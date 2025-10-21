@@ -52,14 +52,14 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+<Link to="/" className="flex items-center">
             <img 
               src={APP_LOGO} 
               alt="Wattsun Énergie" 
               className={logoClasses} 
               style={{ 
                 maxWidth: '200px',
-                filter: isScrolled || !isHomePage ? 'none' : 'drop-shadow(0 0 0.75rem black)'
+                filter: (isScrolled || !isHomePage) ? 'drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3))' : 'none'
               }} 
             />
           </Link>
