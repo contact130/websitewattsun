@@ -52,7 +52,7 @@ export default function BatteriesStockage() {
   return (
     <ServicePage
       title="Batteries de Stockage"
-      heroImage="/batteries-stockage-hero.png"
+      heroImage="/batteries-stockage-hero.jpg"
       shortDescription="Maximisez votre autoconsommation et gagnez en indépendance énergétique"
       advantages={advantages}
       process={process}
