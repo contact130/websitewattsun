@@ -48,7 +48,7 @@ export default function Home() {
       <section
         className="relative h-screen flex items-center justify-center text-white"
         style={{
-          backgroundImage: "url('/assets/470013370_17951185151895076_4466383991065580590_n.jpg')",
+        backgroundImage: "url(\'/homepage-hero.jpg\')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
