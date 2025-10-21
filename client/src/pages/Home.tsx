@@ -89,7 +89,7 @@ export default function Home() {
           </div>
 
           {/* Icône de scroll */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
             <ChevronDown size={40} />
           </div>
         </div>
