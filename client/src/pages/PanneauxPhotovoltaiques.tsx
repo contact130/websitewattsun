@@ -59,7 +59,7 @@ export default function PanneauxPhotovoltaiques() {
   return (
     <ServicePage
       title="Panneaux Photovoltaïques"
-      heroImage="/assets/470013370_17951185151895076_4466383991065580590_n.jpg"
+      heroImage="/assets/361585731_17884931429895076_6551257407481636813_n.jpg"
       shortDescription="Produisez votre propre électricité et réduisez votre facture jusqu'à 70%"
       advantages={advantages}
       process={process}

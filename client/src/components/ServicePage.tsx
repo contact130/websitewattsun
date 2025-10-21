@@ -3,6 +3,7 @@ import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
+import { ChevronDown } from "lucide-react";
 import Footer from "@/components/Footer";
 
 interface ServicePageProps {
@@ -30,15 +31,15 @@ export default function ServicePage({
 
       {/* Hero Section */}
       <section
-        className="relative h-[60vh] flex items-center justify-center text-white mt-20"
+        className="relative h-screen flex flex-col justify-between text-white"
         style={{
           backgroundImage: `url('${heroImage}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 container mx-auto px-4 text-center flex-grow flex flex-col justify-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">{title}</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
             {shortDescription}
@@ -51,6 +52,10 @@ export default function ServicePage({
               Demander un Devis Gratuit
             </Button>
           </Link>
+        </div>
+        {/* Icône de scroll */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+          <ChevronDown size={40} />
         </div>
       </section>
 
