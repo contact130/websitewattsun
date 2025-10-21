@@ -4,9 +4,6 @@ dist/
 .DS_Store
 *.log
 pnpm-lock.yaml
-
-
-
 .cache/
-.cache
+.nvm/
 
