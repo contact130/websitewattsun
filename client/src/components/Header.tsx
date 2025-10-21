@@ -10,7 +10,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-
+  const isServicePage = SERVICES.some(service => service.path === location.pathname);
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -26,7 +26,7 @@ export default function Header() {
   }, [location]);
 
   const headerClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-    isScrolled || !isHomePage
+    isScrolled || (!isHomePage && !isServicePage)
       ? "bg-white shadow-md"
       : "bg-transparent"
   }`;
@@ -34,7 +34,7 @@ export default function Header() {
   const logoClasses = `h-16 transition-all duration-300`;
 
   const textClasses = `transition-colors duration-300 ${
-    isScrolled || !isHomePage ? "text-gray-800" : "text-white"
+   isScrolled || (!isHomePage && !isServicePage) ? "text-gray-800" : "text-white"
   }`;
 
   // Mapping des icônes pour les services
@@ -54,7 +54,7 @@ export default function Header() {
           {/* Logo */}
 <Link to="/" className="flex items-center">
             <img 
-              src={(!isScrolled && isHomePage) ? APP_LOGO_WHITE : APP_LOGO} 
+              src={(!isScrolled && (isHomePage || isServicePage)) ? APP_LOGO_WHITE : APP_LOGO} 
               alt="Wattsun Énergie" 
               className={logoClasses} 
               style={{ 
