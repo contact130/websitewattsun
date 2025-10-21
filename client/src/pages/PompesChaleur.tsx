@@ -59,7 +59,7 @@ export default function PompesChaleur() {
   return (
     <ServicePage
       title="Pompes à Chaleur"
-      heroImage="/assets/469976003_17951185334895076_2625930423470784503_n.jpg"
+      heroImage="/pompe-a-chaleur-hero.jpg"
       shortDescription="Chauffage écologique et économique pour votre confort toute l'année"
       advantages={advantages}
       process={process}
