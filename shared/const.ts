@@ -2,8 +2,7 @@
 
 export const APP_TITLE = import.meta.env.VITE_APP_TITLE || "App";
 
-export const APP_LOGO =
-  "/attached_assets/LogoWattsuntransparent.png";
+export const APP_LOGO = "/LogoWattsuntransparent.png";
 
 // Generate login URL at runtime so redirect URI reflects the current origin.
 export const getLoginUrl = () => {
@@ -72,3 +71,6 @@ export const CONTACT = {
   email: "contact@wattsun-energie.fr",
   address: "123 Rue de l'Énergie, 17000 La Rochelle",
 };
+
+
+export const APP_LOGO_WHITE = "/LogoWattsun_blanc.png";

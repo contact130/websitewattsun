@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Home, Sun, Thermometer, Battery, Plug, Zap, Wind, FileText } from "lucide-react";
-import { APP_LOGO } from "@shared/const";
+import { APP_LOGO, APP_LOGO_WHITE } from "@shared/const";
 import { SERVICES } from "@shared/const";
 import { Button } from "@/components/ui/button";
 
@@ -54,12 +54,11 @@ export default function Header() {
           {/* Logo */}
 <Link to="/" className="flex items-center">
             <img 
-              src={APP_LOGO} 
+              src={(!isScrolled && isHomePage) ? APP_LOGO_WHITE : APP_LOGO} 
               alt="Wattsun Énergie" 
               className={logoClasses} 
               style={{ 
                 maxWidth: '200px',
-                filter: (isScrolled || !isHomePage) ? 'none' : 'brightness(0) invert(1)'
               }} 
             />
           </Link>
