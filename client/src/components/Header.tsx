@@ -59,7 +59,7 @@ export default function Header() {
               className={logoClasses} 
               style={{ 
                 maxWidth: '200px',
-                filter: isScrolled || !isHomePage ? 'none' : 'brightness(0) invert(1)'
+                filter: isScrolled || !isHomePage ? 'none' : 'drop-shadow(0 0 0.75rem black)'
               }} 
             />
           </Link>
