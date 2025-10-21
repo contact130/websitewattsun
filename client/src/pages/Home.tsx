@@ -46,7 +46,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="relative h-screen flex items-center justify-center text-white"
+        className="relative h-screen flex flex-col justify-between text-white"
         style={{
         backgroundImage: "url(\'/homepage-hero.jpg\')",
           backgroundSize: "cover",
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50"></div>
 
         {/* Contenu */}
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="relative z-10 container mx-auto px-4 text-center flex-grow flex flex-col justify-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Solutions Énergétiques Durables
             <br />
@@ -88,10 +88,10 @@ export default function Home() {
             </Button>
           </div>
 
-          {/* Icône de scroll */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ChevronDown size={40} />
-          </div>
+        {/* Icône de scroll */}
+        <div className="w-full flex justify-center pb-20 z-10">
+          <ChevronDown size={40} className="animate-bounce" />
+        </div>
         </div>
       </section>
 
