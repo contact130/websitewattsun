@@ -54,7 +54,7 @@ export default function Header() {
           {/* Logo */}
 <Link to="/" className="flex items-center">
             <img 
-              src={(!isScrolled && (isHomePage || isServicePage)) ? APP_LOGO_WHITE : APP_LOGO} 
+              src={((!isScrolled && isHomePage) || (!isScrolled && isServicePage)) ? APP_LOGO_WHITE : APP_LOGO} 
               alt="Wattsun Énergie" 
               className={logoClasses} 
               style={{ 
