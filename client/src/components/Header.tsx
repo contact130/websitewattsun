@@ -52,7 +52,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-<Link to="/" className="flex items-center flex-shrink-0 h-16">
+<Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center flex-shrink-0 h-16">
             <img 
               src={((!isScrolled && isHomePage) || (!isScrolled && isServicePage)) ? APP_LOGO : APP_LOGO_WHITE} 
               alt="Wattsun Énergie" 
@@ -72,6 +72,7 @@ export default function Header() {
           <button
             className={`${textClasses} p-2 rounded-lg hover:bg-white/20 transition-colors`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onMouseEnter={() => setIsMobileMenuOpen(true)}
             aria-label="Menu"
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -80,7 +81,10 @@ export default function Header() {
 
         {/* Menu Burger Raffiné */}
         {isMobileMenuOpen && (
-          <div className="fixed top-20 right-4 w-80 bg-white rounded-2xl shadow-2xl py-6 z-40 border border-gray-100">
+          <div 
+            className="fixed top-20 right-4 w-80 bg-white rounded-2xl shadow-2xl py-6 z-40 border border-gray-100"
+            onMouseLeave={() => setIsMobileMenuOpen(false)}
+          >
             <nav className="flex flex-col space-y-1">
               {/* Accueil */}
               <Link

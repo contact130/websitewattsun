@@ -44,7 +44,7 @@ export default function BornesRecharge() {
 
   const certifications = [
     {
-      logo: "/assets/Logorechargeelec+.png",
+      logo: "/Logorechargeelec+.png",
       name: "Recharge Elec+"
     }
   ];

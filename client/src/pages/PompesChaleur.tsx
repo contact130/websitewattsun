@@ -44,7 +44,7 @@ export default function PompesChaleur() {
 
   const certifications = [
     {
-      logo: "/assets/LogoQualiPACtransparent.png",
+      logo: "/LogoQualiPACtransparent.png",
       name: "QualiPAC"
     }
   ];

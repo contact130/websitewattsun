@@ -44,7 +44,7 @@ export default function VMC() {
 
   const certifications = [
     {
-      logo: "/assets/Logoventilationtransparent.png",
+      logo: "/Logoventilationtransparent.png",
       name: "Ventilation"
     }
   ];

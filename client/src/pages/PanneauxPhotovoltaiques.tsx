@@ -44,7 +44,7 @@ export default function PanneauxPhotovoltaiques() {
 
   const certifications = [
     {
-      logo: "/assets/LogoqualiPVtransparent.png",
+      logo: "/LogoqualiPVtransparent.png",
       name: "QualiPV"
     }
   ];

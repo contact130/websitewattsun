@@ -87,11 +87,11 @@ export default function Home() {
               Découvrir Nos Services
             </Button>
           </div>
+        </div>
 
         {/* Icône de scroll */}
-        <div className="w-full flex justify-center pb-20 z-10">
+        <div className="relative z-10 w-full flex justify-center pb-8">
           <ChevronDown size={40} className="animate-bounce" />
-        </div>
         </div>
       </section>
 
@@ -117,13 +117,18 @@ export default function Home() {
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                       )}
-                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#5e8a92] transition-colors duration-300">
+                      <Link
+                        to={service.path}
+                        onClick={() => window.scrollTo(0, 0)}
+                        className="text-xl font-bold text-gray-900 group-hover:text-[#5e8a92] transition-colors duration-300 hover:underline"
+                      >
                         {service.title}
-                      </h3>
+                      </Link>
                     </div>
                     <p className="text-gray-600 mb-4 group-hover:text-gray-800 transition-colors duration-300">{service.shortDescription}</p>
                     <Link
                       to={service.path}
+                      onClick={() => window.scrollTo(0, 0)}
                       className="text-[#fcad0d] font-medium hover:underline inline-flex items-center gap-1 group-hover:gap-3 transition-all duration-300 group-hover:font-bold"
                     >
                       En savoir plus →
@@ -133,6 +138,27 @@ export default function Home() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Section Certifications */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+            Nos Certifications et Qualifications
+          </h2>
+
+          <div className="flex flex-wrap justify-center items-center gap-8 mb-8">
+            <img src="/LogoqualiPVtransparent.png" alt="QualiPV" className="h-28 object-contain" />
+            <img src="/LogoQualiPACtransparent.png" alt="QualiPAC" className="h-28 object-contain" />
+            <img src="/Logorechargeelec+.png" alt="Recharge Elec+" className="h-28 object-contain" />
+            <img src="/Logoventilationtransparent.png" alt="Ventilation" className="h-28 object-contain" />
+          </div>
+
+          <p className="text-center text-gray-700 max-w-3xl mx-auto text-lg">
+            Nos certifications RGE (Reconnu Garant de l'Environnement) garantissent la qualité de nos installations et vous permettent de bénéficier des aides de l'État. 
+            Nous respectons les normes les plus strictes pour votre sécurité et votre satisfaction.
+          </p>
         </div>
       </section>
 

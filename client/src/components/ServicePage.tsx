@@ -122,7 +122,7 @@ export default function ServicePage({
                   key={index}
                   src={cert.logo}
                   alt={cert.name}
-                  className="h-24 object-contain"
+                  className="h-32 object-contain"
                 />
               ))}
             </div>
