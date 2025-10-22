@@ -31,7 +31,7 @@ export default function Header() {
       : "bg-transparent"
   }`;
 
-  const logoClasses = `h-16 transition-all duration-300`;
+  const logoClasses = `h-16 transition-all duration-300 w-auto`;
 
   const textClasses = `transition-colors duration-300 ${
    isScrolled || (!isHomePage && !isServicePage) ? "text-gray-800" : "text-white"
@@ -52,14 +52,16 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-<Link to="/" className="flex items-center">
+<Link to="/" className="flex items-center flex-shrink-0 h-16">
             <img 
-              src={((!isScrolled && isHomePage) || (!isScrolled && isServicePage)) ? APP_LOGO_WHITE : APP_LOGO} 
+              src={((!isScrolled && isHomePage) || (!isScrolled && isServicePage)) ? APP_LOGO : APP_LOGO_WHITE} 
               alt="Wattsun Énergie" 
-              className={logoClasses} 
+              className="h-full w-auto transition-opacity duration-300" 
               style={{ 
                 maxWidth: '200px',
+                objectFit: 'contain',
               }} 
+              key={((!isScrolled && isHomePage) || (!isScrolled && isServicePage)) ? 'logo-transparent' : 'logo-white'}
             />
           </Link>
 
