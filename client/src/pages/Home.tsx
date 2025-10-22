@@ -108,23 +108,23 @@ export default function Home() {
               return (
                 <Card
                   key={service.id}
-                  className="hover:shadow-xl transition-shadow duration-300 cursor-pointer group"
+                  className="hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer group"
                 >
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4 mb-4">
                       {Icon && (
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                       )}
-                      <h3 className="text-xl font-bold bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] bg-clip-text text-transparent">
+                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#5e8a92] transition-colors duration-300">
                         {service.title}
                       </h3>
                     </div>
-                    <p className="text-gray-600 mb-4">{service.shortDescription}</p>
+                    <p className="text-gray-600 mb-4 group-hover:text-gray-800 transition-colors duration-300">{service.shortDescription}</p>
                     <Link
                       to={service.path}
-                      className="text-[#fcad0d] font-medium hover:underline inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+                      className="text-[#fcad0d] font-medium hover:underline inline-flex items-center gap-1 group-hover:gap-3 transition-all duration-300 group-hover:font-bold"
                     >
                       En savoir plus →
                     </Link>
