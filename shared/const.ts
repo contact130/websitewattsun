@@ -67,7 +67,7 @@ export const SERVICES = [
 ];
 
 export const CONTACT = {
-  phone: "07 86 73 10 33",
+  phone: "06 08 75 00 51",
   email: "contact@wattsun-energie.fr",
   address: "21 bis Rue Ampère 17139 Dompierre sur mer"
 };
