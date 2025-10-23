@@ -59,7 +59,7 @@ export const SERVICES = [
   },
   {
     id: 6,
-    title: "VMC (Ventilation Mécanique Contrôlée)",
+    title: "VMC",
     shortDescription: "Améliorez la qualité de l'air intérieur et réduisez votre consommation.",
     icon: "Fan",
     path: "/vmc",
