@@ -55,12 +55,7 @@ export default function Footer() {
                   {service.title}
                 </Link>
               ))}
-              <Link
-                to="/demande-devis"
-                className="block text-gray-400 hover:text-[#fcad0d] transition-colors mt-4"
-              >
-                Demander un Devis
-              </Link>
+
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, Sun, Thermometer, Battery, Plug, Zap, Wind, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronDown, Sun, Thermometer, Battery, Plug, Zap, Wind, Star, ChevronLeft, ChevronRight, Fan } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SERVICES } from "@shared/const";
@@ -19,6 +20,7 @@ export default function Home() {
     Plug,
     Zap,
     Wind,
+    Fan,
   };
 
   const nextReviews = () => {
@@ -111,9 +113,9 @@ export default function Home() {
                   className="hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer group"
                 >
                   <CardContent className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center gap-4 mb-4 flex-shrink-0">
                       {Icon && (
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] flex items-center justify-center">
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                       )}

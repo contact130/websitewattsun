@@ -61,15 +61,15 @@ export const SERVICES = [
     id: 6,
     title: "VMC (Ventilation Mécanique Contrôlée)",
     shortDescription: "Améliorez la qualité de l'air intérieur et réduisez votre consommation.",
-    icon: "Wind",
+    icon: "Fan",
     path: "/vmc",
   },
 ];
 
 export const CONTACT = {
-  phone: "05 46 00 00 00",
+  phone: "07 86 73 10 33",
   email: "contact@wattsun-energie.fr",
-  address: "123 Rue de l'Énergie, 17000 La Rochelle",
+  address: "21 bis Rue Ampère 17139 Dompierre sur mer"
 };
 
 
