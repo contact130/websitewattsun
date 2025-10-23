@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, Sun, Thermometer, Battery, Plug, Zap, Wind, FileText } from "lucide-react";
+import { Menu, X, Home, Sun, Thermometer, Battery, Plug, Zap, Wind, FileText, Fan } from "lucide-react";
 import { APP_LOGO, APP_LOGO_WHITE } from "@shared/const";
 import { SERVICES } from "@shared/const";
 import { Button } from "@/components/ui/button";
@@ -45,6 +45,7 @@ export default function Header() {
     Plug: <Plug className="w-5 h-5" />,
     Zap: <Zap className="w-5 h-5" />,
     Wind: <Wind className="w-5 h-5" />,
+    Fan: <Fan className="w-5 h-5" />,
   };
 
   return (

@@ -98,42 +98,65 @@ export default function Home() {
       </section>
 
       {/* Section Services */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900 animate-fade-in">
             Nos Services
           </h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Découvrez nos solutions énergétiques innovantes et durables
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {SERVICES.map((service: any) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px]">
+            {SERVICES.map((service: any, index: number) => {
               const Icon = iconMap[service.icon];
+              const colors = [
+                'from-blue-500 to-cyan-400',
+                'from-orange-500 to-red-400',
+                'from-green-500 to-emerald-400',
+                'from-purple-500 to-pink-400',
+                'from-yellow-500 to-orange-400',
+                'from-indigo-500 to-blue-400',
+              ];
+              const colorClass = colors[index % colors.length];
+              
+              // Tous les services prennent 1 colonne pour tenir sur un écran
+              const cardClassName = "lg:col-span-1";
+              
               return (
                 <Card
                   key={service.id}
-                  className="hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer group"
+                  className={`relative overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transition-all duration-500 cursor-pointer group border-0 bg-white ${cardClassName}`}
+                  style={{
+                    animation: `slideUp 0.6s ease-out ${index * 0.1}s both`,
+                  }}
                 >
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-4 mb-4 flex-shrink-0">
+                  {/* Gradient background on hover */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${colorClass} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                  
+                  <CardContent className="p-8 relative z-10">
+                    <div className="flex items-start gap-4 mb-6">
                       {Icon && (
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] flex items-center justify-center">
-                          <Icon className="w-6 h-6 text-white" />
+                        <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${colorClass} flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 transform`}>
+                          <Icon className="w-8 h-8 text-white" />
                         </div>
                       )}
                       <Link
                         to={service.path}
                         onClick={() => window.scrollTo(0, 0)}
-                        className="text-xl font-bold text-gray-900 group-hover:text-[#5e8a92] transition-colors duration-300 hover:underline"
+                        className="text-xl font-bold text-gray-900 group-hover:text-[#5e8a92] transition-colors duration-300 hover:underline line-clamp-2"
                       >
                         {service.title}
                       </Link>
                     </div>
-                    <p className="text-gray-600 mb-4 group-hover:text-gray-800 transition-colors duration-300">{service.shortDescription}</p>
+                    <p className="text-gray-600 mb-6 group-hover:text-gray-800 transition-colors duration-300 leading-relaxed">{service.shortDescription}</p>
                     <Link
                       to={service.path}
                       onClick={() => window.scrollTo(0, 0)}
-                      className="text-[#fcad0d] font-medium hover:underline inline-flex items-center gap-1 group-hover:gap-3 transition-all duration-300 group-hover:font-bold"
+                      className="text-[#fcad0d] font-bold hover:underline inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300 group-hover:text-[#5e8a92]"
                     >
-                      En savoir plus →
+                      En savoir plus
+                      <span className="inline-block group-hover:translate-x-1 transition-transform duration-300">→</span>
                     </Link>
                   </CardContent>
                 </Card>
