@@ -149,7 +149,7 @@ export default function Home() {
                         {service.title}
                       </Link>
                     </div>
-                    <p className="text-gray-600 mb-6 group-hover:text-gray-800 transition-colors duration-300 leading-relaxed">{service.shortDescription}</p>
+                    <p className="text-gray-600 mb-6 group-hover:text-gray-800 transition-colors duration-300 leading-relaxed">{service.description}</p>
                     <Link
                       to={service.path}
                       onClick={() => window.scrollTo(0, 0)}
