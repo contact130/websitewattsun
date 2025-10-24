@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, Sun, Thermometer, Battery, Plug, Zap, Wind, Star, ChevronLeft, ChevronRight, Fan } from "lucide-react";
+import { ChevronDown, Sun, Thermometer, Battery, Zap, Star, ChevronLeft, ChevronRight, Fan } from "lucide-react";
+import { PlugZap } from 'lucide-react';
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,13 +14,12 @@ export default function Home() {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
   const reviewsPerPage = 3;
 
-  const iconMap: Record<string, any> = {
+  const iconMap: Record<string, React.ComponentType<{ className: string }>> = {
     Sun,
     Thermometer,
     Battery,
-    Plug,
+    ChargingStation: PlugZap,
     Zap,
-    Wind,
     Fan,
   };
 
@@ -109,7 +109,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px]">
             {SERVICES.map((service: any, index: number) => {
-              const Icon = iconMap[service.icon];
+              const Icon = iconMap[service.Icon];
               const colors = [
                 'from-blue-500 to-cyan-400',
                 'from-orange-500 to-red-400',

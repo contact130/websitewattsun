@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, Sun, Thermometer, Battery, Plug, Zap, Wind, FileText, Fan } from "lucide-react";
+import { Menu, X, Home, Sun, Thermometer, Battery, Zap, Fan, FileText } from "lucide-react";
+import { PlugZap } from 'lucide-react';
 import { APP_LOGO, APP_LOGO_WHITE } from "@shared/const";
 import { SERVICES } from "@shared/const";
 import { Button } from "@/components/ui/button";
@@ -55,13 +56,12 @@ export default function Header() {
   }`;
 
   // Mapping des icônes pour les services
-  const iconMap: Record<string, any> = {
+  const iconMap: Record<string, React.ReactElement> = {
     Sun: <Sun className="w-5 h-5" />,
     Thermometer: <Thermometer className="w-5 h-5" />,
     Battery: <Battery className="w-5 h-5" />,
-    Plug: <Plug className="w-5 h-5" />,
+    ChargingStation: <PlugZap className="w-5 h-5" />,
     Zap: <Zap className="w-5 h-5" />,
-    Wind: <Wind className="w-5 h-5" />,
     Fan: <Fan className="w-5 h-5" />,
   };
 
@@ -131,7 +131,7 @@ export default function Header() {
                   className="flex items-center gap-3 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] transition-colors px-6 py-3 rounded-lg mx-2"
                 >
                   <span className="w-5 h-5 flex-shrink-0 flex items-center justify-center">
-                    {iconMap[service.icon] || <Zap className="w-5 h-5" />}
+                    {iconMap[service.Icon] || <Zap className="w-5 h-5" />}
                   </span>
                   <span className="text-sm">{service.title}</span>
                 </Link>
