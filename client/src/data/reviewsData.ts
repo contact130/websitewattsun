@@ -13,7 +13,7 @@ export const reviewsData: Review[] = [
     id: 1,
     name: "Antonio DIAS-PEREIRA",
     rating: 5,
-    date: "Juillet 2024",
+    date: "Il y a 3 mois",
     text: "Pour une installation de panneaux photovoltaïques de 3 kWc, j'ai choisi de faire appel à WATTSUN, qui propose des produits de qualité comme les panneaux solaires DUALSUN et les micro onduleurs HOYMILES avec passerelle pour la visualisation (Bourneois). Xavier et Randy, qui ont installé les panneaux, ont fait preuve d'une grande écoute pour réaliser une installation soignée, bien intégrée dans mon tableau pour harmoniser le tout, en maintenant les mêmes modules de rangement et une fonction du modèle SCHNEIDER. Après avoir comparé plusieurs devis, j'ai opté pour WATTSUN en raison de leur rapidité d'exécution, de l'efficacité de leurs démarches administratives grâce à un prestataire compétent, et de la visite du Consuel effectuée juste après la fin du chantier. La seule réserve que j'avais concernait le paiement échelonné avec un premier acompte à la commande. En discutant avec Nicolas, nous avons convenu que le premier acompte serait versé dès l'obtention de la déclaration préalable par la mairie, ce qui m'a rassuré quant à leur professionnalisme.",
     avatar: null
   },
@@ -21,7 +21,7 @@ export const reviewsData: Review[] = [
     id: 2,
     name: "Michel B",
     rating: 5,
-    date: "Août 2024",
+    date: "Il y a 2 mois",
     text: "Équipe très professionnelle. Du devis à l'installation des panneaux photovoltaïques, tout a été parfait. Je recommande vivement WATTSUN ÉNERGIE.",
     avatar: null
   },
@@ -29,7 +29,7 @@ export const reviewsData: Review[] = [
     id: 3,
     name: "Jean-Philippe C",
     rating: 5,
-    date: "Août 2024",
+    date: "Il y a 2 mois",
     text: "Excellent service. Très bons conseils et installation très professionnelle. Je recommande Wattsun Énergie.",
     avatar: null
   },
@@ -37,7 +37,7 @@ export const reviewsData: Review[] = [
     id: 4,
     name: "Pierre L",
     rating: 5,
-    date: "Juillet 2024",
+    date: "Il y a 3 mois",
     text: "Très bon contact avec l'équipe Wattsun. Très bons conseils et installation très rapide. Je recommande vivement.",
     avatar: null
   },
@@ -45,7 +45,7 @@ export const reviewsData: Review[] = [
     id: 5,
     name: "Thierry D",
     rating: 5,
-    date: "Juin 2024",
+    date: "Il y a 4 mois",
     text: "Installation d'une pompe à chaleur. Équipe très professionnelle et sympathique. Très satisfait de la prestation. Je recommande.",
     avatar: null
   },
@@ -53,7 +53,7 @@ export const reviewsData: Review[] = [
     id: 6,
     name: "Antoine M",
     rating: 5,
-    date: "Mai 2024",
+    date: "Il y a 5 mois",
     text: "Très bons conseils et installation très professionnelle. Je recommande Wattsun Énergie.",
     avatar: null
   }
