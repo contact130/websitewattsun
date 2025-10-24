@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import * as React from "react";
+const { useState, useEffect } = React;
 import { Link } from "react-router-dom";
-import { ChevronDown, Sun, Thermometer, Battery, Zap, Star, ChevronLeft, ChevronRight, Fan } from "lucide-react";
+import { ChevronDown, Sun, Thermometer, Battery, Zap, ChevronLeft, ChevronRight, Fan } from "lucide-react";
 import { PlugZap } from 'lucide-react';
 
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,35 @@ import { SERVICES } from "@shared/const";
 import { reviewsData } from "@/data/reviewsData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+const MAX_LENGTH = 200;
+
+const ReviewText = ({ review }: { review: { text: string } }) => {
+  const [isTruncated, setIsTruncated] = useState(true);
+
+  const toggleTruncation = () => {
+    setIsTruncated(!isTruncated);
+  };
+
+  const displayFullText = review.text.length <= MAX_LENGTH || !isTruncated;
+  const text = displayFullText
+    ? review.text
+    : review.text.substring(0, MAX_LENGTH) + "...";
+
+  return (
+    <p className="text-gray-700 italic mb-3">
+      {text}
+      {review.text.length > MAX_LENGTH && (
+        <button
+          onClick={toggleTruncation}
+          className="text-[#fcad0d] font-bold hover:underline ml-1"
+        >
+          {isTruncated ? "Lire la suite" : "Réduire"}
+        </button>
+      )}
+    </p>
+  );
+};
 
 export default function Home() {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
@@ -176,58 +206,49 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center gap-8 mb-8">
             <img src="/LogoqualiPVtransparent.png" alt="QualiPV" className="h-28 object-contain" />
             <img src="/LogoQualiPACtransparent.png" alt="QualiPAC" className="h-28 object-contain" />
-            <img src="/Logorechargeelec+.png" alt="Recharge Elec+" className="h-28 object-contain" />
-            <img src="/Logoventilationtransparent.png" alt="Ventilation" className="h-28 object-contain" />
-          </div>
-
-          <p className="text-center text-gray-700 max-w-3xl mx-auto text-lg">
-            Nos certifications RGE (Reconnu Garant de l'Environnement) garantissent la qualité de nos installations et vous permettent de bénéficier des aides de l'État. 
-            Nous respectons les normes les plus strictes pour votre sécurité et votre satisfaction.
-          </p>
-        </div>
-      </section>
-
-      {/* Section Avis Clients */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-            Avis de Nos Clients
-          </h2>
-
-          <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {visibleReviews.map((review: any) => (
-              <Card key={review.id} className="shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] flex items-center justify-center text-white font-bold">
-                      {review.name.charAt(0)}
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900">{review.name}</h4>
-                      <p className="text-sm text-gray-500">{review.date}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-1 mb-3">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-[#fcad0d] text-[#fcad0d]" />
-                    ))}
-                  </div>
-
-                  <p className="text-gray-700 italic">"{review.text}"</p>
-                </CardContent>
-              </Card>
-            ))}
-            </div>
-
-            {/* Boutons de navigation du carrousel */}
-            <div className="flex justify-center gap-4">
-              <button
-                onClick={prevReviews}
-                className="p-2 rounded-full border-2 border-[#fcad0d] text-[#fcad0d] hover:bg-[#fcad0d] hover:text-white transition-all"
-                aria-label="Avis précédents"
-              >
+           <img src="/Logorechargeelec+.png" alt="Recharge Elec+" className="h-28 object-contain" />
+	            <img src="/Logoventilationtransparent.png" alt="Ventilation" className="h-28 object-contain" />
+	          </div>
+	
+	          <p className="text-center text-gray-700 max-w-3xl mx-auto text-lg">
+	            Nos certifications RGE (Reconnu Garant de l'Environnement) garantissent la qualité de nos installations et vous permettent de bénéficier des aides de l'État. 
+	            Nous respectons les normes les plus strictes pour votre sécurité et votre satisfaction.
+	          </p>
+	        </div>
+	      </section>
+	
+	      {/* Section Avis Clients */}
+	      <section className="py-20 bg-white">
+	        <div className="container mx-auto px-4">
+	          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+	            Avis de Nos Clients
+	          </h2>
+	          <div className="relative">
+	            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+	              {visibleReviews.map((review: any) => (
+	              <Card key={review.id} className="shadow-lg">
+	                <CardContent className="p-6">
+	                  <div className="flex items-center gap-3 mb-4">
+	                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] flex items-center justify-center text-white font-bold">
+	                      {review.name.charAt(0)}
+	                    </div>
+	                    <div>
+	                      <h4 className="font-bold text-gray-900">{review.name}</h4>
+	                      <p className="text-sm text-gray-500">{review.date}</p>
+	                    </div>
+	                  </div>
+	                  <ReviewText review={review} />
+	                </CardContent>
+	              </Card>
+	            ))}
+	            </div>
+	            {/* Boutons de navigation du carrousel */}
+	            <div className="flex justify-center gap-4">
+	              <button
+	                onClick={prevReviews}
+	                className="p-2 rounded-full border-2 border-[#fcad0d] text-[#fcad0d] hover:bg-[#fcad0d] hover:text-white transition-all"
+	                aria-label="Avis précédents"
+	              >
                 <ChevronLeft className="w-6 h-6" />
               </button>
               <button
