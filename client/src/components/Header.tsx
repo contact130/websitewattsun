@@ -25,6 +25,23 @@ export default function Header() {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+  // Logique de fermeture du menu au clic en dehors
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const menu = document.getElementById("burger-menu");
+      const button = document.getElementById("burger-button");
+
+      if (menu && button && !menu.contains(event.target as Node) && !button.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   const headerClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
     isScrolled || (!isHomePage && !isServicePage)
       ? "bg-white shadow-md"
@@ -75,6 +92,7 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             onMouseEnter={() => setIsMobileMenuOpen(true)}
             aria-label="Menu"
+            id="burger-button" // Ajout d'un ID pour la détection de clic
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -84,7 +102,8 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div 
             className="fixed top-20 right-4 w-80 bg-white rounded-2xl shadow-2xl py-6 z-40 border border-gray-100"
-            onMouseLeave={() => setIsMobileMenuOpen(false)}
+            id="burger-menu" // Ajout d'un ID pour la détection de clic
+            // Suppression de onMouseLeave pour éviter la fermeture au survol
           >
             <nav className="flex flex-col space-y-1">
               {/* Accueil */}
