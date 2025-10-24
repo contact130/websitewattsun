@@ -90,7 +90,6 @@ export default function Header() {
           <button
             className={`${textClasses} p-2 rounded-lg hover:bg-white/20 transition-colors`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            onMouseEnter={() => setIsMobileMenuOpen(true)}
             aria-label="Menu"
             id="burger-button" // Ajout d'un ID pour la détection de clic
           >
@@ -103,7 +102,6 @@ export default function Header() {
           <div 
             className="fixed top-20 right-4 w-80 bg-white rounded-2xl shadow-2xl py-6 z-40 border border-gray-100"
             id="burger-menu" // Ajout d'un ID pour la détection de clic
-            onMouseLeave={() => setIsMobileMenuOpen(false)} // Remise du onMouseLeave
           >
             <nav className="flex flex-col space-y-1">
               {/* Accueil */}
