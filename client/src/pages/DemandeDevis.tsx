@@ -10,6 +10,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SERVICES, CONTACT } from "../../../shared/const";
+import { Sun, Thermometer, Battery, ChargingStation, Zap, Fan } from "lucide-react";
 
 interface FormData {
   // Étape 1: Services
@@ -227,7 +228,7 @@ export default function DemandeDevis() {
                   setSubmitted(false);
                   setCurrentStep(1);
                 }}
-                className="bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white"
+                className="bg-[#5e8a92] hover:bg-[#4a7279] text-white"
               >
                 Soumettre une autre demande
               </Button>
@@ -257,7 +258,7 @@ export default function DemandeDevis() {
                   <div
                     className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all ${
                       step <= currentStep
-                        ? "bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white"
+                        ? "bg-[#5e8a92] text-white"
                         : "bg-gray-300 text-gray-600"
                     }`}
                   >
@@ -267,7 +268,7 @@ export default function DemandeDevis() {
                     <div
                       className={`flex-1 h-1 mx-2 transition-all ${
                         step < currentStep
-                          ? "bg-gradient-to-r from-[#5e8a92] to-[#fcad0d]"
+                          ? "bg-[#5e8a92]"
                           : "bg-gray-300"
                       }`}
                     ></div>
@@ -289,22 +290,28 @@ export default function DemandeDevis() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   Quels services vous intéressent ?
                 </h2>
-                <div className="space-y-4">
-                  {SERVICES.map((service: any) => (
-                    <div key={service.id} className="flex items-center space-x-3">
-                      <Checkbox
-                        id={service.id}
-                        checked={formData.selectedServices.includes(service.id)}
-                        onCheckedChange={() => handleServiceToggle(service.id)}
-                      />
-                      <Label
-                        htmlFor={service.id}
-                        className="text-lg cursor-pointer font-medium text-gray-700"
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {SERVICES.map((service: any) => {
+                    const isSelected = formData.selectedServices.includes(service.id);
+                    return (
+                      <div
+                        key={service.id}
+                        onClick={() => handleServiceToggle(service.id)}
+                        className={`p-4 border-2 rounded-lg cursor-pointer transition-all duration-200 flex flex-col items-center text-center ${
+                          isSelected
+                            ? "border-[#5e8a92] bg-[#5e8a92]/10 shadow-md"
+                            : "border-gray-200 hover:border-gray-400 bg-white"
+                        }`}
                       >
-                        {service.title}
-                      </Label>
-                    </div>
-                  ))}
+                        <service.Icon 
+                          size={36} 
+                          className={`mb-2 transition-colors ${isSelected ? "text-[#5e8a92]" : "text-gray-500"}`} 
+                        />
+                        <h3 className="font-semibold text-lg text-gray-800">{service.title}</h3>
+                        <p className="text-sm text-gray-500">{service.description}</p>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -386,7 +393,7 @@ export default function DemandeDevis() {
 
                 {/* Panneaux Photovoltaïques */}
                 {formData.selectedServices.includes("photovoltaique") && (
-                  <div className="border-l-4 border-[#fcad0d] pl-6 py-4">
+                  <div className="pl-6 py-4 border-l-4 border-gray-200">
                     <h3 className="font-bold text-lg text-gray-900 mb-4">
                       Panneaux Photovoltaïques
                     </h3>
@@ -443,7 +450,7 @@ export default function DemandeDevis() {
 
                 {/* Pompes à Chaleur */}
                 {formData.selectedServices.includes("pompes-chaleur") && (
-                  <div className="border-l-4 border-[#fcad0d] pl-6 py-4">
+                  <div className="pl-6 py-4 border-l-4 border-gray-200">
                     <h3 className="font-bold text-lg text-gray-900 mb-4">
                       Pompes à Chaleur
                     </h3>
@@ -502,7 +509,7 @@ export default function DemandeDevis() {
 
                 {/* Bornes de Recharge */}
                 {formData.selectedServices.includes("bornes") && (
-                  <div className="border-l-4 border-[#fcad0d] pl-6 py-4">
+                  <div className="pl-6 py-4 border-l-4 border-gray-200">
                     <h3 className="font-bold text-lg text-gray-900 mb-4">
                       Bornes de Recharge
                     </h3>
@@ -544,7 +551,7 @@ export default function DemandeDevis() {
 
                 {/* Batteries de Stockage */}
                 {formData.selectedServices.includes("batteries") && (
-                  <div className="border-l-4 border-[#fcad0d] pl-6 py-4">
+                  <div className="pl-6 py-4 border-l-4 border-gray-200">
                     <h3 className="font-bold text-lg text-gray-900 mb-4">
                       Batteries de Stockage
                     </h3>
@@ -593,7 +600,7 @@ export default function DemandeDevis() {
                 {/* Électricité Générale ou VMC */}
                 {(formData.selectedServices.includes("electricite") ||
                   formData.selectedServices.includes("vmc")) && (
-                  <div className="border-l-4 border-[#fcad0d] pl-6 py-4">
+                  <div className="pl-6 py-4 border-l-4 border-gray-200">
                     <h3 className="font-bold text-lg text-gray-900 mb-4">
                       Détails de Votre Projet
                     </h3>
@@ -633,7 +640,7 @@ export default function DemandeDevis() {
                   type="button"
                   onClick={() => setCurrentStep(currentStep + 1)}
                   disabled={!canProceedToNextStep()}
-                  className="bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white flex items-center gap-2"
+                  className="bg-[#5e8a92] hover:bg-[#4a7279] text-white flex items-center gap-2"
                 >
                   Suivant
                   <ChevronRight className="w-4 h-4" />
@@ -642,7 +649,7 @@ export default function DemandeDevis() {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white"
+                  className="bg-[#5e8a92] hover:bg-[#4a7279] text-white"
                 >
                   {isLoading ? "Envoi en cours..." : "Envoyer ma Demande"}
                 </Button>
