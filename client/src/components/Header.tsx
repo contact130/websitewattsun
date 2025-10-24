@@ -103,7 +103,7 @@ export default function Header() {
           <div 
             className="fixed top-20 right-4 w-80 bg-white rounded-2xl shadow-2xl py-6 z-40 border border-gray-100"
             id="burger-menu" // Ajout d'un ID pour la détection de clic
-            // Suppression de onMouseLeave pour éviter la fermeture au survol
+            onMouseLeave={() => setIsMobileMenuOpen(false)} // Remise du onMouseLeave
           >
             <nav className="flex flex-col space-y-1">
               {/* Accueil */}
