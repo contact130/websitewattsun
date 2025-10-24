@@ -42,6 +42,7 @@ interface FormData {
   // Étape 3: Questions spécifiques
   // Panneaux
   typeToiture: string;
+  inclinaisonToiture: string;
   surfaceDisponible: string;
   consommationAnnuelle: string;
   
@@ -73,6 +74,7 @@ export default function DemandeDevis() {
     adresse: "",
     typeToiture: "",
     surfaceDisponible: "",
+    inclinaisonToiture: "",
     consommationAnnuelle: "",
     typeChauffageActuel: "",
     surfaceChauffer: "",
@@ -149,6 +151,7 @@ export default function DemandeDevis() {
     if (formData.selectedServices.includes("photovoltaique")) {
       message += `--- Panneaux Photovoltaïques ---\n`;
       message += `Type de toiture: ${formData.typeToiture}\n`;
+      message += `Inclinaison de la toiture: ${formData.inclinaisonToiture} degrés\n`;
       message += `Surface disponible: ${formData.surfaceDisponible} m²\n`;
       message += `Consommation annuelle: ${formData.consommationAnnuelle} kWh\n\n`;
     }
@@ -445,10 +448,23 @@ export default function DemandeDevis() {
                           type="number"
                           value={formData.surfaceDisponible}
                           onChange={handleInputChange}
-                          placeholder="30"
-                        />
-                      </div>
-                      <div>
+                                                        placeholder="30"
+                                                />
+                                              </div>
+                                              <div>
+                                                <Label htmlFor="inclinaisonToiture">
+                                                  Inclinaison de la Toiture (en degrés)
+                                                </Label>
+                                                <Input
+                                                  id="inclinaisonToiture"
+                                                  name="inclinaisonToiture"
+                                                  type="number"
+                                                  value={formData.inclinaisonToiture}
+                                                  onChange={handleInputChange}
+                                                  placeholder="30"
+                                                />
+                                              </div>
+                                              <div>
                         <Label htmlFor="consommationAnnuelle">
                           Consommation Annuelle d'Électricité (kWh)
                         </Label>
