@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronRight, ChevronLeft } from "lucide-react";
+import { ChevronRight, ChevronLeft, Sun, Thermometer, Battery, PlugZap, Zap, Fan } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,6 +10,22 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SERVICES, CONTACT } from "../../../shared/const";
+
+const IconMap = {
+  Sun: Sun,
+  Thermometer: Thermometer,
+  Battery: Battery,
+  ChargingStation: PlugZap,
+  Zap: Zap,
+  Fan: Fan,
+};
+
+// Composant pour rendre l'icône à partir de son nom (string)
+const IconComponent = ({ iconName, size, className }: { iconName: keyof typeof IconMap, size: number, className: string }) => {
+  const Icon = IconMap[iconName];
+  if (!Icon) return null;
+  return <Icon size={size} className={className} />;
+};
 
 
 interface FormData {
@@ -303,7 +319,8 @@ export default function DemandeDevis() {
                             : "border-gray-200 hover:border-gray-400 bg-white"
                         }`}
                       >
-                        <service.Icon 
+                        <IconComponent 
+                          iconName={service.Icon}
                           size={36} 
                           className={`mb-2 transition-colors ${isSelected ? "text-[#5e8a92]" : "text-gray-500"}`} 
                         />

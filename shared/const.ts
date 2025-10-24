@@ -4,7 +4,7 @@ export const APP_TITLE = import.meta.env.VITE_APP_TITLE || "App";
 
 export const APP_LOGO = "/LogoWattsuntransparent.png";
 
-import { Sun, Thermometer, Battery, ChargingStation, Zap, Fan } from "lucide-react";
+// import { Sun, Thermometer, Battery, ChargingStation, Zap, Fan } from "lucide-react"; // Reverted due to build error in Node.js compilation context
 
 // Generate login URL at runtime so redirect URI reflects the current origin.
 export const getLoginUrl = () => {
@@ -28,42 +28,42 @@ export const SERVICES = [
     id: "photovoltaique",
     title: "Panneaux Photovoltaïques",
     description: "Produisez votre propre électricité verte et réduisez vos factures.",
-    Icon: Sun,
+    Icon: "Sun",
     path: "/panneaux-photovoltaiques",
   },
   {
     id: "pompes-chaleur",
     title: "Pompes à Chaleur",
     description: "Chauffage et climatisation écologiques pour un confort optimal.",
-    Icon: Thermometer,
+    Icon: "Thermometer",
     path: "/pompes-a-chaleur",
   },
   {
     id: "batteries",
     title: "Batteries de Stockage",
     description: "Maximisez votre autoconsommation et gagnez en indépendance énergétique.",
-    Icon: Battery,
+    Icon: "Battery",
     path: "/batteries-stockage",
   },
   {
     id: "bornes",
     title: "Bornes de Recharge",
     description: "Rechargez votre véhicule électrique à domicile en toute sécurité.",
-    Icon: ChargingStation,
+    Icon: "ChargingStation",
     path: "/bornes-recharge",
   },
   {
     id: "electricite",
     title: "Électricité Générale",
     description: "Installation et rénovation électrique pour votre habitat.",
-    Icon: Zap,
+    Icon: "Zap",
     path: "/electricite-generale",
   },
   {
     id: "vmc",
     title: "VMC",
     description: "Améliorez la qualité de l'air intérieur et réduisez votre consommation.",
-    Icon: Fan,
+    Icon: "Fan",
     path: "/vmc",
   },
 ];
