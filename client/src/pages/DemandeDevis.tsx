@@ -10,7 +10,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SERVICES, CONTACT } from "../../../shared/const";
-import { Sun, Thermometer, Battery, ChargingStation, Zap, Fan } from "lucide-react";
+
 
 interface FormData {
   // Étape 1: Services

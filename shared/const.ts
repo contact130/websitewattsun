@@ -4,6 +4,8 @@ export const APP_TITLE = import.meta.env.VITE_APP_TITLE || "App";
 
 export const APP_LOGO = "/LogoWattsuntransparent.png";
 
+import { Sun, Thermometer, Battery, ChargingStation, Zap, Fan } from "lucide-react";
+
 // Generate login URL at runtime so redirect URI reflects the current origin.
 export const getLoginUrl = () => {
   const oauthPortalUrl = import.meta.env.VITE_OAUTH_PORTAL_URL;
@@ -23,45 +25,45 @@ export const getLoginUrl = () => {
 
 export const SERVICES = [
   {
-    id: 1,
+    id: "photovoltaique",
     title: "Panneaux Photovoltaïques",
-    shortDescription: "Produisez votre propre électricité verte et réduisez vos factures.",
-    icon: "Sun",
+    description: "Produisez votre propre électricité verte et réduisez vos factures.",
+    Icon: Sun,
     path: "/panneaux-photovoltaiques",
   },
   {
-    id: 2,
+    id: "pompes-chaleur",
     title: "Pompes à Chaleur",
-    shortDescription: "Chauffage et climatisation écologiques pour un confort optimal.",
-    icon: "Thermometer",
+    description: "Chauffage et climatisation écologiques pour un confort optimal.",
+    Icon: Thermometer,
     path: "/pompes-a-chaleur",
   },
   {
-    id: 3,
+    id: "batteries",
     title: "Batteries de Stockage",
-    shortDescription: "Maximisez votre autoconsommation et gagnez en indépendance énergétique.",
-    icon: "Battery",
+    description: "Maximisez votre autoconsommation et gagnez en indépendance énergétique.",
+    Icon: Battery,
     path: "/batteries-stockage",
   },
   {
-    id: 4,
+    id: "bornes",
     title: "Bornes de Recharge",
-    shortDescription: "Rechargez votre véhicule électrique à domicile en toute sécurité.",
-    icon: "Plug",
+    description: "Rechargez votre véhicule électrique à domicile en toute sécurité.",
+    Icon: ChargingStation,
     path: "/bornes-recharge",
   },
   {
-    id: 5,
+    id: "electricite",
     title: "Électricité Générale",
-    shortDescription: "Installation et rénovation électrique pour votre habitat.",
-    icon: "Zap",
+    description: "Installation et rénovation électrique pour votre habitat.",
+    Icon: Zap,
     path: "/electricite-generale",
   },
   {
-    id: 6,
+    id: "vmc",
     title: "VMC",
-    shortDescription: "Améliorez la qualité de l'air intérieur et réduisez votre consommation.",
-    icon: "Fan",
+    description: "Améliorez la qualité de l'air intérieur et réduisez votre consommation.",
+    Icon: Fan,
     path: "/vmc",
   },
 ];
