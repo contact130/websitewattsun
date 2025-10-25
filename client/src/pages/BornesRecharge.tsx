@@ -1,4 +1,5 @@
 import ServicePage from "@/components/ServicePage";
+import { SERVICES } from "../../../shared/const";
 
 export default function BornesRecharge() {
   const advantages = [
@@ -64,6 +65,8 @@ export default function BornesRecharge() {
       advantages={advantages}
       process={process}
       certifications={certifications}
+      seoTitle={SERVICES.find(s => s.id === "bornes")?.seoTitle || "Bornes de Recharge"}
+      seoDescription={SERVICES.find(s => s.id === "bornes")?.seoDescription || "Rechargez votre véhicule électrique à domicile en toute sécurité."}
       aides={aides}
     />
   );

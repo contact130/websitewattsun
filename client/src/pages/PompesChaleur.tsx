@@ -1,4 +1,5 @@
 import ServicePage from "@/components/ServicePage";
+import { SERVICES } from "../../../shared/const";
 
 export default function PompesChaleur() {
   const advantages = [
@@ -64,6 +65,8 @@ export default function PompesChaleur() {
       advantages={advantages}
       process={process}
       certifications={certifications}
+      seoTitle={SERVICES.find(s => s.id === "pompes-chaleur")?.seoTitle || "Pompes à Chaleur"}
+      seoDescription={SERVICES.find(s => s.id === "pompes-chaleur")?.seoDescription || "Chauffage et climatisation écologiques pour un confort optimal."}
       aides={aides}
     />
   );

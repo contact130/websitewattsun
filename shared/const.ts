@@ -29,6 +29,8 @@ export const SERVICES = [
     title: "Panneaux Photovoltaïques",
     description: "Produisez votre propre électricité verte et réduisez vos factures.",
     Icon: "Sun",
+    seoTitle: "Panneaux Photovoltaïques à La Rochelle | Wattsun Énergie",
+    seoDescription: "Installation de panneaux solaires RGE QualiPV à La Rochelle. Produisez votre électricité, réduisez vos factures et bénéficiez des aides de l'État. Demandez un devis gratuit.",
     path: "/panneaux-photovoltaiques",
   },
   {
@@ -36,6 +38,8 @@ export const SERVICES = [
     title: "Pompes à Chaleur",
     description: "Chauffage et climatisation écologiques pour un confort optimal.",
     Icon: "Thermometer",
+    seoTitle: "Pompes à Chaleur RGE QualiPAC à La Rochelle | Wattsun Énergie",
+    seoDescription: "Installation et remplacement de pompes à chaleur (Air/Eau, Air/Air) RGE QualiPAC. Économisez jusqu'à 70% sur votre chauffage. Devis et aides financières.",
     path: "/pompes-a-chaleur",
   },
   {
@@ -43,6 +47,8 @@ export const SERVICES = [
     title: "Batteries de Stockage",
     description: "Maximisez votre autoconsommation et gagnez en indépendance énergétique.",
     Icon: "Battery",
+    seoTitle: "Batteries de Stockage Solaire | Maximisez votre Autoconsommation",
+    seoDescription: "Solutions de batteries de stockage pour panneaux solaires. Augmentez votre autonomie et utilisez votre énergie jour et nuit. Compatible avec toutes installations PV.",
     path: "/batteries-stockage",
   },
   {
@@ -50,6 +56,8 @@ export const SERVICES = [
     title: "Bornes de Recharge",
     description: "Rechargez votre véhicule électrique à domicile en toute sécurité.",
     Icon: "ChargingStation",
+    seoTitle: "Installation Bornes de Recharge IRVE à Domicile | Wattsun Énergie",
+    seoDescription: "Pose de bornes de recharge pour véhicules électriques à La Rochelle (IRVE). Installation sécurisée, éligible au programme ADVENIR. Devis gratuit.",
     path: "/bornes-recharge",
   },
   {
@@ -57,6 +65,8 @@ export const SERVICES = [
     title: "Électricité Générale",
     description: "Installation et rénovation électrique pour votre habitat.",
     Icon: "Zap",
+    seoTitle: "Électricité Générale et Rénovation Électrique | Wattsun Énergie",
+    seoDescription: "Travaux d'électricité générale, mise aux normes NF C 15-100, et rénovation électrique complète pour votre habitat. Sécurité et conformité garanties.",
     path: "/electricite-generale",
   },
   {
@@ -64,6 +74,8 @@ export const SERVICES = [
     title: "VMC",
     description: "Améliorez la qualité de l'air intérieur et réduisez votre consommation.",
     Icon: "Fan",
+    seoTitle: "Installation VMC (Ventilation Mécanique) | Wattsun Énergie",
+    seoDescription: "Améliorez la qualité de l'air de votre intérieur avec une VMC simple ou double flux. Économies d'énergie et confort thermique. Devis gratuit.",
     path: "/vmc",
   },
 ];

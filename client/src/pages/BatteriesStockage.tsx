@@ -1,4 +1,5 @@
 import ServicePage from "@/components/ServicePage";
+import { SERVICES } from "../../../shared/const";
 
 export default function BatteriesStockage() {
   const advantages = [
@@ -57,6 +58,8 @@ export default function BatteriesStockage() {
       advantages={advantages}
       process={process}
       aides={aides}
+      seoTitle={SERVICES.find(s => s.id === "batteries")?.seoTitle || "Batteries de Stockage"}
+      seoDescription={SERVICES.find(s => s.id === "batteries")?.seoDescription || "Maximisez votre autoconsommation et gagnez en indépendance énergétique."}
     />
   );
 }

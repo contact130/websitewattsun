@@ -1,4 +1,5 @@
 import ServicePage from "@/components/ServicePage";
+import { SERVICES } from "../../../shared/const";
 
 export default function VMC() {
   const advantages = [
@@ -64,6 +65,8 @@ export default function VMC() {
       advantages={advantages}
       process={process}
       certifications={certifications}
+      seoTitle={SERVICES.find(s => s.id === "vmc")?.seoTitle || "VMC - Ventilation Mécanique Contrôlée"}
+      seoDescription={SERVICES.find(s => s.id === "vmc")?.seoDescription || "Améliorez la qualité de l'air intérieur et réduisez votre consommation."}
       aides={aides}
     />
   );

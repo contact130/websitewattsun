@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronRight, ChevronLeft, Sun, Thermometer, Battery, PlugZap, Zap, Fan } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -68,6 +68,16 @@ interface FormData {
 }
 
 export default function DemandeDevis() {
+  useEffect(() => {
+    document.title = "Demande de Devis Gratuit | Wattsun Énergie";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Demandez votre devis gratuit et personnalisé en quelques clics pour vos projets photovoltaïques, pompes à chaleur, bornes de recharge ou électricité générale."
+      );
+    }
+  }, []);
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
     selectedServices: [],

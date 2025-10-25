@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,6 +8,8 @@ import { ChevronDown } from "lucide-react";
 import Footer from "@/components/Footer";
 
 interface ServicePageProps {
+  seoTitle: string;
+  seoDescription: string;
   title: string;
   heroImage: string;
   shortDescription: string;
@@ -23,8 +26,18 @@ export default function ServicePage({
   advantages,
   process,
   certifications,
+  seoTitle,
+  seoDescription,
   aides,
 }: ServicePageProps) {
+  useEffect(() => {
+    document.title = seoTitle;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", seoDescription);
+    }
+  }, [seoTitle, seoDescription]);
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

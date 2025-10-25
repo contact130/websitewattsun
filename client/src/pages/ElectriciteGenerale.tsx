@@ -1,4 +1,5 @@
 import ServicePage from "@/components/ServicePage";
+import { SERVICES } from "../../../shared/const";
 
 export default function ElectriciteGenerale() {
   const advantages = [
@@ -57,6 +58,8 @@ export default function ElectriciteGenerale() {
       advantages={advantages}
       process={process}
       aides={aides}
+      seoTitle={SERVICES.find(s => s.id === "electricite")?.seoTitle || "Électricité Générale"}
+      seoDescription={SERVICES.find(s => s.id === "electricite")?.seoDescription || "Installation et rénovation électrique pour votre habitat."}
     />
   );
 }

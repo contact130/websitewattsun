@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sun, Thermometer, Battery, PlugZap, Zap, Fan } from "lucide-react";
 import { SERVICES } from "../../../shared/const";
@@ -25,6 +26,16 @@ const IconComponent = ({ iconName, size, className }: { iconName: keyof typeof I
 };
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Wattsun Énergie - Solutions Photovoltaïques, PAC et Bornes de Recharge";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Wattsun Énergie : Solutions photovoltaïques, pompes à chaleur, bornes de recharge et électricité générale à La Rochelle et ses environs. Devis gratuit et aides financières."
+      );
+    }
+  }, []);
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />

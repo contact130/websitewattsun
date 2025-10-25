@@ -1,4 +1,5 @@
 import ServicePage from "@/components/ServicePage";
+import { SERVICES } from "../../../shared/const";
 
 export default function PanneauxPhotovoltaiques() {
   const advantages = [
@@ -64,6 +65,8 @@ export default function PanneauxPhotovoltaiques() {
       advantages={advantages}
       process={process}
       certifications={certifications}
+      seoTitle={SERVICES.find(s => s.id === "photovoltaique")?.seoTitle || "Panneaux Photovoltaïques"}
+      seoDescription={SERVICES.find(s => s.id === "photovoltaique")?.seoDescription || "Produisez votre propre électricité verte et réduisez vos factures."}
       aides={aides}
     />
   );
