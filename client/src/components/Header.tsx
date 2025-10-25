@@ -84,7 +84,7 @@ export default function Header() {
           </Link>
 
 {/* Bouton CTA pour grand écran */}
-	          <Link to="/demande-devis" className="hidden lg:block mr-0.5">
+	          <Link to="/demande-devis" className="hidden lg:block mr-0">
 	            <Button
 	              size="sm"
 	              className="bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"

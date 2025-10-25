@@ -53,7 +53,7 @@ export default function ElectriciteGenerale() {
   return (
     <ServicePage
       title="Électricité Générale"
-      heroImage="/electricite-generale-hero.jpg"
+      heroImage="/optimized/elec-generale.jpg"
       shortDescription="Tous vos travaux d'électricité par des professionnels certifiés"
       advantages={advantages}
       process={process}

@@ -4,6 +4,9 @@ import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sun, Thermometer, Battery, Zap, Fan, Plug, MapPin } from "lucide-react";
 import { SERVICES, REALISATIONS } from "../../../shared/const";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -131,9 +134,28 @@ export default function Home() {
 	          <div className="container mx-auto px-4">
 	            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Nos Réalisations Locales</h2>
 	            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-	              {/* Colonne Carte (Placeholder) */}
-	              <div className="bg-gray-100 rounded-xl shadow-lg flex items-center justify-center p-8 min-h-[400px]">
-	                <p className="text-gray-500 text-xl font-semibold">Emplacement pour la Carte Interactive</p>
+	              {/* Colonne Carte Interactive */}
+	              <div className="rounded-xl shadow-lg min-h-[400px] overflow-hidden">
+	                <MapContainer center={[46.1603, -1.1511]} zoom={9} scrollWheelZoom={false} style={{ height: '400px', width: '100%' }}>
+	                  <TileLayer
+	                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+	                  />
+	                  {REALISATIONS.map((realisation, index) => (
+	                    <Marker key={index} position={[realisation.lat, realisation.lng]} icon={L.divIcon({
+	                      className: 'custom-div-icon',
+	                      html: `<div style="background-color: #fcad0d; width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 2px #fcad0d;"></div>`,
+	                      iconSize: [24, 24],
+	                      iconAnchor: [12, 12]
+	                    })}>
+	                      <Popup>
+	                        <div className="font-semibold">{realisation.city}</div>
+	                        <div>{realisation.service}</div>
+	                        <div className="text-sm text-gray-500">Réalisé en {realisation.date}</div>
+	                      </Popup>
+	                    </Marker>
+	                  ))}
+	                </MapContainer>
 	              </div>
 	              {/* Colonne Liste des Réalisations */}
 	              <div>

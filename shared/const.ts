@@ -95,17 +95,17 @@ export const SERVICES = [
 export const APP_LOGO_WHITE = "/LogoWattsun_blanc.png";
 
 export const REALISATIONS = [
-  { city: "Chatelaillon", service: "Pompes à chaleur", date: "Décembre 2023" },
-  { city: "Nieul sur mer", service: "Panneaux photovoltaïques", date: "Janvier 2024" },
-  { city: "Dompierre sur mer", service: "Panneaux photovoltaïques", date: "Février 2024" },
-  { city: "Talmont saint hilaire", service: "Panneaux photovoltaïques", date: "Mars 2024" },
-  { city: "Fouras", service: "Panneaux photovoltaïques", date: "Avril 2024" },
-  { city: "Puyravault", service: "Panneaux photovoltaïques", date: "Mai 2024" },
-  { city: "Vérines", service: "Panneaux photovoltaïques", date: "Juin 2024" },
-  { city: "Rochefort", service: "Panneaux photovoltaïques", date: "Juillet 2024" },
-  { city: "Saint Gilles croix de vie", service: "Panneaux photovoltaïques", date: "Août 2024" },
-  { city: "Surgères", service: "Panneaux photovoltaïques", date: "Septembre 2024" },
-  { city: "La flotte en Ré", service: "Panneaux photovoltaïques", date: "Octobre 2024" },
+  { city: "Châtelaillon-Plage", service: "Pompes à chaleur", date: "Décembre 2023", lat: 46.072, lng: -1.089 },
+  { city: "Nieul-sur-Mer", service: "Panneaux photovoltaïques", date: "Janvier 2024", lat: 46.207, lng: -1.163 },
+  { city: "Dompierre-sur-Mer", service: "Panneaux photovoltaïques", date: "Février 2024", lat: 46.188, lng: -1.063 },
+  { city: "Talmont-Saint-Hilaire", service: "Panneaux photovoltaïques", date: "Mars 2024", lat: 46.466, lng: -1.618 },
+  { city: "Fouras", service: "Panneaux photovoltaïques", date: "Avril 2024", lat: 45.988, lng: -1.093 },
+  { city: "Puyravault", service: "Panneaux photovoltaïques", date: "Mai 2024", lat: 46.138, lng: -0.818 },
+  { city: "Vérines", service: "Panneaux photovoltaïques", date: "Juin 2024", lat: 46.194, lng: -0.967 },
+  { city: "Rochefort", service: "Panneaux photovoltaïques", date: "Juillet 2024", lat: 45.942, lng: -0.958 },
+  { city: "Saint-Gilles-Croix-de-Vie", service: "Panneaux photovoltaïques", date: "Août 2024", lat: 46.697, lng: -1.945 },
+  { city: "Surgères", service: "Panneaux photovoltaïques", date: "Septembre 2024", lat: 46.108, lng: -0.801 },
+  { city: "La Flotte-en-Ré", service: "Panneaux photovoltaïques", date: "Octobre 2024", lat: 46.187, lng: -1.333 }
 ];
 
 export const CONTACT = {
