@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, Sun, Thermometer, Battery, Zap, Fan, FileText } from "lucide-react";
-import { PlugZap } from 'lucide-react';
+import { Menu, X, Home, Sun, Thermometer, Battery, Zap, Fan, FileText, Plug } from "lucide-react";
+// import { PlugZap } from 'lucide-react'; // Remplacé par Plug
 import { APP_LOGO, APP_LOGO_WHITE } from "@shared/const";
 import { SERVICES } from "@shared/const";
 import { Button } from "@/components/ui/button";
@@ -60,7 +60,7 @@ export default function Header() {
     Sun: <Sun className="w-5 h-5" />,
     Thermometer: <Thermometer className="w-5 h-5" />,
     Battery: <Battery className="w-5 h-5" />,
-    ChargingStation: <PlugZap className="w-5 h-5" />,
+    ChargingStation: <Plug className="w-5 h-5" />,
     Zap: <Zap className="w-5 h-5" />,
     Fan: <Fan className="w-5 h-5" />,
   };
@@ -89,7 +89,7 @@ export default function Header() {
 	              size="sm"
 	              className="bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
 	            >
-	              Demander un Devis Gratuit
+	              Demander un Devis
 	            </Button>
 	          </Link>
 	

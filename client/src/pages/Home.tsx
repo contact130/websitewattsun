@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sun, Thermometer, Battery, PlugZap, Zap, Fan } from "lucide-react";
+import { Sun, Thermometer, Battery, PlugZap, Zap, Fan, Plug } from "lucide-react";
 import { SERVICES } from "../../../shared/const";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
@@ -13,7 +13,7 @@ const IconMap = {
   Sun: Sun,
   Thermometer: Thermometer,
   Battery: Battery,
-  ChargingStation: PlugZap,
+  ChargingStation: Plug,
   Zap: Zap,
   Fan: Fan,
 };
@@ -54,13 +54,13 @@ export default function Home() {
               Solutions photovoltaïques, pompes à chaleur, et plus encore. Nous concevons votre avenir énergétique.
             </p>
 <div className="flex justify-center space-x-4">
-	              {/* Bouton 1: Demander un Devis Gratuit (avec dégradé) */}
+	              {/* Bouton 1: Demander un Devis (avec dégradé) */}
 	              <Link to="/demande-devis" className="flex-1 max-w-xs">
 	                <Button
 	                  size="lg"
 	                  className="w-full bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
 	                >
-	                  Demander un Devis Gratuit
+	                  Demander un Devis
 	                </Button>
 	              </Link>
 	              {/* Bouton 2: Découvrir nos services (style contrasté) */}

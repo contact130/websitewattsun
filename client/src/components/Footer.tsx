@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* À propos */}
           <div>
-            <img src={APP_LOGO} alt="Wattsun Énergie" className="h-12 mb-4" />
+            <img src={APP_LOGO} alt="Wattsun Énergie" className="h-16 mb-4" />
             <p className="text-gray-400 text-sm leading-relaxed">
               Wattsun Énergie est votre partenaire de confiance pour toutes vos solutions énergétiques durables à La Rochelle. 
               Nous vous accompagnons dans votre transition énergétique avec professionnalisme et expertise.
