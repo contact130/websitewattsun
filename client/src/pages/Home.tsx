@@ -7,6 +7,20 @@ import { SERVICES, REALISATIONS } from "../../../shared/const";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
+import shadow from 'leaflet/dist/images/marker-shadow.png';
+
+L.Marker.prototype.options.icon = L.icon({
+    iconRetinaUrl: iconRetina,
+    iconUrl: icon,
+    shadowUrl: shadow,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    tooltipAnchor: [16, -28],
+    shadowSize: [41, 41]
+});
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -142,12 +156,7 @@ export default function Home() {
 	                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 	                  />
 	                  {REALISATIONS.map((realisation, index) => (
-	                    <Marker key={index} position={[realisation.lat, realisation.lng]} icon={L.divIcon({
-	                      className: 'custom-div-icon',
-	                      html: `<div style="background-color: #fcad0d; width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 2px #fcad0d;"></div>`,
-	                      iconSize: [24, 24],
-	                      iconAnchor: [12, 12]
-	                    })}>
+	                    <Marker key={index} position={[realisation.lat, realisation.lng]} >
 	                      <Popup>
 	                        <div className="font-semibold">{realisation.city}</div>
 	                        <div>{realisation.service}</div>
