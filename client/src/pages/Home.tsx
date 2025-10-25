@@ -1,27 +1,28 @@
 
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sun, Thermometer, Battery, Zap, Fan, Plug, MapPin } from "lucide-react";
 import { SERVICES, REALISATIONS } from "../../../shared/const";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+
+
+import { Button } from "@/components/ui/button";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
+
+// Fix for default Leaflet icon not showing
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
 import shadow from 'leaflet/dist/images/marker-shadow.png';
 
-L.Marker.prototype.options.icon = L.icon({
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
     iconRetinaUrl: iconRetina,
     iconUrl: icon,
     shadowUrl: shadow,
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    tooltipAnchor: [16, -28],
-    shadowSize: [41, 41]
 });
-import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -43,6 +44,11 @@ const IconComponent = ({ iconName, size, className }: { iconName: keyof typeof I
 };
 
 export default function Home() {
+	  const [isClient, setIsClient] = useState(false);
+	
+	  useEffect(() => {
+	    setIsClient(true);
+	  }, []);
   useEffect(() => {
     document.title = "Wattsun Énergie - Solutions Photovoltaïques, PAC et Bornes de Recharge";
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -149,23 +155,29 @@ export default function Home() {
 	            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Nos Réalisations Locales</h2>
 	            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 	              {/* Colonne Carte Interactive */}
-	              <div className="rounded-xl shadow-lg min-h-[400px] overflow-hidden">
-	                <MapContainer center={[46.1603, -1.1511]} zoom={9} scrollWheelZoom={false} style={{ height: '400px', width: '100%' }}>
-	                  <TileLayer
-	                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-	                  />
-	                  {REALISATIONS.map((realisation, index) => (
-	                    <Marker key={index} position={[realisation.lat, realisation.lng]} >
-	                      <Popup>
-	                        <div className="font-semibold">{realisation.city}</div>
-	                        <div>{realisation.service}</div>
-	                        <div className="text-sm text-gray-500">Réalisé en {realisation.date}</div>
-	                      </Popup>
-	                    </Marker>
-	                  ))}
-	                </MapContainer>
-	              </div>
+	              {isClient ? (
+	                <div className="rounded-xl shadow-lg min-h-[400px] overflow-hidden">
+	                  <MapContainer center={[46.1603, -1.1511]} zoom={9} scrollWheelZoom={false} style={{ height: '400px', width: '100%' }}>
+	                    <TileLayer
+	                      attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+	                    />
+	                    {REALISATIONS.map((realisation, index) => (
+	                      <Marker key={index} position={[realisation.lat, realisation.lng]} >
+	                        <Popup>
+	                          <div className="font-semibold">{realisation.city}</div>
+	                          <div>{realisation.service}</div>
+	                          <div className="text-sm text-gray-500">Réalisé en {realisation.date}</div>
+	                        </Popup>
+	                      </Marker>
+	                    ))}
+	                  </MapContainer>
+	                </div>
+	              ) : (
+	                <div className="bg-gray-100 rounded-xl shadow-lg flex items-center justify-center p-8 min-h-[400px]">
+	                  <p className="text-gray-500 text-xl font-semibold">Chargement de la Carte Interactive...</p>
+	                </div>
+	              )}
 	              {/* Colonne Liste des Réalisations */}
 	              <div>
 	                <h3 className="text-2xl font-semibold mb-6 text-gray-800">Derniers Projets Récents</h3>
