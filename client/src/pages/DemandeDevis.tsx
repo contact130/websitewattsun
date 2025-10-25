@@ -46,10 +46,12 @@ interface FormData {
   surfaceDisponible: string;
   consommationAnnuelle: string;
   
-  // Pompes
-  typeChauffageActuel: string;
-  surfaceChauffer: string;
-  anneeConstruction: string;
+	  // Pompes
+	  typeChauffageActuel: string;
+	  surfaceChauffer: string;
+	  anneeConstruction: string;
+	  typePompeChaleur: string;
+	  chauffageCentral: string;
   
   // Bornes
   typeVehicule: string;
@@ -77,8 +79,10 @@ export default function DemandeDevis() {
     inclinaisonToiture: "",
     consommationAnnuelle: "",
     typeChauffageActuel: "",
-    surfaceChauffer: "",
-    anneeConstruction: "",
+	    surfaceChauffer: "",
+	    anneeConstruction: "",
+	    typePompeChaleur: "",
+	    chauffageCentral: "",
     typeVehicule: "",
     lieuInstallation: "",
     capaciteStockage: "",
@@ -156,12 +160,14 @@ export default function DemandeDevis() {
       message += `Consommation annuelle: ${formData.consommationAnnuelle} kWh\n\n`;
     }
 
-    if (formData.selectedServices.includes("pompes-chaleur")) {
-      message += `--- Pompes à Chaleur ---\n`;
-      message += `Type de chauffage actuel: ${formData.typeChauffageActuel}\n`;
-      message += `Surface à chauffer: ${formData.surfaceChauffer} m²\n`;
-      message += `Année de construction: ${formData.anneeConstruction}\n\n`;
-    }
+	    if (formData.selectedServices.includes("pompes-chaleur")) {
+	      message += `--- Pompes à Chaleur ---\n`;
+	      message += `Type de chauffage actuel: ${formData.typeChauffageActuel}\n`;
+	      message += `Surface à chauffer: ${formData.surfaceChauffer} m²\n`;
+	      message += `Année de construction: ${formData.anneeConstruction}\n`;
+	      message += `Type de PAC souhaitée: ${formData.typePompeChaleur}\n`;
+	      message += `Chauffage central existant: ${formData.chauffageCentral}\n\n`;
+	    }
 
     if (formData.selectedServices.includes("bornes")) {
       message += `--- Bornes de Recharge ---\n`;
@@ -209,8 +215,10 @@ export default function DemandeDevis() {
           consommationAnnuelle: "",
           typeChauffageActuel: "",
           surfaceChauffer: "",
-          anneeConstruction: "",
-          typeVehicule: "",
+	    anneeConstruction: "",
+	    typePompeChaleur: "",
+	    chauffageCentral: "",
+	    typeVehicule: "",
           lieuInstallation: "",
           capaciteStockage: "",
           installationPhotovoltaique: "",
@@ -490,52 +498,107 @@ export default function DemandeDevis() {
                     <div className="space-y-4">
                       <div>
                         <Label htmlFor="typeChauffageActuel">
-                          Type de Chauffage Actuel
-                        </Label>
-                        <Select
-                          value={formData.typeChauffageActuel}
-                          onValueChange={(value) =>
-                            handleSelectChange("typeChauffageActuel", value)
-                          }
-                        >
-                          <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez un type" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="gaz">Gaz</SelectItem>
-                            <SelectItem value="fioul">Fioul</SelectItem>
-                            <SelectItem value="electrique">Électrique</SelectItem>
-                            <SelectItem value="bois">Bois</SelectItem>
-                            <SelectItem value="autre">Autre</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div>
-                        <Label htmlFor="surfaceChauffer">
-                          Surface à Chauffer (m²)
-                        </Label>
-                        <Input
-                          id="surfaceChauffer"
-                          name="surfaceChauffer"
-                          type="number"
-                          value={formData.surfaceChauffer}
-                          onChange={handleInputChange}
-                          placeholder="150"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="anneeConstruction">
-                          Année de Construction
-                        </Label>
-                        <Input
-                          id="anneeConstruction"
-                          name="anneeConstruction"
-                          type="number"
-                          value={formData.anneeConstruction}
-                          onChange={handleInputChange}
-                          placeholder="2005"
-                        />
-                      </div>
+	                      Type de Chauffage Actuel
+	                    </Label>
+	                    <Select
+	                      value={formData.typeChauffageActuel}
+	                      onValueChange={(value) =>
+	                        handleSelectChange("typeChauffageActuel", value)
+	                      }
+	                    >
+	                      <SelectTrigger>
+	                        <SelectValue placeholder="Sélectionnez un type" />
+	                      </SelectTrigger>
+	                      <SelectContent>
+	                        <SelectItem value="gaz">Gaz</SelectItem>
+	                        <SelectItem value="fioul">Fioul</SelectItem>
+	                        <SelectItem value="electrique">Électrique</SelectItem>
+	                        <SelectItem value="bois">Bois</SelectItem>
+	                        <SelectItem value="pompe_a_chaleur">Pompe à Chaleur (Remplacement)</SelectItem>
+	                        <SelectItem value="autre">Autre</SelectItem>
+	                      </SelectContent>
+	                    </Select>
+	                  </div>
+	                  <div>
+	                    <Label htmlFor="surfaceChauffer">
+	                      Surface à Chauffer (m²)
+	                    </Label>
+	                    <Input
+	                      id="surfaceChauffer"
+	                      name="surfaceChauffer"
+	                      type="number"
+	                      value={formData.surfaceChauffer}
+	                      onChange={handleInputChange}
+	                      placeholder="150"
+	                    />
+	                  </div>
+	                  <div>
+	                    <Label htmlFor="anneeConstruction">
+	                      Année de Construction
+	                    </Label>
+	                    <Input
+	                      id="anneeConstruction"
+	                      name="anneeConstruction"
+	                      type="number"
+	                      value={formData.anneeConstruction}
+	                      onChange={handleInputChange}
+	                      placeholder="2005"
+	                    />
+	                  </div>
+	                  <div>
+	                    <Label>
+	                      Type de Pompe à Chaleur souhaitée
+	                    </Label>
+	                    <RadioGroup
+	                      value={formData.typePompeChaleur}
+	                      onValueChange={(value) =>
+	                        handleRadioChange("typePompeChaleur", value)
+	                      }
+	                    >
+	                      <div className="flex items-center space-x-2">
+	                        <RadioGroupItem value="air_eau" id="pac-air-eau" />
+	                        <Label htmlFor="pac-air-eau" className="cursor-pointer">
+	                          Air/Eau
+	                        </Label>
+	                      </div>
+	                      <div className="flex items-center space-x-2">
+	                        <RadioGroupItem value="air_air" id="pac-air-air" />
+	                        <Label htmlFor="pac-air-air" className="cursor-pointer">
+	                          Air/Air
+	                        </Label>
+	                      </div>
+	                      <div className="flex items-center space-x-2">
+	                        <RadioGroupItem value="geothermique" id="pac-geothermique" />
+	                        <Label htmlFor="pac-geothermique" className="cursor-pointer">
+	                          Géothermique
+	                        </Label>
+	                      </div>
+	                    </RadioGroup>
+	                  </div>
+	                  <div>
+	                    <Label>
+	                      Présence d'un système de chauffage central (radiateurs/plancher chauffant) ?
+	                    </Label>
+	                    <RadioGroup
+	                      value={formData.chauffageCentral}
+	                      onValueChange={(value) =>
+	                        handleRadioChange("chauffageCentral", value)
+	                      }
+	                    >
+	                      <div className="flex items-center space-x-2">
+	                        <RadioGroupItem value="oui" id="cc-oui" />
+	                        <Label htmlFor="cc-oui" className="cursor-pointer">
+	                          Oui
+	                        </Label>
+	                      </div>
+	                      <div className="flex items-center space-x-2">
+	                        <RadioGroupItem value="non" id="cc-non" />
+	                        <Label htmlFor="cc-non" className="cursor-pointer">
+	                          Non
+	                        </Label>
+	                      </div>
+	                    </RadioGroup>
+	                  </div>
                     </div>
                   </div>
                 )}
