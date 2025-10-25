@@ -14,7 +14,7 @@ export default function Home() {
         {/* Hero Section */}
         <section
           className="relative bg-cover bg-center text-white py-40"
-          style={{ backgroundImage: "url(\'/Image-de-toit-de-maison-avec-panneaux-solaires.jpg\')" }}
+          style={{ backgroundImage: "url(\'/homepage-hero.jpg\')" }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="container mx-auto px-4 relative z-10 text-center">
