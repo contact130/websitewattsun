@@ -1,10 +1,28 @@
 
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
+import { Sun, Thermometer, Battery, PlugZap, Zap, Fan } from "lucide-react";
 import { SERVICES } from "../../../shared/const";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+// Map des noms d'icônes aux composants Lucide
+const IconMap = {
+  Sun: Sun,
+  Thermometer: Thermometer,
+  Battery: Battery,
+  ChargingStation: PlugZap,
+  Zap: Zap,
+  Fan: Fan,
+};
+
+// Composant pour rendre l'icône à partir de son nom (string)
+const IconComponent = ({ iconName, size, className }: { iconName: keyof typeof IconMap, size: number, className: string }) => {
+  const Icon = IconMap[iconName];
+  if (!Icon) return null;
+  return <Icon size={size} className={className} />;
+};
 
 export default function Home() {
   return (
@@ -13,13 +31,13 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section
-          className="relative bg-cover bg-center text-white py-40"
+          className="relative bg-cover bg-center text-white min-h-[75vh] py-20"
           style={{ backgroundImage: "url(\'/homepage-hero.jpg\')" }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="container mx-auto px-4 relative z-10 text-center">
             <h1 className="text-5xl font-extrabold mb-4 leading-tight">
-              Votre Partenaire Énergétique de Confiance
+              Solutions énergétiques durables pour votre habitat
             </h1>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Solutions photovoltaïques, pompes à chaleur, et plus encore. Nous concevons votre avenir énergétique.
@@ -53,7 +71,8 @@ export default function Home() {
 	                    <CardContent className="p-8 relative z-10">
 	                      <div className="flex items-start gap-4 mb-6">
 	                          <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${colorClass} flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 transform`}>
-	                            {/* Icons are handled in Header.tsx and DemandeDevis.tsx */}
+{/* Icons were previously not showing because the service object only contained the icon name as a string. */}
+			                            <IconComponent iconName={service.Icon as keyof typeof IconMap} size={32} className="text-white" />
 	                          </div>
 	                        <div>
 	                          <Link
