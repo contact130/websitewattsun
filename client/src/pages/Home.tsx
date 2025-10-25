@@ -53,14 +53,27 @@ export default function Home() {
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Solutions photovoltaïques, pompes à chaleur, et plus encore. Nous concevons votre avenir énergétique.
             </p>
-            <Link to="/demande-devis">
-              <Button
-                size="lg"
-                className="bg-[#fcad0d] text-gray-900 hover:bg-[#5e8a92] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                Demander un Devis Gratuit
-              </Button>
-            </Link>
+<div className="flex justify-center space-x-4">
+	              {/* Bouton 1: Demander un Devis Gratuit (avec dégradé) */}
+	              <Link to="/demande-devis" className="flex-1 max-w-xs">
+	                <Button
+	                  size="lg"
+	                  className="w-full bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
+	                >
+	                  Demander un Devis Gratuit
+	                </Button>
+	              </Link>
+	              {/* Bouton 2: Découvrir nos services (style contrasté) */}
+	              <Link to="/services" className="flex-1 max-w-xs">
+	                <Button
+	                  size="lg"
+	                  variant="outline"
+	                  className="w-full bg-white text-[#5e8a92] border-2 border-[#5e8a92] hover:bg-[#5e8a92] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
+	                >
+	                  Découvrir nos services
+	                </Button>
+	              </Link>
+	            </div>
 	          </div>
 	        </section>
 	
@@ -72,6 +85,7 @@ export default function Home() {
 	            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 	              {SERVICES.map((service, index) => {
 	                const colorClass = service.color;
+		                const hoverColorClass = service.hoverColor;
 	                return (
 	                  <Card
 	                    key={index}
@@ -89,7 +103,7 @@ export default function Home() {
 	                          <Link
 	                            to={service.path}
 	                            onClick={() => window.scrollTo(0, 0)}
-	                            className="text-xl font-bold text-gray-900 group-hover:text-[#5e8a92] transition-colors duration-300 hover:underline line-clamp-2"
+	                            className={`text-xl font-bold text-gray-900 group-hover:${hoverColorClass} transition-colors duration-300 hover:underline line-clamp-2`}
 	                          >
 	                            {service.title}
 	                          </Link>

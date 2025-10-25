@@ -32,6 +32,8 @@ export const SERVICES = [
     seoTitle: "Panneaux Photovoltaïques à La Rochelle | Wattsun Énergie",
     seoDescription: "Installation de panneaux solaires RGE QualiPV à La Rochelle. Produisez votre électricité, réduisez vos factures et bénéficiez des aides de l'État. Demandez un devis gratuit.",
     path: "/panneaux-photovoltaiques",
+    color: "from-yellow-400 to-yellow-600", // Jaune/Orange pour le solaire
+    hoverColor: "text-yellow-600",
   },
   {
     id: "pompes-chaleur",
@@ -41,6 +43,8 @@ export const SERVICES = [
     seoTitle: "Pompes à Chaleur RGE QualiPAC à La Rochelle | Wattsun Énergie",
     seoDescription: "Installation et remplacement de pompes à chaleur (Air/Eau, Air/Air) RGE QualiPAC. Économisez jusqu'à 70% sur votre chauffage. Devis et aides financières.",
     path: "/pompes-a-chaleur",
+    color: "from-blue-400 to-blue-600", // Bleu pour le chauffage/froid
+    hoverColor: "text-blue-600",
   },
   {
     id: "batteries",
@@ -50,6 +54,8 @@ export const SERVICES = [
     seoTitle: "Batteries de Stockage Solaire | Maximisez votre Autoconsommation",
     seoDescription: "Solutions de batteries de stockage pour panneaux solaires. Augmentez votre autonomie et utilisez votre énergie jour et nuit. Compatible avec toutes installations PV.",
     path: "/batteries-stockage",
+    color: "from-green-400 to-green-600", // Vert pour le stockage/énergie
+    hoverColor: "text-green-600",
   },
   {
     id: "bornes",
@@ -59,6 +65,8 @@ export const SERVICES = [
     seoTitle: "Installation Bornes de Recharge IRVE à Domicile | Wattsun Énergie",
     seoDescription: "Pose de bornes de recharge pour véhicules électriques à La Rochelle (IRVE). Installation sécurisée, éligible au programme ADVENIR. Devis gratuit.",
     path: "/bornes-recharge",
+    color: "from-indigo-400 to-indigo-600", // Indigo pour la recharge EV
+    hoverColor: "text-indigo-600",
   },
   {
     id: "electricite",
@@ -68,6 +76,8 @@ export const SERVICES = [
     seoTitle: "Électricité Générale et Rénovation Électrique | Wattsun Énergie",
     seoDescription: "Travaux d'électricité générale, mise aux normes NF C 15-100, et rénovation électrique complète pour votre habitat. Sécurité et conformité garanties.",
     path: "/electricite-generale",
+    color: "from-red-400 to-red-600", // Rouge pour l'électricité/danger
+    hoverColor: "text-red-600",
   },
   {
     id: "vmc",
@@ -77,14 +87,16 @@ export const SERVICES = [
     seoTitle: "Installation VMC (Ventilation Mécanique) | Wattsun Énergie",
     seoDescription: "Améliorez la qualité de l'air de votre intérieur avec une VMC simple ou double flux. Économies d'énergie et confort thermique. Devis gratuit.",
     path: "/vmc",
+    color: "from-teal-400 to-teal-600", // Cyan/Teal pour la ventilation/air
+    hoverColor: "text-teal-600",
   },
 ];
 
+export const APP_LOGO_WHITE = "/LogoWattsun_blanc.png";
+
 export const CONTACT = {
-  phone: "06 08 75 00 51",
+  phone: "07 86 73 10 33",
   email: "contact@wattsun-energie.fr",
   address: "21 bis Rue Ampère 17139 Dompierre sur mer"
 };
 
-
-export const APP_LOGO_WHITE = "/LogoWattsun_blanc.png";

@@ -83,12 +83,22 @@ export default function Header() {
             />
           </Link>
 
-          {/* Spacer pour pousser le menu burger à droite */}
-          <div className="flex-1"></div>
+{/* Bouton CTA pour grand écran */}
+	          <Link to="/demande-devis" className="hidden lg:block mr-4">
+	            <Button
+	              size="sm"
+	              className="bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
+	            >
+	              Demander un Devis Gratuit
+	            </Button>
+	          </Link>
+	
+	          {/* Spacer pour pousser le menu burger à droite */}
+	          <div className="flex-1 lg:hidden"></div>
 
           {/* Burger Menu Button */}
           <button
-            className={`${textClasses} p-2 rounded-lg hover:bg-white/20 transition-colors`}
+            className={`${textClasses} p-2 rounded-lg hover:bg-white/20 transition-colors lg:ml-auto`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Menu"
             id="burger-button" // Ajout d'un ID pour la détection de clic
