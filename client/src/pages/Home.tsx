@@ -43,7 +43,7 @@ export default function Home() {
         {/* Hero Section */}
         <section
           className="relative bg-cover bg-center text-white min-h-[75vh] py-20"
-          style={{ backgroundImage: "url(\'/homepage-hero.jpg\')" }}
+          ststyle={{ backgroundImage: "url('/optimized/homepage-hero.webp')" }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="container mx-auto px-4 relative z-10 text-center">
@@ -120,10 +120,10 @@ export default function Home() {
 	            </h2>
 	
 	            <div className="flex flex-wrap justify-center items-center gap-8 mb-8">
-	              <img src="/LogoqualiPVtransparent.png" alt="QualiPV" className="h-28 object-contain" />
-	              <img src="/LogoQualiPACtransparent.png" alt="QualiPAC" className="h-28 object-contain" />
-	              <img src="/Logorechargeelec+.png" alt="Recharge Elec+" className="h-28 object-contain" />
-	              <img src="/Logoventilationtransparent.png" alt="Ventilation" className="h-28 object-contain" />
+	              <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV" className="h-28 object-contain" />
+	              <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC" className="h-28 object-contain" />
+	              <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+" className="h-28 object-contain" />
+	              <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation" className="h-28 object-contain" />
 	            </div>
 	
 	            <p className="text-center text-gray-700 max-w-3xl mx-auto text-lg">

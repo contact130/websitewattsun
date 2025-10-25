@@ -46,7 +46,7 @@ export default function ServicePage({
       <section
         className="relative h-screen flex flex-col justify-between text-white"
         style={{
-          backgroundImage: `url('${heroImage}')`,
+          backgroundImage: `url('/optimized/${heroImage.replace(/\.(jpg|png)$/, '.webp')}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -133,7 +133,7 @@ export default function ServicePage({
               {certifications.map((cert, index) => (
                 <img
                   key={index}
-                  src={cert.logo}
+                  src={`/optimized/${cert.logo.replace(/\.(jpg|png)$/, '.webp')}`}
                   alt={cert.name}
                   className="h-32 object-contain"
                 />
