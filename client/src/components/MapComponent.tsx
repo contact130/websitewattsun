@@ -8,20 +8,7 @@ import icon from 'leaflet/dist/images/marker-icon.png';
 import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
 import shadow from 'leaflet/dist/images/marker-shadow.png';
 
-// Configuration des icônes Leaflet
-// Cette configuration est essentielle pour que les marqueurs s'affichent correctement en production
-delete L.Icon.Default.prototype._getIconUrl;
 
-L.Icon.Default.mergeOptions({
-    iconRetinaUrl: iconRetina,
-    iconUrl: icon,
-    shadowUrl: shadow,
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    tooltipAnchor: [16, -28],
-    shadowSize: [41, 41]
-});
 
 interface Realisation {
   city: string;
@@ -38,6 +25,23 @@ interface MapComponentProps {
 const MapComponent: React.FC<MapComponentProps> = ({ realisations }) => {
   // Coordonnées pour centrer la carte (La Rochelle, Charente-Maritime)
   const center: [number, number] = [46.1603, -1.1511];
+
+  React.useEffect(() => {
+    // Configuration des icônes Leaflet
+    // Cette configuration est essentielle pour que les marqueurs s'affichent correctement en production
+    delete L.Icon.Default.prototype._getIconUrl;
+
+    L.Icon.Default.mergeOptions({
+        iconRetinaUrl: iconRetina,
+        iconUrl: icon,
+        shadowUrl: shadow,
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        tooltipAnchor: [16, -28],
+        shadowSize: [41, 41]
+    });
+  }, []);
 
   return (
     <div className="rounded-xl shadow-lg min-h-[400px] overflow-hidden">

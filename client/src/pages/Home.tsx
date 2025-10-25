@@ -4,7 +4,7 @@ import { useEffect, useState, lazy, Suspense } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sun, Thermometer, Battery, Zap, Fan, Plug, MapPin } from "lucide-react";
 import { SERVICES, REALISATIONS } from "../../../shared/const";
-import 'leaflet/dist/leaflet.css';
+
 
 
 import { Button } from "@/components/ui/button";
