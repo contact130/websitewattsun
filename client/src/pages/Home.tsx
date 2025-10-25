@@ -2,8 +2,8 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sun, Thermometer, Battery, PlugZap, Zap, Fan, Plug } from "lucide-react";
-import { SERVICES } from "../../../shared/const";
+import { Sun, Thermometer, Battery, Zap, Fan, Plug, MapPin } from "lucide-react";
+import { SERVICES, REALISATIONS } from "../../../shared/const";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -126,6 +126,36 @@ export default function Home() {
 	          </div>
 	        </section>
 	
+	        {/* Section Réalisations */}
+	        <section className="py-20 bg-white">
+	          <div className="container mx-auto px-4">
+	            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Nos Réalisations Locales</h2>
+	            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+	              {/* Colonne Carte (Placeholder) */}
+	              <div className="bg-gray-100 rounded-xl shadow-lg flex items-center justify-center p-8 min-h-[400px]">
+	                <p className="text-gray-500 text-xl font-semibold">Emplacement pour la Carte Interactive</p>
+	              </div>
+	              {/* Colonne Liste des Réalisations */}
+	              <div>
+	                <h3 className="text-2xl font-semibold mb-6 text-gray-800">Derniers Projets Récents</h3>
+	                <ul className="space-y-4">
+	                  {REALISATIONS.map((realisation, index) => (
+	                    <li key={index} className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+	                      <MapPin className="w-5 h-5 flex-shrink-0 text-[#5e8a92] mt-1" />
+	                      <div>
+	                        <p className="text-lg font-medium text-gray-900">
+	                          {realisation.city} - <span className="font-normal text-gray-600">{realisation.service}</span>
+	                        </p>
+	                        <p className="text-sm text-gray-500">Réalisé en {realisation.date}</p>
+	                      </div>
+	                    </li>
+	                  ))}
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+	        </section>
+	        
 	        {/* Section Certifications */}
 	        <section className="py-20 bg-gray-50">
 	          <div className="container mx-auto px-4">

@@ -94,6 +94,20 @@ export const SERVICES = [
 
 export const APP_LOGO_WHITE = "/LogoWattsun_blanc.png";
 
+export const REALISATIONS = [
+  { city: "Chatelaillon", service: "Pompes à chaleur", date: "Décembre 2023" },
+  { city: "Nieul sur mer", service: "Panneaux photovoltaïques", date: "Janvier 2024" },
+  { city: "Dompierre sur mer", service: "Panneaux photovoltaïques", date: "Février 2024" },
+  { city: "Talmont saint hilaire", service: "Panneaux photovoltaïques", date: "Mars 2024" },
+  { city: "Fouras", service: "Panneaux photovoltaïques", date: "Avril 2024" },
+  { city: "Puyravault", service: "Panneaux photovoltaïques", date: "Mai 2024" },
+  { city: "Vérines", service: "Panneaux photovoltaïques", date: "Juin 2024" },
+  { city: "Rochefort", service: "Panneaux photovoltaïques", date: "Juillet 2024" },
+  { city: "Saint Gilles croix de vie", service: "Panneaux photovoltaïques", date: "Août 2024" },
+  { city: "Surgères", service: "Panneaux photovoltaïques", date: "Septembre 2024" },
+  { city: "La flotte en Ré", service: "Panneaux photovoltaïques", date: "Octobre 2024" },
+];
+
 export const CONTACT = {
   phone: "07 86 73 10 33",
   email: "contact@wattsun-energie.fr",
