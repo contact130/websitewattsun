@@ -217,51 +217,7 @@ export default function Home() {
 	        </div>
 	      </section>
 	
-	      {/* Section Avis Clients */}
-	      <section className="py-20 bg-white">
-	        <div className="container mx-auto px-4">
-	          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-	            Avis de Nos Clients
-	          </h2>
-	          <div className="relative">
-	            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-	              {visibleReviews.map((review: any) => (
-	              <Card key={review.id} className="shadow-lg">
-	                <CardContent className="p-6">
-	                  <div className="flex items-center gap-3 mb-4">
-	                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] flex items-center justify-center text-white font-bold">
-	                      {review.name.charAt(0)}
-	                    </div>
-	                    <div>
-	                      <h4 className="font-bold text-gray-900">{review.name}</h4>
-	                      <p className="text-sm text-gray-500">{review.date}</p>
-	                    </div>
-	                  </div>
-	                  <ReviewText review={review} />
-	                </CardContent>
-	              </Card>
-	            ))}
-	            </div>
-	            {/* Boutons de navigation du carrousel */}
-	            <div className="flex justify-center gap-4">
-	              <button
-	                onClick={prevReviews}
-	                className="p-2 rounded-full border-2 border-[#fcad0d] text-[#fcad0d] hover:bg-[#fcad0d] hover:text-white transition-all"
-	                aria-label="Avis précédents"
-	              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <button
-                onClick={nextReviews}
-                className="p-2 rounded-full border-2 border-[#fcad0d] text-[#fcad0d] hover:bg-[#fcad0d] hover:text-white transition-all"
-                aria-label="Avis suivants"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <Footer />
     </div>
