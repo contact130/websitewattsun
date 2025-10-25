@@ -42,11 +42,11 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section
-          className="relative bg-cover bg-center text-white min-h-[75vh] py-20"
+          className="relative bg-cover bg-center text-white h-screen"
           ststyle={{ backgroundImage: "url('/optimized/homepage-hero.webp')" }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="container mx-auto px-4 relative z-10 text-center">
+          <div className="container mx-auto px-4 relative z-10 text-center flex flex-col justify-center h-full" >
             <h1 className="text-5xl font-extrabold mb-4 leading-tight">
               Solutions énergétiques durables pour votre habitat
             </h1>
