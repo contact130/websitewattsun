@@ -53,13 +53,15 @@ interface FormData {
 	  typePompeChaleur: string;
 	  chauffageCentral: string;
   
-  // Bornes
-  typeVehicule: string;
-  lieuInstallation: string;
+	  // Bornes
+	  typeVehicule: string;
+	  lieuInstallation: string;
+	  priseRecharge: string;
   
   // Batteries
-  capaciteStockage: string;
-  installationPhotovoltaique: string;
+	  capaciteStockage: string;
+	  installationPhotovoltaique: string;
+	  marqueOnduleur: string;
   
   // Électricité/VMC
   description: string;
@@ -83,11 +85,13 @@ export default function DemandeDevis() {
 	    anneeConstruction: "",
 	    typePompeChaleur: "",
 	    chauffageCentral: "",
-    typeVehicule: "",
-    lieuInstallation: "",
-    capaciteStockage: "",
-    installationPhotovoltaique: "",
-    description: "",
+	    typeVehicule: "",
+	    lieuInstallation: "",
+	    priseRecharge: "",
+	    capaciteStockage: "",
+	    installationPhotovoltaique: "",
+	    marqueOnduleur: "",
+	    description: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -171,14 +175,19 @@ export default function DemandeDevis() {
 
     if (formData.selectedServices.includes("bornes")) {
       message += `--- Bornes de Recharge ---\n`;
-      message += `Type de véhicule: ${formData.typeVehicule}\n`;
-      message += `Lieu d'installation: ${formData.lieuInstallation}\n\n`;
+	      message += `Type de véhicule: ${formData.typeVehicule}\n`;
+	      message += `Type de prise: ${formData.priseRecharge}\n`;
+	      message += `Lieu d'installation: ${formData.lieuInstallation}\n\n`;
     }
 
     if (formData.selectedServices.includes("batteries")) {
       message += `--- Batteries de Stockage ---\n`;
       message += `Capacité de stockage souhaitée: ${formData.capaciteStockage}\n`;
-      message += `Installation photovoltaïque existante: ${formData.installationPhotovoltaique}\n\n`;
+	      message += `Installation photovoltaïque existante: ${formData.installationPhotovoltaique}\n`;
+	      if (formData.installationPhotovoltaique === "oui") {
+	        message += `Marque et modèle onduleur: ${formData.marqueOnduleur}\n`;
+	      }
+	      message += `\n`;
     }
 
     if (
@@ -303,11 +312,9 @@ export default function DemandeDevis() {
                 </div>
               ))}
             </div>
-            <div className="flex justify-between text-sm text-gray-600">
-              <span>Services</span>
-              <span>Informations</span>
-              <span>Détails</span>
-            </div>
+            <div className="flex justify-between text-sm text-gray-600">	              <span>Services</span>
+	              <span>Détails du Projet</span>
+	              <span>Contact</span>            </div>
           </div>
 
           <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8">
@@ -344,12 +351,12 @@ export default function DemandeDevis() {
               </div>
             )}
 
-            {/* Étape 2: Informations de Contact */}
-            {currentStep === 2 && (
+	            {/* Étape 3: Informations de Contact */}
+	            {currentStep === 3 && (
               <div className="space-y-6">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Vos Informations de Contact
-                </h2>
+	                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+	                  Vos Informations de Contact (Étape Finale)
+	                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="prenom">Prénom *</Label>
@@ -412,12 +419,12 @@ export default function DemandeDevis() {
               </div>
             )}
 
-            {/* Étape 3: Questions Spécifiques */}
-            {currentStep === 3 && (
+	            {/* Étape 2: Questions Spécifiques */}
+	            {currentStep === 2 && (
               <div className="space-y-6">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Détails de Votre Projet
-                </h2>
+	                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+	                  Détails de Votre Projet (Étape 2/3)
+	                </h2>
 
                 {/* Panneaux Photovoltaïques */}
                 {formData.selectedServices.includes("photovoltaique") && (
@@ -610,16 +617,50 @@ export default function DemandeDevis() {
                       Bornes de Recharge
                     </h3>
                     <div className="space-y-4">
-                      <div>
-                        <Label htmlFor="typeVehicule">Type de Véhicule</Label>
-                        <Input
-                          id="typeVehicule"
-                          name="typeVehicule"
-                          value={formData.typeVehicule}
-                          onChange={handleInputChange}
-                          placeholder="Tesla Model 3"
-                        />
-                      </div>
+	                      <div>
+	                        <Label htmlFor="typeVehicule">Type de Véhicule</Label>
+	                        <Input
+	                          id="typeVehicule"
+	                          name="typeVehicule"
+	                          value={formData.typeVehicule}
+	                          onChange={handleInputChange}
+	                          placeholder="Tesla Model 3"
+	                        />
+	                      </div>
+	                      <div>
+	                        <Label>Type de Prise de Recharge (si connue)</Label>
+	                        <RadioGroup
+	                          value={formData.priseRecharge}
+	                          onValueChange={(value) =>
+	                            handleRadioChange("priseRecharge", value)
+	                          }
+	                        >
+	                          <div className="flex items-center space-x-2">
+	                            <RadioGroupItem value="type2" id="prise-type2" />
+	                            <Label htmlFor="prise-type2" className="cursor-pointer">
+	                              Type 2
+	                            </Label>
+	                          </div>
+	                          <div className="flex items-center space-x-2">
+	                            <RadioGroupItem value="ccs" id="prise-ccs" />
+	                            <Label htmlFor="prise-ccs" className="cursor-pointer">
+	                              CCS
+	                            </Label>
+	                          </div>
+	                          <div className="flex items-center space-x-2">
+	                            <RadioGroupItem value="chademo" id="prise-chademo" />
+	                            <Label htmlFor="prise-chademo" className="cursor-pointer">
+	                              CHAdeMO
+	                            </Label>
+	                          </div>
+	                          <div className="flex items-center space-x-2">
+	                            <RadioGroupItem value="autre" id="prise-autre" />
+	                            <Label htmlFor="prise-autre" className="cursor-pointer">
+	                              Autre / Ne sais pas
+	                            </Label>
+	                          </div>
+	                        </RadioGroup>
+	                      </div>
                       <div>
                         <Label htmlFor="lieuInstallation">
                           Lieu d'Installation Souhaité
@@ -665,30 +706,44 @@ export default function DemandeDevis() {
                           placeholder="10"
                         />
                       </div>
-                      <div>
-                        <Label>
-                          Avez-vous une installation photovoltaïque existante ?
-                        </Label>
-                        <RadioGroup
-                          value={formData.installationPhotovoltaique}
-                          onValueChange={(value) =>
-                            handleRadioChange("installationPhotovoltaique", value)
-                          }
-                        >
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="oui" id="pv-oui" />
-                            <Label htmlFor="pv-oui" className="cursor-pointer">
-                              Oui
-                            </Label>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="non" id="pv-non" />
-                            <Label htmlFor="pv-non" className="cursor-pointer">
-                              Non
-                            </Label>
-                          </div>
-                        </RadioGroup>
-                      </div>
+	                      <div>
+	                        <Label>
+	                          Avez-vous une installation photovoltaïque existante ?
+	                        </Label>
+	                        <RadioGroup
+	                          value={formData.installationPhotovoltaique}
+	                          onValueChange={(value) =>
+	                            handleRadioChange("installationPhotovoltaique", value)
+	                          }
+	                        >
+	                          <div className="flex items-center space-x-2">
+	                            <RadioGroupItem value="oui" id="pv-oui" />
+	                            <Label htmlFor="pv-oui" className="cursor-pointer">
+	                              Oui
+	                            </Label>
+	                          </div>
+	                          <div className="flex items-center space-x-2">
+	                            <RadioGroupItem value="non" id="pv-non" />
+	                            <Label htmlFor="pv-non" className="cursor-pointer">
+	                              Non
+	                            </Label>
+	                          </div>
+	                        </RadioGroup>
+	                      </div>
+	                      {formData.installationPhotovoltaique === "oui" && (
+	                        <div>
+	                          <Label htmlFor="marqueOnduleur">
+	                            Marque et modèle de votre onduleur actuel
+	                          </Label>
+	                          <Input
+	                            id="marqueOnduleur"
+	                            name="marqueOnduleur"
+	                            value={formData.marqueOnduleur}
+	                            onChange={handleInputChange}
+	                            placeholder="Ex: SolarEdge SE6000"
+	                          />
+	                        </div>
+	                      )}
                     </div>
                   </div>
                 )}
@@ -731,14 +786,14 @@ export default function DemandeDevis() {
                 Précédent
               </Button>
 
-              {currentStep < 3 ? (
-                <Button
-                  type="button"
-                  onClick={() => setCurrentStep(currentStep + 1)}
-                  disabled={!canProceedToNextStep()}
-                  className="bg-[#5e8a92] hover:bg-[#4a7279] text-white flex items-center gap-2"
-                >
-                  Suivant
+	              {currentStep < 3 ? (
+	                <Button
+	                  type="button"
+	                  onClick={() => setCurrentStep(currentStep + 1)}
+	                  disabled={!canProceedToNextStep()}
+	                  className="bg-[#5e8a92] hover:bg-[#4a7279] text-white flex items-center gap-2"
+	                >
+	                  Suivant
                   <ChevronRight className="w-4 h-4" />
                 </Button>
               ) : (
