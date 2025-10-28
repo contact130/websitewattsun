@@ -60,7 +60,7 @@ export default function BornesRecharge() {
   return (
     <ServicePage
       title="Bornes de Recharge"
-      heroImage="/optimized/borne-de-recharge.jpeg"
+      heroImage="/bornes-recharge-new.jpeg"
       shortDescription="Rechargez votre véhicule électrique rapidement et en toute sécurité"
       advantages={advantages}
       process={process}

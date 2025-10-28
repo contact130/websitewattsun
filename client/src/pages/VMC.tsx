@@ -60,7 +60,7 @@ export default function VMC() {
   return (
     <ServicePage
       title="VMC - Ventilation Mécanique Contrôlée"
-      heroImage="/optimized/vmc.jpg"
+      heroImage="/vmc-new.jpg"
       shortDescription="Air sain et renouvelé pour un confort optimal dans votre habitat"
       advantages={advantages}
       process={process}
