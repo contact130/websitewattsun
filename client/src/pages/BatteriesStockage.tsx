@@ -53,7 +53,7 @@ export default function BatteriesStockage() {
   return (
     <ServicePage
       title="Batteries de Stockage"
-      heroImage="/panneaux-solaires-hero.jpg"
+      heroImage="/optimized/batterie-new.jpg"
       shortDescription="Maximisez votre autoconsommation et gagnez en indépendance énergétique"
       advantages={advantages}
       process={process}
@@ -63,3 +63,4 @@ export default function BatteriesStockage() {
     />
   );
 }
+
