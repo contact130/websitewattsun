@@ -25,11 +25,11 @@ const IconMap = {
 };
 
 // Composant pour rendre l'icône à partir de son nom (string)
-const IconComponent = ({ iconName, size, className }: { iconName: keyof typeof IconMap, size: number, className: string }) => {
-  const Icon = IconMap[iconName];
+const IconComponent = ({ iconName, size, className }: { iconName: string, size: number, className: string }) => {
+  const Icon = IconMap[iconName as keyof typeof IconMap];
   if (!Icon) {
-    console.warn(`Icon "${iconName}" not found in IconMap`);
-    return null;
+    console.warn(`Icon "${iconName}" not found in IconMap. Available icons:`, Object.keys(IconMap));
+    return <Sun size={size} className={className} />; // Fallback icon
   }
   return <Icon size={size} className={className} />;
 };
@@ -110,8 +110,7 @@ export default function Home() {
 	                    <CardContent className="p-8 relative z-10">
 	                      <div className="flex items-start gap-4 mb-6">
 	                          <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${colorClass} flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 transform`}>
-{/* Icons were previously not showing because the service object only contained the icon name as a string. */}
-			                            <IconComponent iconName={service.Icon as keyof typeof IconMap} size={32} className="text-white" />
+<IconComponent iconName={service.Icon} size={32} className="text-white" />
 	                          </div>
 	                        <div>
 	                          <Link
