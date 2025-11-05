@@ -66,7 +66,7 @@ export default function Home() {
         <section
           className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/optimized/wattsun-hero-image.webp')",
+            backgroundImage: "url('/optimized/wattsun-hero-image.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30"></div>
