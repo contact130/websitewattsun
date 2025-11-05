@@ -46,7 +46,7 @@ export default function ServicePage({
       <section
         className="relative h-screen flex flex-col justify-between text-white"
         style={{
-          backgroundImage: `url('/optimized/${heroImage.replace(/\.(jpg|png)$/, '.webp')}')`,
+          backgroundImage: `url('/optimized/${heroImage}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
