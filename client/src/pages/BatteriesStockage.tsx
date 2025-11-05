@@ -53,7 +53,7 @@ export default function BatteriesStockage() {
   return (
     <ServicePage
       title="Batteries de Stockage"
-      heroImage="/optimized/batterie-wondrwall.jpg"
+      heroImage="batterie-wondrwall.jpg"
       shortDescription="Maximisez votre autoconsommation et gagnez en indépendance énergétique"
       advantages={advantages}
       process={process}
