@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InteractiveMap from "@/components/InteractiveMap";
 
 // Map des noms d'icônes aux composants Lucide
 const IconMap = {
@@ -69,21 +70,25 @@ export default function Home() {
 	                </Button>
 	              </Link>
 	              {/* Bouton 2: Découvrir nos services (style contrasté) */}
-	              <Link to="/services" className="flex-1 max-w-xs">
-	                <Button
-	                  size="lg"
-	                  variant="outline"
-	                  className="w-full bg-white text-[#5e8a92] border-2 border-[#5e8a92] hover:bg-[#5e8a92] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
-	                >
-	                  Découvrir nos services
-	                </Button>
-	              </Link>
+	              <Button
+	                size="lg"
+	                variant="outline"
+	                onClick={() => {
+	                  const servicesSection = document.getElementById('services-section');
+	                  if (servicesSection) {
+	                    servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	                  }
+	                }}
+	                className="flex-1 max-w-xs bg-white text-[#5e8a92] border-2 border-[#5e8a92] hover:bg-[#5e8a92] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold cursor-pointer"
+	              >
+	                Découvrir nos services
+	              </Button>
 	            </div>
 	          </div>
 	        </section>
 	
 	        {/* Services Section */}
-	        <section className="py-20">
+	        <section id="services-section" className="py-20">
 	          <div className="container mx-auto px-4">
 	            <h2 className="text-4xl font-bold text-center mb-2 text-gray-900">Nos Services</h2>
 	            <p className="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto">Découvrez nos solutions énergétiques innovantes et durables</p>
@@ -135,10 +140,10 @@ export default function Home() {
 	        <section className="py-20 bg-white">
 	          <div className="container mx-auto px-4">
 	            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Nos Réalisations Locales</h2>
-	            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-	              <div className="bg-gray-100 rounded-xl shadow-lg flex items-center justify-center p-8 min-h-[400px]">
-	                  <p className="text-gray-500 text-xl font-semibold">La carte interactive sera bientôt disponible.</p>
-	                </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="rounded-xl shadow-lg min-h-[400px]">
+                <InteractiveMap realisations={REALISATIONS} />
+              </div>
 	              {/* Colonne Liste des Réalisations */}
 	              <div>
 	                <h3 className="text-2xl font-semibold mb-6 text-gray-800">Derniers Projets Récents</h3>

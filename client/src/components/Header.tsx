@@ -70,7 +70,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-<Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center flex-shrink-0 h-16 mr-4">
+          <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center flex-shrink-0 h-16 mr-4">
             <img 
               src={((!isScrolled && isHomePage) || (!isScrolled && isServicePage)) ? APP_LOGO : APP_LOGO_WHITE} 
               alt="Wattsun Énergie" 
@@ -83,24 +83,25 @@ export default function Header() {
             />
           </Link>
 
-{/* Bouton CTA pour grand écran */}
-	          <Link to="/demande-devis" className="hidden lg:block">
-	            <Button
-	              size="sm"
-	              className="bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
-	            >
-	              Demander un Devis
-	            </Button>
-	          </Link>
-	
-	          
+          {/* Spacer pour pousser les éléments à droite */}
+          <div className="flex-grow"></div>
+
+          {/* Bouton CTA pour grand écran - déplacé à droite */}
+          <Link to="/demande-devis" className="hidden lg:block mr-4">
+            <Button
+              size="sm"
+              className="bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
+            >
+              Demander un Devis
+            </Button>
+          </Link>
 
           {/* Burger Menu Button */}
           <button
             className={`${textClasses} p-2 rounded-lg hover:bg-white/20 transition-colors`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Menu"
-            id="burger-button" // Ajout d'un ID pour la détection de clic
+            id="burger-button"
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
