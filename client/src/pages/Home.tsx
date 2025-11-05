@@ -19,6 +19,7 @@ const IconMap = {
   Thermometer: Thermometer,
   Battery: Battery,
   ChargingStation: Plug,
+  Plug: Plug,
   Zap: Zap,
   Fan: Fan,
 };
@@ -26,7 +27,10 @@ const IconMap = {
 // Composant pour rendre l'icône à partir de son nom (string)
 const IconComponent = ({ iconName, size, className }: { iconName: keyof typeof IconMap, size: number, className: string }) => {
   const Icon = IconMap[iconName];
-  if (!Icon) return null;
+  if (!Icon) {
+    console.warn(`Icon "${iconName}" not found in IconMap`);
+    return null;
+  }
   return <Icon size={size} className={className} />;
 };
 
