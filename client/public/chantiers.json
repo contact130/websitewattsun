@@ -108,8 +108,8 @@
     "ville": "LA FERRIERE",
     "date": "May 2024",
     "puissance": "3kwc",
-    "lat": 45.280845,
-    "lon": 6.0858021
+    "lat": 46.7203,
+    "lon": -1.6983
   },
   {
     "nom": "CAMILLE BRUNO",
@@ -340,8 +340,8 @@
     "ville": "SAINT SYMPHORIEN",
     "date": "September 2024",
     "puissance": "7,5kwc",
-    "lat": 49.3140652,
-    "lon": 0.4670513
+    "lat": 45.9419,
+    "lon": -0.9572
   },
   {
     "nom": "LAFOLIE DANIEL",
@@ -412,8 +412,8 @@
     "ville": "LA FERRIERE",
     "date": "December 2024",
     "puissance": "6kwc",
-    "lat": 45.280845,
-    "lon": 6.0858021
+    "lat": 46.7203,
+    "lon": -1.6983
   },
   {
     "nom": "MENOT MARC",
@@ -524,8 +524,8 @@
     "ville": "CLESSÉ",
     "date": "January 2025",
     "puissance": "8kwc",
-    "lat": 46.416292,
-    "lon": 4.8140269
+    "lat": 46.4167,
+    "lon": -0.2667
   },
   {
     "nom": "SANS YOHANN",
