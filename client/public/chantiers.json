@@ -691,5 +691,141 @@
     "lat": 46.1388115,
     "lon": -0.6716992,
     "type": "PV"
+  },
+  {
+    "nom": "M François Badeau",
+    "ville": "BELLEVILLE",
+    "date": "Décembre 2024",
+    "lat": 46.2,
+    "lon": -0.95,
+    "type": "Bornes"
+  },
+  {
+    "nom": "M François Badeau",
+    "ville": "BELLEVILLE",
+    "date": "Décembre 2024",
+    "lat": 46.2,
+    "lon": -0.95,
+    "type": "Electricite"
+  },
+  {
+    "nom": "M Christophe Geneau",
+    "ville": "BREUIL-MAGNÉ",
+    "date": "Janvier 2025",
+    "lat": 45.9839283,
+    "lon": -0.9584142,
+    "type": "Electricite"
+  },
+  {
+    "nom": "M Mathlide",
+    "ville": "LA ROCHELLE",
+    "date": "Février 2025",
+    "lat": 46.159732,
+    "lon": -1.1515951,
+    "type": "Bornes"
+  },
+  {
+    "nom": "M Mathéo Bouhier",
+    "ville": "LA FOYE-MONJAULT",
+    "date": "Février 2025",
+    "lat": 46.1863655,
+    "lon": -0.5395676,
+    "type": "PAC"
+  },
+  {
+    "nom": "M Bruno Thierry",
+    "ville": "VÉRINES",
+    "date": "Février 2025",
+    "lat": 46.1927243,
+    "lon": -0.9645614,
+    "type": "Bornes"
+  },
+  {
+    "nom": "M Nicolas Bart",
+    "ville": "LA ROCHELLE",
+    "date": "Mars 2025",
+    "lat": 46.159732,
+    "lon": -1.1515951,
+    "type": "PAC"
+  },
+  {
+    "nom": "M\nMise",
+    "ville": "VÉRINES",
+    "date": "Février 2025",
+    "lat": 46.1927243,
+    "lon": -0.9645614,
+    "type": "VMC"
+  },
+  {
+    "nom": "Mme Catherine",
+    "ville": "LE LANGON",
+    "date": "Mars 2025",
+    "lat": 46.4386111,
+    "lon": -0.9486111,
+    "type": "Electricite"
+  },
+  {
+    "nom": "M Macodou Ndiaye",
+    "ville": "MOUILLERON",
+    "date": "Avril 2025",
+    "lat": 46.68,
+    "lon": -0.83,
+    "type": "Electricite"
+  },
+  {
+    "nom": "M Mr Et",
+    "ville": "CHÂTELAILLON-PLAGE",
+    "date": "Juin 2025",
+    "lat": 46.0738633,
+    "lon": -1.0903991,
+    "type": "Electricite"
+  },
+  {
+    "nom": "M Antony Taveneau",
+    "ville": "TAUGON",
+    "date": "Juin 2025",
+    "lat": 46.309113,
+    "lon": -0.8336324,
+    "type": "Electricite"
+  },
+  {
+    "nom": "M Laurent Braquehais",
+    "ville": "LA ROCHELLE",
+    "date": "Juillet 2025",
+    "lat": 46.159732,
+    "lon": -1.1515951,
+    "type": "PAC"
+  },
+  {
+    "nom": "M Antony Taveneau",
+    "ville": "TAUGON",
+    "date": "Septembre 2025",
+    "lat": 46.309113,
+    "lon": -0.8336324,
+    "type": "PAC"
+  },
+  {
+    "nom": "M Randy",
+    "ville": "BOURGNEUF",
+    "date": "Septembre 2025",
+    "lat": 46.1665781,
+    "lon": -1.0230793,
+    "type": "PAC"
+  },
+  {
+    "nom": "M Dylan Tourneur",
+    "ville": "LA ROCHELLE",
+    "date": "Octobre 2025",
+    "lat": 46.159732,
+    "lon": -1.1515951,
+    "type": "PAC"
+  },
+  {
+    "nom": "M Christian Donnet",
+    "ville": "LA ROCHELLE",
+    "date": "Novembre 2025",
+    "lat": 46.159732,
+    "lon": -1.1515951,
+    "type": "Electricite"
   }
 ]
