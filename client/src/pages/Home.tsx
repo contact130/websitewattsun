@@ -120,7 +120,7 @@ export default function Home() {
                     <div className={`absolute inset-0 bg-gradient-to-br ${colorClass} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                     
                     <CardContent className="p-8 relative z-10">
-                      <div className="flex items-start gap-4 mb-6">
+                      <div className="flex items-center gap-4 mb-6">
                           <div 
                             className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 transform"
                             style={{ 
