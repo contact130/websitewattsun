@@ -94,7 +94,7 @@ export default function Home() {
                     servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
                 }}
-                className="flex-1 max-w-xs bg-white text-[#5e8a92] border-2 border-[#5e8a92] hover:bg-[#5e8a92] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold cursor-pointer"
+                className="flex-1 max-w-xs bg-white text-[#5e8a92] border-2 border-[#5e8a92] hover:bg-[#5e8a92] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold text-lg px-8 py-6 cursor-pointer"
               >
                 Découvrir nos services
               </Button>
