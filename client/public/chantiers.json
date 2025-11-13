@@ -5,7 +5,8 @@
     "date": "Février 2024",
     "puissance": "7,5kwc",
     "lat": 46.4775007,
-    "lon": -1.6280266
+    "lon": -1.6280266,
+    "type": "PV"
   },
   {
     "nom": "BADEAU FRANÇOIS",
@@ -13,7 +14,8 @@
     "date": "Mars 2025",
     "puissance": "6kwc",
     "lat": 46.7842036,
-    "lon": -1.4300397
+    "lon": -1.4300397,
+    "type": "PV"
   },
   {
     "nom": "BARROIS CHRISTIAN",
@@ -21,7 +23,8 @@
     "date": "Juin 2024",
     "puissance": "6kwc",
     "lat": 45.9883689,
-    "lon": -1.0935837
+    "lon": -1.0935837,
+    "type": "PV"
   },
   {
     "nom": "BARTOUIL CAPUCINE",
@@ -29,7 +32,8 @@
     "date": "Février 2024",
     "puissance": "3kwc",
     "lat": 46.159732,
-    "lon": -1.1515951
+    "lon": -1.1515951,
+    "type": "PV"
   },
   {
     "nom": "BARTOUX BRIGITTE",
@@ -37,7 +41,8 @@
     "date": "Novembre 2024",
     "puissance": "4kwc",
     "lat": 46.186001,
-    "lon": -1.0656405
+    "lon": -1.0656405,
+    "type": "PV"
   },
   {
     "nom": "BEAUPIN CÉDRIC",
@@ -45,7 +50,8 @@
     "date": "Août 2024",
     "puissance": "7kwc",
     "lat": 46.3101338,
-    "lon": -0.9940538
+    "lon": -0.9940538,
+    "type": "PV"
   },
   {
     "nom": "BELMONTET BRUNO",
@@ -53,7 +59,8 @@
     "date": "Juin 2025",
     "puissance": "3kwc",
     "lat": 46.398877,
-    "lon": -1.0251604
+    "lon": -1.0251604,
+    "type": "PV"
   },
   {
     "nom": "BERNARD FREDERIC",
@@ -61,7 +68,8 @@
     "date": "Janvier 2025",
     "puissance": "6kwc",
     "lat": 46.2069355,
-    "lon": -1.1639199
+    "lon": -1.1639199,
+    "type": "PV"
   },
   {
     "nom": "BILLON GERARD",
@@ -69,7 +77,8 @@
     "date": "Avril 2024",
     "puissance": "6kwc",
     "lat": 46.159732,
-    "lon": -1.1515951
+    "lon": -1.1515951,
+    "type": "PV"
   },
   {
     "nom": "BOUILLAUD MIKAEL",
@@ -77,7 +86,8 @@
     "date": "Février 2025",
     "puissance": "6kwc",
     "lat": 46.3316667,
-    "lon": -0.9480556
+    "lon": -0.9480556,
+    "type": "PV"
   },
   {
     "nom": "BOULLIC LAURENT",
@@ -85,7 +95,8 @@
     "date": "Mars 2024",
     "puissance": "3kwc",
     "lat": 46.3239233,
-    "lon": -0.4646064
+    "lon": -0.4646064,
+    "type": "PV"
   },
   {
     "nom": "BOURDET CLAUDE",
@@ -93,7 +104,8 @@
     "date": "Juin 2024",
     "puissance": "3kwc",
     "lat": 46.4706005,
-    "lon": -0.6656039
+    "lon": -0.6656039,
+    "type": "PV"
   },
   {
     "nom": "BRAQUEHAIS LAURENT",
@@ -101,7 +113,8 @@
     "date": "Octobre 2024",
     "puissance": "3kwc",
     "lat": 46.159732,
-    "lon": -1.1515951
+    "lon": -1.1515951,
+    "type": "PV"
   },
   {
     "nom": "BUSO LUC",
@@ -109,7 +122,8 @@
     "date": "Mai 2024",
     "puissance": "3kwc",
     "lat": 46.7203,
-    "lon": -1.6983
+    "lon": -1.6983,
+    "type": "PV"
   },
   {
     "nom": "CAMILLE BRUNO",
@@ -117,7 +131,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.3101338,
-    "lon": -0.9940538
+    "lon": -0.9940538,
+    "type": "PV"
   },
   {
     "nom": "CHAGNOLEAU JEAN-LOUIS",
@@ -125,7 +140,8 @@
     "date": "Juillet 2024",
     "puissance": "3kwc",
     "lat": 45.7389374,
-    "lon": -0.504218
+    "lon": -0.504218,
+    "type": "PV"
   },
   {
     "nom": "CHAMARD PASCAL",
@@ -133,7 +149,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.1247121,
-    "lon": -0.6006905
+    "lon": -0.6006905,
+    "type": "PV"
   },
   {
     "nom": "CHAUMETTE VINCENT 2k",
@@ -141,7 +158,8 @@
     "date": "Mai 2024",
     "puissance": "2kwc",
     "lat": 45.9437695,
-    "lon": -1.3061227
+    "lon": -1.3061227,
+    "type": "PV"
   },
   {
     "nom": "CHAUMETTE VINCENT 5k",
@@ -149,7 +167,8 @@
     "date": "Mars 2025",
     "puissance": "5kwc",
     "lat": 45.9437695,
-    "lon": -1.3061227
+    "lon": -1.3061227,
+    "type": "PV"
   },
   {
     "nom": "CHERADE CYRIL",
@@ -157,7 +176,8 @@
     "date": "Mai 2024",
     "puissance": "3kwc",
     "lat": 45.6940704,
-    "lon": -0.5076702
+    "lon": -0.5076702,
+    "type": "PV"
   },
   {
     "nom": "CHRISTY BRUNO",
@@ -165,7 +185,8 @@
     "date": "Février 2024",
     "puissance": "3kwc",
     "lat": 46.1409843,
-    "lon": -1.0273587
+    "lon": -1.0273587,
+    "type": "PV"
   },
   {
     "nom": "CLOUET CHRISTOPHE",
@@ -173,7 +194,8 @@
     "date": "Mars 2024",
     "puissance": "3kwc",
     "lat": 46.1498022,
-    "lon": -1.0686838
+    "lon": -1.0686838,
+    "type": "PV"
   },
   {
     "nom": "COAT THOMAS",
@@ -181,7 +203,8 @@
     "date": "Septembre 2024",
     "puissance": "3kwc",
     "lat": 46.4990505,
-    "lon": -1.7767859
+    "lon": -1.7767859,
+    "type": "PV"
   },
   {
     "nom": "CUBERO FLORIAN",
@@ -189,7 +212,8 @@
     "date": "Juillet 2024",
     "puissance": "7,5kwc",
     "lat": 46.0738633,
-    "lon": -1.0903991
+    "lon": -1.0903991,
+    "type": "PV"
   },
   {
     "nom": "DIAS PEREIRA",
@@ -197,7 +221,8 @@
     "date": "Mai 2024",
     "puissance": "3kwc",
     "lat": 46.1049709,
-    "lon": -1.0571737
+    "lon": -1.0571737,
+    "type": "PV"
   },
   {
     "nom": "DOARE JEAN-PIERRE",
@@ -205,7 +230,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.186001,
-    "lon": -1.0656405
+    "lon": -1.0656405,
+    "type": "PV"
   },
   {
     "nom": "DRAPEAU STÉPHANE",
@@ -213,7 +239,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.1257314,
-    "lon": -0.8497848
+    "lon": -0.8497848,
+    "type": "PV"
   },
   {
     "nom": "DROUARD PATRICK",
@@ -221,7 +248,8 @@
     "date": "Septembre 2024",
     "puissance": "6kwc",
     "lat": 45.9839283,
-    "lon": -0.9584142
+    "lon": -0.9584142,
+    "type": "PV"
   },
   {
     "nom": "DROUET LAURENT",
@@ -229,7 +257,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.1098227,
-    "lon": -1.0069804
+    "lon": -1.0069804,
+    "type": "PV"
   },
   {
     "nom": "FELISIAK EWA ",
@@ -237,7 +266,8 @@
     "date": "Octobre 2024",
     "puissance": "3kwc",
     "lat": 45.6727461,
-    "lon": -1.0120694
+    "lon": -1.0120694,
+    "type": "PV"
   },
   {
     "nom": "FROMAGET AMELIE",
@@ -245,7 +275,8 @@
     "date": "Février 2025",
     "puissance": "3kwc",
     "lat": 46.6688226,
-    "lon": -0.847767
+    "lon": -0.847767,
+    "type": "PV"
   },
   {
     "nom": "GARSAULT PATRICK",
@@ -253,7 +284,8 @@
     "date": "Avril 2024",
     "puissance": "6kwc",
     "lat": 46.1851302,
-    "lon": -1.1177313
+    "lon": -1.1177313,
+    "type": "PV"
   },
   {
     "nom": "GAUTIER FABRICE",
@@ -261,7 +293,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.1163928,
-    "lon": -0.9342868
+    "lon": -0.9342868,
+    "type": "PV"
   },
   {
     "nom": "GAUTRON JOEL",
@@ -269,7 +302,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 45.8353249,
-    "lon": -0.679123
+    "lon": -0.679123,
+    "type": "PV"
   },
   {
     "nom": "GENEAU CHRISTOPHE",
@@ -277,7 +311,8 @@
     "date": "",
     "puissance": "6kwc",
     "lat": 45.9839283,
-    "lon": -0.9584142
+    "lon": -0.9584142,
+    "type": "PV"
   },
   {
     "nom": "GERBAUD LOGAN",
@@ -285,7 +320,8 @@
     "date": "Février 2025",
     "puissance": "6kwc",
     "lat": 46.1927243,
-    "lon": -0.9645614
+    "lon": -0.9645614,
+    "type": "PV"
   },
   {
     "nom": "GIBERT FRANÇOIS",
@@ -293,7 +329,8 @@
     "date": "Novembre 2023",
     "puissance": "6kwc",
     "lat": 46.1349889,
-    "lon": -0.8141893
+    "lon": -0.8141893,
+    "type": "PV"
   },
   {
     "nom": "GOBERT CHRISTOPHE",
@@ -301,7 +338,8 @@
     "date": "Novembre 2024",
     "puissance": "7,5kwc",
     "lat": 45.6727461,
-    "lon": -1.0120694
+    "lon": -1.0120694,
+    "type": "PV"
   },
   {
     "nom": "GRIFFON THOMAS",
@@ -309,7 +347,8 @@
     "date": "Mai 2024",
     "puissance": "9kwc",
     "lat": 46.2595794,
-    "lon": -0.3466615
+    "lon": -0.3466615,
+    "type": "PV"
   },
   {
     "nom": "GUILLET DOMINIQUE",
@@ -317,7 +356,8 @@
     "date": "Décembre 2023",
     "puissance": "3kwc",
     "lat": 46.3440097,
-    "lon": -1.4380541
+    "lon": -1.4380541,
+    "type": "PV"
   },
   {
     "nom": "GUITTARD LISA",
@@ -325,7 +365,8 @@
     "date": "Novembre 2024",
     "puissance": "6kwc",
     "lat": 46.3101338,
-    "lon": -0.9940538
+    "lon": -0.9940538,
+    "type": "PV"
   },
   {
     "nom": "HAUDOIN CHARLES",
@@ -333,7 +374,8 @@
     "date": "Novembre 2024",
     "puissance": "3kwc",
     "lat": 46.2069355,
-    "lon": -1.1639199
+    "lon": -1.1639199,
+    "type": "PV"
   },
   {
     "nom": "JODHUN SANJAY",
@@ -341,7 +383,8 @@
     "date": "Septembre 2024",
     "puissance": "7,5kwc",
     "lat": 45.9419,
-    "lon": -0.9572
+    "lon": -0.9572,
+    "type": "PV"
   },
   {
     "nom": "LAFOLIE DANIEL",
@@ -349,7 +392,8 @@
     "date": "Avril 2024",
     "puissance": "4,5kwc",
     "lat": 46.4706005,
-    "lon": -0.6656039
+    "lon": -0.6656039,
+    "type": "PV"
   },
   {
     "nom": "LARGE CHRISTOPHE",
@@ -357,7 +401,8 @@
     "date": "Février 2024",
     "puissance": "3kwc",
     "lat": 45.9366592,
-    "lon": -0.9616399
+    "lon": -0.9616399,
+    "type": "PV"
   },
   {
     "nom": "LECERF MICHEL",
@@ -365,7 +410,8 @@
     "date": "Mai 2024",
     "puissance": "3kwc",
     "lat": 46.6416667,
-    "lon": -1.805
+    "lon": -1.805,
+    "type": "PV"
   },
   {
     "nom": "LIGEN MATHILDE",
@@ -373,7 +419,8 @@
     "date": "Octobre 2024",
     "puissance": "3kwc",
     "lat": 46.159732,
-    "lon": -1.1515951
+    "lon": -1.1515951,
+    "type": "PV"
   },
   {
     "nom": "LISSENKO DANIEL",
@@ -381,7 +428,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.4555953,
-    "lon": -1.1645595
+    "lon": -1.1645595,
+    "type": "PV"
   },
   {
     "nom": "LOUCHET DIANE",
@@ -389,7 +437,8 @@
     "date": "Mars 2025",
     "puissance": "3kwc",
     "lat": 45.8224965,
-    "lon": -1.112795
+    "lon": -1.112795,
+    "type": "PV"
   },
   {
     "nom": "MADIOT CLAUDE",
@@ -397,7 +446,8 @@
     "date": "Juillet 2024",
     "puissance": "3kwc",
     "lat": 46.1257314,
-    "lon": -0.8497848
+    "lon": -0.8497848,
+    "type": "PV"
   },
   {
     "nom": "MAURON SEBASTIEN",
@@ -405,7 +455,8 @@
     "date": "Août 2024",
     "puissance": "3kwc",
     "lat": 46.4251677,
-    "lon": -1.488347
+    "lon": -1.488347,
+    "type": "PV"
   },
   {
     "nom": "MEDJAKE EMMANUEL",
@@ -413,7 +464,8 @@
     "date": "Décembre 2024",
     "puissance": "6kwc",
     "lat": 46.7203,
-    "lon": -1.6983
+    "lon": -1.6983,
+    "type": "PV"
   },
   {
     "nom": "MENOT MARC",
@@ -421,7 +473,8 @@
     "date": "Janvier 2025",
     "puissance": "3kwc",
     "lat": 46.033611,
-    "lon": -1.3775
+    "lon": -1.3775,
+    "type": "PV"
   },
   {
     "nom": "METAYER JEAN YVES",
@@ -429,7 +482,8 @@
     "date": "Avril 2024",
     "puissance": "9kwc",
     "lat": 45.578869,
-    "lon": -0.4466007
+    "lon": -0.4466007,
+    "type": "PV"
   },
   {
     "nom": "METAYER RÉGIS",
@@ -437,7 +491,8 @@
     "date": "Janvier 2024",
     "puissance": "3kwc",
     "lat": 46.188253,
-    "lon": -1.0157986
+    "lon": -1.0157986,
+    "type": "PV"
   },
   {
     "nom": "MICHAUD CYRILLE",
@@ -445,7 +500,8 @@
     "date": "Février 2024",
     "puissance": "7,5kwc",
     "lat": 46.505,
-    "lon": -1.7361111
+    "lon": -1.7361111,
+    "type": "PV"
   },
   {
     "nom": "MONNIER REMY",
@@ -453,7 +509,8 @@
     "date": "Mai 2024",
     "puissance": "3kwc",
     "lat": 46.7391797,
-    "lon": -1.6084351
+    "lon": -1.6084351,
+    "type": "PV"
   },
   {
     "nom": "NAUD DIDIER",
@@ -461,7 +518,8 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.2709561,
-    "lon": -0.8728577
+    "lon": -0.8728577,
+    "type": "PV"
   },
   {
     "nom": "PAUCHARD ERIC 2",
@@ -469,7 +527,8 @@
     "date": "Octobre 2025",
     "puissance": "3kwc",
     "lat": 46.0839685,
-    "lon": -0.9172451
+    "lon": -0.9172451,
+    "type": "PV"
   },
   {
     "nom": "PAUCHARD ERIC",
@@ -477,7 +536,8 @@
     "date": "Novembre 2024",
     "puissance": "3kwc",
     "lat": 46.0839685,
-    "lon": -0.9172451
+    "lon": -0.9172451,
+    "type": "PV"
   },
   {
     "nom": "PIJOLLET NELLY",
@@ -485,7 +545,8 @@
     "date": "Mai 2025",
     "puissance": "45kwc",
     "lat": 45.6725217,
-    "lon": -0.7901874
+    "lon": -0.7901874,
+    "type": "PV"
   },
   {
     "nom": "PHILLIPS COLLIN",
@@ -493,7 +554,8 @@
     "date": "Mars 2024",
     "puissance": "6kwc",
     "lat": 46.1314087,
-    "lon": 0.0024052
+    "lon": 0.0024052,
+    "type": "PV"
   },
   {
     "nom": "PREVOST MICHEL",
@@ -501,7 +563,8 @@
     "date": "Octobre 2024",
     "puissance": "3kwc",
     "lat": 46.1052715,
-    "lon": -0.7511152
+    "lon": -0.7511152,
+    "type": "PV"
   },
   {
     "nom": "ROGER FRANÇOIS",
@@ -509,7 +572,8 @@
     "date": "Octobre 2024",
     "puissance": "7kwc",
     "lat": 46.692985,
-    "lon": -1.9254545
+    "lon": -1.9254545,
+    "type": "PV"
   },
   {
     "nom": "ROUSSEAU THIERRY",
@@ -517,7 +581,8 @@
     "date": "Février 2025",
     "puissance": "6kwc",
     "lat": 46.4386111,
-    "lon": -0.9486111
+    "lon": -0.9486111,
+    "type": "PV"
   },
   {
     "nom": "SANNA NATHALIE",
@@ -525,7 +590,8 @@
     "date": "Janvier 2025",
     "puissance": "8kwc",
     "lat": 46.4167,
-    "lon": -0.2667
+    "lon": -0.2667,
+    "type": "PV"
   },
   {
     "nom": "SANS YOHANN",
@@ -533,7 +599,8 @@
     "date": "Mai 2024",
     "puissance": "9kwc",
     "lat": 46.1886242,
-    "lon": -1.325123
+    "lon": -1.325123,
+    "type": "PV"
   },
   {
     "nom": "SAUTJEAU HUGUES",
@@ -541,7 +608,8 @@
     "date": "Janvier 2025",
     "puissance": "6kwc",
     "lat": 45.3278205,
-    "lon": -0.1933698
+    "lon": -0.1933698,
+    "type": "PV"
   },
   {
     "nom": "SCHALLER JEAN-LUC",
@@ -549,7 +617,8 @@
     "date": "Septembre 2024",
     "puissance": "6kwc",
     "lat": 45.7349044,
-    "lon": -0.7624343
+    "lon": -0.7624343,
+    "type": "PV"
   },
   {
     "nom": "SOULET HUGUES",
@@ -557,7 +626,8 @@
     "date": "Juin 2024",
     "puissance": "6kwc",
     "lat": 46.3148541,
-    "lon": -0.5431161
+    "lon": -0.5431161,
+    "type": "PV"
   },
   {
     "nom": "STIMARIDIS PHILIPPE",
@@ -565,7 +635,8 @@
     "date": "Mars 2025",
     "puissance": "7,5kwc",
     "lat": 45.8480885,
-    "lon": -0.7044416
+    "lon": -0.7044416,
+    "type": "PV"
   },
   {
     "nom": "SUC-BLANCHARD",
@@ -573,7 +644,8 @@
     "date": "Mai 2024",
     "puissance": "6kwc",
     "lat": 46.0839685,
-    "lon": -0.9172451
+    "lon": -0.9172451,
+    "type": "PV"
   },
   {
     "nom": "SUIRE SOPHIE",
@@ -581,7 +653,8 @@
     "date": "Mai 2024",
     "puissance": "6kwc",
     "lat": 46.241153,
-    "lon": -1.0682289
+    "lon": -1.0682289,
+    "type": "PV"
   },
   {
     "nom": "THIERRY BRUNO",
@@ -589,7 +662,8 @@
     "date": "Mai 2024",
     "puissance": "6kwc",
     "lat": 46.1927243,
-    "lon": -0.9645614
+    "lon": -0.9645614,
+    "type": "PV"
   },
   {
     "nom": "TRICHET JEAN-MICHEL",
@@ -597,7 +671,8 @@
     "date": "Mars 2024",
     "puissance": "3kwc",
     "lat": 46.4926693,
-    "lon": -1.4247824
+    "lon": -1.4247824,
+    "type": "PV"
   },
   {
     "nom": "VIOLLIER NICOLAS",
@@ -605,7 +680,8 @@
     "date": "Mars 2025",
     "puissance": "1,5kwc",
     "lat": 46.6858331,
-    "lon": -1.5113138
+    "lon": -1.5113138,
+    "type": "PV"
   },
   {
     "nom": "VINCENT ALAIN",
@@ -613,6 +689,7 @@
     "date": "",
     "puissance": "3kwc",
     "lat": 46.1388115,
-    "lon": -0.6716992
+    "lon": -0.6716992,
+    "type": "PV"
   }
 ]
