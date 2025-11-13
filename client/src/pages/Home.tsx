@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sun, Thermometer, Battery, Zap, Fan, Plug, MapPin } from "lucide-react";
-import { SERVICES, REALISATIONS } from "../../../shared/const";
+import { Sun, Thermometer, Battery, Zap, Fan, Plug } from "lucide-react";
+import { SERVICES } from "../../../shared/const";
 
 
 
@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import InteractiveMap from "@/components/InteractiveMap";
+import ProjectsMap from "@/components/ProjectsMap";
 
 // Map des noms d'icônes aux composants Lucide
 const IconMap = {
@@ -159,27 +159,11 @@ export default function Home() {
         {/* Section Réalisations */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Nos Réalisations Locales</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div className="rounded-xl shadow-lg min-h-[400px]">
-                <InteractiveMap realisations={REALISATIONS} />
-              </div>
-              {/* Colonne Liste des Réalisations */}
-              <div>
-                <h3 className="text-2xl font-semibold mb-6 text-gray-800">Derniers Projets Récents</h3>
-                <ul className="space-y-4">
-                  {REALISATIONS.map((realisation, index) => (
-                    <li key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 shadow-sm hover:shadow-md">
-                      <MapPin className="w-5 h-5 text-[#5e8a92] flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-semibold text-gray-900">{realisation.city} - {realisation.service}</p>
-                        <p className="text-sm text-gray-600">Réalisé en {realisation.date}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Nos Réalisations</h2>
+            <p className="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              Découvrez tous nos chantiers photovoltaïques réalisés dans la région. Cliquez sur les marqueurs pour voir les détails.
+            </p>
+            <ProjectsMap />
           </div>
         </section>
 

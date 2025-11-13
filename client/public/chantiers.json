@@ -1,0 +1,618 @@
+[
+  {
+    "nom": "ANSELME PHILIPPE",
+    "ville": "TALMONT SAINT HILAIRE",
+    "date": "February 2024",
+    "puissance": "7,5kwc",
+    "lat": 46.4775007,
+    "lon": -1.6280266
+  },
+  {
+    "nom": "BADEAU FRANÇOIS",
+    "ville": "BELLEVILLE SUR VIE",
+    "date": "March 2025",
+    "puissance": "6kwc",
+    "lat": 46.7842036,
+    "lon": -1.4300397
+  },
+  {
+    "nom": "BARROIS CHRISTIAN",
+    "ville": "FOURAS",
+    "date": "June 2024",
+    "puissance": "6kwc",
+    "lat": 45.9883689,
+    "lon": -1.0935837
+  },
+  {
+    "nom": "BARTOUIL CAPUCINE",
+    "ville": "LA ROCHELLE",
+    "date": "February 2024",
+    "puissance": "3kwc",
+    "lat": 46.159732,
+    "lon": -1.1515951
+  },
+  {
+    "nom": "BARTOUX BRIGITTE",
+    "ville": "DOMPIERRE SUR MER",
+    "date": "November 2024",
+    "puissance": "4kwc",
+    "lat": 46.186001,
+    "lon": -1.0656405
+  },
+  {
+    "nom": "BEAUPIN CÉDRIC",
+    "ville": "MARANS",
+    "date": "August 2024",
+    "puissance": "7kwc",
+    "lat": 46.3101338,
+    "lon": -0.9940538
+  },
+  {
+    "nom": "BELMONTET BRUNO",
+    "ville": "CHAILLE LES MARAIS",
+    "date": "June 2025",
+    "puissance": "3kwc",
+    "lat": 46.398877,
+    "lon": -1.0251604
+  },
+  {
+    "nom": "BERNARD FREDERIC",
+    "ville": "NIEUL SUR MER",
+    "date": "January 2025",
+    "puissance": "6kwc",
+    "lat": 46.2069355,
+    "lon": -1.1639199
+  },
+  {
+    "nom": "BILLON GERARD",
+    "ville": "LA ROCHELLE",
+    "date": "April 2024",
+    "puissance": "6kwc",
+    "lat": 46.159732,
+    "lon": -1.1515951
+  },
+  {
+    "nom": "BOUILLAUD MIKAEL",
+    "ville": "L'ILE D'ELLE",
+    "date": "February 2025",
+    "puissance": "6kwc",
+    "lat": 46.3316667,
+    "lon": -0.9480556
+  },
+  {
+    "nom": "BOULLIC LAURENT",
+    "ville": "NIORT",
+    "date": "March 2024",
+    "puissance": "3kwc",
+    "lat": 46.3239233,
+    "lon": -0.4646064
+  },
+  {
+    "nom": "BOURDET CLAUDE",
+    "ville": " SAINT HILAIRE DES LOGES",
+    "date": "June 2024",
+    "puissance": "3kwc",
+    "lat": 46.4706005,
+    "lon": -0.6656039
+  },
+  {
+    "nom": "BRAQUEHAIS LAURENT",
+    "ville": "LA ROCHELLE",
+    "date": "October 2024",
+    "puissance": "3kwc",
+    "lat": 46.159732,
+    "lon": -1.1515951
+  },
+  {
+    "nom": "BUSO LUC",
+    "ville": "LA FERRIERE",
+    "date": "May 2024",
+    "puissance": "3kwc",
+    "lat": 45.280845,
+    "lon": 6.0858021
+  },
+  {
+    "nom": "CAMILLE BRUNO",
+    "ville": "MARANS",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.3101338,
+    "lon": -0.9940538
+  },
+  {
+    "nom": "CHAGNOLEAU JEAN-LOUIS",
+    "ville": "SAINT SAUVANT",
+    "date": "July 2024",
+    "puissance": "3kwc",
+    "lat": 45.7389374,
+    "lon": -0.504218
+  },
+  {
+    "nom": "CHAMARD PASCAL",
+    "ville": "MARSAIS",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.1247121,
+    "lon": -0.6006905
+  },
+  {
+    "nom": "CHAUMETTE VINCENT 2k",
+    "ville": "SAINT PIERRE D'OLÉRON",
+    "date": "May 2024",
+    "puissance": "2kwc",
+    "lat": 45.9437695,
+    "lon": -1.3061227
+  },
+  {
+    "nom": "CHAUMETTE VINCENT 5k",
+    "ville": "SAINT PIERRE D'OLÉRON",
+    "date": "March 2025",
+    "puissance": "5kwc",
+    "lat": 45.9437695,
+    "lon": -1.3061227
+  },
+  {
+    "nom": "CHERADE CYRIL",
+    "ville": "SAINT SEVER DE SAINTONGE",
+    "date": "May 2024",
+    "puissance": "3kwc",
+    "lat": 45.6940704,
+    "lon": -0.5076702
+  },
+  {
+    "nom": "CHRISTY BRUNO",
+    "ville": "CLAVETTE",
+    "date": "February 2024",
+    "puissance": "3kwc",
+    "lat": 46.1409843,
+    "lon": -1.0273587
+  },
+  {
+    "nom": "CLOUET CHRISTOPHE",
+    "ville": "SAINT ROGATIEN",
+    "date": "March 2024",
+    "puissance": "3kwc",
+    "lat": 46.1498022,
+    "lon": -1.0686838
+  },
+  {
+    "nom": "COAT THOMAS",
+    "ville": "LES SABLES D'OLONNE",
+    "date": "September 2024",
+    "puissance": "3kwc",
+    "lat": 46.4990505,
+    "lon": -1.7767859
+  },
+  {
+    "nom": "CUBERO FLORIAN",
+    "ville": "CHATELAILLON",
+    "date": "July 2024",
+    "puissance": "7,5kwc",
+    "lat": 46.0738633,
+    "lon": -1.0903991
+  },
+  {
+    "nom": "DIAS PEREIRA",
+    "ville": "SALLES SUR MER",
+    "date": "May 2024",
+    "puissance": "3kwc",
+    "lat": 46.1049709,
+    "lon": -1.0571737
+  },
+  {
+    "nom": "DOARE JEAN-PIERRE",
+    "ville": "DOMPIERRE SUR MER",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.186001,
+    "lon": -1.0656405
+  },
+  {
+    "nom": "DRAPEAU STÉPHANE",
+    "ville": "CHAMBON",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.1257314,
+    "lon": -0.8497848
+  },
+  {
+    "nom": "DROUARD PATRICK",
+    "ville": "BREUIL MAGNÉ",
+    "date": "September 2024",
+    "puissance": "6kwc",
+    "lat": 45.9839283,
+    "lon": -0.9584142
+  },
+  {
+    "nom": "DROUET LAURENT",
+    "ville": "CROIX CHAPEAU",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.1098227,
+    "lon": -1.0069804
+  },
+  {
+    "nom": "FELISIAK EWA ",
+    "ville": "SAINT SULPICE DE ROYAN",
+    "date": "October 2024",
+    "puissance": "3kwc",
+    "lat": 45.6727461,
+    "lon": -1.0120694
+  },
+  {
+    "nom": "FROMAGET AMELIE",
+    "ville": "MOUILLERON ST GERMAIN",
+    "date": "February 2025",
+    "puissance": "3kwc",
+    "lat": 46.6688226,
+    "lon": -0.847767
+  },
+  {
+    "nom": "GARSAULT PATRICK",
+    "ville": "PUILBOREAU",
+    "date": "April 2024",
+    "puissance": "6kwc",
+    "lat": 46.1851302,
+    "lon": -1.1177313
+  },
+  {
+    "nom": "GAUTIER FABRICE",
+    "ville": "AIGREFEUILLE D'AUNIS",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.1163928,
+    "lon": -0.9342868
+  },
+  {
+    "nom": "GAUTRON JOEL",
+    "ville": "PORT D'ENVAUX",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 45.8353249,
+    "lon": -0.679123
+  },
+  {
+    "nom": "GENEAU CHRISTOPHE",
+    "ville": "BREUIL MAGNÉ",
+    "date": "",
+    "puissance": "6kwc",
+    "lat": 45.9839283,
+    "lon": -0.9584142
+  },
+  {
+    "nom": "GERBAUD LOGAN",
+    "ville": "VÉRINES",
+    "date": "February 2025",
+    "puissance": "6kwc",
+    "lat": 46.1927243,
+    "lon": -0.9645614
+  },
+  {
+    "nom": "GIBERT FRANÇOIS",
+    "ville": "PUYRAVAULT",
+    "date": "November 2023",
+    "puissance": "6kwc",
+    "lat": 46.1349889,
+    "lon": -0.8141893
+  },
+  {
+    "nom": "GOBERT CHRISTOPHE",
+    "ville": "SAINT SULPICE DE ROYAN",
+    "date": "November 2024",
+    "puissance": "7,5kwc",
+    "lat": 45.6727461,
+    "lon": -1.0120694
+  },
+  {
+    "nom": "GRIFFON THOMAS",
+    "ville": "PRAHECQ",
+    "date": "May 2024",
+    "puissance": "9kwc",
+    "lat": 46.2595794,
+    "lon": -0.3466615
+  },
+  {
+    "nom": "GUILLET DOMINIQUE",
+    "ville": "LA TRANCHE SUR MER",
+    "date": "December 2023",
+    "puissance": "3kwc",
+    "lat": 46.3440097,
+    "lon": -1.4380541
+  },
+  {
+    "nom": "GUITTARD LISA",
+    "ville": "MARANS",
+    "date": "November 2024",
+    "puissance": "6kwc",
+    "lat": 46.3101338,
+    "lon": -0.9940538
+  },
+  {
+    "nom": "HAUDOIN CHARLES",
+    "ville": "NIEUL SUR MER",
+    "date": "November 2024",
+    "puissance": "3kwc",
+    "lat": 46.2069355,
+    "lon": -1.1639199
+  },
+  {
+    "nom": "JODHUN SANJAY",
+    "ville": "SAINT SYMPHORIEN",
+    "date": "September 2024",
+    "puissance": "7,5kwc",
+    "lat": 49.3140652,
+    "lon": 0.4670513
+  },
+  {
+    "nom": "LAFOLIE DANIEL",
+    "ville": "SAINT HILAIRE DES LOGES",
+    "date": "April 2024",
+    "puissance": "4,5kwc",
+    "lat": 46.4706005,
+    "lon": -0.6656039
+  },
+  {
+    "nom": "LARGE CHRISTOPHE",
+    "ville": "ROCHEFORT",
+    "date": "February 2024",
+    "puissance": "3kwc",
+    "lat": 45.9366592,
+    "lon": -0.9616399
+  },
+  {
+    "nom": "LECERF MICHEL",
+    "ville": "LANDEVIEILLE",
+    "date": "May 2024",
+    "puissance": "3kwc",
+    "lat": 46.6416667,
+    "lon": -1.805
+  },
+  {
+    "nom": "LIGEN MATHILDE",
+    "ville": "LA ROCHELLE",
+    "date": "October 2024",
+    "puissance": "3kwc",
+    "lat": 46.159732,
+    "lon": -1.1515951
+  },
+  {
+    "nom": "LISSENKO DANIEL",
+    "ville": "LUÇON",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.4555953,
+    "lon": -1.1645595
+  },
+  {
+    "nom": "LOUCHET DIANE",
+    "ville": "MARENNES",
+    "date": "March 2025",
+    "puissance": "3kwc",
+    "lat": 45.8224965,
+    "lon": -1.112795
+  },
+  {
+    "nom": "MADIOT CLAUDE",
+    "ville": "CHAMBON",
+    "date": "July 2024",
+    "puissance": "3kwc",
+    "lat": 46.1257314,
+    "lon": -0.8497848
+  },
+  {
+    "nom": "MAURON SEBASTIEN",
+    "ville": "LONGEVILLE SUR MER",
+    "date": "August 2024",
+    "puissance": "3kwc",
+    "lat": 46.4251677,
+    "lon": -1.488347
+  },
+  {
+    "nom": "MEDJAKE EMMANUEL",
+    "ville": "LA FERRIERE",
+    "date": "December 2024",
+    "puissance": "6kwc",
+    "lat": 45.280845,
+    "lon": 6.0858021
+  },
+  {
+    "nom": "MENOT MARC",
+    "ville": "SAINT DENIS D'OLERON",
+    "date": "January 2025",
+    "puissance": "3kwc",
+    "lat": 46.033611,
+    "lon": -1.3775
+  },
+  {
+    "nom": "METAYER JEAN YVES",
+    "ville": "ECHEBRUNE",
+    "date": "April 2024",
+    "puissance": "9kwc",
+    "lat": 45.578869,
+    "lon": -0.4466007
+  },
+  {
+    "nom": "METAYER RÉGIS",
+    "ville": "SAINTE SOULLE",
+    "date": "January 2024",
+    "puissance": "3kwc",
+    "lat": 46.188253,
+    "lon": -1.0157986
+  },
+  {
+    "nom": "MICHAUD CYRILLE",
+    "ville": "CHATEAU D'OLONNE",
+    "date": "February 2024",
+    "puissance": "7,5kwc",
+    "lat": 46.505,
+    "lon": -1.7361111
+  },
+  {
+    "nom": "MONNIER REMY",
+    "ville": "AIZENAY",
+    "date": "May 2024",
+    "puissance": "3kwc",
+    "lat": 46.7391797,
+    "lon": -1.6084351
+  },
+  {
+    "nom": "NAUD DIDIER",
+    "ville": "SAINT JEAN DE LIVERSAY",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.2709561,
+    "lon": -0.8728577
+  },
+  {
+    "nom": "PAUCHARD ERIC 2",
+    "ville": "LE THOU",
+    "date": "October 2025",
+    "puissance": "3kwc",
+    "lat": 46.0839685,
+    "lon": -0.9172451
+  },
+  {
+    "nom": "PAUCHARD ERIC",
+    "ville": "LE THOU",
+    "date": "November 2024",
+    "puissance": "3kwc",
+    "lat": 46.0839685,
+    "lon": -0.9172451
+  },
+  {
+    "nom": "PIJOLLET NELLY",
+    "ville": "THEZAC",
+    "date": "May 2025",
+    "puissance": "45kwc",
+    "lat": 45.6725217,
+    "lon": -0.7901874
+  },
+  {
+    "nom": "PHILLIPS COLLIN",
+    "ville": "MELLERAN",
+    "date": "March 2024",
+    "puissance": "6kwc",
+    "lat": 46.1314087,
+    "lon": 0.0024052
+  },
+  {
+    "nom": "PREVOST MICHEL",
+    "ville": "SURGÈRES",
+    "date": "October 2024",
+    "puissance": "3kwc",
+    "lat": 46.1052715,
+    "lon": -0.7511152
+  },
+  {
+    "nom": "ROGER FRANÇOIS",
+    "ville": "SAINT GILLES CROIX DE VIE",
+    "date": "October 2024",
+    "puissance": "7kwc",
+    "lat": 46.692985,
+    "lon": -1.9254545
+  },
+  {
+    "nom": "ROUSSEAU THIERRY",
+    "ville": "LE LANGON",
+    "date": "February 2025",
+    "puissance": "6kwc",
+    "lat": 46.4386111,
+    "lon": -0.9486111
+  },
+  {
+    "nom": "SANNA NATHALIE",
+    "ville": "CLESSÉ",
+    "date": "January 2025",
+    "puissance": "8kwc",
+    "lat": 46.416292,
+    "lon": 4.8140269
+  },
+  {
+    "nom": "SANS YOHANN",
+    "ville": "LA FLOTTE EN RÉ",
+    "date": "May 2024",
+    "puissance": "9kwc",
+    "lat": 46.1886242,
+    "lon": -1.325123
+  },
+  {
+    "nom": "SAUTJEAU HUGUES",
+    "ville": "BORS",
+    "date": "January 2025",
+    "puissance": "6kwc",
+    "lat": 45.3278205,
+    "lon": -0.1933698
+  },
+  {
+    "nom": "SCHALLER JEAN-LUC",
+    "ville": "LA CLISSE",
+    "date": "September 2024",
+    "puissance": "6kwc",
+    "lat": 45.7349044,
+    "lon": -0.7624343
+  },
+  {
+    "nom": "SOULET HUGUES",
+    "ville": "MAGNÉ",
+    "date": "June 2024",
+    "puissance": "6kwc",
+    "lat": 46.3148541,
+    "lon": -0.5431161
+  },
+  {
+    "nom": "STIMARIDIS PHILIPPE",
+    "ville": "CRAZANNES",
+    "date": "March 2025",
+    "puissance": "7,5kwc",
+    "lat": 45.8480885,
+    "lon": -0.7044416
+  },
+  {
+    "nom": "SUC-BLANCHARD",
+    "ville": "LE THOU",
+    "date": "May 2024",
+    "puissance": "6kwc",
+    "lat": 46.0839685,
+    "lon": -0.9172451
+  },
+  {
+    "nom": "SUIRE SOPHIE",
+    "ville": "VILLEDOUX",
+    "date": "May 2024",
+    "puissance": "6kwc",
+    "lat": 46.241153,
+    "lon": -1.0682289
+  },
+  {
+    "nom": "THIERRY BRUNO",
+    "ville": "VÉRINES",
+    "date": "May 2024",
+    "puissance": "6kwc",
+    "lat": 46.1927243,
+    "lon": -0.9645614
+  },
+  {
+    "nom": "TRICHET JEAN-MICHEL",
+    "ville": " MOUTIERS LES MAUXFAITS",
+    "date": "March 2024",
+    "puissance": "3kwc",
+    "lat": 46.4926693,
+    "lon": -1.4247824
+  },
+  {
+    "nom": "VIOLLIER NICOLAS",
+    "ville": "VENANSAULT",
+    "date": "March 2025",
+    "puissance": "1,5kwc",
+    "lat": 46.6858331,
+    "lon": -1.5113138
+  },
+  {
+    "nom": "VINCENT ALAIN",
+    "ville": "SAINT SATURNIN DU BOIS",
+    "date": "",
+    "puissance": "3kwc",
+    "lat": 46.1388115,
+    "lon": -0.6716992
+  }
+]
