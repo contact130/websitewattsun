@@ -44,6 +44,19 @@ export default function ProjectsMap() {
         document.head.appendChild(link);
       }
 
+      // Ajouter le CSS de MarkerCluster
+      if (!document.querySelector('link[href*="MarkerCluster.css"]')) {
+        const link1 = document.createElement('link');
+        link1.rel = 'stylesheet';
+        link1.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css';
+        document.head.appendChild(link1);
+
+        const link2 = document.createElement('link');
+        link2.rel = 'stylesheet';
+        link2.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css';
+        document.head.appendChild(link2);
+      }
+
       // Charger le script Leaflet
       if (!(window as any).L) {
         await new Promise((resolve, reject) => {
@@ -51,6 +64,17 @@ export default function ProjectsMap() {
           script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
           script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
           script.crossOrigin = '';
+          script.onload = resolve;
+          script.onerror = reject;
+          document.body.appendChild(script);
+        });
+      }
+
+      // Charger le script MarkerCluster
+      if (!(window as any).L.markerClusterGroup) {
+        await new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js';
           script.onload = resolve;
           script.onerror = reject;
           document.body.appendChild(script);
@@ -81,9 +105,49 @@ export default function ProjectsMap() {
         popupAnchor: [0, -32],
       });
 
-      // Ajouter les marqueurs
+      // Créer un groupe de clusters avec style personnalisé
+      const markers = L.markerClusterGroup({
+        maxClusterRadius: 50, // Distance de regroupement
+        spiderfyOnMaxZoom: true, // Déployer les marqueurs au zoom max
+        showCoverageOnHover: false, // Ne pas montrer la zone de couverture
+        zoomToBoundsOnClick: true, // Zoomer sur le cluster au clic
+        iconCreateFunction: function(cluster: any) {
+          const count = cluster.getChildCount();
+          let size = 'small';
+          
+          if (count > 20) {
+            size = 'large';
+          } else if (count > 10) {
+            size = 'medium';
+          }
+          
+          return L.divIcon({
+            html: `<div style="
+              background: linear-gradient(135deg, #fcad0d 0%, #ffc84d 100%);
+              color: #1f2937;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: 700;
+              font-size: ${size === 'large' ? '16px' : size === 'medium' ? '14px' : '12px'};
+              width: 100%;
+              height: 100%;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              border: 3px solid white;
+            ">${count}</div>`,
+            className: 'custom-cluster-icon',
+            iconSize: L.point(
+              size === 'large' ? 50 : size === 'medium' ? 42 : 36,
+              size === 'large' ? 50 : size === 'medium' ? 42 : 36
+            ),
+          });
+        }
+      });
+
+      // Ajouter les marqueurs au groupe de clusters
       projects.forEach(project => {
-        const marker = L.marker([project.lat, project.lon], { icon: customIcon }).addTo(map);
+        const marker = L.marker([project.lat, project.lon], { icon: customIcon });
         
         const popupContent = `
           <div style="font-family: system-ui, -apple-system, sans-serif; min-width: 200px;">
@@ -99,7 +163,11 @@ export default function ProjectsMap() {
         `;
         
         marker.bindPopup(popupContent);
+        markers.addLayer(marker);
       });
+
+      // Ajouter le groupe de clusters à la carte
+      map.addLayer(markers);
 
       // Ajuster la vue pour afficher tous les marqueurs
       const bounds = L.latLngBounds(projects.map(p => [p.lat, p.lon]));
