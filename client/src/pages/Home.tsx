@@ -81,7 +81,7 @@ export default function Home() {
               <Link to="/demande-devis" onClick={() => window.scrollTo(0, 0)}>
                 <Button
                   size="lg"
-                  className="flex-1 max-w-xs bg-gradient-to-r from-[#fcad0d] to-[#f59e0b] text-white hover:from-[#f59e0b] hover:to-[#fcad0d] transition-all duration-300 transform hover:scale-105 shadow-2xl font-semibold"
+                  className="flex-1 max-w-xs bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl font-semibold text-lg px-8 py-6"
                 >
                   Demander un Devis
                 </Button>

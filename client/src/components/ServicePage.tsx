@@ -60,7 +60,7 @@ export default function ServicePage({
           <Link to="/demande-devis">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white px-8 py-6 text-lg hover:opacity-90 transition-opacity"
+              className="bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl font-semibold text-lg px-8 py-6"
             >
               Demander un Devis Gratuit
             </Button>
