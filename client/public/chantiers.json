@@ -827,5 +827,13 @@
     "lat": 46.159732,
     "lon": -1.1515951,
     "type": "Electricite"
+  },
+  {
+    "nom": "Mme & M Bayle",
+    "ville": "SAINT-JEAN-DE-LIVERSAY",
+    "date": "Juillet 2024",
+    "lat": 46.1416,
+    "lon": -0.8236,
+    "type": "Batteries"
   }
 ]
