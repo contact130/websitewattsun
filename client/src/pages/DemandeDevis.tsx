@@ -515,7 +515,7 @@ export default function DemandeDevis() {
                         <div
                           key={service.id}
                           onClick={() => handleServiceToggle(service.id)}
-                          className={`p-5 border-2 rounded-xl cursor-pointer transition-all duration-300 flex flex-col items-center text-center transform hover:scale-105 ${
+                          className={`p-5 border-2 rounded-xl cursor-pointer transition-all duration-300 flex flex-col items-center text-center transform hover:scale-105 h-[200px] relative ${
                             isSelected
                               ? "border-[#5e8a92] bg-gradient-to-br from-[#5e8a92]/10 to-[#5e8a92]/5 shadow-lg"
                               : "border-gray-200 hover:border-[#5e8a92]/50 bg-white hover:shadow-md"
