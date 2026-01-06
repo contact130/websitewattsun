@@ -44,10 +44,9 @@ export default function ElectriciteGenerale() {
   ];
 
   const aides = [
-    "TVA réduite à 10%",
-    "Crédit d'impôt (selon travaux)",
-    "Aides ANAH",
-    "Prêt à taux zéro (selon conditions)"
+    "TVA réduite à 10% (logement > 2 ans)",
+    "Aides ANAH (rénovation énergétique)",
+    "Éco-PTZ (si rénovation globale)"
   ];
 
   return (

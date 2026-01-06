@@ -51,10 +51,10 @@ export default function VMC() {
   ];
 
   const aides = [
-    "TVA réduite à 10%",
-    "MaPrimeRénov'",
+    "MaPrimeRénov' (1 500€ à 2 500€ selon revenus)",
     "CEE (Certificats d'Économies d'Énergie)",
-    "Éco-PTZ"
+    "TVA réduite à 5,5%",
+    "Éco-PTZ (jusqu'à 15 000€)"
   ];
 
   return (

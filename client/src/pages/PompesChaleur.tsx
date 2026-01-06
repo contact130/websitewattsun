@@ -51,10 +51,10 @@ export default function PompesChaleur() {
   ];
 
   const aides = [
-    "MaPrimeRénov'",
-    "CEE (Certificats d'Économies d'Énergie)",
+    "MaPrimeRénov' (jusqu'à 5 000€)",
+    "CEE (jusqu'à 4 200€ en zone H2)",
     "TVA réduite à 5,5%",
-    "Éco-PTZ"
+    "Éco-PTZ (jusqu'à 15 000€)"
   ];
 
   return (

@@ -51,10 +51,10 @@ export default function PanneauxPhotovoltaiques() {
   ];
 
   const aides = [
-    "MaPrimeRénov'",
-    "CEE (Certificats d'Économies d'Énergie)",
-    "TVA réduite à 10%",
-    "Aides locales"
+    "Prime à l'autoconsommation (80€/kWc)",
+    "TVA réduite à 5,5% (installations < 9 kWc)",
+    "Tarif de rachat garanti 20 ans",
+    "Aides locales et régionales"
   ];
 
   return (

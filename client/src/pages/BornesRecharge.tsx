@@ -51,10 +51,9 @@ export default function BornesRecharge() {
   ];
 
   const aides = [
-    "Programme ADVENIR",
-    "Crédit d'impôt 75% (plafonné)",
+    "Programme ADVENIR (copropriétés)",
     "TVA réduite à 5,5%",
-    "Prime à la conversion"
+    "Aides locales et régionales"
   ];
 
   return (

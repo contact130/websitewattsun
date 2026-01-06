@@ -44,10 +44,9 @@ export default function BatteriesStockage() {
   ];
 
   const aides = [
-    "Prime à l'autoconsommation",
-    "TVA réduite à 10%",
-    "Aides régionales",
-    "Crédit d'impôt (selon conditions)"
+    "Prime à l'autoconsommation (couplée au PV)",
+    "TVA réduite à 5,5% (avec PV < 9 kWc)",
+    "Aides locales et régionales"
   ];
 
   return (
