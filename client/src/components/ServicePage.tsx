@@ -155,7 +155,7 @@ export default function ServicePage({
             Aides et Financements Disponibles
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className={`grid grid-cols-1 md:grid-cols-2 ${aides.length === 3 ? 'lg:grid-cols-3' : aides.length === 2 ? 'lg:grid-cols-2' : 'lg:grid-cols-4'} gap-6 max-w-6xl mx-auto`}>
             {aides.map((aide, index) => (
               <Card key={index} className="shadow-lg">
                 <CardContent className="p-6 text-center">
