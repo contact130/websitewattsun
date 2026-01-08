@@ -206,7 +206,6 @@ export default function ProjectsMap() {
               ${project.ville}
             </h3>
             <div style="font-size: 14px; color: #6b7280; line-height: 1.6;">
-              <p style="margin: 4px 0;"><strong>Client:</strong> ${project.nom}</p>
               <p style="margin: 4px 0;"><strong>Date:</strong> ${project.date}</p>
               ${project.puissance ? `<p style="margin: 4px 0;"><strong>Puissance:</strong> ${project.puissance}</p>` : ''}
             </div>
