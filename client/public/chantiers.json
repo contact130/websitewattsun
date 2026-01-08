@@ -328,8 +328,8 @@
     "ville": "LA TRANCHE SUR MER",
     "date": "Décembre 2023",
     "puissance": "3kwc",
-    "lat": 46.3440097,
-    "lon": -1.4380541,
+    "lat": 46.34302,
+    "lon": -1.424009,
     "type": "PV"
   },
   {
@@ -383,7 +383,7 @@
     "date": "Mai 2024",
     "puissance": "3kwc",
     "lat": 46.6416667,
-    "lon": -1.805,
+    "lon": -1.755,
     "type": "PV"
   },
   {
@@ -400,8 +400,8 @@
     "ville": "MARENNES",
     "date": "Mars 2025",
     "puissance": "3kwc",
-    "lat": 45.83011,
-    "lon": -1.11637,
+    "lat": 45.818871,
+    "lon": -1.101703,
     "type": "PV"
   },
   {
@@ -437,7 +437,7 @@
     "date": "Janvier 2025",
     "puissance": "3kwc",
     "lat": 46.033611,
-    "lon": -1.3775,
+    "lon": -1.3275,
     "type": "PV"
   },
   {
@@ -535,8 +535,8 @@
     "ville": "SAINT GILLES CROIX DE VIE",
     "date": "Octobre 2024",
     "puissance": "7kwc",
-    "lat": 46.69256,
-    "lon": -1.933536,
+    "lat": 46.699473,
+    "lon": -1.928243,
     "type": "PV"
   },
   {
@@ -775,7 +775,7 @@
     "date": "Avril 2023",
     "puissance": "6kwc",
     "lat": 46.02063,
-    "lon": -1.050656,
+    "lon": -1.000656,
     "type": "PV"
   },
   {
@@ -783,8 +783,8 @@
     "ville": "ESNANDES",
     "date": "Mai 2025",
     "puissance": "6kwc",
-    "lat": 46.267795,
-    "lon": -1.12335,
+    "lat": 46.256133,
+    "lon": -1.111151,
     "type": "PV"
   },
   {
@@ -1197,8 +1197,8 @@
     "ville": "ESNANDES",
     "date": "Novembre 2025",
     "puissance": "6kwc",
-    "lat": 46.265934,
-    "lon": -1.111442,
+    "lat": 46.259107,
+    "lon": -1.099216,
     "type": "PV"
   },
   {
@@ -1278,8 +1278,8 @@
     "ville": "LA FLOTTE",
     "date": "Juillet 2024",
     "puissance": "6kwc",
-    "lat": 46.193637,
-    "lon": -1.33332,
+    "lat": 46.194593,
+    "lon": -1.318407,
     "type": "PV"
   },
   {
@@ -1513,7 +1513,7 @@
     "date": "Février 2024",
     "puissance": "6kwc",
     "lat": 46.021494,
-    "lon": -1.056291,
+    "lon": -1.006291,
     "type": "PV"
   },
   {
@@ -1746,8 +1746,8 @@
     "ville": "CHARRON",
     "date": "Novembre 2023",
     "puissance": "9kwc",
-    "lat": 46.297619,
-    "lon": -1.102239,
+    "lat": 46.297953,
+    "lon": -1.096065,
     "type": "PV"
   },
   {
@@ -1926,8 +1926,8 @@
     "ville": "CHARRON",
     "date": "Juillet 2025",
     "puissance": "",
-    "lat": 46.299802,
-    "lon": -1.101862,
+    "lat": 46.286974,
+    "lon": -1.090639,
     "type": "PAC"
   },
   {
@@ -1962,8 +1962,8 @@
     "ville": "RIVEDOUX-PLAGE",
     "date": "Février 2024",
     "puissance": "",
-    "lat": 46.165259,
-    "lon": -1.266292,
+    "lat": 46.163019,
+    "lon": -1.27695,
     "type": "PAC"
   },
   {
@@ -2025,8 +2025,8 @@
     "ville": "RIVEDOUX-PLAGE",
     "date": "Septembre 2024",
     "puissance": "",
-    "lat": 46.162299,
-    "lon": -1.278783,
+    "lat": 46.161465,
+    "lon": -1.266198,
     "type": "PAC"
   },
   {
@@ -2304,8 +2304,8 @@
     "ville": "LA FLOTTE",
     "date": "Janvier 2026",
     "puissance": "",
-    "lat": 46.201559,
-    "lon": -1.335839,
+    "lat": 46.17945,
+    "lon": -1.335607,
     "type": "PAC"
   },
   {
@@ -2322,8 +2322,8 @@
     "ville": "RIVEDOUX-PLAGE",
     "date": "Janvier 2026",
     "puissance": "",
-    "lat": 46.159065,
-    "lon": -1.270904,
+    "lat": 46.169096,
+    "lon": -1.266822,
     "type": "PAC"
   },
   {
@@ -2475,8 +2475,8 @@
     "ville": "ESNANDES",
     "date": "Avril 2024",
     "puissance": "",
-    "lat": 46.253827,
-    "lon": -1.115,
+    "lat": 46.252857,
+    "lon": -1.105117,
     "type": "PAC"
   },
   {
@@ -2673,8 +2673,8 @@
     "ville": "ESNANDES",
     "date": "Mai 2025",
     "puissance": "",
-    "lat": 46.261285,
-    "lon": -1.119028,
+    "lat": 46.247113,
+    "lon": -1.105128,
     "type": "VMC"
   },
   {
@@ -2745,8 +2745,8 @@
     "ville": "CHARRON",
     "date": "Février 2024",
     "puissance": "",
-    "lat": 46.294462,
-    "lon": -1.111654,
+    "lat": 46.294555,
+    "lon": -1.097614,
     "type": "VMC"
   },
   {
@@ -2871,8 +2871,8 @@
     "ville": "LA FLOTTE",
     "date": "Août 2025",
     "puissance": "",
-    "lat": 46.191225,
-    "lon": -1.316396,
+    "lat": 46.190771,
+    "lon": -1.321494,
     "type": "VMC"
   },
   {
@@ -2898,8 +2898,8 @@
     "ville": "LA FLOTTE",
     "date": "Décembre 2024",
     "puissance": "",
-    "lat": 46.179381,
-    "lon": -1.330273,
+    "lat": 46.19615,
+    "lon": -1.325995,
     "type": "VMC"
   },
   {
@@ -3232,7 +3232,7 @@
     "date": "Avril 2025",
     "puissance": "",
     "lat": 46.025946,
-    "lon": -1.061275,
+    "lon": -1.011275,
     "type": "Electricite"
   },
   {
@@ -3375,8 +3375,8 @@
     "ville": "LA FLOTTE",
     "date": "Juillet 2023",
     "puissance": "",
-    "lat": 46.197488,
-    "lon": -1.33153,
+    "lat": 46.188885,
+    "lon": -1.326876,
     "type": "Electricite"
   },
   {
@@ -3771,8 +3771,8 @@
     "ville": "CHARRON",
     "date": "Octobre 2024",
     "puissance": "10kwh",
-    "lat": 46.286546,
-    "lon": -1.105447,
+    "lat": 46.291017,
+    "lon": -1.103276,
     "type": "Batteries"
   },
   {
@@ -3799,7 +3799,7 @@
     "date": "Septembre 2024",
     "puissance": "10kwh",
     "lat": 46.021018,
-    "lon": -1.057038,
+    "lon": -1.007038,
     "type": "Batteries"
   },
   {
@@ -3924,8 +3924,8 @@
     "ville": "ESNANDES",
     "date": "Juin 2025",
     "puissance": "10kwh",
-    "lat": 46.269792,
-    "lon": -1.123403,
+    "lat": 46.257412,
+    "lon": -1.109312,
     "type": "Batteries"
   },
   {
@@ -4122,8 +4122,8 @@
     "ville": "LA FLOTTE",
     "date": "Octobre 2023",
     "puissance": "10kwh",
-    "lat": 46.195615,
-    "lon": -1.33303,
+    "lat": 46.187919,
+    "lon": -1.336669,
     "type": "Batteries"
   },
   {
@@ -4321,7 +4321,7 @@
     "date": "Mai 2023",
     "puissance": "7kw",
     "lat": 46.022882,
-    "lon": -1.056742,
+    "lon": -1.006742,
     "type": "Bornes"
   },
   {
@@ -4428,8 +4428,8 @@
     "ville": "CHARRON",
     "date": "Janvier 2026",
     "puissance": "11kw",
-    "lat": 46.294445,
-    "lon": -1.101184,
+    "lat": 46.29293,
+    "lon": -1.085924,
     "type": "Bornes"
   },
   {
@@ -4447,7 +4447,7 @@
     "date": "Septembre 2025",
     "puissance": "22kw",
     "lat": 46.020646,
-    "lon": -1.052302,
+    "lon": -1.002302,
     "type": "Bornes"
   },
   {
@@ -5022,8 +5022,8 @@
     "ville": "ESNANDES",
     "date": "Juillet 2024",
     "puissance": "7kw",
-    "lat": 46.26696,
-    "lon": -1.121945,
+    "lat": 46.250393,
+    "lon": -1.097751,
     "type": "Bornes"
   },
   {
@@ -5043,5 +5043,1598 @@
     "lat": 46.208684,
     "lon": -1.519771,
     "type": "Bornes"
+  },
+  {
+    "nom": "",
+    "ville": "CHASSENEUIL-DU-POITOU",
+    "date": "Mars 2024",
+    "puissance": "3kwc",
+    "lat": 46.638525,
+    "lon": 0.354236,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JONZAC",
+    "date": "Janvier 2023",
+    "puissance": "9kwc",
+    "lat": 45.444401,
+    "lon": -0.445326,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-JEAN-D'ANGÉLY",
+    "date": "Mai 2025",
+    "puissance": "3kwc",
+    "lat": 45.932065,
+    "lon": -0.519241,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "THOUARS",
+    "date": "Novembre 2025",
+    "puissance": "7,5kwc",
+    "lat": 46.972376,
+    "lon": -0.20359,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "PARTHENAY",
+    "date": "Mars 2024",
+    "puissance": "9kwc",
+    "lat": 46.63728,
+    "lon": -0.260376,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "LUSIGNAN",
+    "date": "Octobre 2025",
+    "puissance": "9kwc",
+    "lat": 46.443063,
+    "lon": 0.130914,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ROCHEFORT",
+    "date": "Août 2025",
+    "puissance": "6kwc",
+    "lat": 45.939312,
+    "lon": -0.944613,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SOYAUX",
+    "date": "Septembre 2023",
+    "puissance": "3kwc",
+    "lat": 45.661337,
+    "lon": 0.202575,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "VIVONNE",
+    "date": "Mai 2025",
+    "puissance": "9kwc",
+    "lat": 46.433297,
+    "lon": 0.269509,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COGNAC",
+    "date": "Janvier 2024",
+    "puissance": "7,5kwc",
+    "lat": 45.707519,
+    "lon": -0.339867,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "POITIERS",
+    "date": "Septembre 2025",
+    "puissance": "9kwc",
+    "lat": 46.590583,
+    "lon": 0.350931,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ROCHEFORT",
+    "date": "Décembre 2025",
+    "puissance": "12kwc",
+    "lat": 45.934012,
+    "lon": -0.959485,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "BEAUVOIR-SUR-NIORT",
+    "date": "Janvier 2026",
+    "puissance": "7,5kwc",
+    "lat": 46.188867,
+    "lon": -0.471362,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MONTMORILLON",
+    "date": "Mars 2025",
+    "puissance": "6kwc",
+    "lat": 46.439658,
+    "lon": 0.878868,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SEGONZAC",
+    "date": "Juillet 2025",
+    "puissance": "7,5kwc",
+    "lat": 45.625264,
+    "lon": -0.223971,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ROCHEFORT",
+    "date": "Mars 2024",
+    "puissance": "7,5kwc",
+    "lat": 45.933038,
+    "lon": -0.955036,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COZES",
+    "date": "Juin 2025",
+    "puissance": "6kwc",
+    "lat": 45.594885,
+    "lon": -0.83202,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "BEAUVOIR-SUR-NIORT",
+    "date": "Juin 2024",
+    "puissance": "3kwc",
+    "lat": 46.169746,
+    "lon": -0.455427,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SEGONZAC",
+    "date": "Mai 2025",
+    "puissance": "6kwc",
+    "lat": 45.60869,
+    "lon": -0.222038,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "TONNAY-CHARENTE",
+    "date": "Juin 2025",
+    "puissance": "7,5kwc",
+    "lat": 45.955108,
+    "lon": -0.880547,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MONTMORILLON",
+    "date": "Février 2024",
+    "puissance": "3kwc",
+    "lat": 46.44021,
+    "lon": 0.883472,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "TONNAY-CHARENTE",
+    "date": "Août 2025",
+    "puissance": "3kwc",
+    "lat": 45.959792,
+    "lon": -0.900112,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JARNAC",
+    "date": "Février 2024",
+    "puissance": "6kwc",
+    "lat": 45.675052,
+    "lon": -0.175476,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINTES",
+    "date": "Juin 2024",
+    "puissance": "9kwc",
+    "lat": 45.732017,
+    "lon": -0.639096,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JAUNAY-MARIGNY",
+    "date": "Juillet 2025",
+    "puissance": "3kwc",
+    "lat": 46.693787,
+    "lon": 0.373797,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MELLE",
+    "date": "Septembre 2024",
+    "puissance": "9kwc",
+    "lat": 46.212177,
+    "lon": -0.156824,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ROYAN",
+    "date": "Décembre 2024",
+    "puissance": "7,5kwc",
+    "lat": 45.624193,
+    "lon": -1.04108,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MONTMORILLON",
+    "date": "Octobre 2023",
+    "puissance": "6kwc",
+    "lat": 46.414322,
+    "lon": 0.877705,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "TONNAY-CHARENTE",
+    "date": "Juillet 2024",
+    "puissance": "6kwc",
+    "lat": 45.936388,
+    "lon": -0.906341,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "POITIERS",
+    "date": "Août 2024",
+    "puissance": "3kwc",
+    "lat": 46.567928,
+    "lon": 0.327796,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ANGOULÊME",
+    "date": "Avril 2024",
+    "puissance": "9kwc",
+    "lat": 45.651898,
+    "lon": 0.157693,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SOYAUX",
+    "date": "Août 2024",
+    "puissance": "3kwc",
+    "lat": 45.643832,
+    "lon": 0.191885,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINTES",
+    "date": "Février 2025",
+    "puissance": "6kwc",
+    "lat": 45.742402,
+    "lon": -0.626596,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "FONTENAY-LE-COMTE",
+    "date": "Décembre 2024",
+    "puissance": "6kwc",
+    "lat": 46.45264,
+    "lon": -0.818525,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "POITIERS",
+    "date": "Octobre 2025",
+    "puissance": "6kwc",
+    "lat": 46.572586,
+    "lon": 0.337267,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MONTMORILLON",
+    "date": "Juillet 2025",
+    "puissance": "6kwc",
+    "lat": 46.414374,
+    "lon": 0.869029,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-BENOÎT",
+    "date": "Juillet 2024",
+    "puissance": "9kwc",
+    "lat": 46.546694,
+    "lon": 0.347669,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MONTAMISÉ",
+    "date": "Mars 2023",
+    "puissance": "9kwc",
+    "lat": 46.617528,
+    "lon": 0.417416,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "BRESSUIRE",
+    "date": "Juin 2024",
+    "puissance": "6kwc",
+    "lat": 46.84821,
+    "lon": -0.502896,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MESCHERS-SUR-GIRONDE",
+    "date": "Août 2024",
+    "puissance": "12kwc",
+    "lat": 45.565096,
+    "lon": -0.955168,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "NIORT",
+    "date": "Octobre 2024",
+    "puissance": "9kwc",
+    "lat": 46.314376,
+    "lon": -0.472949,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MORTAGNE-SUR-GIRONDE",
+    "date": "Juillet 2025",
+    "puissance": "6kwc",
+    "lat": 45.480007,
+    "lon": -0.797913,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COULON",
+    "date": "Février 2024",
+    "puissance": "9kwc",
+    "lat": 46.312418,
+    "lon": -0.589057,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ANGOULÊME",
+    "date": "Mai 2023",
+    "puissance": "9kwc",
+    "lat": 45.641663,
+    "lon": 0.172876,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "AIGREFEUILLE-D'AUNIS",
+    "date": "Juin 2024",
+    "puissance": "9kwc",
+    "lat": 46.113377,
+    "lon": -0.937254,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "CHAUVIGNY",
+    "date": "Février 2024",
+    "puissance": "6kwc",
+    "lat": 46.5614,
+    "lon": 0.638356,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COGNAC",
+    "date": "Novembre 2023",
+    "puissance": "9kwc",
+    "lat": 45.685373,
+    "lon": -0.33994,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JONZAC",
+    "date": "Mars 2025",
+    "puissance": "7,5kwc",
+    "lat": 45.435901,
+    "lon": -0.442644,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MELLE",
+    "date": "Décembre 2024",
+    "puissance": "9kwc",
+    "lat": 46.211516,
+    "lon": -0.138491,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "LUSIGNAN",
+    "date": "Février 2024",
+    "puissance": "3kwc",
+    "lat": 46.437925,
+    "lon": 0.119085,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "LA COURONNE",
+    "date": "Décembre 2024",
+    "puissance": "3kwc",
+    "lat": 45.616758,
+    "lon": 0.093276,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINTES",
+    "date": "Décembre 2024",
+    "puissance": "6kwc",
+    "lat": 45.75069,
+    "lon": -0.623814,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "CHEF-BOUTONNE",
+    "date": "Mai 2024",
+    "puissance": "9kwc",
+    "lat": 46.119122,
+    "lon": -0.072251,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ANGOULÊME",
+    "date": "Mars 2025",
+    "puissance": "6kwc",
+    "lat": 45.655665,
+    "lon": 0.15618,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "CHEF-BOUTONNE",
+    "date": "Avril 2025",
+    "puissance": "9kwc",
+    "lat": 46.117973,
+    "lon": -0.068354,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "CHASSENEUIL-DU-POITOU",
+    "date": "Octobre 2024",
+    "puissance": "6kwc",
+    "lat": 46.661946,
+    "lon": 0.352092,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MELLE",
+    "date": "Juillet 2024",
+    "puissance": "12kwc",
+    "lat": 46.216236,
+    "lon": -0.143009,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "POITIERS",
+    "date": "Janvier 2026",
+    "puissance": "3kwc",
+    "lat": 46.576649,
+    "lon": 0.328587,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINTES",
+    "date": "Mai 2024",
+    "puissance": "9kwc",
+    "lat": 45.752739,
+    "lon": -0.630398,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "CHEF-BOUTONNE",
+    "date": "Avril 2025",
+    "puissance": "6kwc",
+    "lat": 46.095331,
+    "lon": -0.070558,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "LUSIGNAN",
+    "date": "Janvier 2023",
+    "puissance": "6kwc",
+    "lat": 46.41971,
+    "lon": 0.122231,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "AIGREFEUILLE-D'AUNIS",
+    "date": "Mars 2024",
+    "puissance": "6kwc",
+    "lat": 46.098523,
+    "lon": -0.952044,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "NIORT",
+    "date": "Juin 2025",
+    "puissance": "7,5kwc",
+    "lat": 46.332516,
+    "lon": -0.452069,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ANGOULÊME",
+    "date": "Avril 2023",
+    "puissance": "9kwc",
+    "lat": 45.637382,
+    "lon": 0.158174,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MARANS",
+    "date": "Avril 2024",
+    "puissance": "6kwc",
+    "lat": 46.32132,
+    "lon": -0.989534,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "BUXEROLLES",
+    "date": "Mai 2024",
+    "puissance": "3kwc",
+    "lat": 46.603611,
+    "lon": 0.33892,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "BARBEZIEUX-SAINT-HILAIRE",
+    "date": "Août 2023",
+    "puissance": "9kwc",
+    "lat": 45.479317,
+    "lon": -0.141183,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "PARTHENAY",
+    "date": "Avril 2024",
+    "puissance": "6kwc",
+    "lat": 46.646265,
+    "lon": -0.261733,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "AIGREFEUILLE-D'AUNIS",
+    "date": "Avril 2024",
+    "puissance": "6kwc",
+    "lat": 46.106306,
+    "lon": -0.923511,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINTES",
+    "date": "Juin 2024",
+    "puissance": "6kwc",
+    "lat": 45.735977,
+    "lon": -0.628909,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JARNAC",
+    "date": "Décembre 2023",
+    "puissance": "3kwc",
+    "lat": 45.67315,
+    "lon": -0.183123,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JARNAC",
+    "date": "Octobre 2023",
+    "puissance": "6kwc",
+    "lat": 45.680693,
+    "lon": -0.165134,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-BENOÎT",
+    "date": "Mai 2024",
+    "puissance": "12kwc",
+    "lat": 46.535888,
+    "lon": 0.35272,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "RUELLE-SUR-TOUVRE",
+    "date": "Février 2024",
+    "puissance": "6kwc",
+    "lat": 45.678508,
+    "lon": 0.238839,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-MAIXENT-L'ÉCOLE",
+    "date": "Mai 2025",
+    "puissance": "3kwc",
+    "lat": 46.428907,
+    "lon": -0.189639,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "TONNAY-CHARENTE",
+    "date": "Janvier 2026",
+    "puissance": "9kwc",
+    "lat": 45.957692,
+    "lon": -0.880041,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "POITIERS",
+    "date": "Mars 2025",
+    "puissance": "6kwc",
+    "lat": 46.589977,
+    "lon": 0.328174,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MELLE",
+    "date": "Mars 2024",
+    "puissance": "3kwc",
+    "lat": 46.227256,
+    "lon": -0.148753,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COZES",
+    "date": "Septembre 2025",
+    "puissance": "3kwc",
+    "lat": 45.596583,
+    "lon": -0.83641,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ROYAN",
+    "date": "Décembre 2024",
+    "puissance": "3kwc",
+    "lat": 45.639144,
+    "lon": -1.039727,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COGNAC",
+    "date": "Décembre 2025",
+    "puissance": "6kwc",
+    "lat": 45.69129,
+    "lon": -0.339416,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MIRAMBEAU",
+    "date": "Avril 2025",
+    "puissance": "3kwc",
+    "lat": 45.364134,
+    "lon": -0.5567,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "BRESSUIRE",
+    "date": "Novembre 2025",
+    "puissance": "6kwc",
+    "lat": 46.841057,
+    "lon": -0.476866,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "LA COURONNE",
+    "date": "Mai 2025",
+    "puissance": "7,5kwc",
+    "lat": 45.609672,
+    "lon": 0.110437,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "AIFFRES",
+    "date": "Août 2025",
+    "puissance": "6kwc",
+    "lat": 46.285533,
+    "lon": -0.428554,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-MAIXENT-L'ÉCOLE",
+    "date": "Décembre 2025",
+    "puissance": "9kwc",
+    "lat": 46.424461,
+    "lon": -0.201696,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COZES",
+    "date": "Avril 2025",
+    "puissance": "6kwc",
+    "lat": 45.572978,
+    "lon": -0.821557,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "RUELLE-SUR-TOUVRE",
+    "date": "Décembre 2024",
+    "puissance": "6kwc",
+    "lat": 45.681265,
+    "lon": 0.232624,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MELLE",
+    "date": "Juillet 2023",
+    "puissance": "3kwc",
+    "lat": 46.217246,
+    "lon": -0.147866,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAUJON",
+    "date": "Septembre 2024",
+    "puissance": "3kwc",
+    "lat": 45.673704,
+    "lon": -0.9346,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COULON",
+    "date": "Février 2024",
+    "puissance": "6kwc",
+    "lat": 46.334077,
+    "lon": -0.578553,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "PONS",
+    "date": "Juin 2025",
+    "puissance": "6kwc",
+    "lat": 45.57794,
+    "lon": -0.562542,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COULON",
+    "date": "Août 2023",
+    "puissance": "6kwc",
+    "lat": 46.324895,
+    "lon": -0.592224,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SEGONZAC",
+    "date": "Janvier 2023",
+    "puissance": "6kwc",
+    "lat": 45.628635,
+    "lon": -0.210434,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MONTMORILLON",
+    "date": "Février 2023",
+    "puissance": "3kwc",
+    "lat": 46.42869,
+    "lon": 0.876568,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ANGOULÊME",
+    "date": "Décembre 2025",
+    "puissance": "9kwc",
+    "lat": 45.644944,
+    "lon": 0.16471,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "POITIERS",
+    "date": "Février 2024",
+    "puissance": "6kwc",
+    "lat": 46.590313,
+    "lon": 0.349457,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "RUFFEC",
+    "date": "Janvier 2026",
+    "puissance": "6kwc",
+    "lat": 46.0222,
+    "lon": 0.185109,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COZES",
+    "date": "Mars 2024",
+    "puissance": "6kwc",
+    "lat": 45.581693,
+    "lon": -0.827565,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JONZAC",
+    "date": "Décembre 2024",
+    "puissance": "6kwc",
+    "lat": 45.446005,
+    "lon": -0.443591,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "POITIERS",
+    "date": "Mars 2024",
+    "puissance": "9kwc",
+    "lat": 46.592294,
+    "lon": 0.333333,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MARANS",
+    "date": "Juillet 2025",
+    "puissance": "9kwc",
+    "lat": 46.313873,
+    "lon": -0.978068,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JONZAC",
+    "date": "Mars 2024",
+    "puissance": "7,5kwc",
+    "lat": 45.432816,
+    "lon": -0.431748,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COULON",
+    "date": "Mars 2025",
+    "puissance": "6kwc",
+    "lat": 46.328385,
+    "lon": -0.594891,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINTES",
+    "date": "Décembre 2025",
+    "puissance": "6kwc",
+    "lat": 45.745104,
+    "lon": -0.631515,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAINTES",
+    "date": "Octobre 2024",
+    "puissance": "9kwc",
+    "lat": 45.734988,
+    "lon": -0.629414,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "COGNAC",
+    "date": "Décembre 2025",
+    "puissance": "3kwc",
+    "lat": 45.686403,
+    "lon": -0.339773,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SURGÈRES",
+    "date": "Décembre 2023",
+    "puissance": "3kwc",
+    "lat": 46.119699,
+    "lon": -0.743967,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ROCHEFORT",
+    "date": "Mai 2023",
+    "puissance": "6kwc",
+    "lat": 45.943986,
+    "lon": -0.957367,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MELLE",
+    "date": "Avril 2025",
+    "puissance": "6kwc",
+    "lat": 46.237343,
+    "lon": -0.138767,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "GOND-PONTOUVRE",
+    "date": "Décembre 2024",
+    "puissance": "3kwc",
+    "lat": 45.674058,
+    "lon": 0.152144,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SEGONZAC",
+    "date": "Octobre 2024",
+    "puissance": "6kwc",
+    "lat": 45.629242,
+    "lon": -0.228509,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAUJON",
+    "date": "Février 2023",
+    "puissance": "9kwc",
+    "lat": 45.661827,
+    "lon": -0.912779,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "FONTENAY-LE-COMTE",
+    "date": "Août 2025",
+    "puissance": "7,5kwc",
+    "lat": 46.458889,
+    "lon": -0.798712,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SURGÈRES",
+    "date": "Avril 2024",
+    "puissance": "9kwc",
+    "lat": 46.095172,
+    "lon": -0.754294,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "JAUNAY-MARIGNY",
+    "date": "Novembre 2023",
+    "puissance": "6kwc",
+    "lat": 46.672458,
+    "lon": 0.378145,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "FRONTENAY-ROHAN-ROHAN",
+    "date": "Octobre 2025",
+    "puissance": "3kwc",
+    "lat": 46.256813,
+    "lon": -0.533276,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SEGONZAC",
+    "date": "Janvier 2026",
+    "puissance": "3kwc",
+    "lat": 45.616793,
+    "lon": -0.219662,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "AIRVAULT",
+    "date": "Janvier 2026",
+    "puissance": "6kwc",
+    "lat": 46.81725,
+    "lon": -0.120472,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "THOUARS",
+    "date": "Mai 2024",
+    "puissance": "6kwc",
+    "lat": 46.96972,
+    "lon": -0.216334,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "CIVRAY",
+    "date": "Juin 2023",
+    "puissance": "6kwc",
+    "lat": 46.134987,
+    "lon": 0.309341,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "SAUJON",
+    "date": "Mai 2024",
+    "puissance": "7,5kwc",
+    "lat": 45.675253,
+    "lon": -0.916571,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "LA COURONNE",
+    "date": "Avril 2025",
+    "puissance": "6kwc",
+    "lat": 45.611008,
+    "lon": 0.088611,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "BRESSUIRE",
+    "date": "Mars 2023",
+    "puissance": "6kwc",
+    "lat": 46.850897,
+    "lon": -0.495817,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "CHÂTEAUNEUF-SUR-CHARENTE",
+    "date": "Novembre 2023",
+    "puissance": "3kwc",
+    "lat": 45.599504,
+    "lon": -0.044828,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MESCHERS-SUR-GIRONDE",
+    "date": "Mars 2025",
+    "puissance": "9kwc",
+    "lat": 45.544881,
+    "lon": -0.95732,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ANGOULÊME",
+    "date": "Mai 2024",
+    "puissance": "7,5kwc",
+    "lat": 45.661667,
+    "lon": 0.166482,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "ROYAN",
+    "date": "Décembre 2023",
+    "puissance": "6kwc",
+    "lat": 45.621322,
+    "lon": -1.042453,
+    "type": "PV"
+  },
+  {
+    "nom": "",
+    "ville": "MARANS",
+    "date": "Octobre 2025",
+    "puissance": "",
+    "lat": 46.314694,
+    "lon": -1.006166,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "LUSIGNAN",
+    "date": "Février 2023",
+    "puissance": "",
+    "lat": 46.419201,
+    "lon": 0.116432,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "ARCHIAC",
+    "date": "Octobre 2025",
+    "puissance": "",
+    "lat": 45.52671,
+    "lon": -0.310734,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SURGÈRES",
+    "date": "Juin 2023",
+    "puissance": "",
+    "lat": 46.122088,
+    "lon": -0.753272,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "JAUNAY-MARIGNY",
+    "date": "Mai 2024",
+    "puissance": "",
+    "lat": 46.679831,
+    "lon": 0.394908,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "PARTHENAY",
+    "date": "Février 2024",
+    "puissance": "",
+    "lat": 46.639354,
+    "lon": -0.241995,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "NIORT",
+    "date": "Août 2025",
+    "puissance": "",
+    "lat": 46.324003,
+    "lon": -0.453618,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "PONS",
+    "date": "Juin 2025",
+    "puissance": "",
+    "lat": 45.581547,
+    "lon": -0.559224,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "BUXEROLLES",
+    "date": "Novembre 2025",
+    "puissance": "",
+    "lat": 46.588309,
+    "lon": 0.343323,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "MARANS",
+    "date": "Mai 2023",
+    "puissance": "",
+    "lat": 46.30962,
+    "lon": -0.978062,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "CHAUVIGNY",
+    "date": "Janvier 2024",
+    "puissance": "",
+    "lat": 46.563637,
+    "lon": 0.64026,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "ROYAN",
+    "date": "Juin 2023",
+    "puissance": "",
+    "lat": 45.618144,
+    "lon": -1.019389,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "CHAMPNIERS",
+    "date": "Avril 2025",
+    "puissance": "",
+    "lat": 45.712064,
+    "lon": 0.187286,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "LA COURONNE",
+    "date": "Août 2024",
+    "puissance": "",
+    "lat": 45.624494,
+    "lon": 0.094813,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "CHAUVIGNY",
+    "date": "Août 2023",
+    "puissance": "",
+    "lat": 46.576211,
+    "lon": 0.647173,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SURGÈRES",
+    "date": "Mai 2025",
+    "puissance": "",
+    "lat": 46.115824,
+    "lon": -0.763595,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "AIGREFEUILLE-D'AUNIS",
+    "date": "Juin 2024",
+    "puissance": "",
+    "lat": 46.097769,
+    "lon": -0.942121,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-BENOÎT",
+    "date": "Avril 2024",
+    "puissance": "",
+    "lat": 46.558364,
+    "lon": 0.342964,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SEGONZAC",
+    "date": "Novembre 2025",
+    "puissance": "",
+    "lat": 45.605324,
+    "lon": -0.231298,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-JEAN-D'ANGÉLY",
+    "date": "Février 2025",
+    "puissance": "",
+    "lat": 45.944497,
+    "lon": -0.518477,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SOYAUX",
+    "date": "Juillet 2023",
+    "puissance": "",
+    "lat": 45.650836,
+    "lon": 0.211361,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "ROYAN",
+    "date": "Janvier 2023",
+    "puissance": "",
+    "lat": 45.63276,
+    "lon": -1.024498,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "AIFFRES",
+    "date": "Septembre 2023",
+    "puissance": "",
+    "lat": 46.27025,
+    "lon": -0.437503,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "LUÇON",
+    "date": "Octobre 2023",
+    "puissance": "",
+    "lat": 46.452568,
+    "lon": -1.174526,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "CHÂTEAUNEUF-SUR-CHARENTE",
+    "date": "Août 2024",
+    "puissance": "",
+    "lat": 45.597905,
+    "lon": -0.049175,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "COGNAC",
+    "date": "Décembre 2025",
+    "puissance": "",
+    "lat": 45.699416,
+    "lon": -0.342004,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "MIGNALOUX-BEAUVOIR",
+    "date": "Septembre 2024",
+    "puissance": "",
+    "lat": 46.536752,
+    "lon": 0.393393,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "MARANS",
+    "date": "Janvier 2023",
+    "puissance": "",
+    "lat": 46.307628,
+    "lon": -0.9939,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "COGNAC",
+    "date": "Avril 2025",
+    "puissance": "",
+    "lat": 45.709467,
+    "lon": -0.337997,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "AIFFRES",
+    "date": "Septembre 2023",
+    "puissance": "",
+    "lat": 46.286284,
+    "lon": -0.430809,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "POITIERS",
+    "date": "Septembre 2025",
+    "puissance": "",
+    "lat": 46.579361,
+    "lon": 0.328545,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "PARTHENAY",
+    "date": "Août 2025",
+    "puissance": "",
+    "lat": 46.660246,
+    "lon": -0.261256,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "JAUNAY-MARIGNY",
+    "date": "Juin 2025",
+    "puissance": "",
+    "lat": 46.696413,
+    "lon": 0.387082,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "AIGREFEUILLE-D'AUNIS",
+    "date": "Avril 2023",
+    "puissance": "",
+    "lat": 46.123718,
+    "lon": -0.952697,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-YRIEIX-SUR-CHARENTE",
+    "date": "Août 2025",
+    "puissance": "",
+    "lat": 45.673652,
+    "lon": 0.118865,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "BRESSUIRE",
+    "date": "Janvier 2026",
+    "puissance": "",
+    "lat": 46.838261,
+    "lon": -0.479106,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "AIRVAULT",
+    "date": "Juin 2025",
+    "puissance": "",
+    "lat": 46.826442,
+    "lon": -0.132211,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "ROCHEFORT",
+    "date": "Avril 2025",
+    "puissance": "",
+    "lat": 45.938328,
+    "lon": -0.950229,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "MARANS",
+    "date": "Mars 2023",
+    "puissance": "",
+    "lat": 46.31636,
+    "lon": -1.00539,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SAUJON",
+    "date": "Avril 2024",
+    "puissance": "",
+    "lat": 45.678435,
+    "lon": -0.914816,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "COULON",
+    "date": "Mai 2025",
+    "puissance": "",
+    "lat": 46.336819,
+    "lon": -0.585609,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-MAIXENT-L'ÉCOLE",
+    "date": "Mai 2024",
+    "puissance": "",
+    "lat": 46.415029,
+    "lon": -0.193907,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-YRIEIX-SUR-CHARENTE",
+    "date": "Juillet 2024",
+    "puissance": "",
+    "lat": 45.689284,
+    "lon": 0.127076,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "COZES",
+    "date": "Septembre 2025",
+    "puissance": "",
+    "lat": 45.580757,
+    "lon": -0.829363,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "CHEF-BOUTONNE",
+    "date": "Juillet 2025",
+    "puissance": "",
+    "lat": 46.102285,
+    "lon": -0.06327,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SOYAUX",
+    "date": "Février 2023",
+    "puissance": "",
+    "lat": 45.656898,
+    "lon": 0.188535,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-JEAN-D'ANGÉLY",
+    "date": "Avril 2024",
+    "puissance": "",
+    "lat": 45.95989,
+    "lon": -0.527328,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "TONNAY-CHARENTE",
+    "date": "Juillet 2023",
+    "puissance": "",
+    "lat": 45.945449,
+    "lon": -0.888029,
+    "type": "PAC"
+  },
+  {
+    "nom": "",
+    "ville": "SAINT-MAIXENT-L'ÉCOLE",
+    "date": "Septembre 2025",
+    "puissance": "",
+    "lat": 46.423245,
+    "lon": -0.195413,
+    "type": "PAC"
   }
 ]
