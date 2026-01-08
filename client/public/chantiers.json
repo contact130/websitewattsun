@@ -22,8 +22,8 @@
     "ville": "FOURAS",
     "date": "Juin 2024",
     "puissance": "6kwc",
-    "lat": 45.9883689,
-    "lon": -1.0935837,
+    "lat": 45.983981,
+    "lon": -1.090915,
     "type": "PV"
   },
   {
@@ -400,8 +400,8 @@
     "ville": "MARENNES",
     "date": "Mars 2025",
     "puissance": "3kwc",
-    "lat": 45.8224965,
-    "lon": -1.112795,
+    "lat": 45.83011,
+    "lon": -1.11637,
     "type": "PV"
   },
   {
@@ -535,8 +535,8 @@
     "ville": "SAINT GILLES CROIX DE VIE",
     "date": "Octobre 2024",
     "puissance": "7kwc",
-    "lat": 46.692985,
-    "lon": -1.9254545,
+    "lat": 46.69256,
+    "lon": -1.933536,
     "type": "PV"
   },
   {
@@ -616,8 +616,8 @@
     "ville": "VILLEDOUX",
     "date": "Mai 2024",
     "puissance": "6kwc",
-    "lat": 46.241153,
-    "lon": -1.0682289,
+    "lat": 46.240834,
+    "lon": -1.048995,
     "type": "PV"
   },
   {
@@ -792,8 +792,8 @@
     "ville": "MARSILLY",
     "date": "Décembre 2023",
     "puissance": "3kwc",
-    "lat": 46.235599,
-    "lon": -1.147628,
+    "lat": 46.237555,
+    "lon": -1.147522,
     "type": "PV"
   },
   {
@@ -810,8 +810,8 @@
     "ville": "L'HOUMEAU",
     "date": "Juin 2023",
     "puissance": "6kwc",
-    "lat": 46.180903,
-    "lon": -1.181044,
+    "lat": 46.199302,
+    "lon": -1.17552,
     "type": "PV"
   },
   {
@@ -918,8 +918,8 @@
     "ville": "L'HOUMEAU",
     "date": "Janvier 2023",
     "puissance": "6kwc",
-    "lat": 46.201669,
-    "lon": -1.190458,
+    "lat": 46.189703,
+    "lon": -1.175122,
     "type": "PV"
   },
   {
@@ -954,8 +954,8 @@
     "ville": "MARSILLY",
     "date": "Juillet 2023",
     "puissance": "6kwc",
-    "lat": 46.235882,
-    "lon": -1.141232,
+    "lat": 46.238638,
+    "lon": -1.142274,
     "type": "PV"
   },
   {
@@ -963,8 +963,8 @@
     "ville": "MARSILLY",
     "date": "Mai 2024",
     "puissance": "3kwc",
-    "lat": 46.223927,
-    "lon": -1.158103,
+    "lat": 46.235686,
+    "lon": -1.140198,
     "type": "PV"
   },
   {
@@ -999,8 +999,8 @@
     "ville": "FOURAS",
     "date": "Avril 2025",
     "puissance": "6kwc",
-    "lat": 45.99299,
-    "lon": -1.085129,
+    "lat": 45.984371,
+    "lon": -1.093309,
     "type": "PV"
   },
   {
@@ -1044,8 +1044,8 @@
     "ville": "FOURAS",
     "date": "Mai 2025",
     "puissance": "9kwc",
-    "lat": 45.975921,
-    "lon": -1.091056,
+    "lat": 45.988697,
+    "lon": -1.089934,
     "type": "PV"
   },
   {
@@ -1161,8 +1161,8 @@
     "ville": "MARSILLY",
     "date": "Juin 2025",
     "puissance": "9kwc",
-    "lat": 46.233241,
-    "lon": -1.156509,
+    "lat": 46.237763,
+    "lon": -1.140787,
     "type": "PV"
   },
   {
@@ -1593,8 +1593,8 @@
     "ville": "MARSILLY",
     "date": "Février 2023",
     "puissance": "6kwc",
-    "lat": 46.236344,
-    "lon": -1.146182,
+    "lat": 46.231077,
+    "lon": -1.139962,
     "type": "PV"
   },
   {
@@ -1746,8 +1746,8 @@
     "ville": "CHARRON",
     "date": "Novembre 2023",
     "puissance": "9kwc",
-    "lat": 46.306939,
-    "lon": -1.094163,
+    "lat": 46.297619,
+    "lon": -1.102239,
     "type": "PV"
   },
   {
@@ -1926,8 +1926,8 @@
     "ville": "CHARRON",
     "date": "Juillet 2025",
     "puissance": "",
-    "lat": 46.295397,
-    "lon": -1.094071,
+    "lat": 46.299802,
+    "lon": -1.101862,
     "type": "PAC"
   },
   {
@@ -1962,8 +1962,8 @@
     "ville": "RIVEDOUX-PLAGE",
     "date": "Février 2024",
     "puissance": "",
-    "lat": 46.166534,
-    "lon": -1.266932,
+    "lat": 46.165259,
+    "lon": -1.266292,
     "type": "PAC"
   },
   {
@@ -2025,8 +2025,8 @@
     "ville": "RIVEDOUX-PLAGE",
     "date": "Septembre 2024",
     "puissance": "",
-    "lat": 46.150978,
-    "lon": -1.257218,
+    "lat": 46.162299,
+    "lon": -1.278783,
     "type": "PAC"
   },
   {
@@ -2043,8 +2043,8 @@
     "ville": "MARSILLY",
     "date": "Novembre 2023",
     "puissance": "",
-    "lat": 46.23138,
-    "lon": -1.136198,
+    "lat": 46.236263,
+    "lon": -1.145375,
     "type": "PAC"
   },
   {
@@ -2061,8 +2061,8 @@
     "ville": "MARSILLY",
     "date": "Novembre 2023",
     "puissance": "",
-    "lat": 46.237951,
-    "lon": -1.152348,
+    "lat": 46.228285,
+    "lon": -1.14236,
     "type": "PAC"
   },
   {
@@ -2079,8 +2079,8 @@
     "ville": "FOURAS",
     "date": "Janvier 2025",
     "puissance": "",
-    "lat": 45.976895,
-    "lon": -1.086333,
+    "lat": 45.989908,
+    "lon": -1.099655,
     "type": "PAC"
   },
   {
@@ -2223,8 +2223,8 @@
     "ville": "FOURAS",
     "date": "Novembre 2023",
     "puissance": "",
-    "lat": 45.975513,
-    "lon": -1.108134,
+    "lat": 45.979155,
+    "lon": -1.099925,
     "type": "PAC"
   },
   {
@@ -2322,8 +2322,8 @@
     "ville": "RIVEDOUX-PLAGE",
     "date": "Janvier 2026",
     "puissance": "",
-    "lat": 46.148073,
-    "lon": -1.262557,
+    "lat": 46.159065,
+    "lon": -1.270904,
     "type": "PAC"
   },
   {
@@ -2727,8 +2727,8 @@
     "ville": "NIEUL-SUR-MER",
     "date": "Mars 2024",
     "puissance": "",
-    "lat": 46.220467,
-    "lon": -1.174388,
+    "lat": 46.203931,
+    "lon": -1.169948,
     "type": "VMC"
   },
   {
@@ -2745,8 +2745,8 @@
     "ville": "CHARRON",
     "date": "Février 2024",
     "puissance": "",
-    "lat": 46.305008,
-    "lon": -1.105651,
+    "lat": 46.294462,
+    "lon": -1.111654,
     "type": "VMC"
   },
   {
@@ -2979,8 +2979,8 @@
     "ville": "MARSILLY",
     "date": "Janvier 2026",
     "puissance": "",
-    "lat": 46.245053,
-    "lon": -1.152116,
+    "lat": 46.233086,
+    "lon": -1.152258,
     "type": "VMC"
   },
   {
@@ -3024,8 +3024,8 @@
     "ville": "FOURAS",
     "date": "Juin 2024",
     "puissance": "",
-    "lat": 45.976356,
-    "lon": -1.080944,
+    "lat": 45.988856,
+    "lon": -1.096948,
     "type": "VMC"
   },
   {
@@ -3186,8 +3186,8 @@
     "ville": "FOURAS",
     "date": "Mars 2024",
     "puissance": "",
-    "lat": 45.970219,
-    "lon": -1.097766,
+    "lat": 45.979206,
+    "lon": -1.099464,
     "type": "ELEC"
   },
   {
@@ -3438,8 +3438,8 @@
     "ville": "FOURAS",
     "date": "Avril 2025",
     "puissance": "",
-    "lat": 45.993313,
-    "lon": -1.088885,
+    "lat": 45.988956,
+    "lon": -1.096754,
     "type": "ELEC"
   },
   {
@@ -3465,8 +3465,8 @@
     "ville": "MARSILLY",
     "date": "Décembre 2023",
     "puissance": "",
-    "lat": 46.224476,
-    "lon": -1.14064,
+    "lat": 46.228355,
+    "lon": -1.147299,
     "type": "ELEC"
   },
   {
@@ -3636,8 +3636,8 @@
     "ville": "MARSILLY",
     "date": "Août 2024",
     "puissance": "15kwh",
-    "lat": 46.234674,
-    "lon": -1.146236,
+    "lat": 46.241055,
+    "lon": -1.138265,
     "type": "BAT"
   },
   {
@@ -3771,8 +3771,8 @@
     "ville": "CHARRON",
     "date": "Octobre 2024",
     "puissance": "10kwh",
-    "lat": 46.306355,
-    "lon": -1.095925,
+    "lat": 46.286546,
+    "lon": -1.105447,
     "type": "BAT"
   },
   {
@@ -3852,8 +3852,8 @@
     "ville": "MARSILLY",
     "date": "Août 2025",
     "puissance": "5kwh",
-    "lat": 46.233798,
-    "lon": -1.146114,
+    "lat": 46.237493,
+    "lon": -1.13939,
     "type": "BAT"
   },
   {
@@ -3861,8 +3861,8 @@
     "ville": "MARSILLY",
     "date": "Octobre 2023",
     "puissance": "20kwh",
-    "lat": 46.233999,
-    "lon": -1.139959,
+    "lat": 46.228523,
+    "lon": -1.140135,
     "type": "BAT"
   },
   {
@@ -3969,8 +3969,8 @@
     "ville": "MARSILLY",
     "date": "Avril 2024",
     "puissance": "15kwh",
-    "lat": 46.232773,
-    "lon": -1.158202,
+    "lat": 46.239138,
+    "lon": -1.153559,
     "type": "BAT"
   },
   {
@@ -4014,8 +4014,8 @@
     "ville": "L'HOUMEAU",
     "date": "Novembre 2023",
     "puissance": "10kwh",
-    "lat": 46.179084,
-    "lon": -1.180598,
+    "lat": 46.191789,
+    "lon": -1.17876,
     "type": "BAT"
   },
   {
@@ -4176,8 +4176,8 @@
     "ville": "MARSILLY",
     "date": "Octobre 2025",
     "puissance": "7kw",
-    "lat": 46.236173,
-    "lon": -1.148193,
+    "lat": 46.233118,
+    "lon": -1.146148,
     "type": "BORNE"
   },
   {
@@ -4203,8 +4203,8 @@
     "ville": "FOURAS",
     "date": "Juin 2024",
     "puissance": "22kw",
-    "lat": 45.991456,
-    "lon": -1.086019,
+    "lat": 45.985595,
+    "lon": -1.094815,
     "type": "BORNE"
   },
   {
@@ -4347,8 +4347,8 @@
     "ville": "MARSILLY",
     "date": "Décembre 2023",
     "puissance": "22kw",
-    "lat": 46.223543,
-    "lon": -1.159609,
+    "lat": 46.239068,
+    "lon": -1.143314,
     "type": "BORNE"
   },
   {
@@ -4428,8 +4428,8 @@
     "ville": "CHARRON",
     "date": "Janvier 2026",
     "puissance": "11kw",
-    "lat": 46.30495,
-    "lon": -1.094517,
+    "lat": 46.294445,
+    "lon": -1.101184,
     "type": "BORNE"
   },
   {
@@ -4482,8 +4482,8 @@
     "ville": "MARSILLY",
     "date": "Août 2023",
     "puissance": "7kw",
-    "lat": 46.23784,
-    "lon": -1.142477,
+    "lat": 46.228048,
+    "lon": -1.146352,
     "type": "BORNE"
   },
   {
