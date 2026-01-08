@@ -662,7 +662,7 @@
     "date": "Décembre 2024",
     "lat": 46.2,
     "lon": -0.95,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "M François Badeau",
@@ -670,7 +670,7 @@
     "date": "Décembre 2024",
     "lat": 46.2,
     "lon": -0.95,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "M Christophe Geneau",
@@ -678,7 +678,7 @@
     "date": "Janvier 2025",
     "lat": 45.9839283,
     "lon": -0.9584142,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "M Mathéo Bouhier",
@@ -694,7 +694,7 @@
     "date": "Février 2025",
     "lat": 46.1927243,
     "lon": -0.9645614,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "M\nMise",
@@ -710,7 +710,7 @@
     "date": "Mars 2025",
     "lat": 46.4386111,
     "lon": -0.9486111,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "M Macodou Ndiaye",
@@ -718,7 +718,7 @@
     "date": "Avril 2025",
     "lat": 46.68,
     "lon": -0.83,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "M Mr Et",
@@ -726,7 +726,7 @@
     "date": "Juin 2025",
     "lat": 46.0738633,
     "lon": -1.0903991,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "M Antony Taveneau",
@@ -734,7 +734,7 @@
     "date": "Juin 2025",
     "lat": 46.309113,
     "lon": -0.8336324,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "M Antony Taveneau",
@@ -758,7 +758,7 @@
     "date": "Juillet 2024",
     "lat": 46.1416,
     "lon": -0.8236,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3080,7 +3080,7 @@
     "puissance": "",
     "lat": 46.179422,
     "lon": -1.17626,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3089,7 +3089,7 @@
     "puissance": "",
     "lat": 45.956625,
     "lon": -0.905178,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3098,7 +3098,7 @@
     "puissance": "",
     "lat": 46.043314,
     "lon": -0.901259,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3107,7 +3107,7 @@
     "puissance": "",
     "lat": 46.397048,
     "lon": -1.030285,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3116,7 +3116,7 @@
     "puissance": "",
     "lat": 45.762216,
     "lon": -0.514007,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3125,7 +3125,7 @@
     "puissance": "",
     "lat": 45.929544,
     "lon": -0.962219,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3134,7 +3134,7 @@
     "puissance": "",
     "lat": 46.066783,
     "lon": -0.822411,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3143,7 +3143,7 @@
     "puissance": "",
     "lat": 46.140126,
     "lon": -1.089819,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3152,7 +3152,7 @@
     "puissance": "",
     "lat": 45.868969,
     "lon": -0.96675,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3161,7 +3161,7 @@
     "puissance": "",
     "lat": 46.070733,
     "lon": -0.898981,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3170,7 +3170,7 @@
     "puissance": "",
     "lat": 45.880196,
     "lon": -0.97291,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3179,7 +3179,7 @@
     "puissance": "",
     "lat": 45.76044,
     "lon": -0.646714,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3188,7 +3188,7 @@
     "puissance": "",
     "lat": 45.979206,
     "lon": -1.099464,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3197,7 +3197,7 @@
     "puissance": "",
     "lat": 45.938817,
     "lon": -0.899882,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3206,7 +3206,7 @@
     "puissance": "",
     "lat": 46.214267,
     "lon": -1.363712,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3215,7 +3215,7 @@
     "puissance": "",
     "lat": 46.17505,
     "lon": -1.152192,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3224,7 +3224,7 @@
     "puissance": "",
     "lat": 46.446708,
     "lon": -1.163112,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3233,7 +3233,7 @@
     "puissance": "",
     "lat": 46.025946,
     "lon": -1.061275,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3242,7 +3242,7 @@
     "puissance": "",
     "lat": 46.073843,
     "lon": -1.096756,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3251,7 +3251,7 @@
     "puissance": "",
     "lat": 46.46576,
     "lon": -1.156342,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3260,7 +3260,7 @@
     "puissance": "",
     "lat": 46.115013,
     "lon": -0.74777,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3269,7 +3269,7 @@
     "puissance": "",
     "lat": 45.741854,
     "lon": -0.572277,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3278,7 +3278,7 @@
     "puissance": "",
     "lat": 45.734934,
     "lon": -0.621593,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3287,7 +3287,7 @@
     "puissance": "",
     "lat": 46.10661,
     "lon": -0.766777,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3296,7 +3296,7 @@
     "puissance": "",
     "lat": 46.099721,
     "lon": -0.944137,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3305,7 +3305,7 @@
     "puissance": "",
     "lat": 45.95317,
     "lon": -1.300344,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3314,7 +3314,7 @@
     "puissance": "",
     "lat": 46.024926,
     "lon": -0.835402,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3323,7 +3323,7 @@
     "puissance": "",
     "lat": 45.944706,
     "lon": -0.902027,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3332,7 +3332,7 @@
     "puissance": "",
     "lat": 46.235238,
     "lon": -0.9371,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3341,7 +3341,7 @@
     "puissance": "",
     "lat": 45.939032,
     "lon": -1.303643,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3350,7 +3350,7 @@
     "puissance": "",
     "lat": 46.212281,
     "lon": -1.170952,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3359,7 +3359,7 @@
     "puissance": "",
     "lat": 46.135206,
     "lon": -0.889574,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3368,7 +3368,7 @@
     "puissance": "",
     "lat": 45.878845,
     "lon": -0.979424,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3377,7 +3377,7 @@
     "puissance": "",
     "lat": 46.197488,
     "lon": -1.33153,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3386,7 +3386,7 @@
     "puissance": "",
     "lat": 46.319376,
     "lon": -0.978354,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3395,7 +3395,7 @@
     "puissance": "",
     "lat": 46.151366,
     "lon": -0.86627,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3404,7 +3404,7 @@
     "puissance": "",
     "lat": 45.757311,
     "lon": -0.624288,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3413,7 +3413,7 @@
     "puissance": "",
     "lat": 46.116171,
     "lon": -0.945205,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3422,7 +3422,7 @@
     "puissance": "",
     "lat": 46.126675,
     "lon": -0.927676,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3431,7 +3431,7 @@
     "puissance": "",
     "lat": 46.098102,
     "lon": -0.945449,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3440,7 +3440,7 @@
     "puissance": "",
     "lat": 45.988956,
     "lon": -1.096754,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3449,7 +3449,7 @@
     "puissance": "",
     "lat": 46.1225,
     "lon": -0.83656,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3458,7 +3458,7 @@
     "puissance": "",
     "lat": 46.057505,
     "lon": -0.81664,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3467,7 +3467,7 @@
     "puissance": "",
     "lat": 46.228355,
     "lon": -1.147299,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3476,7 +3476,7 @@
     "puissance": "",
     "lat": 46.469158,
     "lon": -0.805028,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3485,7 +3485,7 @@
     "puissance": "",
     "lat": 46.113147,
     "lon": -0.756216,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3494,7 +3494,7 @@
     "puissance": "",
     "lat": 46.111411,
     "lon": -0.768721,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3503,7 +3503,7 @@
     "puissance": "",
     "lat": 46.449475,
     "lon": -1.158442,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3512,7 +3512,7 @@
     "puissance": "",
     "lat": 46.120751,
     "lon": -0.939702,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3521,7 +3521,7 @@
     "puissance": "",
     "lat": 45.899481,
     "lon": -0.933544,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3530,7 +3530,7 @@
     "puissance": "",
     "lat": 46.468963,
     "lon": -0.801343,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3539,7 +3539,7 @@
     "puissance": "",
     "lat": 45.925211,
     "lon": -0.949659,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3548,7 +3548,7 @@
     "puissance": "",
     "lat": 45.940356,
     "lon": -0.943572,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3557,7 +3557,7 @@
     "puissance": "",
     "lat": 45.955213,
     "lon": -0.891787,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3566,7 +3566,7 @@
     "puissance": "",
     "lat": 46.458611,
     "lon": -1.170028,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3575,7 +3575,7 @@
     "puissance": "",
     "lat": 46.102381,
     "lon": -0.924493,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -3584,7 +3584,7 @@
     "puissance": "15kwh",
     "lat": 45.900128,
     "lon": -0.92511,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3593,7 +3593,7 @@
     "puissance": "10kwh",
     "lat": 45.733133,
     "lon": -0.624063,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3602,7 +3602,7 @@
     "puissance": "5kwh",
     "lat": 46.202683,
     "lon": -1.176917,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3611,7 +3611,7 @@
     "puissance": "10kwh",
     "lat": 46.1026,
     "lon": -0.921545,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3620,7 +3620,7 @@
     "puissance": "10kwh",
     "lat": 46.069521,
     "lon": -1.020526,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3629,7 +3629,7 @@
     "puissance": "15kwh",
     "lat": 45.869794,
     "lon": -1.196583,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3638,7 +3638,7 @@
     "puissance": "15kwh",
     "lat": 46.241055,
     "lon": -1.138265,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3647,7 +3647,7 @@
     "puissance": "10kwh",
     "lat": 46.106427,
     "lon": -1.10477,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3656,7 +3656,7 @@
     "puissance": "10kwh",
     "lat": 46.391022,
     "lon": -0.945175,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3665,7 +3665,7 @@
     "puissance": "10kwh",
     "lat": 45.741664,
     "lon": -0.628579,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3674,7 +3674,7 @@
     "puissance": "15kwh",
     "lat": 45.952835,
     "lon": -0.966629,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3683,7 +3683,7 @@
     "puissance": "15kwh",
     "lat": 46.137482,
     "lon": -1.081707,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3692,7 +3692,7 @@
     "puissance": "5kwh",
     "lat": 45.93764,
     "lon": -0.953316,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3701,7 +3701,7 @@
     "puissance": "10kwh",
     "lat": 45.951853,
     "lon": -0.882894,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3710,7 +3710,7 @@
     "puissance": "5kwh",
     "lat": 46.08026,
     "lon": -0.903709,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3719,7 +3719,7 @@
     "puissance": "10kwh",
     "lat": 46.020118,
     "lon": -0.840948,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3728,7 +3728,7 @@
     "puissance": "15kwh",
     "lat": 45.943932,
     "lon": -0.895376,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3737,7 +3737,7 @@
     "puissance": "10kwh",
     "lat": 46.142432,
     "lon": -1.078146,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3746,7 +3746,7 @@
     "puissance": "10kwh",
     "lat": 46.245822,
     "lon": -0.809603,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3755,7 +3755,7 @@
     "puissance": "15kwh",
     "lat": 46.14585,
     "lon": -1.083235,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3764,7 +3764,7 @@
     "puissance": "20kwh",
     "lat": 46.098486,
     "lon": -0.753049,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3773,7 +3773,7 @@
     "puissance": "10kwh",
     "lat": 46.286546,
     "lon": -1.105447,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3782,7 +3782,7 @@
     "puissance": "5kwh",
     "lat": 45.731118,
     "lon": -0.571989,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3791,7 +3791,7 @@
     "puissance": "10kwh",
     "lat": 46.111028,
     "lon": -1.106457,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3800,7 +3800,7 @@
     "puissance": "10kwh",
     "lat": 46.021018,
     "lon": -1.057038,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3809,7 +3809,7 @@
     "puissance": "5kwh",
     "lat": 45.936832,
     "lon": -1.297011,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3818,7 +3818,7 @@
     "puissance": "15kwh",
     "lat": 45.913667,
     "lon": -0.925457,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3827,7 +3827,7 @@
     "puissance": "5kwh",
     "lat": 46.082866,
     "lon": -1.034388,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3836,7 +3836,7 @@
     "puissance": "10kwh",
     "lat": 46.195214,
     "lon": -1.152519,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3845,7 +3845,7 @@
     "puissance": "15kwh",
     "lat": 46.160742,
     "lon": -1.099554,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3854,7 +3854,7 @@
     "puissance": "5kwh",
     "lat": 46.237493,
     "lon": -1.13939,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3863,7 +3863,7 @@
     "puissance": "20kwh",
     "lat": 46.228523,
     "lon": -1.140135,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3872,7 +3872,7 @@
     "puissance": "10kwh",
     "lat": 46.175245,
     "lon": -1.159458,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3881,7 +3881,7 @@
     "puissance": "10kwh",
     "lat": 46.035108,
     "lon": -0.847957,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3890,7 +3890,7 @@
     "puissance": "10kwh",
     "lat": 45.95014,
     "lon": -0.884279,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3899,7 +3899,7 @@
     "puissance": "5kwh",
     "lat": 46.308162,
     "lon": -0.991714,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3908,7 +3908,7 @@
     "puissance": "10kwh",
     "lat": 46.100774,
     "lon": -1.105505,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3917,7 +3917,7 @@
     "puissance": "10kwh",
     "lat": 45.934542,
     "lon": -0.530974,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3926,7 +3926,7 @@
     "puissance": "10kwh",
     "lat": 46.269792,
     "lon": -1.123403,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3935,7 +3935,7 @@
     "puissance": "5kwh",
     "lat": 46.235565,
     "lon": -0.823343,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3944,7 +3944,7 @@
     "puissance": "5kwh",
     "lat": 46.112613,
     "lon": -0.9535,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3953,7 +3953,7 @@
     "puissance": "5kwh",
     "lat": 46.31886,
     "lon": -0.979025,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3962,7 +3962,7 @@
     "puissance": "15kwh",
     "lat": 46.097008,
     "lon": -1.106637,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3971,7 +3971,7 @@
     "puissance": "15kwh",
     "lat": 46.239138,
     "lon": -1.153559,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3980,7 +3980,7 @@
     "puissance": "5kwh",
     "lat": 46.466403,
     "lon": -1.154084,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3989,7 +3989,7 @@
     "puissance": "5kwh",
     "lat": 46.557738,
     "lon": -1.054065,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -3998,7 +3998,7 @@
     "puissance": "15kwh",
     "lat": 46.142872,
     "lon": -1.080986,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4007,7 +4007,7 @@
     "puissance": "10kwh",
     "lat": 45.957389,
     "lon": -0.946781,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4016,7 +4016,7 @@
     "puissance": "10kwh",
     "lat": 46.191789,
     "lon": -1.17876,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4025,7 +4025,7 @@
     "puissance": "10kwh",
     "lat": 46.164732,
     "lon": -1.135381,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4034,7 +4034,7 @@
     "puissance": "5kwh",
     "lat": 46.206382,
     "lon": -1.51971,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4043,7 +4043,7 @@
     "puissance": "10kwh",
     "lat": 46.185798,
     "lon": -0.817566,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4052,7 +4052,7 @@
     "puissance": "5kwh",
     "lat": 45.934241,
     "lon": -0.880808,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4061,7 +4061,7 @@
     "puissance": "15kwh",
     "lat": 46.110152,
     "lon": -0.856705,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4070,7 +4070,7 @@
     "puissance": "20kwh",
     "lat": 46.152787,
     "lon": -1.134634,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4079,7 +4079,7 @@
     "puissance": "5kwh",
     "lat": 46.134046,
     "lon": -0.857874,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4088,7 +4088,7 @@
     "puissance": "15kwh",
     "lat": 46.301909,
     "lon": -0.97882,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4097,7 +4097,7 @@
     "puissance": "5kwh",
     "lat": 45.932948,
     "lon": -0.5218,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4106,7 +4106,7 @@
     "puissance": "20kwh",
     "lat": 45.943262,
     "lon": -1.307313,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4115,7 +4115,7 @@
     "puissance": "10kwh",
     "lat": 46.437626,
     "lon": -1.177738,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4124,7 +4124,7 @@
     "puissance": "10kwh",
     "lat": 46.195615,
     "lon": -1.33303,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4133,7 +4133,7 @@
     "puissance": "5kwh",
     "lat": 45.948942,
     "lon": -1.307601,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4142,7 +4142,7 @@
     "puissance": "5kwh",
     "lat": 46.058815,
     "lon": -1.093942,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4151,7 +4151,7 @@
     "puissance": "10kwh",
     "lat": 45.897504,
     "lon": -0.926791,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4160,7 +4160,7 @@
     "puissance": "5kwh",
     "lat": 46.388209,
     "lon": -0.968813,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4169,7 +4169,7 @@
     "puissance": "7kw",
     "lat": 46.14432,
     "lon": -1.077413,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4178,7 +4178,7 @@
     "puissance": "7kw",
     "lat": 46.233118,
     "lon": -1.146148,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4187,7 +4187,7 @@
     "puissance": "11kw",
     "lat": 45.7308,
     "lon": -0.624825,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4196,7 +4196,7 @@
     "puissance": "11kw",
     "lat": 46.225749,
     "lon": -0.933023,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4205,7 +4205,7 @@
     "puissance": "22kw",
     "lat": 45.985595,
     "lon": -1.094815,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4214,7 +4214,7 @@
     "puissance": "7kw",
     "lat": 45.945668,
     "lon": -1.305848,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4223,7 +4223,7 @@
     "puissance": "7kw",
     "lat": 46.106316,
     "lon": -1.10236,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4232,7 +4232,7 @@
     "puissance": "7kw",
     "lat": 46.193158,
     "lon": -1.152627,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4241,7 +4241,7 @@
     "puissance": "7kw",
     "lat": 46.094728,
     "lon": -0.902546,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4250,7 +4250,7 @@
     "puissance": "7kw",
     "lat": 46.184884,
     "lon": -0.817914,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4259,7 +4259,7 @@
     "puissance": "22kw",
     "lat": 46.57044,
     "lon": -1.059047,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4268,7 +4268,7 @@
     "puissance": "7kw",
     "lat": 45.953012,
     "lon": -1.314551,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4277,7 +4277,7 @@
     "puissance": "7kw",
     "lat": 46.209861,
     "lon": -1.521106,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4286,7 +4286,7 @@
     "puissance": "22kw",
     "lat": 46.246893,
     "lon": -0.80795,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4295,7 +4295,7 @@
     "puissance": "7kw",
     "lat": 46.105324,
     "lon": -0.925072,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4304,7 +4304,7 @@
     "puissance": "11kw",
     "lat": 45.89103,
     "lon": -1.21576,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4313,7 +4313,7 @@
     "puissance": "7kw",
     "lat": 46.30751,
     "lon": -0.989413,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4322,7 +4322,7 @@
     "puissance": "7kw",
     "lat": 46.022882,
     "lon": -1.056742,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4331,7 +4331,7 @@
     "puissance": "7kw",
     "lat": 46.154,
     "lon": -1.10088,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4340,7 +4340,7 @@
     "puissance": "11kw",
     "lat": 45.935736,
     "lon": -1.313409,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4349,7 +4349,7 @@
     "puissance": "22kw",
     "lat": 46.239068,
     "lon": -1.143314,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4358,7 +4358,7 @@
     "puissance": "11kw",
     "lat": 46.248376,
     "lon": -1.127435,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4367,7 +4367,7 @@
     "puissance": "11kw",
     "lat": 46.02864,
     "lon": -0.814184,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4376,7 +4376,7 @@
     "puissance": "7kw",
     "lat": 46.059085,
     "lon": -1.092689,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4385,7 +4385,7 @@
     "puissance": "7kw",
     "lat": 46.109203,
     "lon": -0.767701,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4394,7 +4394,7 @@
     "puissance": "22kw",
     "lat": 45.760622,
     "lon": -0.6451,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4403,7 +4403,7 @@
     "puissance": "22kw",
     "lat": 46.259795,
     "lon": -0.816334,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4412,7 +4412,7 @@
     "puissance": "7kw",
     "lat": 46.153261,
     "lon": -1.083711,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4421,7 +4421,7 @@
     "puissance": "7kw",
     "lat": 46.188381,
     "lon": -1.175902,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4430,7 +4430,7 @@
     "puissance": "11kw",
     "lat": 46.294445,
     "lon": -1.101184,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4439,7 +4439,7 @@
     "puissance": "22kw",
     "lat": 46.146852,
     "lon": -1.085847,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4448,7 +4448,7 @@
     "puissance": "22kw",
     "lat": 46.020646,
     "lon": -1.052302,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4457,7 +4457,7 @@
     "puissance": "11kw",
     "lat": 46.363481,
     "lon": -0.966208,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4466,7 +4466,7 @@
     "puissance": "7kw",
     "lat": 46.192671,
     "lon": -1.169299,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4475,7 +4475,7 @@
     "puissance": "7kw",
     "lat": 46.31835,
     "lon": -0.977427,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4484,7 +4484,7 @@
     "puissance": "7kw",
     "lat": 46.228048,
     "lon": -1.146352,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4493,7 +4493,7 @@
     "puissance": "11kw",
     "lat": 45.872782,
     "lon": -1.197569,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4502,7 +4502,7 @@
     "puissance": "7kw",
     "lat": 45.950938,
     "lon": -0.883234,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4511,7 +4511,7 @@
     "puissance": "7kw",
     "lat": 45.859737,
     "lon": -0.990845,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4520,7 +4520,7 @@
     "puissance": "11kw",
     "lat": 45.8115,
     "lon": -0.453101,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4529,7 +4529,7 @@
     "puissance": "11kw",
     "lat": 46.201731,
     "lon": -1.169621,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4538,7 +4538,7 @@
     "puissance": "11kw",
     "lat": 46.155145,
     "lon": -1.134712,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4547,7 +4547,7 @@
     "puissance": "7kw",
     "lat": 45.937353,
     "lon": -1.298372,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4556,7 +4556,7 @@
     "puissance": "7kw",
     "lat": 45.711573,
     "lon": -0.490951,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -4844,7 +4844,7 @@
     "puissance": "",
     "lat": 45.743806,
     "lon": -0.628814,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4853,7 +4853,7 @@
     "puissance": "",
     "lat": 46.073863,
     "lon": -1.08401,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4862,7 +4862,7 @@
     "puissance": "",
     "lat": 46.197937,
     "lon": -1.171606,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4871,7 +4871,7 @@
     "puissance": "",
     "lat": 46.180814,
     "lon": -1.115024,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4880,7 +4880,7 @@
     "puissance": "",
     "lat": 45.947993,
     "lon": -0.955885,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4889,7 +4889,7 @@
     "puissance": "",
     "lat": 46.111868,
     "lon": -0.935601,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4898,7 +4898,7 @@
     "puissance": "",
     "lat": 46.072527,
     "lon": -1.024403,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4907,7 +4907,7 @@
     "puissance": "",
     "lat": 46.079891,
     "lon": -1.089126,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4916,7 +4916,7 @@
     "puissance": "",
     "lat": 46.106328,
     "lon": -1.008238,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4925,7 +4925,7 @@
     "puissance": "",
     "lat": 45.946419,
     "lon": -0.958633,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4934,7 +4934,7 @@
     "puissance": "",
     "lat": 46.113055,
     "lon": -0.753587,
-    "type": "ELEC"
+    "type": "Electricite"
   },
   {
     "nom": "",
@@ -4943,7 +4943,7 @@
     "puissance": "10kwh",
     "lat": 46.194868,
     "lon": -1.154456,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4952,7 +4952,7 @@
     "puissance": "15kwh",
     "lat": 46.184143,
     "lon": -1.067097,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4961,7 +4961,7 @@
     "puissance": "5kwh",
     "lat": 45.671293,
     "lon": -1.012713,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4970,7 +4970,7 @@
     "puissance": "10kwh",
     "lat": 46.490923,
     "lon": -1.423897,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4979,7 +4979,7 @@
     "puissance": "20kwh",
     "lat": 45.950239,
     "lon": -0.963739,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4988,7 +4988,7 @@
     "puissance": "5kwh",
     "lat": 45.965174,
     "lon": -0.887629,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -4997,7 +4997,7 @@
     "puissance": "10kwh",
     "lat": 45.327196,
     "lon": -0.194356,
-    "type": "BAT"
+    "type": "Batteries"
   },
   {
     "nom": "",
@@ -5006,7 +5006,7 @@
     "puissance": "7kw",
     "lat": 45.945402,
     "lon": -0.895867,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -5015,7 +5015,7 @@
     "puissance": "7kw",
     "lat": 45.577659,
     "lon": -0.447278,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -5024,7 +5024,7 @@
     "puissance": "7kw",
     "lat": 46.26696,
     "lon": -1.121945,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -5033,7 +5033,7 @@
     "puissance": "11kw",
     "lat": 46.138135,
     "lon": -1.081289,
-    "type": "BORNE"
+    "type": "Bornes"
   },
   {
     "nom": "",
@@ -5042,6 +5042,6 @@
     "puissance": "11kw",
     "lat": 46.208684,
     "lon": -1.519771,
-    "type": "BORNE"
+    "type": "Bornes"
   }
 ]
