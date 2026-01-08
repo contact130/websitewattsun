@@ -27,15 +27,6 @@
     "type": "PV"
   },
   {
-    "nom": "BARTOUIL CAPUCINE",
-    "ville": "LA ROCHELLE",
-    "date": "Février 2024",
-    "puissance": "3kwc",
-    "lat": 46.159732,
-    "lon": -1.1515951,
-    "type": "PV"
-  },
-  {
     "nom": "BARTOUX BRIGITTE",
     "ville": "DOMPIERRE SUR MER",
     "date": "Novembre 2024",
@@ -72,15 +63,6 @@
     "type": "PV"
   },
   {
-    "nom": "BILLON GERARD",
-    "ville": "LA ROCHELLE",
-    "date": "Avril 2024",
-    "puissance": "6kwc",
-    "lat": 46.159732,
-    "lon": -1.1515951,
-    "type": "PV"
-  },
-  {
     "nom": "BOUILLAUD MIKAEL",
     "ville": "L'ILE D'ELLE",
     "date": "Février 2025",
@@ -105,15 +87,6 @@
     "puissance": "3kwc",
     "lat": 46.4706005,
     "lon": -0.6656039,
-    "type": "PV"
-  },
-  {
-    "nom": "BRAQUEHAIS LAURENT",
-    "ville": "LA ROCHELLE",
-    "date": "Octobre 2024",
-    "puissance": "3kwc",
-    "lat": 46.159732,
-    "lon": -1.1515951,
     "type": "PV"
   },
   {
@@ -414,15 +387,6 @@
     "type": "PV"
   },
   {
-    "nom": "LIGEN MATHILDE",
-    "ville": "LA ROCHELLE",
-    "date": "Octobre 2024",
-    "puissance": "3kwc",
-    "lat": 46.159732,
-    "lon": -1.1515951,
-    "type": "PV"
-  },
-  {
     "nom": "LISSENKO DANIEL",
     "ville": "LUÇON",
     "date": "",
@@ -717,14 +681,6 @@
     "type": "Electricite"
   },
   {
-    "nom": "M Mathlide",
-    "ville": "LA ROCHELLE",
-    "date": "Février 2025",
-    "lat": 46.159732,
-    "lon": -1.1515951,
-    "type": "Bornes"
-  },
-  {
     "nom": "M Mathéo Bouhier",
     "ville": "LA FOYE-MONJAULT",
     "date": "Février 2025",
@@ -739,14 +695,6 @@
     "lat": 46.1927243,
     "lon": -0.9645614,
     "type": "Bornes"
-  },
-  {
-    "nom": "M Nicolas Bart",
-    "ville": "LA ROCHELLE",
-    "date": "Mars 2025",
-    "lat": 46.159732,
-    "lon": -1.1515951,
-    "type": "PAC"
   },
   {
     "nom": "M\nMise",
@@ -789,14 +737,6 @@
     "type": "Electricite"
   },
   {
-    "nom": "M Laurent Braquehais",
-    "ville": "LA ROCHELLE",
-    "date": "Juillet 2025",
-    "lat": 46.159732,
-    "lon": -1.1515951,
-    "type": "PAC"
-  },
-  {
     "nom": "M Antony Taveneau",
     "ville": "TAUGON",
     "date": "Septembre 2025",
@@ -811,22 +751,6 @@
     "lat": 46.1665781,
     "lon": -1.0230793,
     "type": "PAC"
-  },
-  {
-    "nom": "M Dylan Tourneur",
-    "ville": "LA ROCHELLE",
-    "date": "Octobre 2025",
-    "lat": 46.159732,
-    "lon": -1.1515951,
-    "type": "PAC"
-  },
-  {
-    "nom": "M Christian Donnet",
-    "ville": "LA ROCHELLE",
-    "date": "Novembre 2025",
-    "lat": 46.159732,
-    "lon": -1.1515951,
-    "type": "Electricite"
   },
   {
     "nom": "Mme & M Bayle",
@@ -883,15 +807,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Juin 2025",
-    "puissance": "12kwc",
-    "lat": 46.162976,
-    "lon": -1.149116,
-    "type": "PV"
-  },
-  {
-    "nom": "",
     "ville": "L'HOUMEAU",
     "date": "Juin 2023",
     "puissance": "6kwc",
@@ -924,24 +839,6 @@
     "puissance": "6kwc",
     "lat": 46.439031,
     "lon": -1.177427,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Janvier 2026",
-    "puissance": "7,5kwc",
-    "lat": 46.166882,
-    "lon": -1.139426,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mars 2025",
-    "puissance": "12kwc",
-    "lat": 46.164523,
-    "lon": -1.136239,
     "type": "PV"
   },
   {
@@ -1225,15 +1122,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Septembre 2023",
-    "puissance": "6kwc",
-    "lat": 46.155992,
-    "lon": -1.148114,
-    "type": "PV"
-  },
-  {
-    "nom": "",
     "ville": "AIGREFEUILLE-D'AUNIS",
     "date": "Juin 2024",
     "puissance": "6kwc",
@@ -1275,15 +1163,6 @@
     "puissance": "9kwc",
     "lat": 46.233241,
     "lon": -1.156509,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Décembre 2025",
-    "puissance": "3kwc",
-    "lat": 46.154237,
-    "lon": -1.136261,
     "type": "PV"
   },
   {
@@ -1338,15 +1217,6 @@
     "puissance": "9kwc",
     "lat": 46.193044,
     "lon": -1.170886,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Novembre 2025",
-    "puissance": "3kwc",
-    "lat": 46.153111,
-    "lon": -1.14641,
     "type": "PV"
   },
   {
@@ -1419,15 +1289,6 @@
     "puissance": "6kwc",
     "lat": 46.203574,
     "lon": -1.167717,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Août 2023",
-    "puissance": "3kwc",
-    "lat": 46.159522,
-    "lon": -1.153355,
     "type": "PV"
   },
   {
@@ -1558,15 +1419,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Janvier 2026",
-    "puissance": "6kwc",
-    "lat": 46.154061,
-    "lon": -1.165157,
-    "type": "PV"
-  },
-  {
-    "nom": "",
     "ville": "SAINT-JEAN-D'ANGÉLY",
     "date": "Juin 2025",
     "puissance": "9kwc",
@@ -1648,15 +1500,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mars 2024",
-    "puissance": "9kwc",
-    "lat": 46.173525,
-    "lon": -1.158831,
-    "type": "PV"
-  },
-  {
-    "nom": "",
     "ville": "ROCHEFORT",
     "date": "Août 2025",
     "puissance": "3kwc",
@@ -1729,15 +1572,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Septembre 2023",
-    "puissance": "6kwc",
-    "lat": 46.169766,
-    "lon": -1.165473,
-    "type": "PV"
-  },
-  {
-    "nom": "",
     "ville": "AYTRÉ",
     "date": "Mai 2024",
     "puissance": "9kwc",
@@ -1788,15 +1622,6 @@
     "puissance": "9kwc",
     "lat": 46.134963,
     "lon": -0.857142,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Juillet 2024",
-    "puissance": "3kwc",
-    "lat": 46.165094,
-    "lon": -1.136252,
     "type": "PV"
   },
   {
@@ -1855,29 +1680,11 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Janvier 2025",
-    "puissance": "9kwc",
-    "lat": 46.164515,
-    "lon": -1.156612,
-    "type": "PV"
-  },
-  {
-    "nom": "",
     "ville": "NIEUL-SUR-MER",
     "date": "Mars 2024",
     "puissance": "3kwc",
     "lat": 46.203934,
     "lon": -1.176091,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Août 2024",
-    "puissance": "6kwc",
-    "lat": 46.154736,
-    "lon": -1.136521,
     "type": "PV"
   },
   {
@@ -1950,24 +1757,6 @@
     "puissance": "3kwc",
     "lat": 46.204089,
     "lon": -1.377657,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Juillet 2024",
-    "puissance": "9kwc",
-    "lat": 46.167018,
-    "lon": -1.137821,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mai 2023",
-    "puissance": "12kwc",
-    "lat": 46.156849,
-    "lon": -1.152881,
     "type": "PV"
   },
   {
@@ -2058,15 +1847,6 @@
     "puissance": "6kwc",
     "lat": 46.115383,
     "lon": -1.054463,
-    "type": "PV"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Décembre 2024",
-    "puissance": "6kwc",
-    "lat": 46.173168,
-    "lon": -1.150825,
     "type": "PV"
   },
   {
@@ -2179,15 +1959,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Septembre 2024",
-    "puissance": "",
-    "lat": 46.165225,
-    "lon": -1.15841,
-    "type": "PAC"
-  },
-  {
-    "nom": "",
     "ville": "RIVEDOUX-PLAGE",
     "date": "Février 2024",
     "puissance": "",
@@ -2242,15 +2013,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Octobre 2025",
-    "puissance": "",
-    "lat": 46.150881,
-    "lon": -1.164676,
-    "type": "PAC"
-  },
-  {
-    "nom": "",
     "ville": "FORGES",
     "date": "Février 2024",
     "puissance": "",
@@ -2265,15 +2027,6 @@
     "puissance": "",
     "lat": 46.150978,
     "lon": -1.257218,
-    "type": "PAC"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Janvier 2023",
-    "puissance": "",
-    "lat": 46.163233,
-    "lon": -1.143958,
     "type": "PAC"
   },
   {
@@ -2310,15 +2063,6 @@
     "puissance": "",
     "lat": 46.237951,
     "lon": -1.152348,
-    "type": "PAC"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Octobre 2024",
-    "puissance": "",
-    "lat": 46.156563,
-    "lon": -1.151321,
     "type": "PAC"
   },
   {
@@ -2418,15 +2162,6 @@
     "puissance": "",
     "lat": 45.71801,
     "lon": -0.491901,
-    "type": "PAC"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mars 2024",
-    "puissance": "",
-    "lat": 46.172412,
-    "lon": -1.162267,
     "type": "PAC"
   },
   {
@@ -2665,15 +2400,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mars 2025",
-    "puissance": "",
-    "lat": 46.155752,
-    "lon": -1.143234,
-    "type": "PAC"
-  },
-  {
-    "nom": "",
     "ville": "NIEUL-SUR-MER",
     "date": "Décembre 2024",
     "puissance": "",
@@ -2850,15 +2576,6 @@
     "puissance": "",
     "lat": 46.151652,
     "lon": -1.08516,
-    "type": "PAC"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Janvier 2026",
-    "puissance": "",
-    "lat": 46.168821,
-    "lon": -1.150454,
     "type": "PAC"
   },
   {
@@ -3070,15 +2787,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Février 2024",
-    "puissance": "",
-    "lat": 46.162185,
-    "lon": -1.154173,
-    "type": "VMC"
-  },
-  {
-    "nom": "",
     "ville": "LAGORD",
     "date": "Février 2024",
     "puissance": "",
@@ -3277,15 +2985,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Novembre 2024",
-    "puissance": "",
-    "lat": 46.171036,
-    "lon": -1.146092,
-    "type": "VMC"
-  },
-  {
-    "nom": "",
     "ville": "ARS-EN-RÉ",
     "date": "Juillet 2025",
     "puissance": "",
@@ -3439,15 +3138,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mai 2024",
-    "puissance": "",
-    "lat": 46.169992,
-    "lon": -1.163506,
-    "type": "ELEC"
-  },
-  {
-    "nom": "",
     "ville": "AYTRÉ",
     "date": "Juin 2024",
     "puissance": "",
@@ -3574,15 +3264,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Novembre 2023",
-    "puissance": "",
-    "lat": 46.146262,
-    "lon": -1.160725,
-    "type": "ELEC"
-  },
-  {
-    "nom": "",
     "ville": "CHANIERS",
     "date": "Juin 2024",
     "puissance": "",
@@ -3660,15 +3341,6 @@
     "puissance": "",
     "lat": 45.939032,
     "lon": -1.303643,
-    "type": "ELEC"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mai 2025",
-    "puissance": "",
-    "lat": 46.166173,
-    "lon": -1.145671,
     "type": "ELEC"
   },
   {
@@ -3862,29 +3534,11 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Septembre 2024",
-    "puissance": "",
-    "lat": 46.168013,
-    "lon": -1.140806,
-    "type": "ELEC"
-  },
-  {
-    "nom": "",
     "ville": "SOUBISE",
     "date": "Janvier 2023",
     "puissance": "",
     "lat": 45.925211,
     "lon": -0.949659,
-    "type": "ELEC"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Avril 2025",
-    "puissance": "",
-    "lat": 46.169652,
-    "lon": -1.154414,
     "type": "ELEC"
   },
   {
@@ -3952,15 +3606,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mars 2023",
-    "puissance": "5kwh",
-    "lat": 46.160985,
-    "lon": -1.152664,
-    "type": "BAT"
-  },
-  {
-    "nom": "",
     "ville": "LE THOU",
     "date": "Février 2024",
     "puissance": "10kwh",
@@ -3984,15 +3629,6 @@
     "puissance": "15kwh",
     "lat": 45.869794,
     "lon": -1.196583,
-    "type": "BAT"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Août 2025",
-    "puissance": "10kwh",
-    "lat": 46.165329,
-    "lon": -1.13973,
     "type": "BAT"
   },
   {
@@ -4038,15 +3674,6 @@
     "puissance": "15kwh",
     "lat": 45.952835,
     "lon": -0.966629,
-    "type": "BAT"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Juin 2023",
-    "puissance": "5kwh",
-    "lat": 46.153226,
-    "lon": -1.165223,
     "type": "BAT"
   },
   {
@@ -4101,15 +3728,6 @@
     "puissance": "15kwh",
     "lat": 45.943932,
     "lon": -0.895376,
-    "type": "BAT"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Décembre 2025",
-    "puissance": "15kwh",
-    "lat": 46.154798,
-    "lon": -1.146214,
     "type": "BAT"
   },
   {
@@ -4191,15 +3809,6 @@
     "puissance": "5kwh",
     "lat": 45.936832,
     "lon": -1.297011,
-    "type": "BAT"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Novembre 2024",
-    "puissance": "5kwh",
-    "lat": 46.151394,
-    "lon": -1.145924,
     "type": "BAT"
   },
   {
@@ -4402,15 +4011,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Février 2025",
-    "puissance": "10kwh",
-    "lat": 46.170189,
-    "lon": -1.164753,
-    "type": "BAT"
-  },
-  {
-    "nom": "",
     "ville": "L'HOUMEAU",
     "date": "Novembre 2023",
     "puissance": "10kwh",
@@ -4434,15 +4034,6 @@
     "puissance": "5kwh",
     "lat": 46.206382,
     "lon": -1.51971,
-    "type": "BAT"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Juin 2024",
-    "puissance": "15kwh",
-    "lat": 46.161479,
-    "lon": -1.149019,
     "type": "BAT"
   },
   {
@@ -4479,15 +4070,6 @@
     "puissance": "20kwh",
     "lat": 46.152787,
     "lon": -1.134634,
-    "type": "BAT"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Avril 2024",
-    "puissance": "10kwh",
-    "lat": 46.164546,
-    "lon": -1.136228,
     "type": "BAT"
   },
   {
@@ -4627,15 +4209,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mars 2024",
-    "puissance": "22kw",
-    "lat": 46.165644,
-    "lon": -1.13881,
-    "type": "BORNE"
-  },
-  {
-    "nom": "",
     "ville": "ÎLE D'OLÉRON",
     "date": "Juillet 2024",
     "puissance": "7kw",
@@ -4659,15 +4232,6 @@
     "puissance": "7kw",
     "lat": 46.193158,
     "lon": -1.152627,
-    "type": "BORNE"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Août 2025",
-    "puissance": "7kw",
-    "lat": 46.164158,
-    "lon": -1.156442,
     "type": "BORNE"
   },
   {
@@ -4744,15 +4308,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mai 2025",
-    "puissance": "11kw",
-    "lat": 46.168812,
-    "lon": -1.136419,
-    "type": "BORNE"
-  },
-  {
-    "nom": "",
     "ville": "MARANS",
     "date": "Mars 2025",
     "puissance": "7kw",
@@ -4776,15 +4331,6 @@
     "puissance": "7kw",
     "lat": 46.154,
     "lon": -1.10088,
-    "type": "BORNE"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Avril 2025",
-    "puissance": "7kw",
-    "lat": 46.157587,
-    "lon": -1.154192,
     "type": "BORNE"
   },
   {
@@ -4906,15 +4452,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mai 2025",
-    "puissance": "22kw",
-    "lat": 46.160708,
-    "lon": -1.15466,
-    "type": "BORNE"
-  },
-  {
-    "nom": "",
     "ville": "LONGÈVES",
     "date": "Juillet 2024",
     "puissance": "11kw",
@@ -4987,15 +4524,6 @@
   },
   {
     "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Mai 2025",
-    "puissance": "11kw",
-    "lat": 46.171327,
-    "lon": -1.149054,
-    "type": "BORNE"
-  },
-  {
-    "nom": "",
     "ville": "L'HOUMEAU",
     "date": "Octobre 2024",
     "puissance": "11kw",
@@ -5019,15 +4547,6 @@
     "puissance": "7kw",
     "lat": 45.937353,
     "lon": -1.298372,
-    "type": "BORNE"
-  },
-  {
-    "nom": "",
-    "ville": "LA ROCHELLE",
-    "date": "Juillet 2024",
-    "puissance": "22kw",
-    "lat": 46.151188,
-    "lon": -1.147927,
     "type": "BORNE"
   },
   {
