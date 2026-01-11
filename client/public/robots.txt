@@ -1,0 +1,13 @@
+# Robots.txt pour wattsun-energie.fr
+# Permet aux moteurs de recherche d'indexer tout le site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wattsun-energie.fr/sitemap.xml
+
+# Bloquer les ressources inutiles pour le crawl
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/chunks/
