@@ -13,6 +13,14 @@ import ElectriciteGenerale from "@/pages/ElectriciteGenerale";
 import VMC from "@/pages/VMC";
 import DemandeDevis from "@/pages/DemandeDevis";
 
+// Pages locales SEO (landing pages)
+import PanneauxSolairesLaRochelle from "@/pages/local/PanneauxSolairesLaRochelle";
+import PanneauxSolairesRochefort from "@/pages/local/PanneauxSolairesRochefort";
+import PanneauxSolairesSaintes from "@/pages/local/PanneauxSolairesSaintes";
+import PompeChaleurLaRochelle from "@/pages/local/PompeChaleurLaRochelle";
+import PompeChaleurRochefort from "@/pages/local/PompeChaleurRochefort";
+import PompeChaleurSaintes from "@/pages/local/PompeChaleurSaintes";
+
 function App() {
   return (
     <ErrorBoundary>
@@ -29,6 +37,17 @@ function App() {
               <Route path="/electricite-generale" element={<ElectriciteGenerale />} />
               <Route path="/vmc" element={<VMC />} />
               <Route path="/demande-devis" element={<DemandeDevis />} />
+              
+              {/* Pages locales SEO - Panneaux Solaires */}
+              <Route path="/panneaux-solaires-la-rochelle" element={<PanneauxSolairesLaRochelle />} />
+              <Route path="/panneaux-solaires-rochefort" element={<PanneauxSolairesRochefort />} />
+              <Route path="/panneaux-solaires-saintes" element={<PanneauxSolairesSaintes />} />
+              
+              {/* Pages locales SEO - Pompes à Chaleur */}
+              <Route path="/pompe-a-chaleur-la-rochelle" element={<PompeChaleurLaRochelle />} />
+              <Route path="/pompe-a-chaleur-rochefort" element={<PompeChaleurRochefort />} />
+              <Route path="/pompe-a-chaleur-saintes" element={<PompeChaleurSaintes />} />
+              
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

@@ -6,6 +6,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { ChevronDown } from "lucide-react";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/FAQ";
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
 
 interface ServicePageProps {
   seoTitle: string;
@@ -17,6 +23,7 @@ interface ServicePageProps {
   process: { step: number; title: string; description: string }[];
   certifications?: { logo: string; name: string }[];
   aides: string[];
+  faq?: FAQItem[];
 }
 
 export default function ServicePage({
@@ -29,6 +36,7 @@ export default function ServicePage({
   seoTitle,
   seoDescription,
   aides,
+  faq,
 }: ServicePageProps) {
   useEffect(() => {
     document.title = seoTitle;
@@ -175,6 +183,11 @@ export default function ServicePage({
         </div>
       </section>
 
+      {/* Section FAQ */}
+      {faq && faq.length > 0 && (
+        <FAQ items={faq} />
+      )}
+
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white">
         <div className="container mx-auto px-4 text-center">
@@ -199,4 +212,3 @@ export default function ServicePage({
     </div>
   );
 }
-
