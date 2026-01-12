@@ -20,6 +20,16 @@ const TYPE_COLORS = {
   VMC: '#14b8a6',          // Turquoise (ventilateur)
 };
 
+// Couleurs claires pour le dégradé des clusters
+const TYPE_COLORS_LIGHT = {
+  PV: '#fcd34d',           // Jaune clair
+  PAC: '#93c5fd',          // Bleu clair
+  Batteries: '#6ee7b7',    // Vert clair
+  Bornes: '#c4b5fd',       // Violet clair
+  Electricite: '#fca5a5',  // Rouge clair
+  VMC: '#5eead4',          // Turquoise clair
+};
+
 const TYPE_LABELS = {
   PV: 'Panneaux Photovoltaïques',
   PAC: 'Pompes à Chaleur',
@@ -64,6 +74,47 @@ export default function ProjectsMap() {
   };
 
   const filteredProjects = projects.filter(p => selectedTypes.has(p.type));
+
+  // Déterminer la couleur dominante des clusters
+  const getClusterColor = () => {
+    const activeTypes = Array.from(selectedTypes);
+    
+    // Si un seul type est sélectionné, utiliser sa couleur
+    if (activeTypes.length === 1) {
+      const type = activeTypes[0] as keyof typeof TYPE_COLORS;
+      return {
+        main: TYPE_COLORS[type],
+        light: TYPE_COLORS_LIGHT[type],
+        text: type === 'PV' ? '#1f2937' : '#ffffff'
+      };
+    }
+    
+    // Si plusieurs types mais pas tous, utiliser la couleur du type le plus représenté
+    if (activeTypes.length > 1 && activeTypes.length < 6) {
+      const typeCounts = filteredProjects.reduce((acc, p) => {
+        acc[p.type] = (acc[p.type] || 0) + 1;
+        return acc;
+      }, {} as Record<string, number>);
+      
+      const dominantType = Object.entries(typeCounts)
+        .sort((a, b) => b[1] - a[1])[0]?.[0] as keyof typeof TYPE_COLORS;
+      
+      if (dominantType) {
+        return {
+          main: TYPE_COLORS[dominantType],
+          light: TYPE_COLORS_LIGHT[dominantType],
+          text: dominantType === 'PV' ? '#1f2937' : '#ffffff'
+        };
+      }
+    }
+    
+    // Par défaut (tous les types sélectionnés), utiliser le jaune Wattsun
+    return {
+      main: '#fcad0d',
+      light: '#ffc84d',
+      text: '#1f2937'
+    };
+  };
 
   useEffect(() => {
     if (!mapRef.current || loading || projects.length === 0) return;
@@ -137,7 +188,10 @@ export default function ProjectsMap() {
         mapInstanceRef.current.removeLayer(markersGroupRef.current);
       }
 
-      // Créer un groupe de clusters
+      // Obtenir les couleurs pour les clusters
+      const clusterColors = getClusterColor();
+
+      // Créer un groupe de clusters avec couleurs dynamiques
       const markers = L.markerClusterGroup({
         maxClusterRadius: 50,
         spiderfyOnMaxZoom: true,
@@ -155,8 +209,8 @@ export default function ProjectsMap() {
           
           return L.divIcon({
             html: `<div style="
-              background: linear-gradient(135deg, #fcad0d 0%, #ffc84d 100%);
-              color: #1f2937;
+              background: linear-gradient(135deg, ${clusterColors.main} 0%, ${clusterColors.light} 100%);
+              color: ${clusterColors.text};
               border-radius: 50%;
               display: flex;
               align-items: center;
@@ -165,7 +219,7 @@ export default function ProjectsMap() {
               font-size: ${size === 'large' ? '16px' : size === 'medium' ? '14px' : '12px'};
               width: 100%;
               height: 100%;
-              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
               border: 3px solid white;
             ">${count}</div>`,
             className: 'custom-cluster-icon',
@@ -228,7 +282,7 @@ export default function ProjectsMap() {
     };
 
     loadLeaflet();
-  }, [filteredProjects, loading, projects]);
+  }, [filteredProjects, loading, projects, selectedTypes]);
 
   if (loading) {
     return (
