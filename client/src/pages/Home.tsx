@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sun, Thermometer, Battery, Zap, Fan, Plug } from "lucide-react";
+import { Sun, Thermometer, Battery, Zap, Fan, Plug, ChevronDown } from "lucide-react";
 import { SERVICES } from "../../../shared/const";
-
-
 
 import { Button } from "@/components/ui/button";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProjectsMap from "@/components/ProjectsMap";
+import TrustBanner from "@/components/TrustBanner";
+import GoogleReviews from "@/components/GoogleReviews";
 
 // Map des noms d'icônes aux composants Lucide
 const IconMap = {
@@ -58,49 +58,88 @@ export default function Home() {
       );
     }
   }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* Hero Section - Optimisé avec message percutant */}
         <section
           className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/optimized/wattsun-hero-image.jpg')",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
           <div className="relative z-10 container mx-auto px-4 text-center text-white">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-2xl">
-              Solutions énergétiques durables pour votre habitat
+            {/* Badge de confiance */}
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
+              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+              <span className="text-sm font-medium">Plus de 739 installations réalisées en Charente-Maritime</span>
+            </div>
+            
+            {/* Titre principal avec accroche forte */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-2xl leading-tight">
+              Réduisez votre facture d'énergie<br />
+              <span className="text-[#fcad0d]">jusqu'à 70%</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-10 drop-shadow-lg max-w-3xl mx-auto">
-              Solutions photovoltaïques, pompes à chaleur, et plus encore. Nous concevons votre avenir énergétique.
+            
+            {/* Sous-titre avec proposition de valeur */}
+            <p className="text-lg md:text-xl mb-4 drop-shadow-lg max-w-2xl mx-auto text-gray-200">
+              Panneaux solaires, pompes à chaleur, bornes de recharge
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            
+            {/* Points clés */}
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-8 text-sm md:text-base">
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Devis gratuit sous 48h</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Certifié RGE</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Aides financières</span>
+              </div>
+            </div>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Link to="/demande-devis" onClick={() => window.scrollTo(0, 0)}>
                 <Button
                   size="lg"
-                  className="flex-1 max-w-xs bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl font-semibold text-lg px-8 py-6"
+                  className="flex-1 max-w-xs bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-2xl font-bold text-lg px-10 py-7"
                 >
-                  Demander un Devis
+                  Demander un Devis Gratuit
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                onClick={() => {
-                  const servicesSection = document.getElementById('services-section');
-                  if (servicesSection) {
-                    servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }
-                }}
-                className="flex-1 max-w-xs bg-white text-[#5e8a92] border-2 border-[#5e8a92] hover:bg-[#5e8a92] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold text-lg px-8 py-6 cursor-pointer"
-              >
-                Découvrir nos services
-              </Button>
+              <a href="tel:0786731033">
+                <Button
+                  size="lg"
+                  className="flex-1 max-w-xs bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold text-lg px-8 py-6"
+                >
+                  📞 07 86 73 10 33
+                </Button>
+              </a>
             </div>
           </div>
+          
+          {/* Scroll indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <ChevronDown size={32} className="text-white/70" />
+          </div>
         </section>
+
+        {/* Bandeau de confiance - Juste après le hero */}
+        <TrustBanner />
 
         {/* Services Section */}
         <section id="services-section" className="py-20">
@@ -156,6 +195,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Section Avis Google */}
+        <GoogleReviews />
+
         {/* Section Réalisations */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -172,14 +214,34 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Nos Certifications et Qualifications</h2>
             <div className="flex flex-wrap justify-center items-center gap-12 mb-8">
-              <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
-              <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
-              <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
-              <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
+              <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV - Certification pour installations photovoltaïques" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
+              <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC - Certification pour pompes à chaleur" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
+              <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ - Certification pour bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
+              <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation - Certification pour systèmes VMC" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
             </div>
             <p className="text-center text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Nos certifications RGE (Reconnu Garant de l'Environnement) garantissent la qualité de nos installations et vous permettent de bénéficier des aides de l'État. Nous respectons les normes les plus strictes pour votre sécurité et votre satisfaction.
             </p>
+          </div>
+        </section>
+
+        {/* CTA Final */}
+        <section className="py-16 bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8]">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Prêt à réduire votre facture d'énergie ?
+            </h2>
+            <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+              Obtenez votre étude personnalisée gratuite et découvrez combien vous pouvez économiser.
+            </p>
+            <Link to="/demande-devis" onClick={() => window.scrollTo(0, 0)}>
+              <Button
+                size="lg"
+                className="bg-[#fcad0d] text-gray-900 hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-2xl font-bold text-lg px-10 py-7"
+              >
+                Demander mon Devis Gratuit
+              </Button>
+            </Link>
           </div>
         </section>
       </main>
