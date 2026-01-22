@@ -2,32 +2,32 @@ import { Star, Quote } from "lucide-react";
 
 const reviews = [
   {
-    name: "Marie D.",
+    name: "François Roger",
     rating: 5,
-    date: "Décembre 2025",
-    text: "Excellente entreprise ! Installation de panneaux solaires réalisée rapidement et proprement. L'équipe est très professionnelle et le suivi impeccable. Je recommande vivement.",
+    date: "Juillet 2025",
+    text: "Depuis la réalisation du devis jusqu'à la mise en place des panneaux photovoltaïques, Wattsun Énergie a toujours su répondre présent. Julien et Randy, mes deux contacts, ont su anticiper et faire preuve d'un grand sens du service. Ils sont professionnels. Je les recommande vivement.",
     service: "Panneaux Photovoltaïques"
   },
   {
-    name: "Jean-Pierre L.",
+    name: "Nicolas Viollier",
     rating: 5,
-    date: "Novembre 2025",
-    text: "Très satisfait de ma pompe à chaleur. Les économies sur ma facture de chauffage sont significatives. Merci à toute l'équipe Wattsun pour leur professionnalisme.",
-    service: "Pompe à Chaleur"
+    date: "Janvier 2024",
+    text: "Une entreprise réactive et professionnelle. Nicolas a fourni des conseils précieux et précis, et le devis était exact et compétitif. Xavier et Randy ont réalisé l'installation avec minutie. Du début à la fin, ils ont été à l'écoute.",
+    service: "Panneaux Photovoltaïques"
   },
   {
-    name: "Sophie M.",
+    name: "Antonio Dias-Pereira",
     rating: 5,
-    date: "Octobre 2025",
-    text: "Installation d'une borne de recharge pour ma voiture électrique. Travail soigné, équipe ponctuelle et prix compétitif. Je suis ravie du résultat !",
-    service: "Borne de Recharge"
+    date: "Juillet 2024",
+    text: "Pour une installation de panneaux photovoltaïques de 3 kWc, j'ai choisi WATTSUN, qui propose des produits de qualité tels que les panneaux solaires DUALSUN et les micro-onduleurs HOYMILES. Xavier et Randy, qui ont installé les panneaux, étaient très professionnels.",
+    service: "Panneaux Photovoltaïques 3 kWc"
   },
   {
-    name: "François B.",
+    name: "Marteau Sofy",
     rating: 5,
-    date: "Septembre 2025",
-    text: "Wattsun a installé nos panneaux solaires avec batterie de stockage. Production excellente et autonomie accrue. Un investissement rentable grâce à leurs conseils.",
-    service: "Panneaux + Batteries"
+    date: "Décembre 2023",
+    text: "Installation de panneaux photovoltaïques terminée fin 2023. Nous sommes très satisfaits du travail effectué. Au top ! On a rarement vu une entreprise aussi fiable, réactive et très professionnelle.",
+    service: "Panneaux Photovoltaïques"
   }
 ];
 
@@ -46,8 +46,8 @@ const StarRating = ({ rating }: { rating: number }) => {
 };
 
 export default function GoogleReviews() {
-  const averageRating = 4.9;
-  const totalReviews = 47;
+  const averageRating = 5.0;
+  const totalReviews = 27;
 
   return (
     <section className="py-16 bg-gray-50">
@@ -107,7 +107,7 @@ export default function GoogleReviews() {
         {/* CTA vers Google */}
         <div className="text-center mt-10">
           <a
-            href="https://www.google.com/search?q=wattsun+energie+avis"
+            href="https://www.google.com/maps/place/WATTSUN+ENERGIE/@46.170925,-1.068921,17z/data=!4m8!3m7!1s0x48014dfc9ae14d3d:0x27177488183ba809!8m2!3d46.170925!4d-1.068921!9m1!1b1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#5e8a92] hover:text-[#fcad0d] font-semibold transition-colors duration-300"
