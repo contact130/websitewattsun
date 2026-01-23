@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sun, Thermometer, Battery, Zap, Fan, Plug, ChevronDown } from "lucide-react";
 import { SERVICES } from "../../../shared/const";
@@ -46,8 +46,33 @@ const getServiceColors = (colorClass: string) => {
   return colorMap[colorClass] || { from: '#facc15', to: '#ca8a04' };
 };
 
+// Données du slider d'impact
+const impactStats = [
+  {
+    value: "739+",
+    label: "installations réalisées en Nouvelle-Aquitaine",
+    icon: "🏠"
+  },
+  {
+    value: "12 500+",
+    label: "panneaux solaires posés",
+    icon: "☀️"
+  },
+  {
+    value: "4.8 GWh",
+    label: "d'électricité verte produite par an",
+    icon: "⚡"
+  },
+  {
+    value: "1 150 T",
+    label: "de CO₂ évitées chaque année",
+    icon: "🌍"
+  }
+];
+
 export default function Home() {
-	  
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   useEffect(() => {
     document.title = "Wattsun Énergie - Solutions Photovoltaïques, PAC et Bornes de Recharge";
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -57,6 +82,14 @@ export default function Home() {
         "Wattsun Énergie : Solutions photovoltaïques, pompes à chaleur, bornes de recharge et électricité générale à La Rochelle et ses environs. Devis gratuit et aides financières."
       );
     }
+  }, []);
+
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % impactStats.length);
+    }, 4000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -72,10 +105,25 @@ export default function Home() {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
           <div className="relative z-10 container mx-auto px-4 text-center text-white">
-            {/* Badge de confiance */}
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium">Plus de 739 installations réalisées en Charente-Maritime</span>
+            {/* Slider d'impact */}
+            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-3 mb-6 min-w-[320px] md:min-w-[400px]">
+              <span className="text-2xl">{impactStats[currentSlide].icon}</span>
+              <div className="flex flex-col items-start">
+                <span className="text-lg md:text-xl font-bold text-[#fcad0d]">{impactStats[currentSlide].value}</span>
+                <span className="text-xs md:text-sm font-medium text-white/90">{impactStats[currentSlide].label}</span>
+              </div>
+              {/* Indicateurs de slide */}
+              <div className="flex gap-1.5 ml-auto">
+                {impactStats.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === currentSlide ? 'bg-[#fcad0d] w-4' : 'bg-white/40 hover:bg-white/60'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
             
             {/* Titre principal avec accroche forte */}
