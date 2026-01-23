@@ -274,18 +274,18 @@ export default function Home() {
         </section>
 
         {/* CTA Final */}
-        <section className="py-16 bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8]">
+        <section className="py-16 bg-gradient-to-r from-[#f7b529] to-[#fcad0d]">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Prêt à réduire votre facture d'énergie ?
             </h2>
-            <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-gray-800 text-lg mb-8 max-w-2xl mx-auto">
               Obtenez votre étude personnalisée gratuite et découvrez combien vous pouvez économiser.
             </p>
             <Link to="/demande-devis" onClick={() => window.scrollTo(0, 0)}>
               <Button
                 size="lg"
-                className="bg-[#fcad0d] text-gray-900 hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-2xl font-bold text-lg px-10 py-7"
+                className="bg-gray-900 text-white hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-2xl font-bold text-lg px-10 py-7"
               >
                 Demander mon Devis Gratuit
               </Button>
