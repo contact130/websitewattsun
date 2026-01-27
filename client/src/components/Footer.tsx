@@ -55,7 +55,12 @@ export default function Footer() {
                   {service.title}
                 </Link>
               ))}
-
+              <Link
+                to="/blog"
+                className="block text-gray-400 hover:text-[#fcad0d] transition-colors mt-4 font-semibold"
+              >
+                Blog & Conseils
+              </Link>
             </div>
           </div>
         </div>

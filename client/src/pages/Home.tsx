@@ -243,6 +243,54 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Section Pourquoi Nous Choisir - Améliorer l'engagement */}
+        <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Pourquoi Choisir Wattsun Énergie ?</h2>
+            <p className="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto">Votre partenaire de confiance pour la transition énergétique en Charente-Maritime</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🏆</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Expertise Locale</h3>
+                <p className="text-gray-600">10+ ans d'expérience à La Rochelle, Rochefort, Saintes et toute la Charente-Maritime</p>
+              </div>
+              <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#4ade80] to-[#16a34a] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Certifié RGE</h3>
+                <p className="text-gray-600">QualiPV, QualiPAC, IRVE : accès à toutes les aides de l'État (MaPrimeRénov', CEE)</p>
+              </div>
+              <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#60a5fa] to-[#2563eb] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Devis Rapide</h3>
+                <p className="text-gray-600">Étude personnalisée gratuite sous 48h, sans engagement</p>
+              </div>
+              <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#f87171] to-[#dc2626] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🛡️</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Garantie Décennale</h3>
+                <p className="text-gray-600">Installation sécurisée avec garantie 10 ans et SAV réactif</p>
+              </div>
+            </div>
+            <div className="text-center mt-10">
+              <Link to="/demande-devis" onClick={() => window.scrollTo(0, 0)}>
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-[#fcad0d] to-[#ffc84d] text-gray-900 hover:from-[#5e8a92] hover:to-[#7ca0a8] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-xl font-bold text-lg px-8 py-6"
+                >
+                  Demander mon Devis Gratuit
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Section Avis Google */}
         <GoogleReviews />
 

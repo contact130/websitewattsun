@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, Sun, Thermometer, Battery, Zap, Fan, FileText, Plug } from "lucide-react";
+import { Menu, X, Home, Sun, Thermometer, Battery, Zap, Fan, FileText, Plug, BookOpen } from "lucide-react";
 // import { PlugZap } from 'lucide-react'; // Remplacé par Plug
 import { APP_LOGO, APP_LOGO_WHITE } from "@shared/const";
 import { SERVICES } from "@shared/const";
@@ -146,6 +146,19 @@ export default function Header() {
                   <span className="text-sm">{service.title}</span>
                 </Link>
               ))}
+
+              {/* Divider */}
+              <div className="my-2 border-t border-gray-200 mx-2"></div>
+
+              {/* Blog */}
+              <Link
+                to="/blog"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex items-center gap-3 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] font-medium transition-colors px-6 py-3 rounded-lg mx-2"
+              >
+                <BookOpen className="w-5 h-5 flex-shrink-0" />
+                <span>Blog & Conseils</span>
+              </Link>
 
               {/* Divider */}
               <div className="my-2 border-t border-gray-200 mx-2"></div>

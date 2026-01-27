@@ -12,6 +12,8 @@ import BornesRecharge from "@/pages/BornesRecharge";
 import ElectriciteGenerale from "@/pages/ElectriciteGenerale";
 import VMC from "@/pages/VMC";
 import DemandeDevis from "@/pages/DemandeDevis";
+import Blog from "@/pages/Blog";
+import BlogArticle from "@/pages/BlogArticle";
 
 // Pages locales SEO (landing pages)
 import PanneauxSolairesLaRochelle from "@/pages/local/PanneauxSolairesLaRochelle";
@@ -37,6 +39,10 @@ function App() {
               <Route path="/electricite-generale" element={<ElectriciteGenerale />} />
               <Route path="/vmc" element={<VMC />} />
               <Route path="/demande-devis" element={<DemandeDevis />} />
+              
+              {/* Blog */}
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:articleId" element={<BlogArticle />} />
               
               {/* Pages locales SEO - Panneaux Solaires */}
               <Route path="/panneaux-solaires-la-rochelle" element={<PanneauxSolairesLaRochelle />} />
