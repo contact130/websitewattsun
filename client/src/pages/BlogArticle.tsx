@@ -5,94 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react";
 import { articles } from "./Blog";
-
-// Fonction pour convertir le Markdown en HTML propre
-function markdownToHtml(markdown: string): string {
-  let html = markdown;
-  
-  // Traitement des tableaux Markdown
-  const lines = html.split('\n');
-  let inTable = false;
-  let tableHtml = '';
-  let headerProcessed = false;
-  const processedLines: string[] = [];
-  
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
-    
-    // Détection d'une ligne de tableau
-    if (line.startsWith('|') && line.endsWith('|')) {
-      // Ligne de séparation (|---|---|)
-      if (line.match(/^\|[\s-:|]+\|$/)) {
-        continue; // On ignore la ligne de séparation
-      }
-      
-      if (!inTable) {
-        inTable = true;
-        headerProcessed = false;
-        tableHtml = '<div class="overflow-x-auto my-6"><table class="w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200">';
-      }
-      
-      const cells = line.split('|').filter(cell => cell.trim() !== '');
-      
-      if (!headerProcessed) {
-        // Première ligne = en-tête
-        tableHtml += '<thead><tr>';
-        cells.forEach(cell => {
-          tableHtml += `<th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 bg-gray-100 border-b border-gray-200">${cell.trim()}</th>`;
-        });
-        tableHtml += '</tr></thead><tbody>';
-        headerProcessed = true;
-      } else {
-        // Lignes de données
-        tableHtml += '<tr class="hover:bg-gray-50">';
-        cells.forEach(cell => {
-          tableHtml += `<td class="px-4 py-3 text-sm text-gray-700 border-b border-gray-100">${cell.trim()}</td>`;
-        });
-        tableHtml += '</tr>';
-      }
-    } else {
-      // Fin du tableau
-      if (inTable) {
-        tableHtml += '</tbody></table></div>';
-        processedLines.push(tableHtml);
-        inTable = false;
-        tableHtml = '';
-        headerProcessed = false;
-      }
-      processedLines.push(line);
-    }
-  }
-  
-  // Fermer le tableau si on est encore dedans à la fin
-  if (inTable) {
-    tableHtml += '</tbody></table></div>';
-    processedLines.push(tableHtml);
-  }
-  
-  html = processedLines.join('\n');
-  
-  // Titres H2
-  html = html.replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">$1</h2>');
-  
-  // Titres H3
-  html = html.replace(/^### (.+)$/gm, '<h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">$1</h3>');
-  
-  // Paragraphes - lignes non vides qui ne commencent pas par < (HTML)
-  const finalLines = html.split('\n');
-  const outputLines: string[] = [];
-  
-  for (const line of finalLines) {
-    const trimmed = line.trim();
-    if (trimmed && !trimmed.startsWith('<') && !trimmed.startsWith('|')) {
-      outputLines.push(`<p class="text-gray-700 leading-relaxed mb-4">${trimmed}</p>`);
-    } else if (trimmed) {
-      outputLines.push(trimmed);
-    }
-  }
-  
-  return outputLines.join('\n');
-}
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function BlogArticle() {
   const { articleId } = useParams<{ articleId: string }>();
@@ -126,8 +40,6 @@ export default function BlogArticle() {
       </div>
     );
   }
-
-  const htmlContent = markdownToHtml(article.content);
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
@@ -184,11 +96,65 @@ export default function BlogArticle() {
               </button>
             </div>
 
-            {/* Content */}
-            <div 
-              className="article-content"
-              dangerouslySetInnerHTML={{ __html: htmlContent }} 
-            />
+            {/* Content with ReactMarkdown */}
+            <div className="article-content">
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  h2: ({ children }) => (
+                    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">{children}</h2>
+                  ),
+                  h3: ({ children }) => (
+                    <h3 className="text-xl font-semibold text-gray-800 mt-8 mb-3">{children}</h3>
+                  ),
+                  p: ({ children }) => (
+                    <p className="text-gray-700 leading-relaxed mb-4">{children}</p>
+                  ),
+                  table: ({ children }) => (
+                    <div className="overflow-x-auto my-6">
+                      <table className="w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200">
+                        {children}
+                      </table>
+                    </div>
+                  ),
+                  thead: ({ children }) => (
+                    <thead className="bg-gray-100">{children}</thead>
+                  ),
+                  th: ({ children }) => (
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-gray-900 border-b border-gray-200">
+                      {children}
+                    </th>
+                  ),
+                  td: ({ children }) => (
+                    <td className="px-4 py-3 text-sm text-gray-700 border-b border-gray-100">
+                      {children}
+                    </td>
+                  ),
+                  tr: ({ children }) => (
+                    <tr className="hover:bg-gray-50">{children}</tr>
+                  ),
+                  ul: ({ children }) => (
+                    <ul className="list-disc list-inside mb-4 text-gray-700 space-y-2">{children}</ul>
+                  ),
+                  ol: ({ children }) => (
+                    <ol className="list-decimal list-inside mb-4 text-gray-700 space-y-2">{children}</ol>
+                  ),
+                  li: ({ children }) => (
+                    <li className="text-gray-700">{children}</li>
+                  ),
+                  strong: ({ children }) => (
+                    <strong className="font-semibold text-gray-900">{children}</strong>
+                  ),
+                  a: ({ href, children }) => (
+                    <a href={href} className="text-[#5e8a92] hover:text-[#fcad0d] underline">
+                      {children}
+                    </a>
+                  ),
+                }}
+              >
+                {article.content}
+              </ReactMarkdown>
+            </div>
 
             {/* CTA Box */}
             <div className="mt-12 p-8 bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8] rounded-2xl text-center text-white">
