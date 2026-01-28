@@ -6,6 +6,49 @@ import Footer from "@/components/Footer";
 import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react";
 import { articles } from "./Blog";
 
+// Fonction pour convertir le Markdown en HTML propre
+function markdownToHtml(markdown: string): string {
+  let html = markdown;
+  
+  // Tableaux Markdown
+  const tableRegex = /\|(.+)\|\n\|[-|\s]+\|\n((?:\|.+\|\n?)+)/g;
+  html = html.replace(tableRegex, (match, header, rows) => {
+    const headerCells = header.split('|').filter((cell: string) => cell.trim()).map((cell: string) => 
+      `<th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 bg-gray-100">${cell.trim()}</th>`
+    ).join('');
+    
+    const bodyRows = rows.trim().split('\n').map((row: string) => {
+      const cells = row.split('|').filter((cell: string) => cell.trim()).map((cell: string) => 
+        `<td class="px-4 py-3 text-sm text-gray-700 border-t border-gray-200">${cell.trim()}</td>`
+      ).join('');
+      return `<tr class="hover:bg-gray-50">${cells}</tr>`;
+    }).join('');
+    
+    return `<div class="overflow-x-auto my-6"><table class="w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200"><thead><tr>${headerCells}</tr></thead><tbody>${bodyRows}</tbody></table></div>`;
+  });
+  
+  // Titres H2
+  html = html.replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">$1</h2>');
+  
+  // Titres H3
+  html = html.replace(/^### (.+)$/gm, '<h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">$1</h3>');
+  
+  // Paragraphes (lignes non vides qui ne sont pas des titres ou tableaux)
+  html = html.replace(/^(?!<[h|d|t])(.+)$/gm, (match, content) => {
+    if (content.trim() && !content.startsWith('<')) {
+      return `<p class="text-gray-700 leading-relaxed mb-4">${content}</p>`;
+    }
+    return match;
+  });
+  
+  // Supprimer les lignes vides multiples
+  html = html.replace(/(<\/p>)\s*\n\s*\n/g, '$1\n');
+  html = html.replace(/(<\/div>)\s*\n\s*\n/g, '$1\n');
+  html = html.replace(/(<\/h[23]>)\s*\n\s*\n/g, '$1\n');
+  
+  return html;
+}
+
 export default function BlogArticle() {
   const { articleId } = useParams<{ articleId: string }>();
   const article = articles.find(a => a.id === articleId);
@@ -38,6 +81,8 @@ export default function BlogArticle() {
       </div>
     );
   }
+
+  const htmlContent = markdownToHtml(article.content);
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
@@ -95,9 +140,10 @@ export default function BlogArticle() {
             </div>
 
             {/* Content */}
-            <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-[#5e8a92] prose-strong:text-gray-900">
-              <div dangerouslySetInnerHTML={{ __html: article.content.replace(/\n/g, '<br/>').replace(/## /g, '<h2 class="text-2xl font-bold mt-8 mb-4">').replace(/### /g, '<h3 class="text-xl font-semibold mt-6 mb-3">') }} />
-            </div>
+            <div 
+              className="article-content"
+              dangerouslySetInnerHTML={{ __html: htmlContent }} 
+            />
 
             {/* CTA Box */}
             <div className="mt-12 p-8 bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8] rounded-2xl text-center text-white">
