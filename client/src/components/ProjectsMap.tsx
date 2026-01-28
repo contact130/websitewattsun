@@ -274,11 +274,7 @@ export default function ProjectsMap() {
       mapInstanceRef.current.addLayer(markers);
       markersGroupRef.current = markers;
 
-      // Ajuster la vue si des projets sont visibles
-      if (filteredProjects.length > 0) {
-        const bounds = L.latLngBounds(filteredProjects.map(p => [p.lat, p.lon]));
-        mapInstanceRef.current.fitBounds(bounds, { padding: [50, 50] });
-      }
+      // Ne pas réinitialiser la vue automatiquement - laisser l'utilisateur naviguer librement
     };
 
     loadLeaflet();
