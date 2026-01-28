@@ -276,46 +276,49 @@ export default function Blog() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {articles.map((article) => (
-                <Card key={article.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-2xl border-none bg-white group">
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src={article.image} 
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-[#fcad0d] text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
-                        {article.category}
+                <Link 
+                  key={article.id}
+                  to={`/blog/${article.id}`}
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="block"
+                >
+                  <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-2xl border-none bg-white group cursor-pointer">
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={article.image} 
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span className="bg-[#fcad0d] text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
+                          {article.category}
+                        </span>
+                      </div>
+                    </div>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                        <div className="flex items-center gap-1">
+                          <Calendar size={14} />
+                          <span>{article.date}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock size={14} />
+                          <span>{article.readTime} de lecture</span>
+                        </div>
+                      </div>
+                      <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#5e8a92] transition-colors line-clamp-2">
+                        {article.title}
+                      </h2>
+                      <p className="text-gray-600 mb-4 line-clamp-3">
+                        {article.excerpt}
+                      </p>
+                      <span className="inline-flex items-center gap-2 text-[#fcad0d] font-semibold group-hover:text-[#5e8a92] transition-colors">
+                        Lire l'article
+                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                       </span>
-                    </div>
-                  </div>
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                      <div className="flex items-center gap-1">
-                        <Calendar size={14} />
-                        <span>{article.date}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Clock size={14} />
-                        <span>{article.readTime} de lecture</span>
-                      </div>
-                    </div>
-                    <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#5e8a92] transition-colors line-clamp-2">
-                      {article.title}
-                    </h2>
-                    <p className="text-gray-600 mb-4 line-clamp-3">
-                      {article.excerpt}
-                    </p>
-                    <Link 
-                      to={`/blog/${article.id}`}
-                      onClick={() => window.scrollTo(0, 0)}
-                      className="inline-flex items-center gap-2 text-[#fcad0d] font-semibold hover:text-[#5e8a92] transition-colors"
-                    >
-                      Lire l'article
-                      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>
