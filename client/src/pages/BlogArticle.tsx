@@ -10,22 +10,67 @@ import { articles } from "./Blog";
 function markdownToHtml(markdown: string): string {
   let html = markdown;
   
-  // Tableaux Markdown
-  const tableRegex = /\|(.+)\|\n\|[-|\s]+\|\n((?:\|.+\|\n?)+)/g;
-  html = html.replace(tableRegex, (match, header, rows) => {
-    const headerCells = header.split('|').filter((cell: string) => cell.trim()).map((cell: string) => 
-      `<th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 bg-gray-100">${cell.trim()}</th>`
-    ).join('');
+  // Traitement des tableaux Markdown
+  const lines = html.split('\n');
+  let inTable = false;
+  let tableHtml = '';
+  let headerProcessed = false;
+  const processedLines: string[] = [];
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
     
-    const bodyRows = rows.trim().split('\n').map((row: string) => {
-      const cells = row.split('|').filter((cell: string) => cell.trim()).map((cell: string) => 
-        `<td class="px-4 py-3 text-sm text-gray-700 border-t border-gray-200">${cell.trim()}</td>`
-      ).join('');
-      return `<tr class="hover:bg-gray-50">${cells}</tr>`;
-    }).join('');
-    
-    return `<div class="overflow-x-auto my-6"><table class="w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200"><thead><tr>${headerCells}</tr></thead><tbody>${bodyRows}</tbody></table></div>`;
-  });
+    // Détection d'une ligne de tableau
+    if (line.startsWith('|') && line.endsWith('|')) {
+      // Ligne de séparation (|---|---|)
+      if (line.match(/^\|[\s-:|]+\|$/)) {
+        continue; // On ignore la ligne de séparation
+      }
+      
+      if (!inTable) {
+        inTable = true;
+        headerProcessed = false;
+        tableHtml = '<div class="overflow-x-auto my-6"><table class="w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200">';
+      }
+      
+      const cells = line.split('|').filter(cell => cell.trim() !== '');
+      
+      if (!headerProcessed) {
+        // Première ligne = en-tête
+        tableHtml += '<thead><tr>';
+        cells.forEach(cell => {
+          tableHtml += `<th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 bg-gray-100 border-b border-gray-200">${cell.trim()}</th>`;
+        });
+        tableHtml += '</tr></thead><tbody>';
+        headerProcessed = true;
+      } else {
+        // Lignes de données
+        tableHtml += '<tr class="hover:bg-gray-50">';
+        cells.forEach(cell => {
+          tableHtml += `<td class="px-4 py-3 text-sm text-gray-700 border-b border-gray-100">${cell.trim()}</td>`;
+        });
+        tableHtml += '</tr>';
+      }
+    } else {
+      // Fin du tableau
+      if (inTable) {
+        tableHtml += '</tbody></table></div>';
+        processedLines.push(tableHtml);
+        inTable = false;
+        tableHtml = '';
+        headerProcessed = false;
+      }
+      processedLines.push(line);
+    }
+  }
+  
+  // Fermer le tableau si on est encore dedans à la fin
+  if (inTable) {
+    tableHtml += '</tbody></table></div>';
+    processedLines.push(tableHtml);
+  }
+  
+  html = processedLines.join('\n');
   
   // Titres H2
   html = html.replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">$1</h2>');
@@ -33,20 +78,20 @@ function markdownToHtml(markdown: string): string {
   // Titres H3
   html = html.replace(/^### (.+)$/gm, '<h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">$1</h3>');
   
-  // Paragraphes (lignes non vides qui ne sont pas des titres ou tableaux)
-  html = html.replace(/^(?!<[h|d|t])(.+)$/gm, (match, content) => {
-    if (content.trim() && !content.startsWith('<')) {
-      return `<p class="text-gray-700 leading-relaxed mb-4">${content}</p>`;
+  // Paragraphes - lignes non vides qui ne commencent pas par < (HTML)
+  const finalLines = html.split('\n');
+  const outputLines: string[] = [];
+  
+  for (const line of finalLines) {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('<') && !trimmed.startsWith('|')) {
+      outputLines.push(`<p class="text-gray-700 leading-relaxed mb-4">${trimmed}</p>`);
+    } else if (trimmed) {
+      outputLines.push(trimmed);
     }
-    return match;
-  });
+  }
   
-  // Supprimer les lignes vides multiples
-  html = html.replace(/(<\/p>)\s*\n\s*\n/g, '$1\n');
-  html = html.replace(/(<\/div>)\s*\n\s*\n/g, '$1\n');
-  html = html.replace(/(<\/h[23]>)\s*\n\s*\n/g, '$1\n');
-  
-  return html;
+  return outputLines.join('\n');
 }
 
 export default function BlogArticle() {
