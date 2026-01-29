@@ -320,6 +320,24 @@ export default function DemandeDevis() {
       });
 
       if (response.ok) {
+        // Envoyer l'événement de conversion à Google Analytics
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'conversion', {
+            'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL', // À configurer dans GA4
+            'event_category': 'form',
+            'event_label': 'demande_devis',
+            'value': servicesText,
+            'services': servicesText
+          });
+          
+          // Événement GA4 standard
+          (window as any).gtag('event', 'generate_lead', {
+            'currency': 'EUR',
+            'value': 0,
+            'services': servicesText
+          });
+        }
+        
         // Animation de succès
         setShowSuccessAnimation(true);
         
