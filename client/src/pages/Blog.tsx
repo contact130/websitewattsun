@@ -260,7 +260,7 @@ export default function Blog() {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8] py-16">
+        <section className="bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8] py-16 pt-24">
           <div className="container mx-auto px-4 text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Blog Wattsun Énergie

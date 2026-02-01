@@ -189,7 +189,7 @@ export default function ServicePage({
       )}
 
       {/* CTA Final */}
-      <section className="py-20 bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white">
+      <section className="py-20 bg-gradient-to-r from-[#f7b529] to-[#fcad0d] text-gray-900">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Prêt à Passer à l'Action ?
@@ -200,7 +200,7 @@ export default function ServicePage({
           <Link to="/demande-devis">
             <Button
               size="lg"
-              className="bg-white text-[#5e8a92] px-8 py-6 text-lg hover:bg-gray-100 transition-colors"
+              className="bg-gray-900 text-white px-8 py-6 text-lg hover:bg-gray-800 transition-colors"
             >
               Demander Votre Devis Gratuit
             </Button>
