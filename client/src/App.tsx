@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ErrorBoundary from "./ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import ScrollToTop from "@/components/ScrollToTop";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/NotFound";
 import PanneauxPhotovoltaiques from "@/pages/PanneauxPhotovoltaiques";
@@ -30,6 +31,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <BrowserRouter>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/panneaux-photovoltaiques" element={<PanneauxPhotovoltaiques />} />
