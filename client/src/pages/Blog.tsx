@@ -260,12 +260,12 @@ export default function Blog() {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8] py-16 pt-24">
+        <section className="bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8] py-20 pt-32 pb-24">
           <div className="container mx-auto px-4 text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Blog Wattsun Énergie
             </h1>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Conseils, guides et actualités sur les énergies renouvelables en Charente-Maritime
             </p>
           </div>
