@@ -266,7 +266,7 @@ export default function Blog() {
               Blog Wattsun Énergie
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Conseils, guides et actualités sur les énergies renouvelables en Charente-Maritime
+              Conseils, guides et actualités sur les énergies renouvelables en Poitou-Charentes
             </p>
           </div>
         </section>
