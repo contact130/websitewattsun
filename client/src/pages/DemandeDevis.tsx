@@ -466,11 +466,11 @@ export default function DemandeDevis() {
           </div>
 
           {/* Barre de progression animée */}
-          <div className="mb-10">
+          <div className="mb-10 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-yellow-400 rounded-2xl shadow-sm">
             {/* Barre de progression */}
             <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden mb-6">
               <div 
-                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#5e8a92] to-[#7ca0a8] transition-all duration-500 ease-out rounded-full"
+                className="absolute top-0 left-0 h-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500 ease-out rounded-full"
                 style={{ width: `${progressPercentage + (currentStep === 3 ? 50 : 0)}%` }}
               />
             </div>
