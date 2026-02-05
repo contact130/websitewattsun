@@ -527,35 +527,41 @@ export default function DemandeDevis() {
                   <p className="text-gray-500 mb-6">Sélectionnez un ou plusieurs services</p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {SERVICES.map((service: any) => {
+                    {SERVICES.map((service: any, index: number) => {
                       const isSelected = formData.selectedServices.includes(service.id);
+                      const colors = [
+                        { border: "border-[#fcad0d]", bg: "bg-gradient-to-br from-[#fcad0d]/20 to-[#fcad0d]/10", icon: "bg-[#fcad0d]/30", text: "text-[#fcad0d]", check: "bg-[#fcad0d]" },
+                        { border: "border-[#22c55e]", bg: "bg-gradient-to-br from-[#22c55e]/20 to-[#22c55e]/10", icon: "bg-[#22c55e]/30", text: "text-[#22c55e]", check: "bg-[#22c55e]" },
+                        { border: "border-[#3b82f6]", bg: "bg-gradient-to-br from-[#3b82f6]/20 to-[#3b82f6]/10", icon: "bg-[#3b82f6]/30", text: "text-[#3b82f6]", check: "bg-[#3b82f6]" },
+                      ];
+                      const color = colors[index % 3];
                       return (
                         <div
                           key={service.id}
                           onClick={() => handleServiceToggle(service.id)}
                           className={`p-5 border-2 rounded-xl cursor-pointer transition-all duration-300 flex flex-col items-center text-center transform hover:scale-105 h-[250px] relative ${
                             isSelected
-                              ? "border-[#5e8a92] bg-gradient-to-br from-[#5e8a92]/10 to-[#5e8a92]/5 shadow-lg"
-                              : "border-gray-200 hover:border-[#5e8a92]/50 bg-white hover:shadow-md"
+                              ? `${color.border} ${color.bg} shadow-lg`
+                              : "border-gray-200 hover:border-gray-300 bg-white hover:shadow-md"
                           }`}
                         >
                           <div className={`p-3 rounded-full mb-3 transition-all duration-300 ${
-                            isSelected ? "bg-[#5e8a92]/20" : "bg-gray-100"
+                            isSelected ? color.icon : "bg-gray-100"
                           }`}>
                             <IconComponent 
                               iconName={service.Icon}
                               size={32} 
-                              className={`transition-colors duration-300 ${isSelected ? "text-[#5e8a92]" : "text-gray-400"}`} 
+                              className={`transition-colors duration-300 ${isSelected ? color.text : "text-gray-400"}`} 
                             />
                           </div>
                           <h3 className={`font-semibold text-lg transition-colors ${
-                            isSelected ? "text-[#5e8a92]" : "text-gray-800"
+                            isSelected ? color.text : "text-gray-800"
                           }`}>{service.title}</h3>
                           <p className="text-sm text-gray-500 mt-1">{service.description}</p>
                           
                           {/* Indicateur de sélection */}
                           {isSelected && (
-                            <div className="absolute top-2 right-2 w-6 h-6 bg-[#5e8a92] rounded-full flex items-center justify-center">
+                            <div className={`absolute top-2 right-2 w-6 h-6 ${color.check} rounded-full flex items-center justify-center`}>
                               <Check className="w-4 h-4 text-white" />
                             </div>
                           )}
