@@ -527,14 +527,18 @@ export default function DemandeDevis() {
                   <p className="text-gray-500 mb-6">Sélectionnez un ou plusieurs services</p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {SERVICES.map((service: any, index: number) => {
+                    {SERVICES.map((service: any) => {
                       const isSelected = formData.selectedServices.includes(service.id);
-                      const colors = [
-                        { border: "border-[#fcad0d]", bg: "bg-gradient-to-br from-[#fcad0d]/20 to-[#fcad0d]/10", icon: "bg-[#fcad0d]/30", text: "text-[#fcad0d]", check: "bg-[#fcad0d]" },
-                        { border: "border-[#22c55e]", bg: "bg-gradient-to-br from-[#22c55e]/20 to-[#22c55e]/10", icon: "bg-[#22c55e]/30", text: "text-[#22c55e]", check: "bg-[#22c55e]" },
-                        { border: "border-[#3b82f6]", bg: "bg-gradient-to-br from-[#3b82f6]/20 to-[#3b82f6]/10", icon: "bg-[#3b82f6]/30", text: "text-[#3b82f6]", check: "bg-[#3b82f6]" },
-                      ];
-                      const color = colors[index % 3];
+                      // Couleurs spécifiques à chaque service (même que page d'accueil)
+                      const serviceColors: Record<string, any> = {
+                        "photovoltaique": { border: "border-yellow-500", bg: "bg-gradient-to-br from-yellow-400/20 to-yellow-600/10", icon: "bg-yellow-500/30", text: "text-yellow-600", check: "bg-yellow-500", hover: "hover:border-yellow-400 hover:shadow-yellow-200" },
+                        "pompes-chaleur": { border: "border-blue-500", bg: "bg-gradient-to-br from-blue-400/20 to-blue-600/10", icon: "bg-blue-500/30", text: "text-blue-600", check: "bg-blue-500", hover: "hover:border-blue-400 hover:shadow-blue-200" },
+                        "batteries": { border: "border-green-500", bg: "bg-gradient-to-br from-green-400/20 to-green-600/10", icon: "bg-green-500/30", text: "text-green-600", check: "bg-green-500", hover: "hover:border-green-400 hover:shadow-green-200" },
+                        "bornes": { border: "border-indigo-500", bg: "bg-gradient-to-br from-indigo-400/20 to-indigo-600/10", icon: "bg-indigo-500/30", text: "text-indigo-600", check: "bg-indigo-500", hover: "hover:border-indigo-400 hover:shadow-indigo-200" },
+                        "electricite": { border: "border-red-500", bg: "bg-gradient-to-br from-red-400/20 to-red-600/10", icon: "bg-red-500/30", text: "text-red-600", check: "bg-red-500", hover: "hover:border-red-400 hover:shadow-red-200" },
+                        "vmc": { border: "border-teal-500", bg: "bg-gradient-to-br from-teal-400/20 to-teal-600/10", icon: "bg-teal-500/30", text: "text-teal-600", check: "bg-teal-500", hover: "hover:border-teal-400 hover:shadow-teal-200" },
+                      };
+                      const color = serviceColors[service.id] || serviceColors["photovoltaique"];
                       return (
                         <div
                           key={service.id}
@@ -542,7 +546,7 @@ export default function DemandeDevis() {
                           className={`p-5 border-2 rounded-xl cursor-pointer transition-all duration-300 flex flex-col items-center text-center transform hover:scale-105 h-[250px] relative ${
                             isSelected
                               ? `${color.border} ${color.bg} shadow-lg`
-                              : "border-gray-200 hover:border-gray-300 bg-white hover:shadow-md"
+                              : `border-gray-200 bg-white hover:shadow-lg ${color.hover}`
                           }`}
                         >
                           <div className={`p-3 rounded-full mb-3 transition-all duration-300 ${
