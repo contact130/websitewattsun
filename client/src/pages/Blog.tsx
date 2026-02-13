@@ -9,6 +9,85 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 // Articles du blog
 const articles = [
   {
+    id: "ppe3-pompe-chaleur-2026",
+    title: "PPE 3 : Pourquoi 2026 est l'année idéale pour installer une pompe à chaleur",
+    excerpt: "La nouvelle Programmation Pluriannuelle de l'Énergie présentée par Sébastien Lecornu recentre les aides sur les pompes à chaleur. Découvrez pourquoi c'est le moment d'agir.",
+    date: "15 février 2026",
+    readTime: "10 min",
+    category: "Actualité Énergie",
+    image: "/optimized/wattsun-hero-image.jpg",
+    content: `
+## Une feuille de route ambitieuse pour la France
+
+La nouvelle Programmation Pluriannuelle de l'Énergie (PPE 3), présentée par le Premier ministre Sébastien Lecornu le 12 février 2026 lors d'un déplacement dans le Jura, marque un tournant décisif pour la transition énergétique en France. Publiée par décret au Journal Officiel (décret n° 2026-76), cette feuille de route fixe un cap clair : porter la part d'énergie décarbonée dans la consommation nationale de 42% à 60% d'ici 2030.
+
+Aujourd'hui, la France dépend encore fortement des énergies fossiles importées. Le pétrole et le gaz représentent 60% de notre consommation d'énergie, pour un coût annuel d'environ 60 milliards d'euros. La PPE 3 entend rompre cette dépendance en misant sur l'électrification massive de l'économie : transports, bâtiment et industrie sont les trois secteurs prioritaires.
+
+Concrètement, l'objectif est de faire passer la part de l'électricité dans le mix énergétique français de 27% à 34% d'ici 2030. Pour y parvenir, le gouvernement s'appuie sur un Grand Plan d'Électrification, combinant relance du nucléaire (6 EPR2 confirmés à Penly, Gravelines et au Bugey) et soutien aux énergies renouvelables.
+
+## La pompe à chaleur : grande gagnante de la PPE 3
+
+Parmi toutes les mesures annoncées, c'est sans doute le volet consacré aux pompes à chaleur qui aura l'impact le plus direct sur les particuliers. Le gouvernement a clairement identifié la PAC comme le levier le plus efficace pour décarboner le chauffage des logements français.
+
+Une étude récente de Hello Watt, basée sur l'analyse de 900 000 logements connectés à leur application, confirme cette analyse. Remplacer un chauffage au gaz par une pompe à chaleur air-eau permet de réduire sa consommation d'énergie de 62% en moyenne. L'Agence de la transition écologique (Ademe) corrobore ces chiffres en faisant état d'une consommation divisée par 3 et de factures de chauffage divisées par 2.
+
+Mais au-delà des économies d'énergie, c'est la rentabilité globale de l'investissement qui est remarquable. En comparant le coût total de possession (achat, entretien et consommation) sur toute la durée de vie de l'appareil, la pompe à chaleur s'avère 28% moins chère qu'une chaudière gaz. L'investissement initial est amorti en seulement 7 à 8 ans.
+
+| Critère | Chaudière Gaz | Pompe à Chaleur Air-Eau |
+|---------|---------------|-------------------------|
+| Consommation annuelle | 15 000 kWh | 4 100 kWh (-62%) |
+| Facture chauffage annuelle | 1 500 €/an | 600 €/an |
+| Coût total sur la durée de vie | Référence | -28% |
+| Amortissement de l'investissement | - | 7 à 8 ans |
+
+*Sources : Hello Watt (février 2026), Ademe*
+
+## Des aides financières recentrées sur les pompes à chaleur
+
+C'est probablement la mesure la plus concrète et la plus avantageuse pour les particuliers. La PPE 3 prévoit un recentrage massif des aides financières sur l'installation de pompes à chaleur.
+
+Le guichet de MaPrimeRénov' devrait rouvrir à la fin du mois de février 2026 avec une orientation claire : favoriser l'électrification des logements. Cette réorientation signifie que certains gestes d'isolation seront écartés au profit de la décarbonation du chauffage, c'est-à-dire le remplacement des systèmes fossiles (chaudières gaz et fioul) par des pompes à chaleur.
+
+La même logique s'applique aux Certificats d'Économies d'Énergie (CEE), ces primes versées par les fournisseurs d'énergie et cumulables avec MaPrimeRénov'. Dès 2026, elles seront réorientées pour financer en priorité deux types d'équipements : les pompes à chaleur et les voitures électriques.
+
+En cumulant MaPrimeRénov' et les CEE, les ménages peuvent obtenir des aides significatives pour l'installation d'une PAC air-eau :
+
+| Profil du ménage | MaPrimeRénov' | Prime CEE | Total des aides |
+|------------------|---------------|-----------|------------------|
+| Revenus très modestes | 5 000 € | 5 800 € | Jusqu'à 10 800 € |
+| Revenus modestes | 4 000 € | 4 000 € | Jusqu'à 8 000 € |
+| Revenus intermédiaires | 3 000 € | 3 000 € | Jusqu'à 6 000 € |
+
+*Montants indicatifs, variables selon le type d'équipement remplacé et la zone géographique.*
+
+## Un Plan d'Électrification des Usages attendu en avril
+
+La PPE 3 ne s'arrête pas là. Le gestionnaire du réseau électrique RTE a constaté un retard dans la dynamique d'électrification du pays. Pour y remédier, un Plan d'Électrification des Usages (PEU) est attendu pour avril 2026. Ce plan devrait détailler les mesures concrètes pour accélérer l'installation de pompes à chaleur, de bornes de recharge et d'autres équipements électriques dans les logements français.
+
+Ce plan pourrait apporter des mesures supplémentaires en faveur des particuliers, comme des simplifications administratives ou de nouvelles incitations financières.
+
+## Le solaire résidentiel : un accélérateur de la transition
+
+La PPE 3 reste volontariste sur le photovoltaïque, avec un objectif de 55 à 90 GW de capacité installée en 2035, contre 30 GW en 2025. Pour les particuliers, l'association panneaux solaires et pompe à chaleur est particulièrement pertinente.
+
+Les données de Hello Watt montrent que les ménages équipés de panneaux solaires franchissent plus rapidement le pas de la pompe à chaleur. La raison est simple : ils peuvent alimenter leur PAC avec l'électricité gratuite produite par leurs panneaux, réduisant de 31 à 41% l'électricité soutirée du réseau. Résultat, l'investissement dans une pompe à chaleur est amorti encore plus rapidement.
+
+## Pourquoi le Poitou-Charentes est idéal pour la PAC
+
+Notre région bénéficie d'un climat océanique avec des hivers doux, rarement en dessous de 0°C. Ces conditions sont idéales pour les pompes à chaleur air-eau, qui offrent un excellent coefficient de performance (COP) tout au long de l'année. En été, la fonction réversible de la PAC permet également de rafraîchir votre logement lors des épisodes de canicule de plus en plus fréquents.
+
+De plus, l'ensoleillement généreux de la Charente-Maritime (environ 2 000 heures par an) rend la combinaison panneaux solaires + pompe à chaleur particulièrement rentable dans notre région.
+
+## Notre conseil : n'attendez pas pour agir
+
+La PPE 3 crée un alignement favorable pour les propriétaires souhaitant installer une pompe à chaleur. Les aides financières sont recentrées et renforcées, la rentabilité est prouvée par des études indépendantes, et le contexte réglementaire pousse clairement vers l'électrification des logements.
+
+Avec la réouverture de MaPrimeRénov' prévue fin février 2026, c'est le moment idéal pour lancer votre projet. Chez Wattsun Énergie, nous sommes certifiés QualiPAC et nous vous accompagnons de A à Z : étude thermique gratuite, dimensionnement optimal, installation et démarches administratives pour obtenir toutes les aides auxquelles vous avez droit.
+
+Contactez-nous dès maintenant pour une étude personnalisée gratuite et découvrez combien vous pouvez économiser grâce à la pompe à chaleur.
+    `
+  },
+  {
     id: "aides-panneaux-solaires-2026",
     title: "Aides Panneaux Solaires 2026 : Le Guide Complet pour la Charente-Maritime",
     excerpt: "Prime à l'autoconsommation, tarifs de rachat EDF OA, TVA réduite à 5,5%... Découvrez toutes les aides disponibles en 2026 pour financer votre installation photovoltaïque.",
