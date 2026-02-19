@@ -247,7 +247,7 @@ export default function Home() {
         <GoogleReviews />
 
         {/* Section Réalisations */}
-        <section className="py-20 bg-white">
+        <section id="realisations" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Nos Réalisations</h2>
             <p className="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">

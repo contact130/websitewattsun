@@ -68,6 +68,12 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
           <p>© 2025 Wattsun Énergie. Tous droits réservés.</p>
+          <Link
+            to="/mentions-legales"
+            className="text-gray-500 hover:text-[#fcad0d] transition-colors mt-2 inline-block"
+          >
+            Mentions légales
+          </Link>
         </div>
       </div>
     </footer>

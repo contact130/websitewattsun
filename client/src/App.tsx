@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ErrorBoundary from "./ErrorBoundary";
@@ -15,6 +15,7 @@ import VMC from "@/pages/VMC";
 import DemandeDevis from "@/pages/DemandeDevis";
 import Blog from "@/pages/Blog";
 import BlogArticle from "@/pages/BlogArticle";
+import MentionsLegales from "@/pages/MentionsLegales";
 
 // Pages locales SEO (landing pages)
 import PanneauxSolairesLaRochelle from "@/pages/local/PanneauxSolairesLaRochelle";
@@ -55,6 +56,13 @@ function App() {
               <Route path="/pompe-a-chaleur-la-rochelle" element={<PompeChaleurLaRochelle />} />
               <Route path="/pompe-a-chaleur-rochefort" element={<PompeChaleurRochefort />} />
               <Route path="/pompe-a-chaleur-saintes" element={<PompeChaleurSaintes />} />
+              
+              {/* Mentions Légales */}
+              <Route path="/mentions-legales" element={<MentionsLegales />} />
+              
+              {/* Redirections pour les anciennes URL */}
+              <Route path="/présentation-réalisation" element={<Navigate to="/#realisations" replace />} />
+              <Route path="/presentation-realisation" element={<Navigate to="/#realisations" replace />} />
               
               <Route path="*" element={<NotFound />} />
             </Routes>
