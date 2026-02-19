@@ -40,7 +40,7 @@ export default function MentionsLegales() {
                   <p>Siège social : 21 bis Rue Ampère, 17139 Dompierre-sur-Mer</p>
                   <p>Téléphone : 07 86 73 10 33</p>
                   <p>Email : contact@wattsun-energie.fr</p>
-                  <p>Directeur de la publication : Julien Parpaillon</p>
+                  <p>Directeur de la publication : Julien Bénard</p>
                 </div>
               </div>
 
