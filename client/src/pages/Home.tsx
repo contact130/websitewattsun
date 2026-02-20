@@ -118,7 +118,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
           <div className="relative z-10 container mx-auto px-4 text-center text-white">
             {/* Slider d'impact */}
-            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-3 mb-6 min-w-[320px] md:min-w-[400px]">
+            <div className="inline-flex items-center gap-2 md:gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 py-2 md:px-5 md:py-3 mb-4 md:mb-6 mt-16 md:mt-0 min-w-0 md:min-w-[400px] max-w-[90vw]">
               <span className="text-2xl">{impactStats[currentSlide].icon}</span>
               <div className="flex flex-col items-start">
                 <span className="text-lg md:text-xl font-bold text-[#fcad0d]">{impactStats[currentSlide].value}</span>
@@ -205,11 +205,41 @@ export default function Home() {
         <TrustBanner />
 
         {/* Services Section */}
-        <section id="services-section" className="py-20">
+        <section id="services-section" className="py-12 md:py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-2 text-gray-900">Nos Services</h2>
-            <p className="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto">Découvrez nos solutions énergétiques innovantes et durables</p>
-            <div className="flex flex-wrap justify-center gap-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-900">Nos Services</h2>
+            <p className="text-base md:text-lg text-center text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto">Découvrez nos solutions énergétiques innovantes et durables</p>
+            
+            {/* Grille compacte mobile 2 colonnes */}
+            <div className="grid grid-cols-2 gap-3 md:hidden">
+              {SERVICES.map((service, index) => {
+                const colors = getServiceColors(service.color);
+                return (
+                  <Link
+                    key={index}
+                    to={service.path}
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-4 flex flex-col items-center text-center group active:scale-95"
+                  >
+                    <div 
+                      className="w-12 h-12 rounded-full flex items-center justify-center mb-3 shadow-md group-hover:scale-110 transition-transform duration-300"
+                      style={{ 
+                        background: `linear-gradient(135deg, ${colors.from} 0%, ${colors.to} 100%)` 
+                      }}
+                    >
+                      <IconComponent iconName={service.Icon} size={22} className="text-white" />
+                    </div>
+                    <h3 className="text-sm font-bold text-gray-900 mb-2 leading-tight line-clamp-2">{service.title}</h3>
+                    <span className="text-xs text-[#fcad0d] font-semibold mt-auto inline-flex items-center gap-1">
+                      En savoir plus <span>→</span>
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+
+            {/* Grandes cartes desktop */}
+            <div className="hidden md:flex flex-wrap justify-center gap-8">
               {SERVICES.map((service, index) => {
                 const colorClass = service.color;
 		                const hoverColorClass = service.hoverColor;
@@ -217,7 +247,7 @@ export default function Home() {
                 return (
                   <Card
                     key={index}
-                    className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500 rounded-2xl border-none bg-white group relative w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]"
+                    className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500 rounded-2xl border-none bg-white group relative md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]"
                   >
                     <div className={`absolute inset-0 bg-gradient-to-br ${colorClass} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                     

@@ -372,15 +372,29 @@ export default function ProjectsMap() {
   }, [selectedTypes, filteredProjects]);
 
   // Quand l'utilisateur mobile clique sur "Voir la carte"
-  const handleShowMapMobile = async () => {
+  const handleShowMapMobile = () => {
     setShowMapOnMobile(true);
     setMapLoading(true);
-    // Attendre le prochain render pour que mapRef soit monté
-    setTimeout(async () => {
-      await initMap();
-      setMapLoading(false);
-    }, 100);
   };
+
+  // Initialiser la carte quand showMapOnMobile passe à true et que le DOM est prêt
+  useEffect(() => {
+    if (showMapOnMobile && projects.length > 0 && !mapInstanceRef.current) {
+      // Attendre que le DOM soit prêt avec le ref
+      const timer = setTimeout(async () => {
+        if (!mapRef.current) return;
+        await initMap();
+        // Forcer Leaflet à recalculer la taille du conteneur après rendu
+        setTimeout(() => {
+          if (mapInstanceRef.current) {
+            mapInstanceRef.current.invalidateSize();
+          }
+          setMapLoading(false);
+        }, 200);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [showMapOnMobile, projects]);
 
   if (loading) {
     return (
@@ -449,7 +463,7 @@ export default function ProjectsMap() {
 
       {/* Carte */}
       {mapLoading && (
-        <div className="w-full h-[500px] flex items-center justify-center bg-gray-100 rounded-xl mb-4">
+        <div className="w-full h-[500px] flex items-center justify-center bg-gray-100 rounded-xl">
           <div className="text-center">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#fcad0d] mx-auto mb-4"></div>
             <p className="text-gray-600">Chargement de la carte...</p>
@@ -458,8 +472,11 @@ export default function ProjectsMap() {
       )}
       <div 
         ref={mapRef} 
-        className={`w-full ${isMobile ? 'h-[500px]' : 'h-[600px]'} rounded-xl shadow-lg border-2 border-gray-200 ${mapLoading ? 'hidden' : ''}`}
-        style={{ zIndex: 1 }}
+        className={`w-full ${isMobile ? 'h-[500px]' : 'h-[600px]'} rounded-xl shadow-lg border-2 border-gray-200`}
+        style={{ 
+          zIndex: 1, 
+          ...(mapLoading ? { height: '1px', overflow: 'hidden', opacity: 0, position: 'absolute' as const } : {})
+        }}
       />
       
       {/* Compteur */}
