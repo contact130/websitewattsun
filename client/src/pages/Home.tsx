@@ -112,7 +112,7 @@ export default function Home() {
         <section
           className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/optimized/wattsun-hero-image.jpg')",
+            backgroundImage: "url('/optimized/wattsun-hero-image.webp')",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
@@ -281,8 +281,8 @@ export default function Home() {
             <div className="flex flex-wrap justify-center items-center gap-12 mb-8">
               <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV - Certification pour installations photovoltaïques" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
               <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC - Certification pour pompes à chaleur" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
-              <img src="/LogoQualibatRGE.png" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
-              <img src="/LogoIRVE.png" alt="IRVE - Installateur qualifié bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
+              <img src="/LogoQualibatRGE.webp" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
+              <img src="/LogoIRVE.webp" alt="IRVE - Installateur qualifié bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
               <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ - Certification pour bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
               <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation - Certification pour systèmes VMC" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
             </div>

@@ -2,7 +2,7 @@
 
 export const APP_TITLE = import.meta.env.VITE_APP_TITLE || "App";
 
-export const APP_LOGO = "/LogoWattsuntransparent.png";
+export const APP_LOGO = "/LogoWattsuntransparent.webp";
 
 // import { Sun, Thermometer, Battery, ChargingStation, Zap, Fan } from "lucide-react"; // Reverted due to build error in Node.js compilation context
 
@@ -159,7 +159,7 @@ export const SERVICES = [
 
 ];
 
-export const APP_LOGO_WHITE = "/LogoWattsun_blanc.png";
+export const APP_LOGO_WHITE = "/LogoWattsun_blanc.webp";
 
 export const REALISATIONS = [
   { city: "Châtelaillon-Plage", service: "Pompes à chaleur", date: "Décembre 2023", lat: 46.072, lng: -1.089 },
