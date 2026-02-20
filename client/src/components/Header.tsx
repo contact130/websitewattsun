@@ -116,7 +116,7 @@ export default function Header() {
         {/* Menu Burger Compact */}
         {isMobileMenuOpen && (
           <div 
-            className="fixed top-20 right-4 w-[420px] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl py-4 z-40 border border-gray-100"
+            className="fixed top-20 right-4 w-[420px] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl py-4 z-40 border border-gray-100 overflow-y-auto max-h-[calc(100vh-6rem)]"
             id="burger-menu"
           >
             <nav className="flex flex-col">
@@ -139,7 +139,7 @@ export default function Header() {
               </div>
 
               {/* Services en grille 2 colonnes */}
-              <div className="grid grid-cols-2 gap-x-1 gap-y-0 px-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-1 gap-y-0 px-2">
                 {SERVICES.map((service) => (
                   <Link
                     key={service.id}
