@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sun, Thermometer, Battery, Zap, Fan, Plug, ChevronDown } from "lucide-react";
+import { Sun, Thermometer, Battery, Zap, Fan, Plug, ChevronDown, Shield, LayoutGrid, DoorOpen, Home as HomeIcon, ClipboardCheck } from "lucide-react";
 import { SERVICES } from "../../../shared/const";
 
 import { Button } from "@/components/ui/button";
@@ -21,6 +21,11 @@ const IconMap = {
   Plug: Plug,
   Zap: Zap,
   Fan: Fan,
+  Shield: Shield,
+  LayoutGrid: LayoutGrid,
+  DoorOpen: DoorOpen,
+  Home: HomeIcon,
+  ClipboardCheck: ClipboardCheck,
 };
 
 // Composant pour rendre l'icône à partir de son nom (string)
@@ -42,6 +47,11 @@ const getServiceColors = (colorClass: string) => {
     'from-indigo-400 to-indigo-600': { from: '#818cf8', to: '#4f46e5' },
     'from-red-400 to-red-600': { from: '#f87171', to: '#dc2626' },
     'from-teal-400 to-teal-600': { from: '#2dd4bf', to: '#0d9488' },
+    'from-orange-400 to-orange-600': { from: '#fb923c', to: '#ea580c' },
+    'from-gray-400 to-gray-600': { from: '#9ca3af', to: '#4b5563' },
+    'from-amber-400 to-amber-600': { from: '#fbbf24', to: '#d97706' },
+    'from-rose-400 to-rose-600': { from: '#fb7185', to: '#e11d48' },
+    'from-purple-400 to-purple-600': { from: '#c084fc', to: '#9333ea' },
   };
   return colorMap[colorClass] || { from: '#facc15', to: '#ca8a04' };
 };
@@ -133,8 +143,11 @@ export default function Home() {
             </h1>
             
             {/* Sous-titre avec proposition de valeur */}
-            <p className="text-lg md:text-xl mb-4 drop-shadow-lg max-w-2xl mx-auto text-gray-200">
+            <p className="text-lg md:text-xl mb-2 drop-shadow-lg max-w-2xl mx-auto text-gray-200">
               Panneaux solaires, pompes à chaleur, bornes de recharge
+            </p>
+            <p className="text-lg md:text-xl mb-4 drop-shadow-lg max-w-2xl mx-auto text-[#fcad0d] font-semibold">
+              Maîtrise d'œuvre & Rénovation du bâtiment
             </p>
             
             {/* Points clés */}
@@ -194,15 +207,15 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-2 text-gray-900">Nos Services</h2>
             <p className="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto">Découvrez nos solutions énergétiques innovantes et durables</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="flex flex-wrap justify-center gap-8">
               {SERVICES.map((service, index) => {
                 const colorClass = service.color;
-	                const hoverColorClass = service.hoverColor;
+		                const hoverColorClass = service.hoverColor;
                 const colors = getServiceColors(colorClass);
                 return (
                   <Card
                     key={index}
-                    className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500 rounded-2xl border-none bg-white group relative"
+                    className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500 rounded-2xl border-none bg-white group relative w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]"
                   >
                     <div className={`absolute inset-0 bg-gradient-to-br ${colorClass} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                     
@@ -251,7 +264,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Nos Réalisations</h2>
             <p className="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-              Découvrez tous nos chantiers photovoltaïques réalisés dans la région. Cliquez sur les marqueurs pour voir les détails.
+              Découvrez tous nos chantiers réalisés dans la région. Cliquez sur les marqueurs pour voir les détails.
             </p>
             <ProjectsMap />
           </div>
@@ -264,6 +277,8 @@ export default function Home() {
             <div className="flex flex-wrap justify-center items-center gap-12 mb-8">
               <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV - Certification pour installations photovoltaïques" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
               <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC - Certification pour pompes à chaleur" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
+              <img src="/LogoQualibatRGE.png" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
+              <img src="/LogoIRVE.png" alt="IRVE - Installateur qualifié bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
               <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ - Certification pour bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
               <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation - Certification pour systèmes VMC" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
             </div>

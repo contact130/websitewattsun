@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, Sun, Thermometer, Battery, Zap, Fan, FileText, Plug, BookOpen } from "lucide-react";
+import { Menu, X, Home, Sun, Thermometer, Battery, Zap, Fan, FileText, Plug, BookOpen, Shield, LayoutGrid, DoorOpen, ClipboardCheck } from "lucide-react";
 // import { PlugZap } from 'lucide-react'; // Remplacé par Plug
 import { APP_LOGO, APP_LOGO_WHITE } from "@shared/const";
 import { SERVICES } from "@shared/const";
@@ -63,6 +63,11 @@ export default function Header() {
     ChargingStation: <Plug className="w-5 h-5" />,
     Zap: <Zap className="w-5 h-5" />,
     Fan: <Fan className="w-5 h-5" />,
+    Shield: <Shield className="w-5 h-5" />,
+    LayoutGrid: <LayoutGrid className="w-5 h-5" />,
+    DoorOpen: <DoorOpen className="w-5 h-5" />,
+    Home: <Home className="w-5 h-5" />,
+    ClipboardCheck: <ClipboardCheck className="w-5 h-5" />,
   };
 
   return (

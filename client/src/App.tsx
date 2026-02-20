@@ -12,6 +12,11 @@ import BatteriesStockage from "@/pages/BatteriesStockage";
 import BornesRecharge from "@/pages/BornesRecharge";
 import ElectriciteGenerale from "@/pages/ElectriciteGenerale";
 import VMC from "@/pages/VMC";
+import Isolation from "@/pages/Isolation";
+import Platrerie from "@/pages/Platrerie";
+import Menuiseries from "@/pages/Menuiseries";
+import Couverture from "@/pages/Couverture";
+import MaitriseOeuvre from "@/pages/MaitriseOeuvre";
 import DemandeDevis from "@/pages/DemandeDevis";
 import Blog from "@/pages/Blog";
 import BlogArticle from "@/pages/BlogArticle";
@@ -41,6 +46,11 @@ function App() {
               <Route path="/bornes-recharge" element={<BornesRecharge />} />
               <Route path="/electricite-generale" element={<ElectriciteGenerale />} />
               <Route path="/vmc" element={<VMC />} />
+              <Route path="/isolation" element={<Isolation />} />
+              <Route path="/platrerie" element={<Platrerie />} />
+              <Route path="/menuiseries" element={<Menuiseries />} />
+              <Route path="/couverture" element={<Couverture />} />
+              <Route path="/maitrise-oeuvre" element={<MaitriseOeuvre />} />
               <Route path="/demande-devis" element={<DemandeDevis />} />
               
               {/* Blog */}

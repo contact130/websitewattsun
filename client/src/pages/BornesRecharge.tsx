@@ -3,7 +3,9 @@ import { SERVICES } from "../../../shared/const";
 
 export default function BornesRecharge() {
   const advantages = [
-    "Recharge rapide et sécurisée à domicile",
+    "Entreprise qualifiée RGE IRVE pour l'installation de bornes de recharge",
+    "Intervention pour les particuliers et les professionnels",
+    "Recharge rapide et sécurisée à domicile ou en entreprise",
     "Économies par rapport aux stations publiques",
     "Installation conforme aux normes électriques",
     "Gestion intelligente de la recharge",
@@ -87,7 +89,7 @@ export default function BornesRecharge() {
     <ServicePage
       title="Bornes de Recharge"
       heroImage="borne-recharge-wallbox.webp"
-      shortDescription="Rechargez votre véhicule électrique rapidement et en toute sécurité"
+      shortDescription="Rechargez votre véhicule électrique rapidement et en toute sécurité — Particuliers et professionnels — RGE IRVE"
       advantages={advantages}
       process={process}
       certifications={certifications}

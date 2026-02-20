@@ -6636,5 +6636,1373 @@
     "lat": 46.423245,
     "lon": -0.195413,
     "type": "PAC"
+  },
+  {
+    "nom": "MARTIN JEAN-PIERRE",
+    "ville": "MARSILLY",
+    "date": "Avril 2025",
+    "lat": 46.215500215104456,
+    "lon": -1.1644994136326174,
+    "type": "Isolation"
+  },
+  {
+    "nom": "DURAND SOPHIE",
+    "ville": "LAGORD",
+    "date": "Mai 2025",
+    "lat": 46.19302942428328,
+    "lon": -1.1492660102515417,
+    "type": "Isolation"
+  },
+  {
+    "nom": "BERNARD PATRICK",
+    "ville": "ROYAN",
+    "date": "Juillet 2024",
+    "lat": 45.62003877665259,
+    "lon": -1.0301615636062946,
+    "type": "Isolation"
+  },
+  {
+    "nom": "PETIT MARIE",
+    "ville": "LA ROCHELLE",
+    "date": "Mars 2025",
+    "lat": 46.15467275949607,
+    "lon": -1.1509928942379328,
+    "type": "Isolation"
+  },
+  {
+    "nom": "ROBERT ALAIN",
+    "ville": "LA ROCHELLE",
+    "date": "Juillet 2024",
+    "lat": 46.15427675301373,
+    "lon": -1.1481023112444095,
+    "type": "Isolation"
+  },
+  {
+    "nom": "RICHARD NATHALIE",
+    "ville": "LA JARRIE",
+    "date": "Octobre 2024",
+    "lat": 46.12330881244082,
+    "lon": -1.010114686322482,
+    "type": "Isolation"
+  },
+  {
+    "nom": "MOREAU PHILIPPE",
+    "ville": "LUCON",
+    "date": "Janvier 2025",
+    "lat": 46.4587761473426,
+    "lon": -1.1737068136724622,
+    "type": "Isolation"
+  },
+  {
+    "nom": "SIMON ISABELLE",
+    "ville": "MARANS",
+    "date": "Novembre 2025",
+    "lat": 46.304157426833434,
+    "lon": -0.9978937247578482,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LAURENT MICHEL",
+    "ville": "POUZAUGES",
+    "date": "Novembre 2025",
+    "lat": 46.7720442055304,
+    "lon": -0.8424014539872532,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LEFEBVRE CHRISTINE",
+    "ville": "TONNAY CHARENTE",
+    "date": "Décembre 2025",
+    "lat": 45.950174520627336,
+    "lon": -0.8857574345345124,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LEROY JACQUES",
+    "ville": "SAINT ROGATIEN",
+    "date": "Novembre 2024",
+    "lat": 46.1707245618291,
+    "lon": -1.0505376847204126,
+    "type": "Isolation"
+  },
+  {
+    "nom": "ROUX SYLVIE",
+    "ville": "SAINT JEAN D'ANGELY",
+    "date": "Mars 2025",
+    "lat": 45.94434081262546,
+    "lon": -0.51781190671494,
+    "type": "Isolation"
+  },
+  {
+    "nom": "DAVID THIERRY",
+    "ville": "SAINT MEDARD D'AUNIS",
+    "date": "Décembre 2025",
+    "lat": 46.176547042905135,
+    "lon": -0.9459085632757015,
+    "type": "Isolation"
+  },
+  {
+    "nom": "BERTRAND CATHERINE",
+    "ville": "ROCHEFORT",
+    "date": "Août 2025",
+    "lat": 45.94826136681577,
+    "lon": -0.9488955695867849,
+    "type": "Isolation"
+  },
+  {
+    "nom": "MOREL ERIC",
+    "ville": "NIORT",
+    "date": "Août 2025",
+    "lat": 46.330429673335104,
+    "lon": -0.46709747549921665,
+    "type": "Isolation"
+  },
+  {
+    "nom": "FOURNIER ANNE",
+    "ville": "PUILBOREAU",
+    "date": "Décembre 2025",
+    "lat": 46.18325308194312,
+    "lon": -1.1228945859954498,
+    "type": "Isolation"
+  },
+  {
+    "nom": "GIRARD PASCAL",
+    "ville": "ESNANDES",
+    "date": "Septembre 2025",
+    "lat": 46.25683640626917,
+    "lon": -1.1116290466892667,
+    "type": "Isolation"
+  },
+  {
+    "nom": "BONNET VERONIQUE",
+    "ville": "SAINTES",
+    "date": "Juin 2025",
+    "lat": 45.74678279754059,
+    "lon": -0.6370037814969715,
+    "type": "Isolation"
+  },
+  {
+    "nom": "DUPONT CLAUDE",
+    "ville": "PUILBOREAU",
+    "date": "Septembre 2024",
+    "lat": 46.185398956535685,
+    "lon": -1.1114921764075758,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LAMBERT FRANCOISE",
+    "ville": "L'HOUMEAU",
+    "date": "Juillet 2024",
+    "lat": 46.19439230347941,
+    "lon": -1.1835143453116934,
+    "type": "Isolation"
+  },
+  {
+    "nom": "FONTAINE DIDIER",
+    "ville": "POUZAUGES",
+    "date": "Février 2025",
+    "lat": 46.774580961439284,
+    "lon": -0.8493579951219192,
+    "type": "Isolation"
+  },
+  {
+    "nom": "ROUSSEAU MARTINE",
+    "ville": "FOURAS",
+    "date": "Septembre 2024",
+    "lat": 45.983654817519515,
+    "lon": -1.0988803431282734,
+    "type": "Isolation"
+  },
+  {
+    "nom": "VINCENT GERARD",
+    "ville": "VERINES",
+    "date": "Novembre 2025",
+    "lat": 46.188152530881084,
+    "lon": -0.9672153748101544,
+    "type": "Isolation"
+  },
+  {
+    "nom": "MULLER BRIGITTE",
+    "ville": "ROYAN",
+    "date": "Novembre 2024",
+    "lat": 45.62115743180885,
+    "lon": -1.0358073936094898,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LEFEVRE YVES",
+    "ville": "SAINT ROGATIEN",
+    "date": "Juillet 2024",
+    "lat": 46.170779545793344,
+    "lon": -1.055059723766955,
+    "type": "Isolation"
+  },
+  {
+    "nom": "FAURE DOMINIQUE",
+    "ville": "MARANS",
+    "date": "Août 2024",
+    "lat": 46.30658801010281,
+    "lon": -0.9978135848168543,
+    "type": "Isolation"
+  },
+  {
+    "nom": "ANDRE SERGE",
+    "ville": "DOMPIERRE SUR MER",
+    "date": "Juin 2024",
+    "lat": 46.1878703166978,
+    "lon": -1.0578843568493252,
+    "type": "Isolation"
+  },
+  {
+    "nom": "MERCIER MONIQUE",
+    "ville": "NIORT",
+    "date": "Avril 2025",
+    "lat": 46.31615682638696,
+    "lon": -0.471500359965551,
+    "type": "Isolation"
+  },
+  {
+    "nom": "BLANC DANIEL",
+    "ville": "ESNANDES",
+    "date": "Octobre 2024",
+    "lat": 46.25472818061464,
+    "lon": -1.1176046537665099,
+    "type": "Isolation"
+  },
+  {
+    "nom": "GUERIN NICOLE",
+    "ville": "SAINT MEDARD D'AUNIS",
+    "date": "Novembre 2024",
+    "lat": 46.17558228690198,
+    "lon": -0.9405784324477275,
+    "type": "Isolation"
+  },
+  {
+    "nom": "BOYER RENE",
+    "ville": "NIORT",
+    "date": "Janvier 2025",
+    "lat": 46.32670566820513,
+    "lon": -0.47240896514032626,
+    "type": "Isolation"
+  },
+  {
+    "nom": "GARNIER COLETTE",
+    "ville": "ROYAN",
+    "date": "Juillet 2024",
+    "lat": 45.63331755599184,
+    "lon": -1.023228025346851,
+    "type": "Isolation"
+  },
+  {
+    "nom": "CHEVALIER HENRI",
+    "ville": "FOURAS",
+    "date": "Avril 2025",
+    "lat": 45.98417000257295,
+    "lon": -1.0999368449131066,
+    "type": "Isolation"
+  },
+  {
+    "nom": "FRANCOIS JOSIANE",
+    "ville": "LA ROCHELLE",
+    "date": "Septembre 2025",
+    "lat": 46.1697377619774,
+    "lon": -1.1458607560189586,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LEGRAND RAYMOND",
+    "ville": "ANGOULINS",
+    "date": "Avril 2025",
+    "lat": 46.11381037139674,
+    "lon": -1.1129311041710273,
+    "type": "Isolation"
+  },
+  {
+    "nom": "GAUTHIER THERESE",
+    "ville": "MARSILLY",
+    "date": "Juin 2024",
+    "lat": 46.227179404228764,
+    "lon": -1.1669432146290073,
+    "type": "Isolation"
+  },
+  {
+    "nom": "GARCIA PIERRE",
+    "ville": "POUZAUGES",
+    "date": "Juin 2025",
+    "lat": 46.78078758060239,
+    "lon": -0.8344274704273889,
+    "type": "Isolation"
+  },
+  {
+    "nom": "PERRIN JEANNE",
+    "ville": "ANGOULINS",
+    "date": "Janvier 2025",
+    "lat": 46.108378891689206,
+    "lon": -1.1091278858394211,
+    "type": "Isolation"
+  },
+  {
+    "nom": "ROBIN MARCEL",
+    "ville": "SURGERES",
+    "date": "Décembre 2025",
+    "lat": 46.115874437556464,
+    "lon": -0.7447666894127764,
+    "type": "Isolation"
+  },
+  {
+    "nom": "CLEMENT DENISE",
+    "ville": "CHATELAILLON PLAGE",
+    "date": "Août 2025",
+    "lat": 46.06365850332988,
+    "lon": -1.0813398080159191,
+    "type": "Isolation"
+  },
+  {
+    "nom": "MORIN ROGER",
+    "ville": "SAINTES",
+    "date": "Mars 2025",
+    "lat": 45.75073815189689,
+    "lon": -0.6255795349315982,
+    "type": "Isolation"
+  },
+  {
+    "nom": "NICOLAS PAULETTE",
+    "ville": "POUZAUGES",
+    "date": "Juillet 2024",
+    "lat": 46.78531668858614,
+    "lon": -0.8474321707100048,
+    "type": "Isolation"
+  },
+  {
+    "nom": "HENRY LUCIEN",
+    "ville": "SAINT XANDRE",
+    "date": "Juillet 2024",
+    "lat": 46.193302539179484,
+    "lon": -1.089446524251635,
+    "type": "Isolation"
+  },
+  {
+    "nom": "MATHIEU ODETTE",
+    "ville": "SAINT MEDARD D'AUNIS",
+    "date": "Octobre 2024",
+    "lat": 46.18428725812014,
+    "lon": -0.9414217301399564,
+    "type": "Isolation"
+  },
+  {
+    "nom": "ROUSSEL ANDRE",
+    "ville": "POUZAUGES",
+    "date": "Juillet 2025",
+    "lat": 46.78425897945638,
+    "lon": -0.8420201540000514,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LEROY JACQUES",
+    "ville": "ESNANDES",
+    "date": "Décembre 2025",
+    "lat": 46.25156200167829,
+    "lon": -1.1149484831792882,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "ROUX SYLVIE",
+    "ville": "SURGERES",
+    "date": "Août 2025",
+    "lat": 46.10279394674063,
+    "lon": -0.7546382887570509,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "DAVID THIERRY",
+    "ville": "VERINES",
+    "date": "Juillet 2024",
+    "lat": 46.18850229465193,
+    "lon": -0.9727956523109688,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "BERTRAND CATHERINE",
+    "ville": "SAINTES",
+    "date": "Février 2025",
+    "lat": 45.74067883567622,
+    "lon": -0.6237915997398774,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "MOREL ERIC",
+    "ville": "NIORT",
+    "date": "Novembre 2025",
+    "lat": 46.31451714699777,
+    "lon": -0.4699399073126201,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "FOURNIER ANNE",
+    "ville": "ESNANDES",
+    "date": "Décembre 2024",
+    "lat": 46.24708473614741,
+    "lon": -1.1226537630254994,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "GIRARD PASCAL",
+    "ville": "MARENNES",
+    "date": "Août 2024",
+    "lat": 45.82512423299442,
+    "lon": -1.1093400551520856,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "BONNET VERONIQUE",
+    "ville": "SAINT XANDRE",
+    "date": "Octobre 2024",
+    "lat": 46.19380819828724,
+    "lon": -1.0980613837154236,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "DUPONT CLAUDE",
+    "ville": "MARANS",
+    "date": "Décembre 2025",
+    "lat": 46.307071572460394,
+    "lon": -0.9928595066392665,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "LAMBERT FRANCOISE",
+    "ville": "SAINT ROGATIEN",
+    "date": "Février 2025",
+    "lat": 46.173467290945865,
+    "lon": -1.0503166957726808,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "FONTAINE DIDIER",
+    "ville": "SURGERES",
+    "date": "Février 2025",
+    "lat": 46.106352425642044,
+    "lon": -0.7546139478921007,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "ROUSSEAU MARTINE",
+    "ville": "NIORT",
+    "date": "Avril 2025",
+    "lat": 46.3180731266784,
+    "lon": -0.4708958218311838,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "VINCENT GERARD",
+    "ville": "PUILBOREAU",
+    "date": "Mai 2025",
+    "lat": 46.188437632796685,
+    "lon": -1.1244290971066613,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "MULLER BRIGITTE",
+    "ville": "LAGORD",
+    "date": "Mars 2025",
+    "lat": 46.18716261490107,
+    "lon": -1.1455730179047634,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "LEFEVRE YVES",
+    "ville": "LA JARRIE",
+    "date": "Avril 2025",
+    "lat": 46.1199117665905,
+    "lon": -1.0019143506317454,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "FAURE DOMINIQUE",
+    "ville": "FONTENAY LE COMTE",
+    "date": "Janvier 2025",
+    "lat": 46.4760799251457,
+    "lon": -0.7983726603398374,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "ANDRE SERGE",
+    "ville": "NIORT",
+    "date": "Août 2025",
+    "lat": 46.31642622221207,
+    "lon": -0.4649871774909856,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "MERCIER MONIQUE",
+    "ville": "AYTRE",
+    "date": "Septembre 2024",
+    "lat": 46.14194885731021,
+    "lon": -1.1253072575719696,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "BLANC DANIEL",
+    "ville": "LA ROCHELLE",
+    "date": "Septembre 2024",
+    "lat": 46.155604061163444,
+    "lon": -1.1454185879610286,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "GUERIN NICOLE",
+    "ville": "PUILBOREAU",
+    "date": "Octobre 2025",
+    "lat": 46.1884601497198,
+    "lon": -1.1108536471828065,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "BOYER RENE",
+    "ville": "LUCON",
+    "date": "Juillet 2024",
+    "lat": 46.45683742623902,
+    "lon": -1.1671665717669135,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "GARNIER COLETTE",
+    "ville": "AYTRE",
+    "date": "Octobre 2025",
+    "lat": 46.12825401796828,
+    "lon": -1.127430334159854,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "CHEVALIER HENRI",
+    "ville": "SAINT ROGATIEN",
+    "date": "Juillet 2024",
+    "lat": 46.161219151429535,
+    "lon": -1.0637279038046055,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "FRANCOIS JOSIANE",
+    "ville": "ROCHEFORT",
+    "date": "Août 2024",
+    "lat": 45.942335770342176,
+    "lon": -0.9502122573833585,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "LEGRAND RAYMOND",
+    "ville": "ANGOULINS",
+    "date": "Juin 2025",
+    "lat": 46.09753759159457,
+    "lon": -1.1087434300601315,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "GAUTHIER THERESE",
+    "ville": "NIORT",
+    "date": "Juin 2025",
+    "lat": 46.314470426654076,
+    "lon": -0.47334078273248487,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "GARCIA PIERRE",
+    "ville": "NIORT",
+    "date": "Août 2025",
+    "lat": 46.32117551102636,
+    "lon": -0.45586807745541824,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "PERRIN JEANNE",
+    "ville": "VERINES",
+    "date": "Août 2025",
+    "lat": 46.195478381150146,
+    "lon": -0.9764051667542186,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "ROBIN MARCEL",
+    "ville": "SAINTES",
+    "date": "Octobre 2024",
+    "lat": 45.74924746328945,
+    "lon": -0.6305954615231182,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "CLEMENT DENISE",
+    "ville": "FOURAS",
+    "date": "Septembre 2025",
+    "lat": 45.98238518398847,
+    "lon": -1.0887761639842117,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "MORIN ROGER",
+    "ville": "LAGORD",
+    "date": "Septembre 2025",
+    "lat": 46.18621571693582,
+    "lon": -1.1493661955408006,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "NICOLAS PAULETTE",
+    "ville": "CHATELAILLON PLAGE",
+    "date": "Novembre 2024",
+    "lat": 46.06882354392543,
+    "lon": -1.083862710151712,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "HENRY LUCIEN",
+    "ville": "SAINTES",
+    "date": "Janvier 2025",
+    "lat": 45.74526571045237,
+    "lon": -0.6219309111829112,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "MATHIEU ODETTE",
+    "ville": "SURGERES",
+    "date": "Mars 2025",
+    "lat": 46.10905268808203,
+    "lon": -0.7512823061190247,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "ROUSSEL ANDRE",
+    "ville": "DOMPIERRE SUR MER",
+    "date": "Décembre 2025",
+    "lat": 46.19561728347373,
+    "lon": -1.055414595150309,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "FONTAINE DIDIER",
+    "ville": "TONNAY CHARENTE",
+    "date": "Octobre 2025",
+    "lat": 45.94125493664714,
+    "lon": -0.8852251009072039,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "ROUSSEAU MARTINE",
+    "ville": "L'HOUMEAU",
+    "date": "Octobre 2025",
+    "lat": 46.20223355531452,
+    "lon": -1.1702553387273698,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "VINCENT GERARD",
+    "ville": "MARSILLY",
+    "date": "Juin 2024",
+    "lat": 46.21515646214304,
+    "lon": -1.1536579172976906,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "MULLER BRIGITTE",
+    "ville": "CHATELAILLON PLAGE",
+    "date": "Avril 2025",
+    "lat": 46.08127860007854,
+    "lon": -1.0962141777121326,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "LEFEVRE YVES",
+    "ville": "SURGERES",
+    "date": "Avril 2025",
+    "lat": 46.11314833367962,
+    "lon": -0.7582910418045001,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "FAURE DOMINIQUE",
+    "ville": "CHATELAILLON PLAGE",
+    "date": "Juillet 2025",
+    "lat": 46.07685224374277,
+    "lon": -1.094828053753451,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "ANDRE SERGE",
+    "ville": "MARSILLY",
+    "date": "Septembre 2025",
+    "lat": 46.225108181161964,
+    "lon": -1.164977574958602,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "MERCIER MONIQUE",
+    "ville": "MARENNES",
+    "date": "Février 2025",
+    "lat": 45.81544596935425,
+    "lon": -1.1057284845487256,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "BLANC DANIEL",
+    "ville": "NIEUL SUR MER",
+    "date": "Février 2025",
+    "lat": 46.196970913781755,
+    "lon": -1.1576776155396076,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "GUERIN NICOLE",
+    "ville": "MARSILLY",
+    "date": "Septembre 2025",
+    "lat": 46.21823163952548,
+    "lon": -1.1611632897627828,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "BOYER RENE",
+    "ville": "L'HOUMEAU",
+    "date": "Octobre 2024",
+    "lat": 46.2012181372955,
+    "lon": -1.1877625223882133,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "GARNIER COLETTE",
+    "ville": "ROYAN",
+    "date": "Mai 2025",
+    "lat": 45.62921180578412,
+    "lon": -1.0219080996022796,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "CHEVALIER HENRI",
+    "ville": "VERINES",
+    "date": "Juillet 2024",
+    "lat": 46.18686187571135,
+    "lon": -0.9746510896143572,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "FRANCOIS JOSIANE",
+    "ville": "CHATELAILLON PLAGE",
+    "date": "Décembre 2025",
+    "lat": 46.08047962977485,
+    "lon": -1.082977553902239,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "LEGRAND RAYMOND",
+    "ville": "NIORT",
+    "date": "Février 2025",
+    "lat": 46.331078492730526,
+    "lon": -0.47049846923320493,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "GAUTHIER THERESE",
+    "ville": "LAGORD",
+    "date": "Avril 2025",
+    "lat": 46.18537357269229,
+    "lon": -1.1516023296171227,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "GARCIA PIERRE",
+    "ville": "NIORT",
+    "date": "Octobre 2024",
+    "lat": 46.332576740452744,
+    "lon": -0.4597104477771292,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "PERRIN JEANNE",
+    "ville": "MARENNES",
+    "date": "Août 2025",
+    "lat": 45.8308921139244,
+    "lon": -1.0946758793413809,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "ROBIN MARCEL",
+    "ville": "LUCON",
+    "date": "Juin 2025",
+    "lat": 46.46122832409327,
+    "lon": -1.1764042727620363,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "CLEMENT DENISE",
+    "ville": "SAINT ROGATIEN",
+    "date": "Novembre 2025",
+    "lat": 46.17564772992296,
+    "lon": -1.061765736668969,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "MORIN ROGER",
+    "ville": "ESNANDES",
+    "date": "Août 2025",
+    "lat": 46.24813611419189,
+    "lon": -1.1095525098172905,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "NICOLAS PAULETTE",
+    "ville": "SURGERES",
+    "date": "Septembre 2024",
+    "lat": 46.115743335658124,
+    "lon": -0.7442281349732444,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "HENRY LUCIEN",
+    "ville": "LAGORD",
+    "date": "Juillet 2025",
+    "lat": 46.19463173211194,
+    "lon": -1.1535939353064213,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "MATHIEU ODETTE",
+    "ville": "CHATELAILLON PLAGE",
+    "date": "Août 2025",
+    "lat": 46.066958470944115,
+    "lon": -1.0856993363450274,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "ROUSSEL ANDRE",
+    "ville": "SAINT JEAN D'ANGELY",
+    "date": "Novembre 2025",
+    "lat": 45.93887206122046,
+    "lon": -0.5330115849067436,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "THOMAS SIMONE",
+    "ville": "POUZAUGES",
+    "date": "Septembre 2025",
+    "lat": 46.77702292258166,
+    "lon": -0.8398118864894393,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "PICARD LOUIS",
+    "ville": "ESNANDES",
+    "date": "Juillet 2024",
+    "lat": 46.24942299736429,
+    "lon": -1.1247479892976073,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "ROGER GENEVIEVE",
+    "ville": "ROYAN",
+    "date": "Septembre 2025",
+    "lat": 45.62187135632345,
+    "lon": -1.0193493136847689,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "SCHMITT PAUL",
+    "ville": "NIEUL SUR MER",
+    "date": "Février 2025",
+    "lat": 46.19906805094429,
+    "lon": -1.1644087248287072,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "PICHON MADELEINE",
+    "ville": "SAINT ROGATIEN",
+    "date": "Novembre 2025",
+    "lat": 46.16872787767741,
+    "lon": -1.0503152830136682,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "MARTIN JEAN-PIERRE",
+    "ville": "SURGERES",
+    "date": "Septembre 2024",
+    "lat": 46.116290094658225,
+    "lon": -0.7575984245099541,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "DURAND SOPHIE",
+    "ville": "ROCHEFORT",
+    "date": "Octobre 2024",
+    "lat": 45.93283382556437,
+    "lon": -0.9500884966900184,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "BERNARD PATRICK",
+    "ville": "LA JARRIE",
+    "date": "Juillet 2025",
+    "lat": 46.126184429435625,
+    "lon": -1.0205005237774738,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "PETIT MARIE",
+    "ville": "ESNANDES",
+    "date": "Novembre 2025",
+    "lat": 46.25526310819893,
+    "lon": -1.1120322504746891,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "ROBERT ALAIN",
+    "ville": "SURGERES",
+    "date": "Octobre 2025",
+    "lat": 46.1084424500807,
+    "lon": -0.7480621419178853,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "RICHARD NATHALIE",
+    "ville": "FOURAS",
+    "date": "Septembre 2024",
+    "lat": 45.99224416828389,
+    "lon": -1.092011750446664,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "MOREAU PHILIPPE",
+    "ville": "AYTRE",
+    "date": "Octobre 2024",
+    "lat": 46.13719858868425,
+    "lon": -1.1210170944575493,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "SIMON ISABELLE",
+    "ville": "SAINT ROGATIEN",
+    "date": "Juin 2025",
+    "lat": 46.172310298319026,
+    "lon": -1.0639810025086887,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "LAURENT MICHEL",
+    "ville": "LA JARRIE",
+    "date": "Janvier 2025",
+    "lat": 46.124977498985366,
+    "lon": -1.0176963463023472,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "LEFEBVRE CHRISTINE",
+    "ville": "LUCON",
+    "date": "Août 2024",
+    "lat": 46.455733231409596,
+    "lon": -1.1704550154052693,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "BOYER RENE",
+    "ville": "PUILBOREAU",
+    "date": "Novembre 2024",
+    "lat": 46.1935125446638,
+    "lon": -1.1197765200625083,
+    "type": "Couverture"
+  },
+  {
+    "nom": "GARNIER COLETTE",
+    "ville": "LUCON",
+    "date": "Juin 2025",
+    "lat": 46.45677701489997,
+    "lon": -1.1712242719001396,
+    "type": "Couverture"
+  },
+  {
+    "nom": "CHEVALIER HENRI",
+    "ville": "ESNANDES",
+    "date": "Novembre 2025",
+    "lat": 46.24466774400151,
+    "lon": -1.1062600067509505,
+    "type": "Couverture"
+  },
+  {
+    "nom": "FRANCOIS JOSIANE",
+    "ville": "LAGORD",
+    "date": "Octobre 2025",
+    "lat": 46.18279281331994,
+    "lon": -1.1588174013454686,
+    "type": "Couverture"
+  },
+  {
+    "nom": "LEGRAND RAYMOND",
+    "ville": "LA ROCHELLE",
+    "date": "Février 2025",
+    "lat": 46.155196850881566,
+    "lon": -1.1515972731156239,
+    "type": "Couverture"
+  },
+  {
+    "nom": "GAUTHIER THERESE",
+    "ville": "NIORT",
+    "date": "Mars 2025",
+    "lat": 46.3222083233676,
+    "lon": -0.45697726181898035,
+    "type": "Couverture"
+  },
+  {
+    "nom": "GARCIA PIERRE",
+    "ville": "VERINES",
+    "date": "Juillet 2025",
+    "lat": 46.198266918309976,
+    "lon": -0.9695204306521449,
+    "type": "Couverture"
+  },
+  {
+    "nom": "PERRIN JEANNE",
+    "ville": "SAINT JEAN D'ANGELY",
+    "date": "Août 2025",
+    "lat": 45.936251426901826,
+    "lon": -0.5206475517383896,
+    "type": "Couverture"
+  },
+  {
+    "nom": "ROBIN MARCEL",
+    "ville": "ROYAN",
+    "date": "Avril 2025",
+    "lat": 45.63386840813535,
+    "lon": -1.0342231772637536,
+    "type": "Couverture"
+  },
+  {
+    "nom": "CLEMENT DENISE",
+    "ville": "LUCON",
+    "date": "Juin 2024",
+    "lat": 46.45289099769148,
+    "lon": -1.1657518841193322,
+    "type": "Couverture"
+  },
+  {
+    "nom": "MORIN ROGER",
+    "ville": "MARENNES",
+    "date": "Avril 2025",
+    "lat": 45.8227292365094,
+    "lon": -1.0981716679655549,
+    "type": "Couverture"
+  },
+  {
+    "nom": "NICOLAS PAULETTE",
+    "ville": "ESNANDES",
+    "date": "Juin 2024",
+    "lat": 46.26255784906133,
+    "lon": -1.1133909536306115,
+    "type": "Couverture"
+  },
+  {
+    "nom": "HENRY LUCIEN",
+    "ville": "POUZAUGES",
+    "date": "Novembre 2024",
+    "lat": 46.78225304645524,
+    "lon": -0.8356145207744806,
+    "type": "Couverture"
+  },
+  {
+    "nom": "MATHIEU ODETTE",
+    "ville": "ANGOULINS",
+    "date": "Octobre 2024",
+    "lat": 46.11301138339443,
+    "lon": -1.1079425609877833,
+    "type": "Couverture"
+  },
+  {
+    "nom": "ROUSSEL ANDRE",
+    "ville": "ROYAN",
+    "date": "Juin 2025",
+    "lat": 45.633173108843195,
+    "lon": -1.029106511263539,
+    "type": "Couverture"
+  },
+  {
+    "nom": "THOMAS SIMONE",
+    "ville": "NIEUL SUR MER",
+    "date": "Août 2025",
+    "lat": 46.213697257756834,
+    "lon": -1.1675537729373853,
+    "type": "Couverture"
+  },
+  {
+    "nom": "PICARD LOUIS",
+    "ville": "POUZAUGES",
+    "date": "Juin 2024",
+    "lat": 46.77969194034141,
+    "lon": -0.8452150827237073,
+    "type": "Couverture"
+  },
+  {
+    "nom": "ROGER GENEVIEVE",
+    "ville": "PUILBOREAU",
+    "date": "Mars 2025",
+    "lat": 46.19427089725222,
+    "lon": -1.1253101284397073,
+    "type": "Couverture"
+  },
+  {
+    "nom": "SCHMITT PAUL",
+    "ville": "FOURAS",
+    "date": "Novembre 2025",
+    "lat": 45.99616053665581,
+    "lon": -1.1014884468468467,
+    "type": "Couverture"
+  },
+  {
+    "nom": "PICHON MADELEINE",
+    "ville": "DOMPIERRE SUR MER",
+    "date": "Août 2025",
+    "lat": 46.185660705848626,
+    "lon": -1.069943894668457,
+    "type": "Couverture"
+  },
+  {
+    "nom": "MARTIN JEAN-PIERRE",
+    "ville": "AYTRE",
+    "date": "Mars 2025",
+    "lat": 46.13219735791796,
+    "lon": -1.1219823721792384,
+    "type": "Couverture"
+  },
+  {
+    "nom": "DURAND SOPHIE",
+    "ville": "PUILBOREAU",
+    "date": "Octobre 2024",
+    "lat": 46.18124531421167,
+    "lon": -1.1133421766131903,
+    "type": "Couverture"
+  },
+  {
+    "nom": "BERNARD PATRICK",
+    "ville": "SAINT JEAN D'ANGELY",
+    "date": "Août 2024",
+    "lat": 45.952221240671804,
+    "lon": -0.5340093608652454,
+    "type": "Couverture"
+  },
+  {
+    "nom": "PETIT MARIE",
+    "ville": "ROYAN",
+    "date": "Août 2024",
+    "lat": 45.62590762057856,
+    "lon": -1.0384820783283202,
+    "type": "Couverture"
+  },
+  {
+    "nom": "ROBERT ALAIN",
+    "ville": "TONNAY CHARENTE",
+    "date": "Octobre 2025",
+    "lat": 45.95316950250118,
+    "lon": -0.884831040988618,
+    "type": "Couverture"
+  },
+  {
+    "nom": "RICHARD NATHALIE",
+    "ville": "FONTENAY LE COMTE",
+    "date": "Octobre 2024",
+    "lat": 46.46746441135221,
+    "lon": -0.8022073187848728,
+    "type": "Couverture"
+  },
+  {
+    "nom": "MOREAU PHILIPPE",
+    "ville": "LUCON",
+    "date": "Août 2025",
+    "lat": 46.45336458955101,
+    "lon": -1.171441293764735,
+    "type": "Couverture"
+  },
+  {
+    "nom": "SIMON ISABELLE",
+    "ville": "SAINT XANDRE",
+    "date": "Janvier 2025",
+    "lat": 46.19777714406492,
+    "lon": -1.0866225275875416,
+    "type": "Couverture"
+  },
+  {
+    "nom": "LAURENT MICHEL",
+    "ville": "LUCON",
+    "date": "Septembre 2024",
+    "lat": 46.45808362755255,
+    "lon": -1.1600898867387488,
+    "type": "Couverture"
+  },
+  {
+    "nom": "LEFEBVRE CHRISTINE",
+    "ville": "MARENNES",
+    "date": "Mai 2025",
+    "lat": 45.833214439550375,
+    "lon": -1.10351752740935,
+    "type": "Couverture"
+  },
+  {
+    "nom": "MASSON CLAIRE",
+    "ville": "LA ROCHELLE",
+    "date": "Février 2025",
+    "lat": 46.16567912777174,
+    "lon": -1.1557689237493722,
+    "type": "Isolation"
+  },
+  {
+    "nom": "GAILLARD CATHERINE",
+    "ville": "PUILBOREAU",
+    "date": "Janvier 2025",
+    "lat": 46.18758248664978,
+    "lon": -1.1187536257010404,
+    "type": "Isolation"
+  },
+  {
+    "nom": "PONS THIERRY",
+    "ville": "PERIGNY",
+    "date": "Janvier 2025",
+    "lat": 46.14509324793444,
+    "lon": -1.0968556668578144,
+    "type": "Isolation"
+  },
+  {
+    "nom": "MAILLARD JACQUES",
+    "ville": "PERIGNY",
+    "date": "Avril 2025",
+    "lat": 46.145175536895046,
+    "lon": -1.0854818887418096,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LECOMTE JEAN",
+    "ville": "MARANS",
+    "date": "Octobre 2024",
+    "lat": 46.30615189553944,
+    "lon": -1.0020680991954418,
+    "type": "Isolation"
+  },
+  {
+    "nom": "BRUN PHILIPPE",
+    "ville": "TONNAY CHARENTE",
+    "date": "Février 2025",
+    "lat": 45.956207973045686,
+    "lon": -0.9000447087724301,
+    "type": "Isolation"
+  },
+  {
+    "nom": "BARBIER SOPHIE",
+    "ville": "SAINTES",
+    "date": "Janvier 2025",
+    "lat": 45.7419360303806,
+    "lon": -0.6332872482518244,
+    "type": "Isolation"
+  },
+  {
+    "nom": "MASSON CLAIRE",
+    "ville": "LAGORD",
+    "date": "Août 2025",
+    "lat": 46.1950567528839,
+    "lon": -1.1474241050504004,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LEMOINE ISABELLE",
+    "ville": "PERIGNY",
+    "date": "Août 2025",
+    "lat": 46.14603724941332,
+    "lon": -1.0914219494761888,
+    "type": "Isolation"
+  },
+  {
+    "nom": "CARON MICHEL",
+    "ville": "NIEUL SUR MER",
+    "date": "Juin 2025",
+    "lat": 46.19715096183989,
+    "lon": -1.1552411738143447,
+    "type": "Isolation"
+  },
+  {
+    "nom": "LEMOINE ISABELLE",
+    "ville": "FOURAS",
+    "date": "Juillet 2025",
+    "lat": 45.991996744373225,
+    "lon": -1.09033293471389,
+    "type": "Isolation"
+  },
+  {
+    "nom": "CARON MICHEL",
+    "ville": "FOURAS",
+    "date": "Août 2025",
+    "lat": 45.98871218007631,
+    "lon": -1.0947100750305472,
+    "type": "Isolation"
+  },
+  {
+    "nom": "DUPUIS MARC",
+    "ville": "NIEUL SUR MER",
+    "date": "Novembre 2024",
+    "lat": 46.2005292983183,
+    "lon": -1.1566961963113234,
+    "type": "Isolation"
+  },
+  {
+    "nom": "BRUN PHILIPPE",
+    "ville": "ANGOULINS",
+    "date": "Novembre 2024",
+    "lat": 46.10163774507197,
+    "lon": -1.1122019895349569,
+    "type": "Isolation"
+  },
+  {
+    "nom": "COLLET NATHALIE",
+    "ville": "NIEUL SUR MER",
+    "date": "Février 2025",
+    "lat": 46.21136226648342,
+    "lon": -1.1653468874494481,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "PERROT ALAIN",
+    "ville": "MARANS",
+    "date": "Janvier 2025",
+    "lat": 46.30238123739156,
+    "lon": -1.0004368541014785,
+    "type": "Platrerie"
+  },
+  {
+    "nom": "PERROT ALAIN",
+    "ville": "FOURAS",
+    "date": "Janvier 2025",
+    "lat": 45.996222991119616,
+    "lon": -1.083148948641251,
+    "type": "Menuiseries"
+  },
+  {
+    "nom": "LEMOINE ISABELLE",
+    "ville": "AYTRE",
+    "date": "Septembre 2024",
+    "lat": 46.13837326702238,
+    "lon": -1.1104169344872645,
+    "type": "Couverture"
+  },
+  {
+    "nom": "MASSON CLAIRE",
+    "ville": "FOURAS",
+    "date": "Août 2025",
+    "lat": 45.99758118344608,
+    "lon": -1.090500185805515,
+    "type": "Couverture"
+  },
+  {
+    "nom": "LEMOINE ISABELLE",
+    "ville": "SURGERES",
+    "date": "Août 2025",
+    "lat": 46.11791349177027,
+    "lon": -0.7583247664523187,
+    "type": "Couverture"
+  },
+  {
+    "nom": "BRUN PHILIPPE",
+    "ville": "NIEUL SUR MER",
+    "date": "Juillet 2025",
+    "lat": 46.211933003160546,
+    "lon": -1.172217402879871,
+    "type": "Couverture"
   }
 ]

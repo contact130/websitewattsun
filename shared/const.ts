@@ -25,6 +25,17 @@ export const getLoginUrl = () => {
 
 export const SERVICES = [
   {
+    id: "maitrise-oeuvre",
+    title: "Maîtrise d'Œuvre",
+    description: "Rénovation globale clé en main pour particuliers et professionnels — Accompagnement MAR / ANAH.",
+    Icon: "ClipboardCheck",
+    seoTitle: "Maîtrise d'Œuvre Rénovation Globale | Wattsun Énergie",
+    seoDescription: "Rénovation énergétique globale clé en main en Charente-Maritime. Accompagnement MAR, aides MaPrimeRénov' jusqu'à 50 000€. Particuliers et professionnels. Devis gratuit.",
+    path: "/maitrise-oeuvre",
+    color: "from-purple-400 to-purple-600",
+    hoverColor: "text-purple-600",
+  },
+  {
     id: "photovoltaique",
     title: "Panneaux Photovoltaïques",
     description: "Produisez votre propre électricité verte et réduisez vos factures.",
@@ -32,7 +43,7 @@ export const SERVICES = [
     seoTitle: "Panneaux Photovoltaïques à La Rochelle | Wattsun Énergie",
     seoDescription: "Installation de panneaux solaires RGE QualiPV à La Rochelle. Produisez votre électricité, réduisez vos factures et bénéficiez des aides de l'État. Demandez un devis gratuit.",
     path: "/panneaux-photovoltaiques",
-    color: "from-yellow-400 to-yellow-600", // Jaune/Orange pour le solaire
+    color: "from-yellow-400 to-yellow-600",
     hoverColor: "text-yellow-600",
   },
   {
@@ -60,12 +71,12 @@ export const SERVICES = [
   {
     id: "bornes",
     title: "Bornes de Recharge",
-    description: "Rechargez votre véhicule électrique à domicile en toute sécurité.",
+    description: "Rechargez votre véhicule électrique à domicile ou en entreprise — RGE IRVE.",
     Icon: "ChargingStation",
-    seoTitle: "Installation Bornes de Recharge IRVE à Domicile | Wattsun Énergie",
-    seoDescription: "Pose de bornes de recharge pour véhicules électriques à La Rochelle (IRVE). Installation sécurisée, éligible au programme ADVENIR. Devis gratuit.",
+    seoTitle: "Installation Bornes de Recharge RGE IRVE | Wattsun Énergie",
+    seoDescription: "Pose de bornes de recharge pour véhicules électriques RGE IRVE à La Rochelle. Particuliers et professionnels. Installation sécurisée, éligible ADVENIR. Devis gratuit.",
     path: "/bornes-recharge",
-    color: "from-indigo-400 to-indigo-600", // Indigo pour la recharge EV
+    color: "from-indigo-400 to-indigo-600",
     hoverColor: "text-indigo-600",
   },
   {
@@ -90,6 +101,51 @@ export const SERVICES = [
     color: "from-teal-400 to-teal-600", // Cyan/Teal pour la ventilation/air
     hoverColor: "text-teal-600",
   },
+  {
+    id: "isolation",
+    title: "Isolation",
+    description: "Isolation des combles, rampants et murs intérieurs — QUALIBAT RGE.",
+    Icon: "Shield",
+    seoTitle: "Isolation Thermique QUALIBAT RGE en Charente-Maritime | Wattsun Énergie",
+    seoDescription: "Isolation des combles, rampants de toiture et murs intérieurs par un artisan QUALIBAT RGE. Particuliers et professionnels. Devis gratuit en Charente-Maritime.",
+    path: "/isolation",
+    color: "from-orange-400 to-orange-600",
+    hoverColor: "text-orange-600",
+  },
+  {
+    id: "platrerie",
+    title: "Plâtrerie",
+    description: "Cloisons, faux plafonds et doublage — QUALIBAT.",
+    Icon: "LayoutGrid",
+    seoTitle: "Plâtrerie QUALIBAT : Cloisons, Faux Plafonds, Doublage | Wattsun Énergie",
+    seoDescription: "Travaux de plâtrerie QUALIBAT en Charente-Maritime : cloisons, faux plafonds, doublage et finitions. Particuliers et professionnels. Devis gratuit.",
+    path: "/platrerie",
+    color: "from-gray-400 to-gray-600",
+    hoverColor: "text-gray-600",
+  },
+  {
+    id: "menuiseries",
+    title: "Menuiseries",
+    description: "Fenêtres, portes et volets haute performance — QUALIBAT RGE.",
+    Icon: "DoorOpen",
+    seoTitle: "Menuiseries QUALIBAT RGE : Fenêtres, Portes, Volets | Wattsun Énergie",
+    seoDescription: "Installation de menuiseries QUALIBAT RGE en Charente-Maritime : fenêtres, portes, volets. Particuliers et professionnels. Devis gratuit.",
+    path: "/menuiseries",
+    color: "from-amber-400 to-amber-600",
+    hoverColor: "text-amber-600",
+  },
+  {
+    id: "couverture",
+    title: "Couverture",
+    description: "Réfection, réparation et entretien de toiture.",
+    Icon: "Home",
+    seoTitle: "Couverture et Toiture en Charente-Maritime | Wattsun Énergie",
+    seoDescription: "Travaux de couverture, réfection de toiture, zinguerie et réparation de fuites en Charente-Maritime. Devis gratuit et intervention rapide.",
+    path: "/couverture",
+    color: "from-rose-400 to-rose-600",
+    hoverColor: "text-rose-600",
+  },
+
 ];
 
 export const APP_LOGO_WHITE = "/LogoWattsun_blanc.png";
@@ -114,4 +170,3 @@ export const CONTACT = {
   address: "21 bis Rue Ampère 17139 Dompierre sur mer",
   formspreeUrl: "https://formspree.io/f/mzzjvrje"
 };
-

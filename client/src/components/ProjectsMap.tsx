@@ -7,7 +7,7 @@ interface Project {
   puissance?: string;
   lat: number;
   lon: number;
-  type: 'PV' | 'PAC' | 'Batteries' | 'Bornes' | 'Electricite' | 'VMC';
+  type: 'PV' | 'PAC' | 'Batteries' | 'Bornes' | 'Electricite' | 'VMC' | 'Isolation' | 'Platrerie' | 'Menuiseries' | 'Couverture';
 }
 
 // Configuration des couleurs par type (cohérentes avec les icônes de services)
@@ -18,6 +18,10 @@ const TYPE_COLORS = {
   Bornes: '#8b5cf6',       // Violet (prise)
   Electricite: '#ef4444',  // Rouge (éclair)
   VMC: '#14b8a6',          // Turquoise (ventilateur)
+  Isolation: '#ea580c',    // Orange (isolation)
+  Platrerie: '#4b5563',    // Gris (plâtrerie)
+  Menuiseries: '#d97706',  // Ambre (menuiseries)
+  Couverture: '#e11d48',   // Rose (couverture)
 };
 
 // Couleurs claires pour le dégradé des clusters
@@ -28,6 +32,10 @@ const TYPE_COLORS_LIGHT = {
   Bornes: '#c4b5fd',       // Violet clair
   Electricite: '#fca5a5',  // Rouge clair
   VMC: '#5eead4',          // Turquoise clair
+  Isolation: '#fb923c',    // Orange clair
+  Platrerie: '#9ca3af',    // Gris clair
+  Menuiseries: '#fbbf24',  // Ambre clair
+  Couverture: '#fb7185',   // Rose clair
 };
 
 const TYPE_LABELS = {
@@ -37,13 +45,17 @@ const TYPE_LABELS = {
   Bornes: 'Bornes de Recharge',
   Electricite: 'Électricité Générale',
   VMC: 'VMC',
+  Isolation: 'Isolation',
+  Platrerie: 'Plâtrerie',
+  Menuiseries: 'Menuiseries',
+  Couverture: 'Couverture',
 };
 
 export default function ProjectsMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set(['PV', 'PAC', 'Batteries', 'Bornes', 'Electricite', 'VMC']));
+  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set(['PV', 'PAC', 'Batteries', 'Bornes', 'Electricite', 'VMC', 'Isolation', 'Platrerie', 'Menuiseries', 'Couverture']));
   const mapInstanceRef = useRef<any>(null);
   const markersGroupRef = useRef<any>(null);
 

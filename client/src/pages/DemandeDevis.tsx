@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { ChevronRight, ChevronLeft, Sun, Thermometer, Battery, PlugZap, Zap, Fan, Check, Clock, AlertCircle, CheckCircle2, Sparkles } from "lucide-react";
+import { ChevronRight, ChevronLeft, Sun, Thermometer, Battery, PlugZap, Zap, Fan, Check, Clock, AlertCircle, CheckCircle2, Sparkles, ClipboardCheck, Shield, LayoutGrid, DoorOpen, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -17,6 +17,11 @@ const IconMap = {
   ChargingStation: PlugZap,
   Zap: Zap,
   Fan: Fan,
+  ClipboardCheck: ClipboardCheck,
+  Shield: Shield,
+  LayoutGrid: LayoutGrid,
+  DoorOpen: DoorOpen,
+  Home: Home,
 };
 
 const IconComponent = ({ iconName, size, className }: { iconName: keyof typeof IconMap, size: number, className: string }) => {
@@ -48,6 +53,13 @@ interface FormData {
   installationPhotovoltaique: string;
   marqueOnduleur: string;
   description: string;
+  // Maîtrise d'œuvre
+  moeAnneeMaison: string;
+  moeTypeProjet: string;
+  moeMaisonEtage: string;
+  moeDelai: string;
+  moePlans: string;
+  moeDescriptionProjet: string;
 }
 
 interface ValidationErrors {
@@ -103,6 +115,12 @@ export default function DemandeDevis() {
       installationPhotovoltaique: "",
       marqueOnduleur: "",
       description: "",
+      moeAnneeMaison: "",
+      moeTypeProjet: "",
+      moeMaisonEtage: "",
+      moeDelai: "",
+      moePlans: "",
+      moeDescriptionProjet: "",
     };
   });
   
@@ -265,6 +283,17 @@ export default function DemandeDevis() {
     message += `Téléphone: ${formData.telephone}\n`;
     message += `Adresse: ${formData.adresse}\n\n`;
 
+    if (formData.selectedServices.includes("maitrise-oeuvre")) {
+      message += `--- Maîtrise d'\u0152uvre ---\n`;
+      if (formData.moeAnneeMaison) message += `Maison datant des années: ${formData.moeAnneeMaison}\n`;
+      if (formData.moeTypeProjet) message += `Type de projet: ${formData.moeTypeProjet}\n`;
+      if (formData.moeMaisonEtage) message += `Configuration: ${formData.moeMaisonEtage}\n`;
+      if (formData.moePlans) message += `Plans déjà réalisés: ${formData.moePlans}\n`;
+      if (formData.moeDelai) message += `Délai souhaité: ${formData.moeDelai}\n`;
+      if (formData.moeDescriptionProjet) message += `Précisions: ${formData.moeDescriptionProjet}\n`;
+      message += `\n`;
+    }
+
     if (formData.selectedServices.includes("photovoltaique")) {
       message += `--- Panneaux Photovoltaïques ---\n`;
       message += `Type de toiture: ${formData.typeToiture}\n`;
@@ -296,6 +325,17 @@ export default function DemandeDevis() {
       if (formData.installationPhotovoltaique === "oui") {
         message += `Marque et modèle onduleur: ${formData.marqueOnduleur}\n`;
       }
+      message += `\n`;
+    }
+
+    if (
+      formData.selectedServices.includes("isolation") ||
+      formData.selectedServices.includes("platrerie") ||
+      formData.selectedServices.includes("menuiseries") ||
+      formData.selectedServices.includes("couverture")
+    ) {
+      message += `--- Détails Travaux ---\n`;
+      if (formData.description) message += `${formData.description}\n`;
       message += `\n`;
     }
 
@@ -372,6 +412,12 @@ export default function DemandeDevis() {
           installationPhotovoltaique: "",
           marqueOnduleur: "",
           description: "",
+          moeAnneeMaison: "",
+          moeTypeProjet: "",
+          moeMaisonEtage: "",
+          moeDelai: "",
+          moePlans: "",
+          moeDescriptionProjet: "",
         });
         setCurrentStep(1);
       }
@@ -537,6 +583,11 @@ export default function DemandeDevis() {
                         "bornes": { border: "border-indigo-500", bg: "bg-gradient-to-br from-indigo-400/20 to-indigo-600/10", icon: "bg-indigo-500/30", text: "text-indigo-600", check: "bg-indigo-500", hover: "hover:border-indigo-400 hover:shadow-indigo-200" },
                         "electricite": { border: "border-red-500", bg: "bg-gradient-to-br from-red-400/20 to-red-600/10", icon: "bg-red-500/30", text: "text-red-600", check: "bg-red-500", hover: "hover:border-red-400 hover:shadow-red-200" },
                         "vmc": { border: "border-teal-500", bg: "bg-gradient-to-br from-teal-400/20 to-teal-600/10", icon: "bg-teal-500/30", text: "text-teal-600", check: "bg-teal-500", hover: "hover:border-teal-400 hover:shadow-teal-200" },
+                        "maitrise-oeuvre": { border: "border-purple-500", bg: "bg-gradient-to-br from-purple-400/20 to-purple-600/10", icon: "bg-purple-500/30", text: "text-purple-600", check: "bg-purple-500", hover: "hover:border-purple-400 hover:shadow-purple-200" },
+                        "isolation": { border: "border-orange-500", bg: "bg-gradient-to-br from-orange-400/20 to-orange-600/10", icon: "bg-orange-500/30", text: "text-orange-600", check: "bg-orange-500", hover: "hover:border-orange-400 hover:shadow-orange-200" },
+                        "platrerie": { border: "border-gray-500", bg: "bg-gradient-to-br from-gray-400/20 to-gray-600/10", icon: "bg-gray-500/30", text: "text-gray-600", check: "bg-gray-500", hover: "hover:border-gray-400 hover:shadow-gray-200" },
+                        "menuiseries": { border: "border-amber-500", bg: "bg-gradient-to-br from-amber-400/20 to-amber-600/10", icon: "bg-amber-500/30", text: "text-amber-600", check: "bg-amber-500", hover: "hover:border-amber-400 hover:shadow-amber-200" },
+                        "couverture": { border: "border-rose-500", bg: "bg-gradient-to-br from-rose-400/20 to-rose-600/10", icon: "bg-rose-500/30", text: "text-rose-600", check: "bg-rose-500", hover: "hover:border-rose-400 hover:shadow-rose-200" },
                       };
                       const color = serviceColors[service.id] || serviceColors["photovoltaique"];
                       return (
@@ -583,6 +634,140 @@ export default function DemandeDevis() {
                     Détails de Votre Projet
                   </h2>
                   <p className="text-gray-500 mb-6">Ces informations nous aident à préparer votre devis (optionnel)</p>
+
+                  {/* Maîtrise d'Œuvre */}
+                  {formData.selectedServices.includes("maitrise-oeuvre") && (
+                    <div className="p-6 bg-gradient-to-r from-purple-50 to-violet-50 rounded-xl border border-purple-200">
+                      <h3 className="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
+                        <ClipboardCheck className="w-5 h-5 text-purple-500" />
+                        Maîtrise d'Œuvre — Décrivez votre projet
+                      </h3>
+                      <p className="text-sm text-gray-500 mb-4">Sélectionnez les options qui correspondent à votre projet (optionnel)</p>
+                      
+                      {/* Année de la maison */}
+                      <div className="mb-4">
+                        <Label className="text-sm font-semibold text-gray-700 mb-2 block">Maison datant des années...</Label>
+                        <div className="flex flex-wrap gap-2">
+                          {["Avant 1950", "1950-1970", "1970-1990", "1990-2000", "Après 2000"].map((option) => (
+                            <button
+                              key={option}
+                              type="button"
+                              onClick={() => setFormData(prev => ({ ...prev, moeAnneeMaison: prev.moeAnneeMaison === option ? "" : option }))}
+                              className={`px-4 py-2 rounded-lg border-2 text-sm font-medium transition-all duration-200 ${
+                                formData.moeAnneeMaison === option
+                                  ? "border-purple-500 bg-purple-100 text-purple-700"
+                                  : "border-gray-200 bg-white text-gray-600 hover:border-purple-300 hover:bg-purple-50"
+                              }`}
+                            >
+                              {formData.moeAnneeMaison === option && <Check className="w-4 h-4 inline mr-1" />}
+                              {option}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Type de projet */}
+                      <div className="mb-4">
+                        <Label className="text-sm font-semibold text-gray-700 mb-2 block">Type de projet</Label>
+                        <div className="flex flex-wrap gap-2">
+                          {["Réfection intégrale du bâtiment", "Rénovation partielle"].map((option) => (
+                            <button
+                              key={option}
+                              type="button"
+                              onClick={() => setFormData(prev => ({ ...prev, moeTypeProjet: prev.moeTypeProjet === option ? "" : option }))}
+                              className={`px-4 py-2 rounded-lg border-2 text-sm font-medium transition-all duration-200 ${
+                                formData.moeTypeProjet === option
+                                  ? "border-purple-500 bg-purple-100 text-purple-700"
+                                  : "border-gray-200 bg-white text-gray-600 hover:border-purple-300 hover:bg-purple-50"
+                              }`}
+                            >
+                              {formData.moeTypeProjet === option && <Check className="w-4 h-4 inline mr-1" />}
+                              {option}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Maison à étage */}
+                      <div className="mb-4">
+                        <Label className="text-sm font-semibold text-gray-700 mb-2 block">Configuration du bâtiment</Label>
+                        <div className="flex flex-wrap gap-2">
+                          {["Maison plain-pied", "Maison à étage", "Immeuble", "Local professionnel"].map((option) => (
+                            <button
+                              key={option}
+                              type="button"
+                              onClick={() => setFormData(prev => ({ ...prev, moeMaisonEtage: prev.moeMaisonEtage === option ? "" : option }))}
+                              className={`px-4 py-2 rounded-lg border-2 text-sm font-medium transition-all duration-200 ${
+                                formData.moeMaisonEtage === option
+                                  ? "border-purple-500 bg-purple-100 text-purple-700"
+                                  : "border-gray-200 bg-white text-gray-600 hover:border-purple-300 hover:bg-purple-50"
+                              }`}
+                            >
+                              {formData.moeMaisonEtage === option && <Check className="w-4 h-4 inline mr-1" />}
+                              {option}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Plans */}
+                      <div className="mb-4">
+                        <Label className="text-sm font-semibold text-gray-700 mb-2 block">Avez-vous des plans déjà réalisés ?</Label>
+                        <div className="flex flex-wrap gap-2">
+                          {["Oui, plans déjà réalisés", "Non, pas encore", "En cours de réalisation"].map((option) => (
+                            <button
+                              key={option}
+                              type="button"
+                              onClick={() => setFormData(prev => ({ ...prev, moePlans: prev.moePlans === option ? "" : option }))}
+                              className={`px-4 py-2 rounded-lg border-2 text-sm font-medium transition-all duration-200 ${
+                                formData.moePlans === option
+                                  ? "border-purple-500 bg-purple-100 text-purple-700"
+                                  : "border-gray-200 bg-white text-gray-600 hover:border-purple-300 hover:bg-purple-50"
+                              }`}
+                            >
+                              {formData.moePlans === option && <Check className="w-4 h-4 inline mr-1" />}
+                              {option}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Délai */}
+                      <div className="mb-4">
+                        <Label className="text-sm font-semibold text-gray-700 mb-2 block">Délai souhaité</Label>
+                        <div className="flex flex-wrap gap-2">
+                          {["Dans les 3 mois", "Dans les 6 mois", "Dans l'année", "Pas de délai précis"].map((option) => (
+                            <button
+                              key={option}
+                              type="button"
+                              onClick={() => setFormData(prev => ({ ...prev, moeDelai: prev.moeDelai === option ? "" : option }))}
+                              className={`px-4 py-2 rounded-lg border-2 text-sm font-medium transition-all duration-200 ${
+                                formData.moeDelai === option
+                                  ? "border-purple-500 bg-purple-100 text-purple-700"
+                                  : "border-gray-200 bg-white text-gray-600 hover:border-purple-300 hover:bg-purple-50"
+                              }`}
+                            >
+                              {formData.moeDelai === option && <Check className="w-4 h-4 inline mr-1" />}
+                              {option}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Description libre */}
+                      <div>
+                        <Label htmlFor="moeDescriptionProjet" className="text-sm font-semibold text-gray-700">Précisions supplémentaires</Label>
+                        <Textarea
+                          id="moeDescriptionProjet"
+                          name="moeDescriptionProjet"
+                          value={formData.moeDescriptionProjet}
+                          onChange={handleInputChange}
+                          placeholder="Décrivez votre projet de rénovation, vos attentes, la surface du bâtiment..."
+                          className="mt-1 min-h-24"
+                        />
+                      </div>
+                    </div>
+                  )}
 
                   {/* Panneaux Photovoltaïques */}
                   {formData.selectedServices.includes("photovoltaique") && (
@@ -816,6 +1001,27 @@ export default function DemandeDevis() {
                             />
                           </div>
                         )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Isolation, Plâtrerie, Menuiseries, Couverture */}
+                  {(formData.selectedServices.includes("isolation") || formData.selectedServices.includes("platrerie") || formData.selectedServices.includes("menuiseries") || formData.selectedServices.includes("couverture")) && (
+                    <div className="p-6 bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl border border-orange-200">
+                      <h3 className="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
+                        <Shield className="w-5 h-5 text-orange-500" />
+                        {[formData.selectedServices.includes("isolation") && "Isolation", formData.selectedServices.includes("platrerie") && "Plâtrerie", formData.selectedServices.includes("menuiseries") && "Menuiseries", formData.selectedServices.includes("couverture") && "Couverture"].filter(Boolean).join(", ")}
+                      </h3>
+                      <div>
+                        <Label htmlFor="description">Décrivez votre projet</Label>
+                        <Textarea
+                          id="description"
+                          name="description"
+                          value={formData.description}
+                          onChange={handleInputChange}
+                          placeholder="Décrivez votre projet : type de travaux, surface concernée, contraintes particulières..."
+                          className="mt-1 min-h-24"
+                        />
                       </div>
                     </div>
                   )}

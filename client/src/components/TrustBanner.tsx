@@ -15,8 +15,8 @@ const stats = [
   },
   {
     icon: Award,
-    value: "4",
-    label: "Certifications RGE",
+    value: "5",
+    label: "Qualifications RGE",
     color: "text-green-500"
   },
   {
