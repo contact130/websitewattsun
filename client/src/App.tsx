@@ -17,6 +17,7 @@ import Platrerie from "@/pages/Platrerie";
 import Menuiseries from "@/pages/Menuiseries";
 import Couverture from "@/pages/Couverture";
 import MaitriseOeuvre from "@/pages/MaitriseOeuvre";
+import IsolationCombles from "@/pages/IsolationCombles";
 import DemandeDevis from "@/pages/DemandeDevis";
 import Blog from "@/pages/Blog";
 import BlogArticle from "@/pages/BlogArticle";
@@ -47,6 +48,7 @@ function App() {
               <Route path="/electricite-generale" element={<ElectriciteGenerale />} />
               <Route path="/vmc" element={<VMC />} />
               <Route path="/isolation" element={<Isolation />} />
+              <Route path="/isolation-combles" element={<IsolationCombles />} />
               <Route path="/platrerie" element={<Platrerie />} />
               <Route path="/menuiseries" element={<Menuiseries />} />
               <Route path="/couverture" element={<Couverture />} />

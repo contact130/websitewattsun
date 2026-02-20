@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sun, Thermometer, Battery, Zap, Fan, Plug, ChevronDown, Shield, LayoutGrid, DoorOpen, Home as HomeIcon, ClipboardCheck } from "lucide-react";
+import { Sun, Thermometer, Battery, Zap, Fan, Plug, ChevronDown, Shield, LayoutGrid, DoorOpen, Home as HomeIcon, ClipboardCheck, Layers } from "lucide-react";
 import { SERVICES } from "../../../shared/const";
 
 import { Button } from "@/components/ui/button";
@@ -26,6 +26,7 @@ const IconMap = {
   DoorOpen: DoorOpen,
   Home: HomeIcon,
   ClipboardCheck: ClipboardCheck,
+  Layers: Layers,
 };
 
 // Composant pour rendre l'icône à partir de son nom (string)
@@ -52,6 +53,7 @@ const getServiceColors = (colorClass: string) => {
     'from-amber-400 to-amber-600': { from: '#fbbf24', to: '#d97706' },
     'from-rose-400 to-rose-600': { from: '#fb7185', to: '#e11d48' },
     'from-purple-400 to-purple-600': { from: '#c084fc', to: '#9333ea' },
+    'from-yellow-500 to-orange-500': { from: '#eab308', to: '#f97316' },
   };
   return colorMap[colorClass] || { from: '#facc15', to: '#ca8a04' };
 };

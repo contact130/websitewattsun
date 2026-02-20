@@ -113,6 +113,17 @@ export const SERVICES = [
     hoverColor: "text-orange-600",
   },
   {
+    id: "isolation-combles",
+    title: "Isolation des Combles",
+    description: "Combles perdus et aménageables — Soufflage et panneaux — QUALIBAT RGE.",
+    Icon: "Layers",
+    seoTitle: "Isolation des Combles QUALIBAT RGE en Charente-Maritime | Wattsun Énergie",
+    seoDescription: "Isolation des combles perdus et aménageables par un artisan QUALIBAT RGE. CEE, TVA 5,5%, Éco-PTZ. Particuliers et professionnels en Charente-Maritime. Devis gratuit.",
+    path: "/isolation-combles",
+    color: "from-yellow-500 to-orange-500",
+    hoverColor: "text-orange-500",
+  },
+  {
     id: "platrerie",
     title: "Plâtrerie",
     description: "Cloisons, faux plafonds et doublage — QUALIBAT.",
