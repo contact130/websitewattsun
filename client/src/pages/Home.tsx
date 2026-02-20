@@ -61,7 +61,7 @@ const getServiceColors = (colorClass: string) => {
 // Données du slider d'impact
 const impactStats = [
   {
-    value: "739+",
+    value: "910+",
     label: "installations réalisées en Nouvelle-Aquitaine",
     icon: "🏠"
   },

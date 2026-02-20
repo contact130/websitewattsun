@@ -9,7 +9,7 @@ const stats = [
   },
   {
     icon: Users,
-    value: "739+",
+    value: "910+",
     label: "Chantiers réalisés",
     color: "text-[#5e8a92]"
   },
