@@ -308,24 +308,24 @@ export default function Home() {
         <section className="py-20 bg-gradient-to-b from-white to-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-4 text-gray-900">Nos Certifications et Qualifications</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 mb-8 max-w-4xl mx-auto">
-              <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-sm">
-                <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV RGE 2026 - Certification pour installations photovoltaïques" className="h-16 md:h-20 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-10 mb-8 max-w-5xl mx-auto">
+              <div className="flex items-center justify-center p-4 md:p-5 bg-white rounded-xl shadow-sm">
+                <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV RGE 2026 - Certification pour installations photovoltaïques" className="h-16 md:h-28 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-sm">
-                <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC RGE - Certification pour pompes à chaleur" className="h-16 md:h-20 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <div className="flex items-center justify-center p-4 md:p-5 bg-white rounded-xl shadow-sm">
+                <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC RGE - Certification pour pompes à chaleur" className="h-16 md:h-28 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-sm">
-                <img src="/LogoQualibatRGE.webp" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-16 md:h-20 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <div className="flex items-center justify-center p-4 md:p-5 bg-white rounded-xl shadow-sm">
+                <img src="/LogoQualibatRGE.webp" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-16 md:h-28 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-sm">
-                <img src="/LogoIRVE.webp" alt="IRVE - Installateur qualifié bornes de recharge" className="h-16 md:h-20 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <div className="flex items-center justify-center p-4 md:p-5 bg-white rounded-xl shadow-sm">
+                <img src="/LogoIRVE.webp" alt="IRVE - Installateur qualifié bornes de recharge" className="h-16 md:h-28 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-sm">
-                <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ 2026 - Certification pour bornes de recharge" className="h-16 md:h-20 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <div className="flex items-center justify-center p-4 md:p-5 bg-white rounded-xl shadow-sm">
+                <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ 2026 - Certification pour bornes de recharge" className="h-16 md:h-28 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-sm">
-                <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation+ RGE - Certification pour systèmes VMC" className="h-16 md:h-20 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <div className="flex items-center justify-center p-4 md:p-5 bg-white rounded-xl shadow-sm">
+                <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation+ RGE - Certification pour systèmes VMC" className="h-16 md:h-28 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
               </div>
             </div>
             <p className="text-center text-gray-700 max-w-3xl mx-auto leading-relaxed">
