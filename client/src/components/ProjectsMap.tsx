@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { MapPin, ChevronRight } from 'lucide-react';
 
 interface Project {
   nom: string;
@@ -51,6 +52,87 @@ const TYPE_LABELS = {
   Couverture: 'Couverture',
 };
 
+// Hook pour détecter mobile
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+  return isMobile;
+}
+
+// Composant teasing mobile
+function MobileTeaser({ totalProjects, typeCounts, onShowMap }: { totalProjects: number; typeCounts: Record<string, number>; onShowMap: () => void }) {
+  const topTypes = Object.entries(typeCounts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5);
+
+  return (
+    <div className="relative overflow-hidden rounded-xl border-2 border-gray-200 bg-gradient-to-br from-gray-50 to-white shadow-lg">
+      {/* Fond décoratif avec points simulant une carte */}
+      <div className="absolute inset-0 opacity-10">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+              <circle cx="15" cy="15" r="1.5" fill="#fcad0d" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots)" />
+        </svg>
+      </div>
+
+      <div className="relative p-6 text-center">
+        {/* Icône carte */}
+        <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-[#fcad0d] to-[#f59e0b] rounded-full flex items-center justify-center shadow-lg">
+          <MapPin className="w-8 h-8 text-white" />
+        </div>
+
+        {/* Titre */}
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+          {totalProjects}+ chantiers réalisés
+        </h3>
+        <p className="text-gray-600 mb-6">
+          en Charente-Maritime et Nouvelle-Aquitaine
+        </p>
+
+        {/* Résumé des types */}
+        <div className="flex flex-wrap justify-center gap-2 mb-6">
+          {topTypes.map(([type, count]) => {
+            const color = TYPE_COLORS[type as keyof typeof TYPE_COLORS];
+            const label = TYPE_LABELS[type as keyof typeof TYPE_LABELS];
+            return (
+              <div
+                key={type}
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-white rounded-full shadow-sm border border-gray-100"
+              >
+                <div
+                  className="w-2.5 h-2.5 rounded-full"
+                  style={{ backgroundColor: color }}
+                />
+                <span className="text-xs font-medium text-gray-700">{label}</span>
+                <span className="text-xs text-gray-400">{count}</span>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Bouton CTA */}
+        <button
+          onClick={onShowMap}
+          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#fcad0d] to-[#f59e0b] text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95"
+        >
+          <MapPin className="w-5 h-5" />
+          Voir la carte interactive
+          <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function ProjectsMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const [projects, setProjects] = useState<Project[]>([]);
@@ -58,6 +140,9 @@ export default function ProjectsMap() {
   const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set(['PV', 'PAC', 'Batteries', 'Bornes', 'Electricite', 'VMC', 'Isolation', 'Platrerie', 'Menuiseries', 'Couverture']));
   const mapInstanceRef = useRef<any>(null);
   const markersGroupRef = useRef<any>(null);
+  const isMobile = useIsMobile();
+  const [showMapOnMobile, setShowMapOnMobile] = useState(false);
+  const [mapLoading, setMapLoading] = useState(false);
 
   useEffect(() => {
     // Charger les données des chantiers
@@ -91,7 +176,6 @@ export default function ProjectsMap() {
   const getClusterColor = () => {
     const activeTypes = Array.from(selectedTypes);
     
-    // Si un seul type est sélectionné, utiliser sa couleur
     if (activeTypes.length === 1) {
       const type = activeTypes[0] as keyof typeof TYPE_COLORS;
       return {
@@ -101,7 +185,6 @@ export default function ProjectsMap() {
       };
     }
     
-    // Si plusieurs types mais pas tous, utiliser la couleur du type le plus représenté
     if (activeTypes.length > 1 && activeTypes.length < 6) {
       const typeCounts = filteredProjects.reduce((acc, p) => {
         acc[p.type] = (acc[p.type] || 0) + 1;
@@ -120,7 +203,6 @@ export default function ProjectsMap() {
       }
     }
     
-    // Par défaut (tous les types sélectionnés), utiliser le jaune Wattsun
     return {
       main: '#fcad0d',
       light: '#ffc84d',
@@ -128,176 +210,184 @@ export default function ProjectsMap() {
     };
   };
 
-  useEffect(() => {
-    if (!mapRef.current || loading || projects.length === 0) return;
+  // Charger et initialiser la carte Leaflet
+  const initMap = async () => {
+    if (!mapRef.current || projects.length === 0) return;
 
     // Charger Leaflet dynamiquement
-    const loadLeaflet = async () => {
-      // Ajouter le CSS de Leaflet
-      if (!document.querySelector('link[href*="leaflet.css"]')) {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-        link.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
-        link.crossOrigin = '';
-        document.head.appendChild(link);
-      }
+    if (!document.querySelector('link[href*="leaflet.css"]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+      link.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
+      link.crossOrigin = '';
+      document.head.appendChild(link);
+    }
 
-      // Ajouter le CSS de MarkerCluster
-      if (!document.querySelector('link[href*="MarkerCluster.css"]')) {
-        const link1 = document.createElement('link');
-        link1.rel = 'stylesheet';
-        link1.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css';
-        document.head.appendChild(link1);
+    if (!document.querySelector('link[href*="MarkerCluster.css"]')) {
+      const link1 = document.createElement('link');
+      link1.rel = 'stylesheet';
+      link1.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css';
+      document.head.appendChild(link1);
 
-        const link2 = document.createElement('link');
-        link2.rel = 'stylesheet';
-        link2.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css';
-        document.head.appendChild(link2);
-      }
+      const link2 = document.createElement('link');
+      link2.rel = 'stylesheet';
+      link2.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css';
+      document.head.appendChild(link2);
+    }
 
-      // Charger le script Leaflet
-      if (!(window as any).L) {
-        await new Promise((resolve, reject) => {
-          const script = document.createElement('script');
-          script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-          script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
-          script.crossOrigin = '';
-          script.onload = resolve;
-          script.onerror = reject;
-          document.body.appendChild(script);
+    if (!(window as any).L) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+        script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+        script.crossOrigin = '';
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+    }
+
+    if (!(window as any).L.markerClusterGroup) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js';
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+    }
+
+    const L = (window as any).L;
+
+    if (!mapInstanceRef.current) {
+      const map = L.map(mapRef.current).setView([46.1591, -1.1520], 10);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors',
+        maxZoom: 19,
+      }).addTo(map);
+      mapInstanceRef.current = map;
+    }
+
+    updateMarkers();
+  };
+
+  // Mettre à jour les marqueurs
+  const updateMarkers = () => {
+    if (!mapInstanceRef.current) return;
+    const L = (window as any).L;
+    if (!L) return;
+
+    if (markersGroupRef.current) {
+      mapInstanceRef.current.removeLayer(markersGroupRef.current);
+    }
+
+    const clusterColors = getClusterColor();
+
+    const markers = L.markerClusterGroup({
+      maxClusterRadius: 50,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: true,
+      iconCreateFunction: function(cluster: any) {
+        const count = cluster.getChildCount();
+        let size = 'small';
+        if (count > 20) size = 'large';
+        else if (count > 10) size = 'medium';
+        
+        return L.divIcon({
+          html: `<div style="
+            background: linear-gradient(135deg, ${clusterColors.main} 0%, ${clusterColors.light} 100%);
+            color: ${clusterColors.text};
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: ${size === 'large' ? '16px' : size === 'medium' ? '14px' : '12px'};
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            border: 3px solid white;
+          ">${count}</div>`,
+          className: 'custom-cluster-icon',
+          iconSize: L.point(
+            size === 'large' ? 50 : size === 'medium' ? 42 : 36,
+            size === 'large' ? 50 : size === 'medium' ? 42 : 36
+          ),
         });
       }
+    });
 
-      // Charger le script MarkerCluster
-      if (!(window as any).L.markerClusterGroup) {
-        await new Promise((resolve, reject) => {
-          const script = document.createElement('script');
-          script.src = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js';
-          script.onload = resolve;
-          script.onerror = reject;
-          document.body.appendChild(script);
-        });
-      }
-
-      const L = (window as any).L;
-
-      // Créer la carte si elle n'existe pas
-      if (!mapInstanceRef.current) {
-        const map = L.map(mapRef.current).setView([46.1591, -1.1520], 10);
-
-        // Ajouter la couche de tuiles OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '© OpenStreetMap contributors',
-          maxZoom: 19,
-        }).addTo(map);
-
-        mapInstanceRef.current = map;
-      }
-
-      // Supprimer l'ancien groupe de marqueurs
-      if (markersGroupRef.current) {
-        mapInstanceRef.current.removeLayer(markersGroupRef.current);
-      }
-
-      // Obtenir les couleurs pour les clusters
-      const clusterColors = getClusterColor();
-
-      // Créer un groupe de clusters avec couleurs dynamiques
-      const markers = L.markerClusterGroup({
-        maxClusterRadius: 50,
-        spiderfyOnMaxZoom: true,
-        showCoverageOnHover: false,
-        zoomToBoundsOnClick: true,
-        iconCreateFunction: function(cluster: any) {
-          const count = cluster.getChildCount();
-          let size = 'small';
-          
-          if (count > 20) {
-            size = 'large';
-          } else if (count > 10) {
-            size = 'medium';
-          }
-          
-          return L.divIcon({
-            html: `<div style="
-              background: linear-gradient(135deg, ${clusterColors.main} 0%, ${clusterColors.light} 100%);
-              color: ${clusterColors.text};
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-weight: 700;
-              font-size: ${size === 'large' ? '16px' : size === 'medium' ? '14px' : '12px'};
-              width: 100%;
-              height: 100%;
-              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-              border: 3px solid white;
-            ">${count}</div>`,
-            className: 'custom-cluster-icon',
-            iconSize: L.point(
-              size === 'large' ? 50 : size === 'medium' ? 42 : 36,
-              size === 'large' ? 50 : size === 'medium' ? 42 : 36
-            ),
-          });
-        }
+    filteredProjects.forEach(project => {
+      const color = TYPE_COLORS[project.type];
+      const customIcon = L.icon({
+        iconUrl: 'data:image/svg+xml;base64,' + btoa(`
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+            <circle cx="12" cy="10" r="3" fill="${color}"/>
+          </svg>
+        `),
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32],
       });
 
-      // Ajouter les marqueurs filtrés
-      filteredProjects.forEach(project => {
-        const color = TYPE_COLORS[project.type];
-        
-        // Créer une icône avec la couleur du type
-        const customIcon = L.icon({
-          iconUrl: 'data:image/svg+xml;base64,' + btoa(`
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-              <circle cx="12" cy="10" r="3" fill="${color}"/>
-            </svg>
-          `),
-          iconSize: [32, 32],
-          iconAnchor: [16, 32],
-          popupAnchor: [0, -32],
-        });
-
-        const marker = L.marker([project.lat, project.lon], { icon: customIcon });
-        
-        const popupContent = `
-          <div style="font-family: system-ui, -apple-system, sans-serif; min-width: 200px;">
-            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-              <div style="width: 12px; height: 12px; border-radius: 50%; background: ${color};"></div>
-              <span style="font-size: 12px; color: #6b7280; font-weight: 600;">${TYPE_LABELS[project.type]}</span>
-            </div>
-            <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #1f2937;">
-              ${project.ville}
-            </h3>
-            <div style="font-size: 14px; color: #6b7280; line-height: 1.6;">
-              <p style="margin: 4px 0;"><strong>Date:</strong> ${project.date}</p>
-              ${project.puissance ? `<p style="margin: 4px 0;"><strong>Puissance:</strong> ${project.puissance}</p>` : ''}
-            </div>
+      const marker = L.marker([project.lat, project.lon], { icon: customIcon });
+      const popupContent = `
+        <div style="font-family: system-ui, -apple-system, sans-serif; min-width: 200px;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: ${color};"></div>
+            <span style="font-size: 12px; color: #6b7280; font-weight: 600;">${TYPE_LABELS[project.type]}</span>
           </div>
-        `;
-        
-        marker.bindPopup(popupContent);
-        markers.addLayer(marker);
-      });
+          <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #1f2937;">
+            ${project.ville}
+          </h3>
+          <div style="font-size: 14px; color: #6b7280; line-height: 1.6;">
+            <p style="margin: 4px 0;"><strong>Date:</strong> ${project.date}</p>
+            ${project.puissance ? `<p style="margin: 4px 0;"><strong>Puissance:</strong> ${project.puissance}</p>` : ''}
+          </div>
+        </div>
+      `;
+      marker.bindPopup(popupContent);
+      markers.addLayer(marker);
+    });
 
-      // Ajouter le groupe de clusters à la carte
-      mapInstanceRef.current.addLayer(markers);
-      markersGroupRef.current = markers;
+    mapInstanceRef.current.addLayer(markers);
+    markersGroupRef.current = markers;
+  };
 
-      // Ne pas réinitialiser la vue automatiquement - laisser l'utilisateur naviguer librement
-    };
+  // Sur bureau : charger la carte automatiquement
+  useEffect(() => {
+    if (!isMobile && !loading && projects.length > 0) {
+      initMap();
+    }
+  }, [isMobile, loading, projects]);
 
-    loadLeaflet();
-  }, [filteredProjects, loading, projects, selectedTypes]);
+  // Mettre à jour les marqueurs quand les filtres changent (bureau ou carte mobile ouverte)
+  useEffect(() => {
+    if (mapInstanceRef.current && (window as any).L) {
+      updateMarkers();
+    }
+  }, [selectedTypes, filteredProjects]);
+
+  // Quand l'utilisateur mobile clique sur "Voir la carte"
+  const handleShowMapMobile = async () => {
+    setShowMapOnMobile(true);
+    setMapLoading(true);
+    // Attendre le prochain render pour que mapRef soit monté
+    setTimeout(async () => {
+      await initMap();
+      setMapLoading(false);
+    }, 100);
+  };
 
   if (loading) {
     return (
-      <div className="w-full h-[600px] flex items-center justify-center bg-gray-100 rounded-xl">
+      <div className="w-full h-[300px] flex items-center justify-center bg-gray-100 rounded-xl">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#fcad0d] mx-auto mb-4"></div>
-          <p className="text-gray-600">Chargement de la carte...</p>
+          <p className="text-gray-600">Chargement...</p>
         </div>
       </div>
     );
@@ -308,6 +398,17 @@ export default function ProjectsMap() {
     acc[p.type] = (acc[p.type] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
+
+  // Mobile : afficher le teaser ou la carte
+  if (isMobile && !showMapOnMobile) {
+    return (
+      <MobileTeaser
+        totalProjects={projects.length}
+        typeCounts={typeCounts}
+        onShowMap={handleShowMapMobile}
+      />
+    );
+  }
 
   return (
     <div className="relative">
@@ -347,9 +448,17 @@ export default function ProjectsMap() {
       </div>
 
       {/* Carte */}
+      {mapLoading && (
+        <div className="w-full h-[500px] flex items-center justify-center bg-gray-100 rounded-xl mb-4">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#fcad0d] mx-auto mb-4"></div>
+            <p className="text-gray-600">Chargement de la carte...</p>
+          </div>
+        </div>
+      )}
       <div 
         ref={mapRef} 
-        className="w-full h-[600px] rounded-xl shadow-lg border-2 border-gray-200"
+        className={`w-full ${isMobile ? 'h-[500px]' : 'h-[600px]'} rounded-xl shadow-lg border-2 border-gray-200 ${mapLoading ? 'hidden' : ''}`}
         style={{ zIndex: 1 }}
       />
       
