@@ -57,18 +57,18 @@ export default function Header() {
 
   // Mapping des icônes pour les services
   const iconMap: Record<string, React.ReactElement> = {
-    Sun: <Sun className="w-5 h-5" />,
-    Thermometer: <Thermometer className="w-5 h-5" />,
-    Battery: <Battery className="w-5 h-5" />,
-    ChargingStation: <Plug className="w-5 h-5" />,
-    Zap: <Zap className="w-5 h-5" />,
-    Fan: <Fan className="w-5 h-5" />,
-    Shield: <Shield className="w-5 h-5" />,
-    LayoutGrid: <LayoutGrid className="w-5 h-5" />,
-    DoorOpen: <DoorOpen className="w-5 h-5" />,
-    Home: <Home className="w-5 h-5" />,
-    ClipboardCheck: <ClipboardCheck className="w-5 h-5" />,
-    Layers: <Layers className="w-5 h-5" />,
+    Sun: <Sun className="w-4 h-4" />,
+    Thermometer: <Thermometer className="w-4 h-4" />,
+    Battery: <Battery className="w-4 h-4" />,
+    ChargingStation: <Plug className="w-4 h-4" />,
+    Zap: <Zap className="w-4 h-4" />,
+    Fan: <Fan className="w-4 h-4" />,
+    Shield: <Shield className="w-4 h-4" />,
+    LayoutGrid: <LayoutGrid className="w-4 h-4" />,
+    DoorOpen: <DoorOpen className="w-4 h-4" />,
+    Home: <Home className="w-4 h-4" />,
+    ClipboardCheck: <ClipboardCheck className="w-4 h-4" />,
+    Layers: <Layers className="w-4 h-4" />,
   };
 
   return (
@@ -113,70 +113,72 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Menu Burger Raffiné */}
+        {/* Menu Burger Compact */}
         {isMobileMenuOpen && (
           <div 
-            className="fixed top-20 right-4 w-80 bg-white rounded-2xl shadow-2xl py-6 z-40 border border-gray-100"
-            id="burger-menu" // Ajout d'un ID pour la détection de clic
+            className="fixed top-20 right-4 w-[420px] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl py-4 z-40 border border-gray-100"
+            id="burger-menu"
           >
-            <nav className="flex flex-col space-y-1">
+            <nav className="flex flex-col">
               {/* Accueil */}
               <Link
                 to="/"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-3 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] font-medium transition-colors px-6 py-3 rounded-lg mx-2"
+                className="flex items-center gap-2 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] font-medium transition-colors px-4 py-2 rounded-lg mx-2"
               >
-                <Home className="w-5 h-5 flex-shrink-0" />
-                <span>Accueil</span>
+                <Home className="w-4 h-4 flex-shrink-0" />
+                <span className="text-sm">Accueil</span>
               </Link>
 
               {/* Divider */}
-              <div className="my-2 border-t border-gray-200 mx-2"></div>
+              <div className="my-1.5 border-t border-gray-200 mx-2"></div>
 
               {/* Titre Services */}
-              <div className="px-6 py-2">
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Services</p>
+              <div className="px-4 py-1">
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Nos Services</p>
               </div>
 
-              {/* Services avec icônes */}
-              {SERVICES.map((service) => (
-                <Link
-                  key={service.id}
-                  to={service.path}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="flex items-center gap-3 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] transition-colors px-6 py-3 rounded-lg mx-2"
-                >
-                  <span className="w-5 h-5 flex-shrink-0 flex items-center justify-center">
-                    {iconMap[service.Icon] || <Zap className="w-5 h-5" />}
-                  </span>
-                  <span className="text-sm">{service.title}</span>
-                </Link>
-              ))}
+              {/* Services en grille 2 colonnes */}
+              <div className="grid grid-cols-2 gap-x-1 gap-y-0 px-2">
+                {SERVICES.map((service) => (
+                  <Link
+                    key={service.id}
+                    to={service.path}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="flex items-center gap-2 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] transition-colors px-2 py-2 rounded-lg"
+                  >
+                    <span className="w-4 h-4 flex-shrink-0 flex items-center justify-center">
+                      {iconMap[service.Icon] || <Zap className="w-4 h-4" />}
+                    </span>
+                    <span className="text-xs leading-tight">{service.title}</span>
+                  </Link>
+                ))}
+              </div>
 
               {/* Divider */}
-              <div className="my-2 border-t border-gray-200 mx-2"></div>
+              <div className="my-1.5 border-t border-gray-200 mx-2"></div>
 
               {/* Blog */}
               <Link
                 to="/blog"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-3 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] font-medium transition-colors px-6 py-3 rounded-lg mx-2"
+                className="flex items-center gap-2 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] font-medium transition-colors px-4 py-2 rounded-lg mx-2"
               >
-                <BookOpen className="w-5 h-5 flex-shrink-0" />
-                <span>Blog & Conseils</span>
+                <BookOpen className="w-4 h-4 flex-shrink-0" />
+                <span className="text-sm">Blog & Conseils</span>
               </Link>
 
               {/* Divider */}
-              <div className="my-2 border-t border-gray-200 mx-2"></div>
+              <div className="my-1.5 border-t border-gray-200 mx-2"></div>
 
               {/* Demander un Devis */}
               <Link
                 to="/demande-devis"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity mx-2 mt-2"
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#5e8a92] to-[#fcad0d] text-white px-4 py-2.5 rounded-lg font-medium hover:opacity-90 transition-opacity mx-2 mt-1"
               >
-                <FileText className="w-5 h-5" />
-                <span>Demander un Devis</span>
+                <FileText className="w-4 h-4" />
+                <span className="text-sm">Demander un Devis</span>
               </Link>
             </nav>
           </div>
@@ -185,4 +187,3 @@ export default function Header() {
     </header>
   );
 }
-
