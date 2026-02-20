@@ -4,10 +4,15 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import { APP_LOGO, CONTACT, SERVICES } from "@shared/const";
 
 export default function Footer() {
+  // Diviser les services en 2 colonnes
+  const midpoint = Math.ceil(SERVICES.length / 2);
+  const servicesCol1 = SERVICES.slice(0, midpoint);
+  const servicesCol2 = SERVICES.slice(midpoint);
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* À propos */}
           <div>
             <img src={APP_LOGO} alt="Wattsun Énergie" className="h-16 mb-4" />
@@ -25,39 +30,55 @@ export default function Footer() {
                 href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
                 className="flex items-center gap-3 text-gray-400 hover:text-[#fcad0d] transition-colors"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5 flex-shrink-0" />
                 <span>{CONTACT.phone}</span>
               </a>
               <a
                 href={`mailto:${CONTACT.email}`}
                 className="flex items-center gap-3 text-gray-400 hover:text-[#fcad0d] transition-colors"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-5 h-5 flex-shrink-0" />
                 <span>{CONTACT.email}</span>
               </a>
               <div className="flex items-center gap-3 text-gray-400">
-                <MapPin className="w-5 h-5" />
+                <MapPin className="w-5 h-5 flex-shrink-0" />
                 <span>{CONTACT.address}</span>
               </div>
             </div>
           </div>
 
-          {/* Liens rapides */}
+          {/* Services - Colonne 1 */}
           <div>
             <h3 className="text-xl font-bold mb-4">Nos Services</h3>
             <div className="space-y-2">
-              {SERVICES.map((service: any) => (
+              {servicesCol1.map((service: any) => (
                 <Link
                   key={service.id}
                   to={service.path}
-                  className="block text-gray-400 hover:text-[#fcad0d] transition-colors"
+                  className="block text-gray-400 hover:text-[#fcad0d] transition-colors text-sm"
+                >
+                  {service.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Services - Colonne 2 */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 invisible md:visible">&nbsp;</h3>
+            <div className="space-y-2">
+              {servicesCol2.map((service: any) => (
+                <Link
+                  key={service.id}
+                  to={service.path}
+                  className="block text-gray-400 hover:text-[#fcad0d] transition-colors text-sm"
                 >
                   {service.title}
                 </Link>
               ))}
               <Link
                 to="/blog"
-                className="block text-gray-400 hover:text-[#fcad0d] transition-colors mt-4 font-semibold"
+                className="block text-gray-400 hover:text-[#fcad0d] transition-colors mt-4 font-semibold text-sm"
               >
                 Blog & Conseils
               </Link>
@@ -67,7 +88,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>© 2025 Wattsun Énergie. Tous droits réservés.</p>
+          <p>© 2026 Wattsun Énergie. Tous droits réservés.</p>
           <Link
             to="/mentions-legales"
             className="text-gray-500 hover:text-[#fcad0d] transition-colors mt-2 inline-block"
@@ -79,4 +100,3 @@ export default function Footer() {
     </footer>
   );
 }
-

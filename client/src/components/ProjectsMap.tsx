@@ -427,7 +427,7 @@ export default function ProjectsMap() {
   return (
     <div className="relative">
       {/* Filtres */}
-      <div className="mb-6 flex flex-wrap gap-3">
+      <div className={`mb-4 md:mb-6 ${isMobile ? 'grid grid-cols-2 gap-2' : 'flex flex-wrap gap-3'}`}>
         {Object.entries(TYPE_LABELS).map(([type, label]) => {
           const count = typeCounts[type] || 0;
           if (count === 0) return null;
@@ -439,21 +439,21 @@ export default function ProjectsMap() {
             <button
               key={type}
               onClick={() => toggleType(type)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+              className={`flex items-center gap-1.5 md:gap-2 px-2 md:px-4 py-1.5 md:py-2 rounded-lg font-medium transition-all text-left ${
                 isSelected
-                  ? 'bg-white shadow-md scale-105'
+                  ? 'bg-white shadow-md'
                   : 'bg-gray-100 opacity-50 hover:opacity-75'
               }`}
               style={{
-                borderLeft: `4px solid ${color}`,
+                borderLeft: `3px solid ${color}`,
               }}
             >
               <div
-                className="w-3 h-3 rounded-full"
+                className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full flex-shrink-0"
                 style={{ backgroundColor: color }}
               />
-              <span className="text-sm text-gray-700">{label}</span>
-              <span className="text-xs bg-gray-200 px-2 py-0.5 rounded-full text-gray-600">
+              <span className="text-xs md:text-sm text-gray-700 truncate">{label}</span>
+              <span className="text-[10px] md:text-xs bg-gray-200 px-1.5 md:px-2 py-0.5 rounded-full text-gray-600 flex-shrink-0">
                 {count}
               </span>
             </button>
