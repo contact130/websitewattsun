@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sun, Thermometer, Battery, Zap, Fan, Plug, ChevronDown, Shield, LayoutGrid, DoorOpen, Home as HomeIcon, ClipboardCheck, Layers } from "lucide-react";
 import { SERVICES } from "../../../shared/const";
@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ProjectsMap from "@/components/ProjectsMap";
+const ProjectsMap = lazy(() => import("@/components/ProjectsMap"));
 import TrustBanner from "@/components/TrustBanner";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -268,7 +268,9 @@ export default function Home() {
             <p className="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">
               Découvrez tous nos chantiers réalisés dans la région. Cliquez sur les marqueurs pour voir les détails.
             </p>
-            <ProjectsMap />
+            <Suspense fallback={<div className="flex items-center justify-center h-96"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#fcad0d]"></div></div>}>
+              <ProjectsMap />
+            </Suspense>
           </div>
         </section>
 
@@ -277,12 +279,12 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Nos Certifications et Qualifications</h2>
             <div className="flex flex-wrap justify-center items-center gap-12 mb-8">
-              <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV - Certification pour installations photovoltaïques" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
-              <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC - Certification pour pompes à chaleur" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
-              <img src="/LogoQualibatRGE.png" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
-              <img src="/LogoIRVE.png" alt="IRVE - Installateur qualifié bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
-              <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ - Certification pour bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
-              <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation - Certification pour systèmes VMC" className="h-24 object-contain hover:scale-110 transition-transform duration-300" />
+              <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV - Certification pour installations photovoltaïques" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
+              <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC - Certification pour pompes à chaleur" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
+              <img src="/LogoQualibatRGE.png" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
+              <img src="/LogoIRVE.png" alt="IRVE - Installateur qualifié bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
+              <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ - Certification pour bornes de recharge" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
+              <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation - Certification pour systèmes VMC" className="h-24 object-contain hover:scale-110 transition-transform duration-300" width="120" height="96" loading="lazy" />
             </div>
             <p className="text-center text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Nos certifications RGE (Reconnu Garant de l'Environnement) garantissent la qualité de nos installations et vous permettent de bénéficier des aides de l'État. Nous respectons les normes les plus strictes pour votre sécurité et votre satisfaction.

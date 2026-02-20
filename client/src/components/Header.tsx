@@ -86,6 +86,8 @@ export default function Header() {
                 objectFit: 'contain',
               }} 
               key={((!isScrolled && isHomePage) || (!isScrolled && isServicePage)) ? 'logo-transparent' : 'logo-white'}
+              width="200"
+              height="64"
             />
           </Link>
 
