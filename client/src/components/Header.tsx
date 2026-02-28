@@ -135,26 +135,60 @@ export default function Header() {
               {/* Divider */}
               <div className="my-1.5 border-t border-gray-200 mx-2"></div>
 
-              {/* Titre Services */}
-              <div className="px-4 py-1">
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Nos Services</p>
-              </div>
+              {/* Maîtrise d'Œuvre - Transversal */}
+              <Link
+                to="/maitrise-oeuvre"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex items-center gap-2 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] font-medium transition-colors px-4 py-2 rounded-lg mx-2"
+              >
+                <ClipboardCheck className="w-4 h-4 flex-shrink-0" />
+                <span className="text-sm">Maîtrise d'Œuvre</span>
+              </Link>
 
-              {/* Services en grille 2 colonnes */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-1 gap-y-0 px-2">
-                {SERVICES.map((service) => (
-                  <Link
-                    key={service.id}
-                    to={service.path}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center gap-2 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] transition-colors px-2 py-2 rounded-lg"
-                  >
-                    <span className="w-4 h-4 flex-shrink-0 flex items-center justify-center">
-                      {iconMap[service.Icon] || <Zap className="w-4 h-4" />}
-                    </span>
-                    <span className="text-xs leading-tight">{service.title}</span>
-                  </Link>
-                ))}
+              {/* Divider */}
+              <div className="my-1.5 border-t border-gray-200 mx-2"></div>
+
+              {/* Deux catégories côte à côte */}
+              <div className="grid grid-cols-2 gap-x-2 px-2">
+                {/* Colonne ENR */}
+                <div>
+                  <div className="px-2 py-1">
+                    <p className="text-xs font-bold text-[#fcad0d] uppercase tracking-wider">Énergies Renouvelables</p>
+                  </div>
+                  {SERVICES.filter(s => ["photovoltaique", "pompes-chaleur", "batteries", "bornes", "vmc"].includes(s.id)).map((service) => (
+                    <Link
+                      key={service.id}
+                      to={service.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex items-center gap-2 text-gray-800 hover:bg-[#fcad0d]/10 hover:text-[#fcad0d] transition-colors px-2 py-2 rounded-lg"
+                    >
+                      <span className="w-4 h-4 flex-shrink-0 flex items-center justify-center">
+                        {iconMap[service.Icon] || <Zap className="w-4 h-4" />}
+                      </span>
+                      <span className="text-xs leading-tight">{service.title}</span>
+                    </Link>
+                  ))}
+                </div>
+
+                {/* Colonne Rénovation & Bâtiment */}
+                <div>
+                  <div className="px-2 py-1">
+                    <p className="text-xs font-bold text-[#5e8a92] uppercase tracking-wider">Rénovation & Bâtiment</p>
+                  </div>
+                  {SERVICES.filter(s => ["electricite", "isolation", "isolation-combles", "platrerie", "menuiseries", "couverture"].includes(s.id)).map((service) => (
+                    <Link
+                      key={service.id}
+                      to={service.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex items-center gap-2 text-gray-800 hover:bg-[#5e8a92]/10 hover:text-[#5e8a92] transition-colors px-2 py-2 rounded-lg"
+                    >
+                      <span className="w-4 h-4 flex-shrink-0 flex items-center justify-center">
+                        {iconMap[service.Icon] || <Zap className="w-4 h-4" />}
+                      </span>
+                      <span className="text-xs leading-tight">{service.title}</span>
+                    </Link>
+                  ))}
+                </div>
               </div>
 
               {/* Divider */}
