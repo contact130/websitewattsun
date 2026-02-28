@@ -44,7 +44,18 @@ export default function ServicePage({
     if (metaDescription) {
       metaDescription.setAttribute("content", seoDescription);
     }
-  }, [seoTitle, seoDescription]);
+    // Preload de l'image hero pour améliorer le LCP (Largest Contentful Paint)
+    let preload = document.querySelector('link[data-hero-preload]') as HTMLLinkElement | null;
+    if (!preload) {
+      preload = document.createElement('link');
+      preload.rel = 'preload';
+      preload.as = 'image';
+      preload.setAttribute('data-hero-preload', 'true');
+      document.head.appendChild(preload);
+    }
+    preload.href = `/optimized/${heroImage}`;
+    (preload as any).fetchpriority = 'high';
+  }, [seoTitle, seoDescription, heroImage]);
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -144,6 +155,9 @@ export default function ServicePage({
                   src={`/optimized/${cert.logo.replace(/\.(jpg|png)$/, '.webp')}`}
                   alt={cert.name}
                   className="h-32 object-contain"
+                  loading="lazy"
+                  width="128"
+                  height="128"
                 />
               ))}
             </div>

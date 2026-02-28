@@ -21,6 +21,22 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "client", "dist"),
     emptyOutDir: true,
+    // Optimisation : diviser le JS en chunks pour réduire le JS inutilisé par page
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Séparer React du reste
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          // Séparer les librairies de carte (Leaflet) - très lourdes
+          'vendor-map': ['leaflet', 'react-leaflet'],
+          // Séparer les composants UI (shadcn/radix)
+          'vendor-ui': ['@radix-ui/react-dialog', '@radix-ui/react-tooltip', '@radix-ui/react-accordion'],
+        },
+      },
+    },
+    // Activer la compression pour réduire la taille des fichiers
+    cssCodeSplit: true,
+    sourcemap: false,
   },
   server: {
     port: 3000,
