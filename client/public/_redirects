@@ -4,7 +4,8 @@ https://www.wattsun-energie.fr/*  https://wattsun-energie.fr/:splat  301!
 # Redirections des anciennes pages vers les nouvelles équivalentes
 /présentation-réalisation         /#realisations                     301
 /presentation-realisation         /#realisations                     301
-/www.wattsun-energie.fr/contact   /contact                           301
+/www.wattsun-energie.fr/contact   /demande-devis                     301
+/contact                          /demande-devis                     301
 
 # Règle SPA : toutes les autres URLs renvoient vers index.html (doit rester en dernier)
 /*    /index.html   200

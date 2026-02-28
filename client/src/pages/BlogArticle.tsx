@@ -19,6 +19,14 @@ export default function BlogArticle() {
       if (metaDescription) {
         metaDescription.setAttribute("content", article.excerpt);
       }
+      // Balise canonique pour éviter les problèmes de contenu dupliqué
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute('href', `https://wattsun-energie.fr/blog/${article.id}`);
     }
   }, [article]);
 

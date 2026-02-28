@@ -72,6 +72,9 @@ function App() {
               {/* Mentions Légales */}
               <Route path="/mentions-legales" element={<MentionsLegales />} />
               
+              {/* Redirection /contact vers /demande-devis */}
+              <Route path="/contact" element={<Navigate to="/demande-devis" replace />} />
+              
               {/* Redirections pour les anciennes URL */}
               <Route path="/présentation-réalisation" element={<Navigate to="/#realisations" replace />} />
               <Route path="/presentation-realisation" element={<Navigate to="/#realisations" replace />} />
