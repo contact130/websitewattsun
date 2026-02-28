@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { MapPin, ChevronRight } from 'lucide-react';
+import { useEffect, useRef, useState, useCallback } from 'react';
+import { MapPin, ChevronRight, RotateCcw } from 'lucide-react';
 
 interface Project {
   nom: string;
@@ -27,16 +27,16 @@ const TYPE_COLORS = {
 
 // Couleurs claires pour le dégradé des clusters
 const TYPE_COLORS_LIGHT = {
-  PV: '#fcd34d',           // Jaune clair
-  PAC: '#93c5fd',          // Bleu clair
-  Batteries: '#6ee7b7',    // Vert clair
-  Bornes: '#c4b5fd',       // Violet clair
-  Electricite: '#fca5a5',  // Rouge clair
-  VMC: '#5eead4',          // Turquoise clair
-  Isolation: '#fb923c',    // Orange clair
-  Platrerie: '#9ca3af',    // Gris clair
-  Menuiseries: '#fbbf24',  // Ambre clair
-  Couverture: '#fb7185',   // Rose clair
+  PV: '#fcd34d',
+  PAC: '#93c5fd',
+  Batteries: '#6ee7b7',
+  Bornes: '#c4b5fd',
+  Electricite: '#fca5a5',
+  VMC: '#5eead4',
+  Isolation: '#fb923c',
+  Platrerie: '#9ca3af',
+  Menuiseries: '#fbbf24',
+  Couverture: '#fb7185',
 };
 
 const TYPE_LABELS = {
@@ -51,6 +51,10 @@ const TYPE_LABELS = {
   Menuiseries: 'Menuiseries',
   Couverture: 'Couverture',
 };
+
+// Centre par défaut : La Rochelle
+const DEFAULT_CENTER: [number, number] = [46.1591, -1.1520];
+const DEFAULT_ZOOM = 10;
 
 // Hook pour détecter mobile
 function useIsMobile() {
@@ -72,7 +76,6 @@ function MobileTeaser({ totalProjects, typeCounts, onShowMap }: { totalProjects:
 
   return (
     <div className="relative overflow-hidden rounded-xl border-2 border-gray-200 bg-gradient-to-br from-gray-50 to-white shadow-lg">
-      {/* Fond décoratif avec points simulant une carte */}
       <div className="absolute inset-0 opacity-10">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -85,12 +88,10 @@ function MobileTeaser({ totalProjects, typeCounts, onShowMap }: { totalProjects:
       </div>
 
       <div className="relative p-6 text-center">
-        {/* Icône carte */}
         <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-[#fcad0d] to-[#f59e0b] rounded-full flex items-center justify-center shadow-lg">
           <MapPin className="w-8 h-8 text-white" />
         </div>
 
-        {/* Titre */}
         <h3 className="text-2xl font-bold text-gray-900 mb-2">
           {totalProjects}+ chantiers réalisés
         </h3>
@@ -98,7 +99,6 @@ function MobileTeaser({ totalProjects, typeCounts, onShowMap }: { totalProjects:
           en Charente-Maritime et Nouvelle-Aquitaine
         </p>
 
-        {/* Résumé des types */}
         <div className="flex flex-wrap justify-center gap-2 mb-6">
           {topTypes.map(([type, count]) => {
             const color = TYPE_COLORS[type as keyof typeof TYPE_COLORS];
@@ -119,7 +119,6 @@ function MobileTeaser({ totalProjects, typeCounts, onShowMap }: { totalProjects:
           })}
         </div>
 
-        {/* Bouton CTA */}
         <button
           onClick={onShowMap}
           className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#fcad0d] to-[#f59e0b] text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95"
@@ -142,10 +141,11 @@ export default function ProjectsMap() {
   const markersGroupRef = useRef<any>(null);
   const isMobile = useIsMobile();
   const [showMapOnMobile, setShowMapOnMobile] = useState(false);
-  const [mapLoading, setMapLoading] = useState(false);
+  const [mapReady, setMapReady] = useState(false);
+  const [showTouchHint, setShowTouchHint] = useState(false);
+  const touchHintTimerRef = useRef<any>(null);
 
   useEffect(() => {
-    // Charger les données des chantiers
     fetch('/chantiers.json')
       .then(res => res.json())
       .then(data => {
@@ -172,7 +172,6 @@ export default function ProjectsMap() {
 
   const filteredProjects = projects.filter(p => selectedTypes.has(p.type));
 
-  // Déterminer la couleur dominante des clusters
   const getClusterColor = () => {
     const activeTypes = Array.from(selectedTypes);
     
@@ -203,18 +202,12 @@ export default function ProjectsMap() {
       }
     }
     
-    return {
-      main: '#fcad0d',
-      light: '#ffc84d',
-      text: '#1f2937'
-    };
+    return { main: '#fcad0d', light: '#ffc84d', text: '#1f2937' };
   };
 
-  // Charger et initialiser la carte Leaflet
-  const initMap = async () => {
-    if (!mapRef.current || projects.length === 0) return;
-
-    // Charger Leaflet dynamiquement
+  // Charger les scripts Leaflet
+  const loadLeafletScripts = async () => {
+    // CSS Leaflet
     if (!document.querySelector('link[href*="leaflet.css"]')) {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
@@ -224,26 +217,19 @@ export default function ProjectsMap() {
       document.head.appendChild(link);
     }
 
+    // CSS MarkerCluster
     if (!document.querySelector('link[href*="MarkerCluster.css"]')) {
       const link1 = document.createElement('link');
       link1.rel = 'stylesheet';
       link1.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css';
       document.head.appendChild(link1);
-
       const link2 = document.createElement('link');
       link2.rel = 'stylesheet';
       link2.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css';
       document.head.appendChild(link2);
     }
 
-    // Charger le plugin GestureHandling pour la navigation tactile mobile
-    if (!document.querySelector('link[href*="leaflet-gesture-handling"]')) {
-      const ghLink = document.createElement('link');
-      ghLink.rel = 'stylesheet';
-      ghLink.href = 'https://unpkg.com/leaflet-gesture-handling@1.2.1/dist/leaflet-gesture-handling.min.css';
-      document.head.appendChild(ghLink);
-    }
-
+    // JS Leaflet
     if (!(window as any).L) {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
@@ -256,6 +242,7 @@ export default function ProjectsMap() {
       });
     }
 
+    // JS MarkerCluster
     if (!(window as any).L.markerClusterGroup) {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
@@ -265,52 +252,75 @@ export default function ProjectsMap() {
         document.body.appendChild(script);
       });
     }
+  };
 
-    // Charger le plugin GestureHandling
-    if (!(window as any).L.GestureHandler) {
-      await new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = 'https://unpkg.com/leaflet-gesture-handling@1.2.1/dist/leaflet-gesture-handling.min.js';
-        script.onload = resolve;
-        script.onerror = reject;
-        document.body.appendChild(script);
-      });
-    }
+  // Initialiser la carte
+  const initMap = useCallback(async () => {
+    if (!mapRef.current || projects.length === 0) return;
 
+    await loadLeafletScripts();
     const L = (window as any).L;
+    if (!L) return;
 
     if (!mapInstanceRef.current) {
-      const mapOptions: any = {
-        center: [46.1591, -1.1520],
-        zoom: 10,
-      };
+      const map = L.map(mapRef.current, {
+        center: DEFAULT_CENTER,
+        zoom: DEFAULT_ZOOM,
+        // Sur mobile : désactiver le drag 1 doigt pour permettre le scroll de la page
+        dragging: !isMobile,
+        // Garder le zoom par pinch (2 doigts) actif
+        touchZoom: true,
+        // Désactiver le scroll wheel zoom sur mobile
+        scrollWheelZoom: !isMobile,
+        // Garder le tap actif pour les popups
+        tap: true,
+        // Désactiver le double-tap zoom sur mobile (peut gêner)
+        doubleClickZoom: true,
+        // Garder les boutons +/- pour zoomer
+        zoomControl: true,
+      });
 
-      // Activer GestureHandling sur mobile pour éviter le conflit scroll/drag
-      if (isMobile && L.gestureHandling) {
-        mapOptions.gestureHandling = true;
-        mapOptions.gestureHandlingOptions = {
-          text: {
-            touch: 'Utilisez deux doigts pour déplacer la carte',
-            scroll: 'Utilisez Ctrl + molette pour zoomer',
-            scrollMac: 'Utilisez \u2318 + molette pour zoomer',
-          },
-          duration: 1500,
-        };
-      }
-
-      const map = L.map(mapRef.current, mapOptions);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '\u00a9 OpenStreetMap contributors',
         maxZoom: 19,
       }).addTo(map);
+
       mapInstanceRef.current = map;
+
+      // Sur mobile, intercepter le touch pour afficher un hint
+      if (isMobile && mapRef.current) {
+        mapRef.current.addEventListener('touchstart', (e: TouchEvent) => {
+          if (e.touches.length === 1) {
+            // Un seul doigt : afficher le hint
+            setShowTouchHint(true);
+            if (touchHintTimerRef.current) clearTimeout(touchHintTimerRef.current);
+            touchHintTimerRef.current = setTimeout(() => setShowTouchHint(false), 1500);
+          } else if (e.touches.length >= 2) {
+            // Deux doigts : activer temporairement le drag
+            setShowTouchHint(false);
+            if (touchHintTimerRef.current) clearTimeout(touchHintTimerRef.current);
+            map.dragging.enable();
+          }
+        }, { passive: true });
+
+        mapRef.current.addEventListener('touchend', (e: TouchEvent) => {
+          if (e.touches.length < 2) {
+            // Quand on relâche à moins de 2 doigts, désactiver le drag
+            setTimeout(() => {
+              if (mapInstanceRef.current) {
+                mapInstanceRef.current.dragging.disable();
+              }
+            }, 100);
+          }
+        }, { passive: true });
+      }
     }
 
     updateMarkers();
-  };
+  }, [projects, isMobile]);
 
   // Mettre à jour les marqueurs
-  const updateMarkers = () => {
+  const updateMarkers = useCallback(() => {
     if (!mapInstanceRef.current) return;
     const L = (window as any).L;
     if (!L) return;
@@ -392,6 +402,13 @@ export default function ProjectsMap() {
 
     mapInstanceRef.current.addLayer(markers);
     markersGroupRef.current = markers;
+  }, [filteredProjects, selectedTypes]);
+
+  // Recentrer la carte
+  const handleRecenter = () => {
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.setView(DEFAULT_CENTER, DEFAULT_ZOOM);
+    }
   };
 
   // Sur bureau : charger la carte automatiquement
@@ -399,39 +416,40 @@ export default function ProjectsMap() {
     if (!isMobile && !loading && projects.length > 0) {
       initMap();
     }
-  }, [isMobile, loading, projects]);
+  }, [isMobile, loading, projects, initMap]);
 
-  // Mettre à jour les marqueurs quand les filtres changent (bureau ou carte mobile ouverte)
+  // Mettre à jour les marqueurs quand les filtres changent
   useEffect(() => {
     if (mapInstanceRef.current && (window as any).L) {
       updateMarkers();
     }
-  }, [selectedTypes, filteredProjects]);
+  }, [selectedTypes, updateMarkers]);
 
   // Quand l'utilisateur mobile clique sur "Voir la carte"
   const handleShowMapMobile = () => {
     setShowMapOnMobile(true);
-    setMapLoading(true);
   };
 
-  // Initialiser la carte quand showMapOnMobile passe à true et que le DOM est prêt
+  // Initialiser la carte quand showMapOnMobile passe à true
   useEffect(() => {
     if (showMapOnMobile && projects.length > 0 && !mapInstanceRef.current) {
-      // Attendre que le DOM soit prêt avec le ref
+      // Attendre que le DOM soit prêt
       const timer = setTimeout(async () => {
         if (!mapRef.current) return;
         await initMap();
-        // Forcer Leaflet à recalculer la taille du conteneur après rendu
+        // Forcer Leaflet à recalculer la taille
         setTimeout(() => {
           if (mapInstanceRef.current) {
             mapInstanceRef.current.invalidateSize();
+            // Recentrer explicitement après invalidateSize
+            mapInstanceRef.current.setView(DEFAULT_CENTER, DEFAULT_ZOOM);
           }
-          setMapLoading(false);
-        }, 200);
-      }, 100);
+          setMapReady(true);
+        }, 300);
+      }, 150);
       return () => clearTimeout(timer);
     }
-  }, [showMapOnMobile, projects]);
+  }, [showMapOnMobile, projects, initMap]);
 
   if (loading) {
     return (
@@ -498,23 +516,58 @@ export default function ProjectsMap() {
         })}
       </div>
 
-      {/* Carte */}
-      {mapLoading && (
-        <div className="w-full h-[500px] flex items-center justify-center bg-gray-100 rounded-xl">
-          <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#fcad0d] mx-auto mb-4"></div>
-            <p className="text-gray-600">Chargement de la carte...</p>
+      {/* Conteneur carte avec overlay */}
+      <div className="relative">
+        {/* Carte */}
+        <div 
+          ref={mapRef} 
+          className={`w-full ${isMobile ? 'h-[400px]' : 'h-[600px]'} rounded-xl shadow-lg border-2 border-gray-200`}
+          style={{ zIndex: 1 }}
+        />
+
+        {/* Overlay hint tactile mobile */}
+        {isMobile && showTouchHint && (
+          <div 
+            className="absolute inset-0 flex items-center justify-center rounded-xl pointer-events-none"
+            style={{ zIndex: 1000, backgroundColor: 'rgba(0,0,0,0.4)' }}
+          >
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl px-6 py-4 shadow-lg text-center max-w-[280px]">
+              <div className="text-2xl mb-2">👆👆</div>
+              <p className="text-sm font-medium text-gray-800">
+                Utilisez <strong>deux doigts</strong> pour déplacer la carte
+              </p>
+              <p className="text-xs text-gray-500 mt-1">
+                Ou utilisez les boutons +/- pour zoomer
+              </p>
+            </div>
           </div>
-        </div>
-      )}
-      <div 
-        ref={mapRef} 
-        className={`w-full ${isMobile ? 'h-[500px]' : 'h-[600px]'} rounded-xl shadow-lg border-2 border-gray-200`}
-        style={{ 
-          zIndex: 1, 
-          ...(mapLoading ? { height: '1px', overflow: 'hidden', opacity: 0, position: 'absolute' as const } : {})
-        }}
-      />
+        )}
+
+        {/* Bouton recentrer (mobile uniquement) */}
+        {isMobile && mapReady && (
+          <button
+            onClick={handleRecenter}
+            className="absolute top-3 right-3 bg-white shadow-lg rounded-lg p-2.5 border border-gray-200 hover:bg-gray-50 active:bg-gray-100 transition-colors"
+            style={{ zIndex: 1000 }}
+            title="Recentrer sur La Rochelle"
+          >
+            <RotateCcw className="w-5 h-5 text-gray-700" />
+          </button>
+        )}
+
+        {/* Loading overlay pour mobile */}
+        {isMobile && showMapOnMobile && !mapReady && (
+          <div 
+            className="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-xl"
+            style={{ zIndex: 1001 }}
+          >
+            <div className="text-center">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#fcad0d] mx-auto mb-4"></div>
+              <p className="text-gray-600">Chargement de la carte...</p>
+            </div>
+          </div>
+        )}
+      </div>
       
       {/* Compteur */}
       <div className="mt-4 text-center">
