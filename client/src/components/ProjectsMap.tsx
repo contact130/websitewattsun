@@ -236,6 +236,14 @@ export default function ProjectsMap() {
       document.head.appendChild(link2);
     }
 
+    // Charger le plugin GestureHandling pour la navigation tactile mobile
+    if (!document.querySelector('link[href*="leaflet-gesture-handling"]')) {
+      const ghLink = document.createElement('link');
+      ghLink.rel = 'stylesheet';
+      ghLink.href = 'https://unpkg.com/leaflet-gesture-handling@1.2.1/dist/leaflet-gesture-handling.min.css';
+      document.head.appendChild(ghLink);
+    }
+
     if (!(window as any).L) {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
@@ -258,12 +266,41 @@ export default function ProjectsMap() {
       });
     }
 
+    // Charger le plugin GestureHandling
+    if (!(window as any).L.GestureHandler) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/leaflet-gesture-handling@1.2.1/dist/leaflet-gesture-handling.min.js';
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+    }
+
     const L = (window as any).L;
 
     if (!mapInstanceRef.current) {
-      const map = L.map(mapRef.current).setView([46.1591, -1.1520], 10);
+      const mapOptions: any = {
+        center: [46.1591, -1.1520],
+        zoom: 10,
+      };
+
+      // Activer GestureHandling sur mobile pour éviter le conflit scroll/drag
+      if (isMobile && L.gestureHandling) {
+        mapOptions.gestureHandling = true;
+        mapOptions.gestureHandlingOptions = {
+          text: {
+            touch: 'Utilisez deux doigts pour déplacer la carte',
+            scroll: 'Utilisez Ctrl + molette pour zoomer',
+            scrollMac: 'Utilisez \u2318 + molette pour zoomer',
+          },
+          duration: 1500,
+        };
+      }
+
+      const map = L.map(mapRef.current, mapOptions);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
+        attribution: '\u00a9 OpenStreetMap contributors',
         maxZoom: 19,
       }).addTo(map);
       mapInstanceRef.current = map;

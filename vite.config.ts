@@ -27,8 +27,7 @@ export default defineConfig({
         manualChunks: {
           // Séparer React du reste
           'vendor-react': ['react', 'react-dom', 'react-router-dom'],
-          // Séparer les librairies de carte (Leaflet) - très lourdes
-          'vendor-map': ['leaflet', 'react-leaflet'],
+          // Leaflet est chargé dynamiquement via CDN, pas besoin de chunk
           // Séparer les composants UI (shadcn/radix)
           'vendor-ui': ['@radix-ui/react-dialog', '@radix-ui/react-tooltip', '@radix-ui/react-accordion'],
         },
