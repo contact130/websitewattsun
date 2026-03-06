@@ -223,6 +223,20 @@
     box-shadow: 0 10px 25px -5px rgba(252, 173, 13, 0.3);
   }
 
+  /* Bandeau défilant continu pour les certifications mobile */
+  @keyframes scroll-certifs {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+
+  .animate-scroll-certifs {
+    animation: scroll-certifs 20s linear infinite;
+  }
+
   .card-hover {
     transition: all 0.3s ease;
   }
