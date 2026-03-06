@@ -308,13 +308,13 @@ export default function Home() {
         <section className="py-20 bg-gradient-to-b from-white to-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-4 text-gray-900">Nos Certifications et Qualifications</h2>
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 mb-10 max-w-6xl mx-auto">
-              <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV RGE 2026 - Certification pour installations photovoltaïques" className="h-24 md:h-44 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
-              <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC RGE - Certification pour pompes à chaleur" className="h-24 md:h-44 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
-              <img src="/LogoQualibatRGE.webp" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-24 md:h-44 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
-              <img src="/LogoIRVE.webp" alt="IRVE - Installateur qualifié bornes de recharge" className="h-24 md:h-44 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
-              <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ 2026 - Certification pour bornes de recharge" className="h-24 md:h-44 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
-              <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation+ RGE - Certification pour systèmes VMC" className="h-24 md:h-44 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 mb-10 max-w-5xl mx-auto">
+              <img src="/optimized/LogoqualiPVtransparent.webp" alt="QualiPV RGE 2026 - Certification pour installations photovoltaïques" className="h-20 md:h-32 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <img src="/optimized/LogoQualiPACtransparent.webp" alt="QualiPAC RGE - Certification pour pompes à chaleur" className="h-20 md:h-32 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <img src="/LogoQualibatRGE.webp" alt="QUALIBAT RGE - Qualification pour isolation, menuiseries et plâtrerie" className="h-20 md:h-32 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <img src="/LogoIRVE.webp" alt="IRVE - Installateur qualifié bornes de recharge" className="h-20 md:h-32 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <img src="/optimized/Logorechargeelec+.webp" alt="Recharge Elec+ 2026 - Certification pour bornes de recharge" className="h-20 md:h-32 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
+              <img src="/optimized/Logoventilationtransparent.webp" alt="Ventilation+ RGE - Certification pour systèmes VMC" className="h-20 md:h-32 object-contain hover:scale-110 transition-transform duration-300" loading="lazy" />
             </div>
             <p className="text-center text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Nos certifications RGE (Reconnu Garant de l'Environnement) garantissent la qualité de nos installations et vous permettent de bénéficier des aides de l'État. Nous respectons les normes les plus strictes pour votre sécurité et votre satisfaction.
