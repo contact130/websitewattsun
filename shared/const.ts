@@ -30,7 +30,7 @@ export const SERVICES = [
     description: "Rénovation globale clé en main pour particuliers et professionnels — Accompagnement MAR / ANAH.",
     Icon: "ClipboardCheck",
     seoTitle: "Maîtrise d'Œuvre Rénovation Globale | Wattsun Énergie",
-    seoDescription: "Rénovation énergétique globale clé en main en Charente-Maritime. Accompagnement MAR, aides MaPrimeRénov' jusqu'à 50 000€. Particuliers et professionnels. Devis gratuit.",
+    seoDescription: "Rénovation énergétique globale clé en main en Charente-Maritime. Accompagnement MAR, aides MaPrimeRénov' jusqu'à 40 000€. Particuliers et professionnels. Devis gratuit.",
     path: "/maitrise-oeuvre",
     color: "from-purple-400 to-purple-600",
     hoverColor: "text-purple-600",

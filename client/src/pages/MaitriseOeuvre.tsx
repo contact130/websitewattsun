@@ -8,7 +8,7 @@ export default function MaitriseOeuvre() {
     "Un seul interlocuteur pour coordonner tous les corps de métier",
     "Audit énergétique complet de votre logement (DPE projeté)",
     "Montage intégral de vos dossiers d'aides financières",
-    "Accès aux subventions disponibles : jusqu'à 50 000€",
+    "Accès aux subventions disponibles : jusqu'à 40 000€",
     "Suivi de chantier rigoureux avec planning et réunions régulières",
     "Gain de 2 classes énergétiques minimum (ex : F → D ou E → C)",
     "Coordination isolation, menuiseries, chauffage, ventilation et couverture",
@@ -44,7 +44,7 @@ export default function MaitriseOeuvre() {
   ];
 
   const aides = [
-    "Aides à la rénovation globale (jusqu'à 50 000€)",
+    "Aides à la rénovation globale (jusqu'à 40 000€)",
     "Primes énergie (CEE)",
     "Éco-prêt à taux zéro",
     "Aides locales (Région, Département, Communes)"
@@ -61,7 +61,7 @@ export default function MaitriseOeuvre() {
     },
     {
       question: "Quel montant d'aides peut-on obtenir pour une rénovation globale ?",
-      answer: "Les aides à la rénovation globale peuvent atteindre jusqu'à 50 000€ selon vos revenus et l'ampleur des travaux. Le taux de prise en charge varie selon votre profil : jusqu'à 80% pour les ménages très modestes, 60% pour les ménages modestes, et 45% pour les revenus intermédiaires. Ces aides sont cumulables avec les primes énergie et l'éco-prêt à taux zéro."
+      answer: "Les aides à la rénovation globale peuvent atteindre jusqu'à 40 000€ (pour un gain de 3 classes DPE ou plus) selon vos revenus et l'ampleur des travaux. Le plafond de dépenses éligibles est de 30 000€ HT pour 2 sauts de classe, et 40 000€ HT pour 3 sauts ou plus. Le taux de prise en charge varie selon votre profil : jusqu'à 80% pour les ménages très modestes, 60% pour les ménages modestes, et 45% pour les revenus intermédiaires. Ces aides sont cumulables avec les primes énergie et l'éco-prêt à taux zéro."
     },
     {
       question: "Quels travaux sont inclus dans une rénovation globale ?",
@@ -81,11 +81,11 @@ export default function MaitriseOeuvre() {
     <ServicePage
       title="Maîtrise d'Œuvre"
       heroImage="maitrise-oeuvre-hero.jpg"
-      shortDescription="Rénovation globale clé en main pour particuliers et professionnels — Accompagnement MAR et aides jusqu'à 50 000€"
+      shortDescription="Rénovation globale clé en main pour particuliers et professionnels — Accompagnement MAR et aides jusqu'à 40 000€"
       advantages={advantages}
       process={process}
       seoTitle={SERVICES.find(s => s.id === "maitrise-oeuvre")?.seoTitle || "Maîtrise d'Œuvre Rénovation Globale | Wattsun Énergie"}
-      seoDescription={SERVICES.find(s => s.id === "maitrise-oeuvre")?.seoDescription || "Rénovation énergétique globale clé en main en Charente-Maritime. Accompagnement MAR, aides jusqu'à 50 000€. Devis gratuit."}
+      seoDescription={SERVICES.find(s => s.id === "maitrise-oeuvre")?.seoDescription || "Rénovation énergétique globale clé en main en Charente-Maritime. Accompagnement MAR, aides jusqu'à 40 000€. Devis gratuit."}
       aides={aides}
       faq={faq}
     />

@@ -10,7 +10,7 @@ export default function IsolationCombles() {
     "Isolation sous rampants pour combles aménageables : panneaux semi-rigides haute performance",
     "Matériaux certifiés : laine de verre, laine de roche, ouate de cellulose — résistance thermique R ≥ 7 m².K/W",
     "Éligible aux aides financières : Certificats d'Économies d'Énergie (CEE), Éco-PTZ, TVA à 5,5%",
-    "Intégrable dans un projet de rénovation globale MaPrimeRénov' Parcours Accompagné (jusqu'à 50 000€ d'aides)",
+    "Intégrable dans un projet de rénovation globale MaPrimeRénov' Parcours Accompagné (jusqu'à 40 000€ d'aides)",
     "Traitement des ponts thermiques et mise en place du pare-vapeur pour une isolation durable",
     "Garantie décennale sur tous nos travaux — suivi et accompagnement après chantier"
   ];
@@ -54,7 +54,7 @@ export default function IsolationCombles() {
     "Certificats d'Économies d'Énergie (CEE) : de 800€ à 2 500€ selon la surface et la zone climatique",
     "TVA réduite à 5,5% sur le matériel et la main d'œuvre (économie d'environ 15%)",
     "Éco-prêt à taux zéro : jusqu'à 15 000€ à 0% d'intérêts, remboursable sur 15 ans",
-    "MaPrimeRénov' Parcours Accompagné : jusqu'à 50 000€ dans le cadre d'une rénovation globale"
+    "MaPrimeRénov' Parcours Accompagné : jusqu'à 40 000€ dans le cadre d'une rénovation globale"
   ];
 
   const faq = [
@@ -64,7 +64,7 @@ export default function IsolationCombles() {
     },
     {
       question: "Quelles aides financières pour l'isolation des combles en 2026 ?",
-      answer: "En 2026, l'isolation des combles est éligible aux Certificats d'Économies d'Énergie (CEE) versés par les fournisseurs d'énergie (800€ à 2 500€), à la TVA réduite à 5,5% appliquée automatiquement, et à l'Éco-prêt à taux zéro (jusqu'à 15 000€). Dans le cadre d'une rénovation globale avec le Parcours Accompagné MaPrimeRénov', les aides peuvent atteindre jusqu'à 50 000€. La condition : faire appel à un artisan RGE comme Wattsun Énergie."
+      answer: "En 2026, l'isolation des combles est éligible aux Certificats d'Économies d'Énergie (CEE) versés par les fournisseurs d'énergie (800€ à 2 500€), à la TVA réduite à 5,5% appliquée automatiquement, et à l'Éco-prêt à taux zéro (jusqu'à 15 000€). Dans le cadre d'une rénovation globale avec le Parcours Accompagné MaPrimeRénov', les aides peuvent atteindre jusqu'à 40 000€ (pour un gain de 3 classes DPE ou plus). La condition : faire appel à un artisan RGE comme Wattsun Énergie."
     },
     {
       question: "Combien de temps durent les travaux d'isolation des combles ?",
